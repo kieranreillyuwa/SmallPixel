@@ -2,11 +2,13 @@
 #!/bin/csh -f
  
 #        % source setup.csh
-setenv MYHOME ~/myvirtuoso
-set cwd=$HOME/myvirtuoso
-set owd=$HOME/myvirtuoso
-set dirstack=$HOME/myvirtuoso
-set home=$HOME/myvirtuoso
+
+setenv MYHOME /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso
+set var = /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel
+set cwd=$var/myvirtuoso
+set owd=$var/myvirtuoso
+set dirstack=$var/myvirtuoso
+set home=$var/myvirtuoso
  
 # Set environment variables for Cadence software,
 setenv CDSHOME         /usr/local/cadence6/IC617-701
