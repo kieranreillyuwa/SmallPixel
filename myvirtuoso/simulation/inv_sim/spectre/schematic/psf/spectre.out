@@ -1,0 +1,337 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.345.isr2 64bit -- 4 Jan 2016
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: 22511497   Host: dep56140nix   HostID: 7F0100   PID: 18439
+Memory  available: 10.1990 GB  physical: 16.4281 GB
+Linux   : Red Hat Enterprise Linux Workstation release 7.9 (Maipo)
+CPU Type: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+        Socket: Processors [Frequency]
+        0:       0 [1214.0],  1 [926.5],  2 [2543.2],  3 [2556.3],  4 [2381.3]
+                 5 [1078.5],  6 [1141.5],  7 [1966.6]
+        
+System load averages (1min, 5min, 15min) : 2.2 %, 2.1 %, 2.8 %
+
+
+Simulating `input.scs' on dep56140nix at 5:34:54 PM, Tue Apr 26, 2022 (process id: 18439).
+Current working directory: /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/inv_sim/spectre/schematic/netlist
+Command line:
+    /usr/local/cadence6/MMSIM15-10-345/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre1_32560_2 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 18439
+
+Loading /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/inv_sim/spectre/schematic/netlist/input.scs
+Reading file:  /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/l130e-rf-v171-control.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/res_poly.va
+Reading link:  /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /usr/local/cadence6/MMSIM15-10-345/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/core_rf_v112.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/core_rf_v112.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/io_rf_v112.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/io_rf_v112.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/npn_v_s_rf_v102.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/npn_v_s_rf_v102.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/npn_v_n_rf_v102.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/npn_v_n_rf_v102.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/pnp_v_n_rf_v102.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/pnp_v_n_rf_v102.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/varmis_12_rf_v121.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/varmis_12_rf_v121.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/varmis_33_rf_v121.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/varmis_33_rf_v121.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/vardiop_rf_v111.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/vardiop_rf_v111.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_rf_v112.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_rf_v112.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnnpo_rf_v111.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnnpo_rf_v111.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnppo_rf_v111.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnppo_rf_v111.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnhr_rf_v121.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rnhr_rf_v121.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/l_cr20k_rf_v111.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/l_cr20k_rf_v111.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/l_sqsk_rf_v112.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/l_sqsk_rf_v112.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/diop_esd_rf_v102.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/diop_esd_rf_v102.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/diodn_esd_rf_v102.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/diodn_esd_rf_v102.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/pad_rf_v112.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/pad_rf_v112.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_15f_rf_vT21.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_15f_rf_vT21.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_rf2fF_v011.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_rf2fF_v011.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mimcaps_rf2fF_v011.va
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rf130e_mom_v012.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/rf130e_mom_v012.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/momcaps_array_vp3_rf_V011.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/momcaps_array_vp3_rf_V011.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/momcaps_array_vp4_rf_V011.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/momcaps_array_vp4_rf_V011.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_LL12_V141.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_LL12_V141.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_LVT33_BPW_V131.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_LVT33_BPW_V131.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_RVT33_BPW_V131.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_RVT33_BPW_V131.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS12_BPW_V241.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS12_BPW_V241.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_LVT12_BPW_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_LVT12_BPW_V031.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_BJT_V141.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_BJT_V141.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_LVT33_V131.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_LVT33_V131.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_NVT33_v031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_NVT33_v031.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_RVT33_V131.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HG_RVT33_V131.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS12_V241.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS12_V241.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_LVT12_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_LVT12_V031.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_NVT12_V041.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_HS_NVT12_V041.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_20f_MIMCAP_V011.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_20f_MIMCAP_V011.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_15f_MIMCAP_V021.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_15f_MIMCAP_V021.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_MIMCAP_V121.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_MIMCAP_V121.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mm130e_mom_v031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/mm130e_mom_v031.mdl.scs
+
+Warning from spectre in `momcaps_symesh_mm', during circuit read-in.
+    WARNING (SFE-2296): "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/./mm130e_mom_v031.mdl.scs" 179: The inline subckt definition `momcaps_symesh_mm' does not contain any inline components. The `inline' qualifier will therefore be ignored.
+Warning from spectre in `momcaps_asmesh_mm', during circuit read-in.
+    WARNING (SFE-2296): "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/./mm130e_mom_v031.mdl.scs" 268: The inline subckt definition `momcaps_asmesh_mm' does not contain any inline components. The `inline' qualifier will therefore be ignored.
+
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_RES_V152.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_RES_V152.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/MML130E_RES_V152.va
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_SP12_V141.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_SP12_V141.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/L130E_DIODE_V151.mdl.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_cr20k_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_cr20k_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwcr20k_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwcr20k_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsqsk_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsqsk_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsy20kct_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsy20kct_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsy20k_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_nwsy20k_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sqsk_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sqsk_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sy20kct_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sy20kct_rfvil_V031.typ.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sy20k_rfvil_V031.lib.scs
+Reading file:  /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/Models/Spectre/VIL/1P8M2T/l_sy20k_rfvil_V031.typ.scs
+Time for NDB Parsing: CPU = 110.415 ms, elapsed = 167.634 ms.
+Time accumulated: CPU = 146.113 ms, elapsed = 167.64 ms.
+Peak resident memory used = 46.7 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (50.0 %)      1 (20.0 %)      2 (82.4 %)      3 (6.2 %)
+                 4 (6.2 %)       7 (20.0 %)     
+        Other   
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-884): "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/l130e-rf-v171-control.scs" 2: The option 'tnom' is deleted because it is redefined at 'input.scs':line '56'.
+Warning from spectre in `inv':`I0', during hierarchy flattening.
+    WARNING (SFE-30): "input.scs" 41: I0.NM0: `nf' is not a valid parameter for an instance of `n_12_hsl130e'.  Ignored.
+    WARNING (SFE-30): "input.scs" 41: I0.NM0: `mis_flag' is not a valid parameter for an instance of `n_12_hsl130e'.  Ignored.
+    WARNING (SFE-30): "input.scs" 41: I0.NM0: `mf' is not a valid parameter for an instance of `n_12_hsl130e'.  Ignored.
+    WARNING (SFE-30): "input.scs" 43: I0.PM0: `nf' is not a valid parameter for an instance of `p_12_hsl130e'.  Ignored.
+    WARNING (SFE-30): "input.scs" 43: I0.PM0: `mis_flag' is not a valid parameter for an instance of `p_12_hsl130e'.  Ignored.
+        Further occurrences of this warning will be suppressed.
+
+Time for Elaboration: CPU = 10.648 ms, elapsed = 13.4671 ms.
+Time accumulated: CPU = 156.851 ms, elapsed = 181.196 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Time for EDB Visiting: CPU = 283 us, elapsed = 283.957 us.
+Time accumulated: CPU = 157.223 ms, elapsed = 181.569 ms.
+Peak resident memory used = 53.4 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2424): I0.NM0: `Acde' = 300e-03 is unusually small.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 2     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2424): I0.NM0: `Acde' = 300e-03 is unusually small.
+Notice from spectre.
+    1 warning suppressed.
+
+Time for parsing: CPU = 1.856 ms, elapsed = 16.4452 ms.
+Time accumulated: CPU = 159.152 ms, elapsed = 198.087 ms.
+Peak resident memory used = 54.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_32560_2, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 24 ns)
+************************************************
+DC simulation time: CPU = 302 us, elapsed = 303.03 us.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 24 ns
+    step = 24 ps
+    maxstep = 240 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+    tran: time = 779.1 ps    (3.25 %), step = 240 ps          (1 %)
+    tran: time = 1.87 ns     (7.79 %), step = 130.4 ps     (544 m%)
+    tran: time = 3.016 ns    (12.6 %), step = 209.6 ps     (873 m%)
+    tran: time = 4.216 ns    (17.6 %), step = 240 ps          (1 %)
+    tran: time = 5.416 ns    (22.6 %), step = 240 ps          (1 %)
+    tran: time = 6.624 ns    (27.6 %), step = 28.76 ps     (120 m%)
+    tran: time = 7.898 ns    (32.9 %), step = 240 ps          (1 %)
+    tran: time = 9.098 ns    (37.9 %), step = 240 ps          (1 %)
+    tran: time = 10.2 ns     (42.5 %), step = 22.06 ps    (91.9 m%)
+    tran: time = 11.55 ns    (48.1 %), step = 240 ps          (1 %)
+    tran: time = 12.75 ns    (53.1 %), step = 240 ps          (1 %)
+    tran: time = 13.86 ns    (57.7 %), step = 152.4 ps     (635 m%)
+    tran: time = 15.02 ns    (62.6 %), step = 88.79 ps     (370 m%)
+    tran: time = 16.26 ns    (67.8 %), step = 240 ps          (1 %)
+    tran: time = 17.46 ns    (72.8 %), step = 240 ps          (1 %)
+    tran: time = 18.62 ns    (77.6 %), step = 65.86 ps     (274 m%)
+    tran: time = 19.81 ns    (82.5 %), step = 240 ps          (1 %)
+    tran: time = 21.01 ns    (87.5 %), step = 240 ps          (1 %)
+    tran: time = 22.2 ns     (92.5 %), step = 18.25 ps      (76 m%)
+    tran: time = 23.55 ns    (98.1 %), step = 240 ps          (1 %)
+Number of accepted tran steps =             363
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (20.0 %)      1 (14.0 %)      2 (45.5 %)      3 (11.4 %)
+                 4 (15.6 %)      5 (2.3 %)       6 (2.3 %)       7 (7.1 %)
+        Other   
+Initial condition solution time: CPU = 339 us, elapsed = 339.031 us.
+Intrinsic tran analysis time:    CPU = 16.294 ms, elapsed = 66.1321 ms.
+Total time required for tran analysis `tran': CPU = 20.584 ms, elapsed = 114.932 ms.
+Time accumulated: CPU = 182.671 ms, elapsed = 485.362 ms.
+Peak resident memory used = 56.6 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (5:39:41 PM, Tue Apr 26, 2022):
+Time used: CPU = 233 ms, elapsed = 287 s (4m  46.8s), util. = 81.4e-03%.
+Time spent in licensing: elapsed = 24.3 ms.
+Peak memory used = 57.6 Mbytes.
+Simulation started at: 5:34:54 PM, Tue Apr 26, 2022, ended at: 5:39:41 PM, Tue Apr 26, 2022, with elapsed time (wall clock): 287 s (4m  46.8s).
+spectre completes with 0 errors, 11 warnings, and 1 notice.

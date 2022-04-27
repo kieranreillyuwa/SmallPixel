@@ -1,0 +1,47 @@
+\# Program start time UTC 2022.04.20 11:59:19.196
+\# Local time Wednesday 20 April 2022, 7:59 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 01/19/2016 02:05 (sjfnl116) $
+\o Hierarchy:		/usr/local/cadence6/IC617-701/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.1  (64-bit addresses)
+\# Command line:	/usr/local/cadence6/IC617-701/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	dep56136nix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.53.1.el7.x86_64 #1 SMP Thu Dec 16 10:19:28 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:0 (1920x1080)
+\# Available geometry:			TL(0:28) BR(1919:1041)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x2400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        360 MB
+\# Available memory:	     21,455 MB
+\# System memory:	     23,859 MB
+\# Maximum memory size:	     23,574 MB
+\# Max mem available:	     21,530 MB
+\# Initial memory used:	         75 MB
+\#        process size:	        876 MB
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		22495757
+\o Working Directory:	dep56136nix:/home/uniwa/22495757/myvirtuoso/myvirtuoso
+\# Process Id:		4349
+\o 
+\o COPYRIGHT © 1992-2015  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2015  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o *ERROR* (DB-320001): Unable to obtain the 'Cadence(R) Design Framework II' license. Run 'lmstat -f 111' to see license, server, and usage information. For more information, see the sections related to license maintenance in the 'Cadence License Manager' manual.
+\# Memory report: on exit             77 MB, process size 898 MB at UTC 2022.04.20 11:59:19.227
+\# Memory report: peak usage          77 MB, process size 898 MB

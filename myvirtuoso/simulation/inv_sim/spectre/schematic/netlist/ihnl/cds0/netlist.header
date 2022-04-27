@@ -1,0 +1,5 @@
+
+// Library name: myLib
+// Cell name: inv
+// View name: schematic
+subckt inv GND IN OUT VDD

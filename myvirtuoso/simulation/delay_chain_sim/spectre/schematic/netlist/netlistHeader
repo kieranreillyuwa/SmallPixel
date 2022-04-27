@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 26 17:25:50 2022
+// Design library name: Project_Lib1_sim
+// Design cell name: delay_chain_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0

@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'delay_chain layout Project_Lib1':
+  info: Assign pin label "GND" at (5.965, 0.340) to layer `ME1_c'.
+  info: Assign pin label "IN" at (5.580, 2.470) to layer `ME1_c'.
+  info: Assign pin label "VDD" at (5.965, 6.765) to layer `ME1_c'.
+  info: Assign pin label "OUT" at (11.335, 2.445) to layer `ME1_c'.
+
+***** End of Label Report *****
+

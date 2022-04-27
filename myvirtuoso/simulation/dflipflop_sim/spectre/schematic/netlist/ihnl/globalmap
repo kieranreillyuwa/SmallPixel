@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Project_Lib1_sim/dflipflop_sim/schematic dflipflop_sim
+Project_Lib1/dflipflop/schematic dflipflop
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

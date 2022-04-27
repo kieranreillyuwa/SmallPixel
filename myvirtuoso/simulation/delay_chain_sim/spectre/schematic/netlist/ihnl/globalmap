@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Project_Lib1_sim/delay_chain_sim/schematic delay_chain_sim
+Project_Lib1/delay_chain/schematic delay_chain
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

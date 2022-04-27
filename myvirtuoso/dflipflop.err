@@ -1,0 +1,67 @@
+================================================================================
+Rule No. 101 : 4A.19F: Minimum separation from an DIFF region to poly1 on field oxide is 0.10um
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : dflipflop layout Project_Lib1
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.970        1.740       1.095        1.820
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.970      1.740      1.095      1.820
+
+================================================================================
+Rule No. 125 : 4A.21M: Maximum NPLUS diffusion to nearest P+ pick-up spacing is 20um
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : dflipflop layout Project_Lib1
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.560        0.045       1.370        1.045
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.560      0.045      1.370      1.045
+
+================================================================================
+Rule No. 140 : 4A.22M: Maximum P+ DIFF to nearest N+ pick-up spacing is 20um
+
+Real Error Count : 2; Flat Error Count : 2
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : dflipflop layout Project_Lib1
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             2              2                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.560        1.820       3.310        5.820
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.560      1.820      1.900      5.820
+   2      X        2.500      1.820      3.310      3.820
+

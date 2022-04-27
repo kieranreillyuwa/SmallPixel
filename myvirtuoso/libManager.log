@@ -1,0 +1,978 @@
+\o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 11/09/2015 17:30 (sjfnl634) $
+\o Sub version:		sub-version  s001 
+\o Arguments:		-unmapped -mpssession virtuoso32560 -mpshost dep56140nix 
+\o Working Directory:	dep56140nix:/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso
+\o 64-bit offsets
+\o Qt version: 		4.8.5
+\o changeWorkingDir("/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(403 241 600 443))
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellListBox->value = "photodiode"
+\a cdsLibManager->cellListBox->value = "reset"
+\a cdsLibManager->viewListBox->value = "reset"
+\a cdsLibManager->viewLineEdit->value = "reset"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
+\a cdsLibManager->cellListBox->value = "inv"
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
+\a cdsLibManager->cellListBox->value = "inv"
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellListBox->value = "photodiode"
+\a cdsLibManager->cellListBox->value = "reset"
+\a cdsLibManager->viewListBox->value = "reset"
+\a cdsLibManager->viewLineEdit->value = "reset"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 14 24 2 "inv")
+\a lmgrLogShowPopup("mainListPopup1" 28 27 2 "inv")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CategoryCellsEdit->value = "*"
+\a basicCopyForm->CellsSkipLibraries->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsSkipLibraries->value = t
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromCell->value = "inv"
+\a basicCopyForm->CopyToCell->value = "inv"
+\a basicCopyForm->CellsViewsToCopy->value = "av_extracted layout schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(481 164 444 674))
+\a basicCopyForm->CopyToCell->value = "comparator"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "Project_Lib1".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(557 356 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 28 41 2 "inv")
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromCell->value = "inv"
+\a basicCopyForm->CopyToCell->value = "inv"
+\a basicCopyForm->CellsViewsToCopy->value = "av_extracted layout schematic symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(471 156 444 674))
+\a basicCopyForm->CopyToCell->value = "delay chain"
+\a basicCopyForm->OK->value = t
+\o ERROR (CLM-209): "Project_Lib1  delay chain" is an invalid name for the current namespace <CDBA>.
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(458 409 490 122))
+\a errorDialog->errorOkButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(basicCopyForm)
+\a basicCopyForm->CopyToCell->value = "delay_chain"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "Project_Lib1".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(557 356 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "zpcellSCRATCH8dAiYC315875"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "lecopy_cv"
+\a cdsLibManager->viewLineEdit->value = "lecopy_cv"
+\a cdsLibManager->cellListBox->value = "zpcellscratch8daiyc315875"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "lecopy_cv"
+\a cdsLibManager->viewLineEdit->value = "lecopy_cv"
+\a cdsLibManager->cellListBox->value = "zpcellSCRATCH8dAiYC315875"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "lecopy_cv"
+\a cdsLibManager->viewLineEdit->value = "lecopy_cv"
+\a cdsLibManager->cellListBox->value = "reset"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "reset"
+\a cdsLibManager->viewLineEdit->value = "reset"
+\a cdsLibManager->cellListBox->value = "photodiode"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->cellLineEdit->value = "inv"
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "dflipflop_sim"
+\a cdsLibManager->cellLineEdit->value = "dflipflop_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "myLib_sim"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "inv_test"
+\a cdsLibManager->cellLineEdit->value = "inv_test"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libLineEdit->value = "myLib_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 27 11 2 "inv_test")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromLibrary->value = "myLib_sim"
+\a basicCopyForm->CopyFromCell->value = "inv_test"
+\a basicCopyForm->CopyToLibrary->value = "myLib_sim"
+\a basicCopyForm->CopyToCell->value = "inv_test"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1 Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(461 148 444 674))
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "Project_Lib1_sim".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file doesn't exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source OpenAccess cellview master file has zero size.
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(567 307 273 133))
+\a nrResizeWindow(copyProblemsDialog list(271 271 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(567 344 273 133))
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 Project_Lib1_sim analogLib avTech basic cdsDefTechLib myLib umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "inv_test"
+\a cdsLibManager->cellLineEdit->value = "inv_test"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_test"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 11 25 2 "inv_test")
+\a cdsLibManager->cellLineEdit->value = "inv_test"
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "inv_test"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "inv_test"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(532 328 343 182))
+\a basicRenameForm->basicRenameToEdit->value = "inv_sim"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "inv_test" to "inv_sim" in library "Project_Lib1_sim".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(569 344 268 133))
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "dflipflop_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dflipflop_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 10 27 2 "inv_sim")
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyFromCell->value = "inv_sim"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyToCell->value = "inv_sim"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(451 140 444 674))
+\a basicCopyForm->CopyFromCell->value = "comparator_sim"
+\a basicCopyForm->OK->value = t
+\o ERROR (CLM-194): The library cell "comparator_sim" doesn't exist.
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(458 409 490 122))
+\a errorDialog->errorOkButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(basicCopyForm)
+\a basicCopyForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup1" 39 25 2 "inv_sim")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyFromCell->value = "inv_sim"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyToCell->value = "inv_sim"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(441 132 444 674))
+\a basicCopyForm->CopyToCell->value = "comparator_sim"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "Project_Lib1_sim".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(557 356 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "comparator_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "comparator_sim"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "comparator_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "comparator_sim"
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "inv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "comparator"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "comparator_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "comparator_sim"
+\a cdsLibManager->libListBox->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "Project_Lib1"
+\a cdsLibManager->cellListBox->value = "comparator"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "delay_chain"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "delay_chain"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 37 48 2 "inv_sim")
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyFromCell->value = "inv_sim"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyToCell->value = "inv_sim"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(431 124 444 674))
+\a basicCopyForm->CopyFromCell->value = "delay_chain_sim"
+\a basicCopyForm->OK->value = t
+\o ERROR (CLM-194): The library cell "delay_chain_sim" doesn't exist.
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(546 409 314 122))
+\a errorDialog->errorOkButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(basicCopyForm)
+\a basicCopyForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup1" 37 44 2 "inv_sim")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1"
+\a basicCopyForm->CopyFromLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyFromCell->value = "inv_sim"
+\a basicCopyForm->CopyToLibrary->value = "Project_Lib1_sim"
+\a basicCopyForm->CopyToCell->value = "inv_sim"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(421 116 444 674))
+\a basicCopyForm->CopyToCell->value = "delay_chain_sim"
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "Project_Lib1_sim".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(557 356 273 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Project_Lib1_sim"
+\a cdsLibManager->libLineEdit->value = "Project_Lib1_sim"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "Project_Lib1 analogLib avTech basic cdsDefTechLib myLib myLib_sim umc13mmrf"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "delay_chain_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "delay_chain_sim"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "comparator_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "comparator_sim"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "delay_chain_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 3 0)
+\a cdsLibManager->cellListBox->value = "inv_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a cdsLibManager->cellLineEdit->value = "inv_sim"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dflipflop_sim"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "delay_chain_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "delay_chain_sim"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)

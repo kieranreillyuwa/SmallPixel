@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      22511497
+HostName                       dep56140nix.uniwa.uwa.edu.au
+ProcessIdentifier              32560
+ProcessCreationTime_UTC        1650958593
+ProcessCreationTime_Readable   Tue Apr 26 15:36:33 2022 AWST
+AppIdentifier                  /usr/local/cadence6/IC617-701/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/CDS.log
+TimeEditLocked                 Tue Apr 26 15:36:33 2022 AWST

@@ -1,0 +1,87 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78
+            Release 4.1_USR5
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue Apr 26 15:48:45 2022
+
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/inv.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+@(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 26 15:48:45 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+ Summary Report: inv.sum
+ RSF           : /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/inv.rsf
+ Library Name  : Project_Lib1
+ CDSLIB Path   : "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib"
+ Cell Name     : inv
+ View Name     : layout
+ Rules File    : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-2.3-P9-EXTRACT.RUL
+ Options       : -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib 
+ Work Directory: .
+ Operating Mode: Legacy Mode is Off
+
+
+Starting dfIIToVdb...
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+@(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Apr 26 15:48:46 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+Loading umc13mmrf/libInit.il ...
+	Loading umc13mmrf/loadCxt.ile ... done!
+	Loading context 'umc13mmrf' from library 'umc13mmrf' ... done!
+	Loading context 'pdkUtils' from library 'umc13mmrf' ... done!
+	Loading context 'Util' from library 'umc13mmrf' ... done!
+	Loading context 'userUtil' from library 'umc13mmrf' ... done!
+	Loading context 'oxf_cb' from library 'umc13mmrf' ... done!
+	Loading umc13mmrf/libInitCustomExit.il ... done!
+Loaded umc13mmrf/libInit.il successfully!
+Compiling rules...
+
+
+************************************************************* 
+
+ Assura LVS of UMC 0.13um Mixed-Mode and RFCMOS 1P8M MMC FSG Enhancement Process (Ps: Pls select the switches of metal opton and metal combination !! )  
+  
+  
+ 
+
+************************************************************* 
+
+WARNING LVS Run detected.
+Non-legacy mode has been disabled for this LVS run
+*WARNING* Failed to open /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/inv.map -- No such file or directory
+*WARNING* Data base not created
+Failed to create a new database.
+
+
+*****  dfIIToVdb terminated abnormally  *****
+
+*WARNING* Translation abnormally terminated!
+
+
+*****  aveng fork terminated abnormally  *****
+
+
+*WARNING* aveng exit with bad status
+*WARNING* Status 256
+*WARNING* Assura execution terminated

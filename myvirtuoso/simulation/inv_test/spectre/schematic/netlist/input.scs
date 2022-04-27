@@ -1,0 +1,70 @@
+// Generated for: spectre
+// Generated on: Apr 26 13:11:19 2022
+// Design library name: myLib_sim
+// Design cell name: inv_test
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/l130e-rf-v171-control.scs"
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_LL12_V141.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_LVT33_BPW_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_RVT33_BPW_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS12_BPW_V241.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_LVT12_BPW_V031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_BJT_V141.lib.scs" section=typ_BIP
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_LVT33_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_NVT33_v031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_RVT33_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS12_V241.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_LVT12_V031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_NVT12_V041.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_20f_MIMCAP_V011.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_15f_MIMCAP_V021.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_MIMCAP_V121.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/mm130e_mom_v031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_RES_V152.lib.scs" section=res_typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_SP12_V141.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_DIODE_V151.mdl.scs"
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_cr20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwcr20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsqsk_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsy20kct_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsy20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sqsk_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sy20kct_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sy20k_rfvil_V031.lib.scs" section=typ
+
+// Library name: myLib
+// Cell name: inv
+// View name: schematic
+subckt inv GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
+        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends inv
+// End of subcircuit definition.
+
+// Library name: myLib_sim
+// Cell name: inv_test
+// View name: schematic
+I0 (0 in out net02) inv
+V1 (net02 0) vsource dc=1.2 type=dc
+V0 (in 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C0 (out 0) capacitor c=100.0f
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=24n errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

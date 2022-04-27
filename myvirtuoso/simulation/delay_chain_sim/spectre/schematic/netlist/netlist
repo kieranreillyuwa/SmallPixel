@@ -1,0 +1,36 @@
+
+// Library name: Project_Lib1
+// Cell name: delay_chain
+// View name: schematic
+subckt delay_chain GND IN OUT VDD
+    NM3 (OUT net038 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net036 net033 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (net038 net036 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net033 IN GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (net036 net033 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM3 (OUT net038 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM2 (net038 net036 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM0 (net033 IN VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends delay_chain
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: delay_chain_sim
+// View name: schematic
+I2 (0 in out net02) delay_chain
+V1 (net02 0) vsource dc=1.2 type=dc
+V0 (in 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C0 (out 0) capacitor c=100.0f

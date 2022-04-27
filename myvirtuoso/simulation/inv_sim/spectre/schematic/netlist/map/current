@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inv_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/inv_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1_sim/inv_sim/schematic" "inv_sim" )
+( "myLib/inv/schematic" "inv" )
+ )
+( "inv_sim" "ihnl/cds1/map" )
+( "inv" "ihnl/cds0/map" )
+ )

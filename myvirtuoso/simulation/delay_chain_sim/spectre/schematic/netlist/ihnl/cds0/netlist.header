@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: delay_chain
+// View name: schematic
+subckt delay_chain GND IN OUT VDD

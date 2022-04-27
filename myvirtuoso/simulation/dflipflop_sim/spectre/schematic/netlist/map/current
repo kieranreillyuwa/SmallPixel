@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "dflipflop_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/dflipflop_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/dflipflop/schematic" "dflipflop" )
+( "Project_Lib1_sim/dflipflop_sim/schematic" "dflipflop_sim" )
+ )
+( "dflipflop" "ihnl/cds0/map" )
+( "dflipflop_sim" "ihnl/cds1/map" )
+ )

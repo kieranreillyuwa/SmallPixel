@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Project_Lib1_sim\" \"delay_chain_sim\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Apr 26 17:25:49 2022"
+"title" ""
+"analysisList" "()"
+END

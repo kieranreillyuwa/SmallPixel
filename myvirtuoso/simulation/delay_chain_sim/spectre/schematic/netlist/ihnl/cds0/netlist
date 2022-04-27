@@ -1,0 +1,22 @@
+    NM3 (OUT net038 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net036 net033 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (net038 net036 GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net033 IN GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (net036 net033 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM3 (OUT net038 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM2 (net038 net036 VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM0 (net033 IN VDD VDD) p_12_hsl130e w=3.1u l=130.0n as=1.054e-12 \
+        ad=1.054e-12 ps=6.88u pd=6.88u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends delay_chain
+// End of subcircuit definition.

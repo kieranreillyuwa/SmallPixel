@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "delay_chain_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/delay_chain_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1_sim/delay_chain_sim/schematic" "delay_chain_sim" )
+( "Project_Lib1/delay_chain/schematic" "delay_chain" )
+ )
+( "delay_chain_sim" "ihnl/cds1/map" )
+( "delay_chain" "ihnl/cds0/map" )
+ )

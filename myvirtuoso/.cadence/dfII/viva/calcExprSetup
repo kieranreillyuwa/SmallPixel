@@ -1,0 +1,3 @@
+artistResMgrCalcExprSetup("true" "plot" "E0" "340.8E-12")
+artistResMgrCalcExprSetup("true" "plot" "E1" "220.5E-12")
+artistResMgrCalcExprSetup("true" "plot" "E2" "220.5E-12")

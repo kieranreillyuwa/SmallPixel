@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+myLib inv schematic cds0
+myLib_sim inv_test schematic cds1

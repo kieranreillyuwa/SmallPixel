@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+myLib_sim/inv_test/schematic inv_test
+myLib/inv/schematic inv
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam
