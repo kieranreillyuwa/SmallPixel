@@ -15,15 +15,14 @@ subckt dflipflop CLK D GND NOT_Q NOT_R Q VDD
         ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
     NM0 (net18 D GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
         ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM5 (net40 D VDD VDD) p_12_hsl130e w=4u l=120.0n as=1.36e-12 \
+    PM5 (net40 D VDD VDD) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
         ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM4 (net18 CLK net40 GND) p_12_hsl130e w=4u l=120.0n as=1.36e-12 \
+    PM4 (net18 CLK net40 GND) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
         ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
     PM3 (Q NOT_Q VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
         ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM2 (NOT_Q NOT_R VDD VDD) p_12_hsl130e w=8u l=130.0n as=2.72e-12 \
-        ad=2.72e-12 ps=16.68u pd=16.68u m=(1)*(1) nf=1 mis_flag=1 \
-        mf=(1)*(1)
+    PM2 (NOT_Q NOT_R VDD VDD) p_12_hsl130e w=4u l=120.0n as=1.36e-12 \
+        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
     PM1 (NOT_Q net25 VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
     PM0 (net25 CLK VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
@@ -36,7 +35,7 @@ ends dflipflop
 // View name: schematic
 I0 (CLK D 0 NOT_Q NOT_R Q net3) dflipflop
 V0 (net3 0) vsource dc=1.2 type=dc
-V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=32n delay=20n \
+V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=64n delay=20n \
         rise=10p fall=10p width=20n
 V2 (CLK 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
         fall=10p width=4n

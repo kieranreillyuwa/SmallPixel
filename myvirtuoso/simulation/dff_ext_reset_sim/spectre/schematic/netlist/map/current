@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "dff_ext_reset_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/dff_ext_reset_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/dflipflop_no_reset/schematic" "dflipflop_no_reset" )
+( "Project_Lib1/reset_pullup/schematic" "reset_pullup" )
+( "Project_Lib1_sim/dff_ext_reset_sim/schematic" "dff_ext_reset_sim" )
+ )
+( "dflipflop_no_reset" "ihnl/cds0/map" )
+( "dff_ext_reset_sim" "ihnl/cds2/map" )
+( "reset_pullup" "ihnl/cds1/map" )
+ )

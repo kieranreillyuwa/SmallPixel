@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: dflipflop_no_reset
+// View name: schematic
+subckt dflipflop_no_reset CLK D GND NOT_Q Q VDD

@@ -1,0 +1,15 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: dff_ext_reset_sim
+// View name: schematic
+I0 (net7 net5 0 net4 net6 net2) dflipflop_no_reset
+I1 (net4 net1 net2) reset_pullup
+V0 (net2 0) vsource type=dc
+V3 (net1 0) vsource type=pulse val0=1.2V val1=0 period=32n delay=20n \
+        rise=10p fall=10p width=20n
+V2 (net5 0) vsource type=pulse val0=0 val1=1.2 period=16n delay=2n \
+        rise=10p fall=10p width=8n
+V1 (net7 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C1 (net6 0) capacitor c=100.0f
+C0 (net4 0) capacitor c=100.0f

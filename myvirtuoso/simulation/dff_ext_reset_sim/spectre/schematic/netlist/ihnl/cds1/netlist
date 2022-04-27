@@ -1,0 +1,10 @@
+    PM3 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM2 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends reset_pullup
+// End of subcircuit definition.

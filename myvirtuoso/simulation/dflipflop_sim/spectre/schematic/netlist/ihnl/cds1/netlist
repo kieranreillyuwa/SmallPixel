@@ -4,7 +4,7 @@
 // View name: schematic
 I0 (CLK D 0 NOT_Q NOT_R Q net3) dflipflop
 V0 (net3 0) vsource dc=1.2 type=dc
-V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=32n delay=20n \
+V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=64n delay=20n \
         rise=10p fall=10p width=20n
 V2 (CLK 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
         fall=10p width=4n

@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: reset_pullup
+// View name: schematic
+subckt reset_pullup I NOT_R VDD

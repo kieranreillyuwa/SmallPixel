@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Project_Lib1_sim/dff_ext_reset_sim/schematic dff_ext_reset_sim
+Project_Lib1/reset_pullup/schematic reset_pullup
+Project_Lib1/dflipflop_no_reset/schematic dflipflop_no_reset
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

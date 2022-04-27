@@ -1,0 +1,59 @@
+
+// Library name: Project_Lib1
+// Cell name: dflipflop_no_reset
+// View name: schematic
+subckt dflipflop_no_reset CLK D GND NOT_Q Q VDD
+    NM6 (NOT_Q CLK net38 GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM5 (net38 net25 GND GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM4 (net25 net18 net39 GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM3 (net39 CLK GND GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (Q NOT_Q GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
+        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net18 D GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
+        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM5 (net40 D VDD VDD) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
+        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM4 (net18 CLK net40 GND) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
+        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM3 (Q NOT_Q VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (NOT_Q net25 VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (net25 CLK VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends dflipflop_no_reset
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: reset_pullup
+// View name: schematic
+subckt reset_pullup I NOT_R VDD
+    PM3 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM2 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (I NOT_R VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends reset_pullup
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: dff_ext_reset_sim
+// View name: schematic
+I0 (net7 net5 0 net4 net6 net2) dflipflop_no_reset
+I1 (net4 net1 net2) reset_pullup
+V0 (net2 0) vsource type=dc
+V3 (net1 0) vsource type=pulse val0=1.2V val1=0 period=32n delay=20n \
+        rise=10p fall=10p width=20n
+V2 (net5 0) vsource type=pulse val0=0 val1=1.2 period=16n delay=2n \
+        rise=10p fall=10p width=8n
+V1 (net7 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C1 (net6 0) capacitor c=100.0f
+C0 (net4 0) capacitor c=100.0f

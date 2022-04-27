@@ -11,9 +11,13 @@
 vuiLayerListOrder  =  "Alphabetical"
 vuiLayerList  = '(
 		("DATAEXTENT" 205 "DATAEXTENT = cellBoundary(root)" 0 2 t "y0 (drawing)" t)
-		("E4A_23Fa_PO1" 2025 "E4A_23Fa_PO1 = geomAndNot( DRC_1 E4A_23Fa_PO1 /*-*/ )" 1 5 t "y1 (drawing)" t)
-		("ME1_c" 426 "ME1_c = geomAndNot( T?424 IND )" 0 4 t "y3 (drawing)" t)
+		("E4A_23Fa_PO1" 2025 "E4A_23Fa_PO1 = geomAndNot( DRC_1 E4A_23Fa_PO1 /*-*/ )" 1 9 t "y1 (drawing)" t)
+		("ME1_c" 426 "ME1_c = geomAndNot( T?424 IND )" 0 6 t "y3 (drawing)" t)
+		("NTAP" 251 "NTAP = geomAndNot( DIFF_NT PPLUS )" 0 5 t "y3 (drawing)" t)
+		("NTAP_con" 2463 "NTAP_con = groupVias(  via(NTAP_con) conn1(ME1_c) conn2(NTAP) )" 1 7 t "y4 (drawing)" t)
 		("NWELL" 236 "NWELL = geomAndNot( NWEL RNWELL )" 0 3 t "y6 (drawing)" t)
+		("PTAP" 476 "PTAP = geomCat( T?280 )" 1 4 t "y6 (drawing)" t)
+		("PTAP_con" 2467 "PTAP_con = groupVias(  via(PTAP_con) conn1(ME1_c) conn2(PTAP) )" 1 8 t "y7 (drawing)" t)
 		("m1_pin" 196 "m1_pin = pinText( \"ME1\" )" 0 1 t "y9 (drawing)" t)
 		("po_pin" 195 "po_pin = pinText( \"PO1\" )" 0 0 t "y0 (drawing)" t)
 )

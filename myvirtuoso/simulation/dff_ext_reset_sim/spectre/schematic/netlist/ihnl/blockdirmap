@@ -1,0 +1,5 @@
+CADENCE IHNL11143
+
+Project_Lib1 dflipflop_no_reset schematic cds0
+Project_Lib1 reset_pullup schematic cds1
+Project_Lib1_sim dff_ext_reset_sim schematic cds2

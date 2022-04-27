@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue Apr 26 18:27:44 2022
+run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Wed Apr 27 11:45:13 2022
 
 
 Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dflipflop.rsf -restart -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 26 18:27:44 2022
+run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 27 11:45:13 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
@@ -49,7 +49,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.17  elap: 4  pf: 0  in: 0  out: 40  virt: 162M  phys: 810M
+cpu: 0.15  elap: 5  pf: 0  in: 0  out: 40  virt: 162M  phys: 815M
 
 Running the Task Processor, 1 cells, 3465 steps...
 
@@ -1297,17 +1297,17 @@ Executing: eLOGO_5_8Db = geomOr(drc(DIFF_LOGO eLOGO_5_8Db_CONT_DIFF_LOGO ((0 < e
 	   errorLayer(eLOGO_5_8Db "LOGO_5.8Db: Minimum DIFFUSION enclosure of CONT is 0.14, floating CONT is not allowed")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.09  elap: 0  pf: 0  in: 0  out: 768  virt: 189M  phys: 948M
+cpu: 0.13  elap: 0  pf: 0  in: 0  out: 768  virt: 187M  phys: 941M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.03  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1015M
+cpu: 0.03  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1013M
 
 Finished building the persistent database.
-cpu: 0.02  elap: 1  pf: 0  in: 0  out: 6408  virt: 238M  phys: 1034M
+cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6408  virt: 238M  phys: 1031M
 
 
 *****  aveng terminated normally  *****
@@ -1323,7 +1323,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 26 18:27:50 2022
+run on dep56141nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 27 11:45:20 2022
 
 
    Creating Error Database 'dflipflop'...
@@ -1426,14 +1426,14 @@ Rule      Message                                    FlatCount     RealCount
 (   92)  4A.19AaBaC: Minimum poly1 width is 0.12u            0            0
 (   93)  4A.19Ab: Minimum poly1 width for 3.3V NM            0            0
 (   94)  4A.19Bb: Minimum poly1 width for 3.3V PM            0            0
-(   95)  4A.19D.a1_4A.19D.c1_4A.19D.c2.1: Minimum            0            0
+(   95)  4A.19D.a1_4A.19D.c1_4A.19D.c2.1: Minimum            3            3
 (   96)  4A.19D.a2: Minimum poly1 spacing on DIFF            0            0
 (   97)  4A.19D.b1: Minimum poly1 spacing on DIFF            0            0
 (   98)  4A.19D.b2: Minimum poly1 spacing on DIFF            0            0
 (   99)  4A.19D.c2.2: Minimum space between two p            0            0
 (  100)  4A.19E: Minimum overlap of a poly1 regio            0            0
-(  101)  4A.19F: Minimum separation from an DIFF             1            1
-(  102)  4A.19G: Minimum poly1 endcap to RELATED             0            0
+(  101)  4A.19F: Minimum separation from an DIFF            12           12
+(  102)  4A.19G: Minimum poly1 endcap to RELATED             5            5
 (  103)  4A.19H.a__4A.19O: Minimum poly1 gate to             0            0
 (  104)  4A.19H.b: Minimum poly1 gate (width > 0.            0            0
 (  105)  4A.19I.a: Minimum poly1 gate width for 4            0            0
@@ -1456,7 +1456,7 @@ Rule      Message                                    FlatCount     RealCount
 (  122)  4A.20L: Minimum NWELL overlap HR poly1 r            0            0
 (  123)  4A.20M: Min PPLUS overlap SAB is 0.2 um             0            0
 (  124)  4A.20N: Minimum spacing from P+ implant             0            0
-(  125)  4A.21M: Maximum NPLUS diffusion to neare            1            1
+(  125)  4A.21M: Maximum NPLUS diffusion to neare            0            0
 (  126)  4A.22A: Minimum width of a PPLUS region             0            0
 (  127)  4A.22B: Minimum space between two PPLUS             0            0
 (  128)  4A.22C.a: Minimum PPLUS overlap P+ DIFF(            0            0
@@ -1471,7 +1471,7 @@ Rule      Message                                    FlatCount     RealCount
 (  137)  4A.22J(4A.21K): Minimum PPLUS overlap CO            0            0
 (  138)  4A.22K(4A.21J): Minimum PPLUS to N+ CONT            0            0
 (  139)  4A.22L: Soft Contacts are prohibited                0            0
-(  140)  4A.22M: Maximum P+ DIFF to nearest N+ pi            2            2
+(  140)  4A.22M: Maximum P+ DIFF to nearest N+ pi            0            0
 (  141)  4A.22N: Minimun PPLUS area is 0.1764 sq.            0            0
 (  142)  4A.23A: Minimum SAB width is 0.40um                 0            0
 (  143)  4A.23B: Minimum SAB space is 0.40um                 0            0
@@ -1513,8 +1513,8 @@ Rule      Message                                    FlatCount     RealCount
 (  179)  4A.23Zf.b: (DIFFUSION OVER SAB) partiall            0            0
 (  180)  4A.23Zg.a: Minimum P+ implant enclosure             0            0
 (  181)  4A.23Zg.b: (DIFFUSION OVER SAB) partiall            0            0
-(  182)  4A.24A: Exact CONT size is 0.16um                   0            0
-(  183)  4A.24B: Minimum space between two CONT r            0            0
+(  182)  4A.24A: Exact CONT size is 0.16um                  16           16
+(  183)  4A.24B: Minimum space between two CONT r           16           16
 (  184)  4A.24C.a:Minimum DIFF CONT to poly1 gate            0            0
 (  185)  4A.24C.b:Minimum DIFF CONT to poly1(3.3V            0            0
 (  186)  4A.24D:Minimum poly1 contact to diffusio            0            0
@@ -1555,17 +1555,19 @@ Rule      Message                                    FlatCount     RealCount
 (  221)  LOGO_5.8Da: Minimum PO1 enclosure of CON            0            0
 (  222)  LOGO_5.8Db: Minimum DIFFUSION enclosure             0            0
 --------------------------------------------------------------------------------
-Total  errors:                                               4            4
+Total  errors:                                              52           52
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into ./dflipflop.err ...
+   Rule 95 done.
    Rule 101 done.
-   Rule 125 done.
-   Rule 140 done.
+   Rule 102 done.
+   Rule 182 done.
+   Rule 183 done.
 
-avrpt cpu sec:    0.11  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.10  elapsed:     0  virtual:    93M
 
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
 
@@ -1578,7 +1580,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Tue Apr 26 18:27:50 2022
+Run ended: Wed Apr 27 11:45:20 2022
 
 *****  Assura terminated normally  *****
 
