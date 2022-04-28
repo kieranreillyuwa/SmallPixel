@@ -2,7 +2,6 @@
 // Library name: Project_Lib1_sim
 // Cell name: dflipflop_sim
 // View name: schematic
-I0 (CLK D 0 NOT_Q NOT_R Q net3) dflipflop
 V0 (net3 0) vsource dc=1.2 type=dc
 V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=64n delay=20n \
         rise=10p fall=10p width=20n
@@ -12,3 +11,4 @@ V1 (D 0) vsource type=pulse val0=0 val1=1.2 period=16n delay=0 rise=10p \
         fall=10p width=8n
 C1 (Q 0) capacitor c=100.0f
 C0 (NOT_Q 0) capacitor c=100.0f
+I2 (CLK D 0 Q net3 NOT_Q NOT_R) dff

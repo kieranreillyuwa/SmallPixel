@@ -1,9 +1,9 @@
 hnlLastStopCellInfo = '(
-                           ( "umc13mmrf" "N_12_HSL130E" "spectre" "49" "1377241033" )
-                          ( "umc13mmrf" "P_12_HSL130E" "spectre" "49" "1377241034" )
-                          ( "analogLib" "vdc" "spectre" "33" "1453198743" )
+                           ( "analogLib" "vdc" "spectre" "33" "1453198743" )
                           ( "analogLib" "vpulse" "spectre" "34" "1453198743" )
                           ( "analogLib" "cap" "spectre" "30" "1453198743" )
+                          ( "umc13mmrf" "N_12_HSL130E" "spectre" "49" "1377241033" )
+                          ( "umc13mmrf" "P_12_HSL130E" "spectre" "49" "1377241034" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"

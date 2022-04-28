@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "15.1.0.345.isr2"
-"date" "10:55:30 AM, Wed Apr 27, 2022"
+"date" "1:26:53 PM, Thur Apr 28, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -72,10 +72,6 @@ VALUE
 "rspd_mml130e" "subckt" (
 ""
 ""
-)
-"dflipflop" "subckt" (
-""
-"CLK D GND NOT_Q NOT_R Q VDD"
 )
 "l_nwsy20k_rfvil" "subckt" (
 ""
@@ -176,6 +172,10 @@ VALUE
 "varmis_12_rf" "subckt" (
 ""
 ""
+)
+"dff" "subckt" (
+""
+"CLK D GND Q VDD nQ nRST"
 )
 "mimcaps_20f_mml130e" "subckt" (
 ""

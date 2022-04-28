@@ -12,9 +12,9 @@
 ( "gnd!" "0" )
  )
 ( model
-( "Project_Lib1/dflipflop/schematic" "dflipflop" )
+( "Project_Lib1/dff/schematic" "dff" )
 ( "Project_Lib1_sim/dflipflop_sim/schematic" "dflipflop_sim" )
  )
-( "dflipflop" "ihnl/cds0/map" )
+( "dff" "ihnl/cds2/map" )
 ( "dflipflop_sim" "ihnl/cds1/map" )
  )

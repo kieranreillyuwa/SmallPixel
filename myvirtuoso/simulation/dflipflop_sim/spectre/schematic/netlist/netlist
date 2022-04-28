@@ -1,39 +1,78 @@
 
 // Library name: Project_Lib1
-// Cell name: dflipflop
+// Cell name: dff
 // View name: schematic
-subckt dflipflop CLK D GND NOT_Q NOT_R Q VDD
-    NM6 (NOT_Q CLK net38 GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+subckt dff CLK D GND Q VDD nQ nRST
+    NM19 (net70 CLK net67 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM18 (net67 net11 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM22 (net65 net30 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM24 (net71 nQ GND GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    NM5 (net38 net25 GND GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+    NM23 (net66 CLK net65 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM28 (net68 nRST GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM21 (net83 nRST net66 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM15 (net30 net11 net69 GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    NM4 (net25 net18 net39 GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+    NM14 (net69 net83 GND GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    NM3 (net39 CLK GND GND) n_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+    NM20 (net79 net83 net70 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM25 (Q net83 net71 GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    NM1 (Q NOT_Q GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
-        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    NM0 (net18 D GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
-        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM5 (net40 D VDD VDD) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
-        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM4 (net18 CLK net40 GND) p_12_hsl130e w=4u l=130.0n as=1.36e-12 \
-        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM3 (Q NOT_Q VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
+    NM27 (net73 net79 net68 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM26 (nQ Q net73 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (net11 nRST net72 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net72 D net74 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net74 net11 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM21 (net83 net30 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM20 (net83 CLK VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM10 (net30 net11 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM9 (net30 net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM18 (net79 net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM26 (nQ nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM25 (nQ net79 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM2 (net11 net79 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (net11 D VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (net11 nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM19 (net83 nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM17 (net79 CLK VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM16 (net79 net11 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM23 (Q nQ VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 ad=6.8e-13 \
         ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM2 (NOT_Q NOT_R VDD VDD) p_12_hsl130e w=4u l=120.0n as=1.36e-12 \
-        ad=1.36e-12 ps=8.68u pd=8.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM1 (NOT_Q net25 VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
+    PM22 (Q net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
         ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM0 (net25 CLK VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 \
-        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-ends dflipflop
+    PM24 (nQ Q VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends dff
 // End of subcircuit definition.
 
 // Library name: Project_Lib1_sim
 // Cell name: dflipflop_sim
 // View name: schematic
-I0 (CLK D 0 NOT_Q NOT_R Q net3) dflipflop
 V0 (net3 0) vsource dc=1.2 type=dc
 V3 (NOT_R 0) vsource type=pulse val0=1.2 val1=0 period=64n delay=20n \
         rise=10p fall=10p width=20n
@@ -43,3 +82,4 @@ V1 (D 0) vsource type=pulse val0=0 val1=1.2 period=16n delay=0 rise=10p \
         fall=10p width=8n
 C1 (Q 0) capacitor c=100.0f
 C0 (NOT_Q 0) capacitor c=100.0f
+I2 (CLK D 0 Q net3 NOT_Q NOT_R) dff
