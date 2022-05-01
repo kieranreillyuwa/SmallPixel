@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"NM19n NM18n NM22n NM24n NM23n NM28n NM21n NM15n NM14n NM20n NM25n NM27n NM26n NM2n NM1n NM0n" "umc13mmrf_N_12_HSL130E_spectre"
+"PM21n PM20n PM10n PM9n PM18n PM26n PM25n PM2n PM1n PM0n PM19n PM17n PM16n PM23n PM22n PM24n" "umc13mmrf_P_12_HSL130E_spectre"
+"CLKv" ":1v"
+"Dv" ":2v"
+"GNDv" ":3v"
+"Qv" ":4v"
+"VDDv" ":5v"
+"nQv" ":6v"
+"nRSTv" ":7v"

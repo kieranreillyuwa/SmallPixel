@@ -1,0 +1,42 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'dff layout Project_Lib1':
+  info: Assign pin label "nRST" at (0.855, 0.240) to layer `ME1'.
+  info: Assign pin label "GND" at (2.255, -0.285) to layer `ME1'.
+  info: Assign pin label "CLK" at (0.490, 4.290) to layer `ME1'.
+  info: Assign pin label "D" at (0.435, 4.840) to layer `ME1'.
+  info: Assign pin label "VDD" at (2.340, 8.775) to layer `ME1'.
+  info: Assign pin label "Q" at (13.700, 4.000) to layer `ME1'.
+  info: Assign pin label "nQ" at (13.775, 4.615) to layer `ME1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'dff layout Project_Lib1':
+  info: Assign pin label "nRST" at (0.855, 0.240) to layer `ME1'.
+  info: Assign pin label "GND" at (2.255, -0.285) to layer `ME1'.
+  info: Assign pin label "CLK" at (0.490, 4.290) to layer `ME1'.
+  info: Assign pin label "D" at (0.435, 4.840) to layer `ME1'.
+  info: Assign pin label "VDD" at (2.340, 8.775) to layer `ME1'.
+  info: Assign pin label "Q" at (13.700, 4.000) to layer `ME1'.
+  info: Assign pin label "nQ" at (13.775, 4.615) to layer `ME1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'dff layout Project_Lib1':
+  info: Assign pin label "nRST" at (0.855, 0.240) to layer `ME1'.
+  info: Assign pin label "GND" at (2.255, -0.285) to layer `ME1'.
+  info: Assign pin label "CLK" at (0.490, 4.290) to layer `ME1'.
+  info: Assign pin label "D" at (0.435, 4.840) to layer `ME1'.
+  info: Assign pin label "VDD" at (2.340, 8.775) to layer `ME1'.
+  info: Assign pin label "Q" at (13.700, 4.000) to layer `ME1'.
+  info: Assign pin label "nQ" at (13.775, 4.615) to layer `ME1'.
+
+***** End of Label Report *****
+

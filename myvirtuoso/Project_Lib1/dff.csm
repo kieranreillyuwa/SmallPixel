@@ -1,0 +1,6 @@
+Schematic                      | Layout                       | Status
+-------------------------------------------------------------------------------
+dff schematic Project_Lib1     | dff layout Project_Lib1      | errors       *
+
+Mismatch between Schematic and Layout
+   1 cell with errors

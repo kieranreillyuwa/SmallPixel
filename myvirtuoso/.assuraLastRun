@@ -1,2 +1,2 @@
-runDir = .
-runName = dflipflop
+runDir = ./Project_Lib1
+runName = dff

@@ -1,0 +1,14 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'dff layout Project_Lib1':
+  info: Assign pin label "CLK" at (1.480, 4.275) to layer `ME2_c'.
+  info: Assign pin label "D" at (1.505, 4.890) to layer `ME2_c'.
+  info: Floating label discarded:  "nQ" at (13.775, 4.615).
+  info: Floating label discarded:  "Q" at (13.775, 4.000).
+  info: Floating label discarded:  "GND" at (2.290, -0.230).
+  info: Floating label discarded:  "VDD" at (2.355, 8.015).
+  info: Floating label discarded:  "nRST" at (0.885, 0.240).
+
+***** End of Label Report *****
+

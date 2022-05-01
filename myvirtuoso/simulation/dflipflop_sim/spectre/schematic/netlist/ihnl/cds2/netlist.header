@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: dff
+// View name: schematic
+subckt dff CLK D GND Q VDD nQ nRST

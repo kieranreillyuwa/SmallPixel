@@ -1,0 +1,66 @@
+    NM19 (net70 CLK net67 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM18 (net67 net11 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM22 (net65 net30 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM24 (net71 nQ GND GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM23 (net66 CLK net65 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM28 (net68 nRST GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM21 (net83 nRST net66 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM15 (net30 net11 net69 GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM14 (net69 net83 GND GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM20 (net79 net83 net70 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM25 (Q net83 net71 GND) n_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM27 (net73 net79 net68 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM26 (nQ Q net73 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (net11 nRST net72 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net72 D net74 GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net74 net11 GND GND) n_12_hsl130e w=3u l=120.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM21 (net83 net30 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM20 (net83 CLK VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM10 (net30 net11 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM9 (net30 net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM18 (net79 net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM26 (nQ nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM25 (nQ net79 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM2 (net11 net79 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM1 (net11 D VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (net11 nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM19 (net83 nRST VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM17 (net79 CLK VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM16 (net79 net11 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM23 (Q nQ VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM22 (Q net83 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM24 (nQ Q VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 ad=6.8e-13 \
+        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends dff
+// End of subcircuit definition.
