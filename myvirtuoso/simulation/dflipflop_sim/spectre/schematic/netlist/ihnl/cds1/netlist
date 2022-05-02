@@ -9,6 +9,6 @@ V2 (CLK 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
         fall=10p width=4n
 V1 (D 0) vsource type=pulse val0=0 val1=1.2 period=16n delay=0 rise=10p \
         fall=10p width=8n
-C1 (Q 0) capacitor c=100.0f
-C0 (NOT_Q 0) capacitor c=100.0f
+C1 (Q 0) capacitor c=1f
+C0 (NOT_Q 0) capacitor c=1f
 I2 (CLK D 0 Q net3 NOT_Q NOT_R) dff

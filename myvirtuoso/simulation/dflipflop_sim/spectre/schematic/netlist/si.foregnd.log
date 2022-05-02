@@ -389,9 +389,7 @@ hnlPrintTopCellHeader hnlPrintTopCellFooter hnlPrintPorts hnlPrintDeviceHeader
 hnlPrintDeviceFooter hnlPrintInst) .
 Loading the file
 '/usr/local/cadence6/IC617-701/tools.lnx86/dfII/etc/skill/hnl/spectre.ile'.Loading the file
-'/usr/local/cadence6/IC617-701/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting Apr 28 13:23:51 2022
-End netlisting Apr 28 13:23:52 2022
-Begin Incremental Netlisting Apr 28 13:26:39 2022
-End netlisting Apr 28 13:26:40 2022
-Begin Incremental Netlisting Apr 28 13:26:52 2022
-End netlisting Apr 28 13:26:53 2022
+'/usr/local/cadence6/IC617-701/tools.lnx86/dfII/etc/skill/hnl/driver.ile'.Begin Incremental Netlisting May  2 12:39:13 2022
+End netlisting May  2 12:39:13 2022
+Begin Incremental Netlisting May  2 12:40:49 2022
+End netlisting May  2 12:40:49 2022
