@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: integrated
+// View name: schematic
+subckt integrated B7 BHIGH GND GR VDD

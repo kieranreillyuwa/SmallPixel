@@ -1,19 +1,20 @@
 
-// Library name: myLib
+// Library name: Project_Lib1
 // Cell name: inv
 // View name: schematic
-subckt inv GND IN OUT VDD
-    NM0 (OUT IN GND GND) n_12_hsl130e w=1u l=130.0n as=3.4e-13 ad=3.4e-13 \
-        ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-    PM0 (OUT IN VDD VDD) p_12_hsl130e w=2u l=130.0n as=6.8e-13 ad=6.8e-13 \
-        ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
-ends inv
+subckt inv_schematic GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=640.0n l=130.0n as=2.176e-13 \
+        ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends inv_schematic
 // End of subcircuit definition.
 
 // Library name: Project_Lib1_sim
 // Cell name: inv_sim
 // View name: schematic
-I0 (0 in out net02) inv
+I2 (0 in out net02) inv_schematic
 V1 (net02 0) vsource dc=1.2 type=dc
 V0 (in 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
         fall=10p width=4n

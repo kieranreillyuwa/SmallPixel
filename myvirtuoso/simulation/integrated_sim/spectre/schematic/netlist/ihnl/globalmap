@@ -1,0 +1,19 @@
+CADENCE IHNL11140
+$model
+myLib/NAND/schematic NAND
+Project_Lib1/reset/schematic reset
+Project_Lib1/comparator/schematic comparator
+Project_Lib1/integrated/schematic integrated
+Project_Lib1/inv/schematic inv
+Project_Lib1/binary/schematic binary
+Project_Lib1/photodiode/schematic photodiode
+Project_Lib1/asr/schematic asr
+Project_Lib1_sim/integrated_sim/schematic integrated_sim
+Project_Lib1/delay_chain/schematic delay_chain
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

@@ -1,0 +1,7 @@
+    I0 (net12 BHIGH BHIGH BHIGH BHIGH BHIGH BHIGH B7 net11 GND VDD) asr
+    I1 (GND net14 net11 VDD) delay_chain
+    I2 (GND GND net14 VDD) comparator
+    I3 (net13 GND) photodiode
+    I4 (net12 GR VDD net13) reset
+ends integrated
+// End of subcircuit definition.

@@ -1,0 +1,12 @@
+CADENCE IHNL111410
+
+myLib NAND schematic cds0
+Project_Lib1 inv schematic cds1
+Project_Lib1 binary schematic cds2
+Project_Lib1 asr schematic cds3
+Project_Lib1 delay_chain schematic cds4
+Project_Lib1 comparator schematic cds5
+Project_Lib1 photodiode schematic cds6
+Project_Lib1 reset schematic cds7
+Project_Lib1 integrated schematic cds8
+Project_Lib1_sim integrated_sim schematic cds9

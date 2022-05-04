@@ -1,0 +1,7 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: photodiode_sim
+// View name: schematic
+I5 (in 0) isource dc=50n type=dc
+C0 (out 0) capacitor c=100.0f
+I4 (in out) photodiode

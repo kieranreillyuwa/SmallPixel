@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  3 18:04:08 2022
+// Design library name: Project_Lib1_sim
+// Design cell name: integrated_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

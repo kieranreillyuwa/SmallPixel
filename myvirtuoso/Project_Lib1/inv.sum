@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 26 15:50:12 2022
+run on dep56142nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue May  3 16:17:06 2022
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -2085,7 +2085,7 @@ Echoing run specific file...
                   Time Summary - Database
 
 reading DFII data. . . .      0 cpu      0 elap  543.3M virt       0 pf
-LVS preprocessing. . . .      0 cpu      2 elap  103.1M virt       0 pf
+LVS preprocessing. . . .      1 cpu      2 elap  103.1M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  103.1M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  103.1M virt       0 pf
 recognize standard cells      0 cpu      0 elap  103.1M virt       0 pf
@@ -2107,7 +2107,7 @@ duplicate inst removal .      0 cpu      0 elap  105.6M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  105.6M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  105.6M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
+TOTALS (secs). . . . . .      1 cpu      2 elap  543.3M virt       0 pf
 
 
 ************************************************************************
@@ -3559,7 +3559,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 362
     MNGATE_C = geomAnd( NG_HS2 CSYMBOL ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 0
 
  ;# 363
  ;  region( MNGATE_C )
@@ -7075,7 +7075,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1241
     CONT = geomOr( CONT ) 
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 27
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 11
 
  ;# 1242
     polycon = geomAndNot( CONT DIFF ) 
@@ -7087,11 +7087,11 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1244
     diffcon = geomAndNot( CONT PO1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 26
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 10
 
  ;# 1245
     nsdcon = geomAnd( diffcon nsd ) 
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 2
 
  ;# 1246
     dataReduction( nsdcon ) 
@@ -7099,7 +7099,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1247
     psdcon = geomAnd( diffcon psd ) 
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 4
 
  ;# 1248
     dataReduction( psdcon ) 
@@ -7299,7 +7299,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1297
  ;  region( psdcon )
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 4
 
  ;# 1298
     nsdcon = groupVias(  via(nsdcon) conn1(ME1) conn2(nsd) )
@@ -7311,7 +7311,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1300
  ;  region( nsdcon )
-    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 133M   task sum: 2
 
  ;# 1301
     polycon = groupVias(  via(polycon) conn1(ME1) conn2(ply) )
@@ -8155,19 +8155,19 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1511
  ;  via( nsdcon ME1 )
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 2
 
  ;# 1512
  ;  via( nsdcon nsd )
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 2
 
  ;# 1513
  ;  via( psdcon ME1 )
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 4
 
  ;# 1514
  ;  via( psdcon psd )
-    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 135M   task sum: 4
 
  ;# 1515
  ;  via( pwCon ME1 )
@@ -8552,339 +8552,339 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 1594
  ;  patch_ME2_MESH_SY_P1_CONN = buttOrOver( ME2 MESH_SY_P1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1595
     dataReduction( patch_ME2_MESH_SY_P1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1596
  ;  patch_ME2_MESH_SY_M1_CONN = buttOrOver( ME2 MESH_SY_M1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1597
     dataReduction( patch_ME2_MESH_SY_M1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1598
  ;  patch_ME2_MESH_SY_P2_CONN = buttOrOver( ME2 MESH_SY_P2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1599
     dataReduction( patch_ME2_MESH_SY_P2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1600
  ;  patch_ME2_MESH_SY_M2_CONN = buttOrOver( ME2 MESH_SY_M2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1601
     dataReduction( patch_ME2_MESH_SY_M2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1602
  ;  patch_ME2_MESH_ASY_P1_CONN = buttOrOver( ME2 MESH_ASY_P1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1603
     dataReduction( patch_ME2_MESH_ASY_P1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1604
  ;  patch_ME2_MESH_ASY_M1_CONN = buttOrOver( ME2 MESH_ASY_M1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1605
     dataReduction( patch_ME2_MESH_ASY_M1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1606
  ;  patch_ME2_MESH_ASY_P2_CONN = buttOrOver( ME2 MESH_ASY_P2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1607
     dataReduction( patch_ME2_MESH_ASY_P2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1608
  ;  patch_ME2_MESH_ASY_M2_CONN = buttOrOver( ME2 MESH_ASY_M2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1609
     dataReduction( patch_ME2_MESH_ASY_M2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1610
  ;  patch_ME2_MOM2_term_P = buttOrOver( ME2 MOM2_term_P )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1611
     dataReduction( patch_ME2_MOM2_term_P ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1612
  ;  patch_ME2_MOM2_term_M = buttOrOver( ME2 MOM2_term_M )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1613
     dataReduction( patch_ME2_MOM2_term_M ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1614
  ;  patch_ME2_VP3_ME2_1 = buttOrOver( ME2 VP3_ME2_1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1615
     dataReduction( patch_ME2_VP3_ME2_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1616
  ;  patch_ME2_VP4_ME2_1 = buttOrOver( ME2 VP4_ME2_1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1617
     dataReduction( patch_ME2_VP4_ME2_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1618
  ;  patch_ME3_MESH_SY_P1_CONN = buttOrOver( ME3 MESH_SY_P1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1619
     dataReduction( patch_ME3_MESH_SY_P1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1620
  ;  patch_ME3_MESH_SY_M1_CONN = buttOrOver( ME3 MESH_SY_M1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1621
     dataReduction( patch_ME3_MESH_SY_M1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1622
  ;  patch_ME3_MESH_SY_P2_CONN = buttOrOver( ME3 MESH_SY_P2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1623
     dataReduction( patch_ME3_MESH_SY_P2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1624
  ;  patch_ME3_MESH_SY_M2_CONN = buttOrOver( ME3 MESH_SY_M2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1625
     dataReduction( patch_ME3_MESH_SY_M2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1626
  ;  patch_ME3_MESH_ASY_P1_CONN = buttOrOver( ME3 MESH_ASY_P1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1627
     dataReduction( patch_ME3_MESH_ASY_P1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1628
  ;  patch_ME3_MESH_ASY_M1_CONN = buttOrOver( ME3 MESH_ASY_M1_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1629
     dataReduction( patch_ME3_MESH_ASY_M1_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1630
  ;  patch_ME3_MESH_ASY_P2_CONN = buttOrOver( ME3 MESH_ASY_P2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1631
     dataReduction( patch_ME3_MESH_ASY_P2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1632
  ;  patch_ME3_MESH_ASY_M2_CONN = buttOrOver( ME3 MESH_ASY_M2_CONN )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1633
     dataReduction( patch_ME3_MESH_ASY_M2_CONN ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1634
  ;  patch_ME3_VP3_ME3_1 = buttOrOver( ME3 VP3_ME3_1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1635
     dataReduction( patch_ME3_VP3_ME3_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1636
  ;  patch_ME3_VP3_ME3_2 = buttOrOver( ME3 VP3_ME3_2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1637
     dataReduction( patch_ME3_VP3_ME3_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1638
  ;  patch_ME3_VP4_ME3_1 = buttOrOver( ME3 VP4_ME3_1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1639
     dataReduction( patch_ME3_VP4_ME3_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1640
  ;  patch_ME3_VP4_ME3_2 = buttOrOver( ME3 VP4_ME3_2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1641
     dataReduction( patch_ME3_VP4_ME3_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1642
  ;  patch_ME4_VP3_ME4_2 = buttOrOver( ME4 VP3_ME4_2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1643
     dataReduction( patch_ME4_VP3_ME4_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1644
  ;  patch_ME4_VP3_ME4_3 = buttOrOver( ME4 VP3_ME4_3 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1645
     dataReduction( patch_ME4_VP3_ME4_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1646
  ;  patch_ME4_VP4_ME4_2 = buttOrOver( ME4 VP4_ME4_2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1647
     dataReduction( patch_ME4_VP4_ME4_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1648
  ;  patch_ME4_VP4_ME4_3 = buttOrOver( ME4 VP4_ME4_3 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1649
     dataReduction( patch_ME4_VP4_ME4_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1650
  ;  patch_ME5_VP3_ME5_3 = buttOrOver( ME5 VP3_ME5_3 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1651
     dataReduction( patch_ME5_VP3_ME5_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1652
  ;  patch_ME5_VP3_ME5_4 = buttOrOver( ME5 VP3_ME5_4 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1653
     dataReduction( patch_ME5_VP3_ME5_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1654
  ;  patch_ME5_VP4_ME5_3 = buttOrOver( ME5 VP4_ME5_3 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1655
     dataReduction( patch_ME5_VP4_ME5_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1656
  ;  patch_ME5_VP4_ME5_4 = buttOrOver( ME5 VP4_ME5_4 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1657
     dataReduction( patch_ME5_VP4_ME5_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1658
  ;  patch_ME6_VP3_ME6_4 = buttOrOver( ME6 VP3_ME6_4 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1659
     dataReduction( patch_ME6_VP3_ME6_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1660
  ;  patch_ME6_VP4_ME6_4 = buttOrOver( ME6 VP4_ME6_4 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1661
     dataReduction( patch_ME6_VP4_ME6_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1662
  ;  patch_MESH_SY_P1_CONN_MESH_SY_P1 = buttOrOver( MESH_SY_P1_CONN MESH_SY_P1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1663
     dataReduction( patch_MESH_SY_P1_CONN_MESH_SY_P1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1664
  ;  patch_MESH_SY_M1_CONN_MESH_SY_M1 = buttOrOver( MESH_SY_M1_CONN MESH_SY_M1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1665
     dataReduction( patch_MESH_SY_M1_CONN_MESH_SY_M1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1666
  ;  patch_MESH_SY_P2_CONN_MESH_SY_P2 = buttOrOver( MESH_SY_P2_CONN MESH_SY_P2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1667
     dataReduction( patch_MESH_SY_P2_CONN_MESH_SY_P2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1668
  ;  patch_MESH_SY_M2_CONN_MESH_SY_M2 = buttOrOver( MESH_SY_M2_CONN MESH_SY_M2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1669
     dataReduction( patch_MESH_SY_M2_CONN_MESH_SY_M2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1670
  ;  patch_MESH_ASY_P1_CONN_MESH_ASY_P1 = buttOrOver( MESH_ASY_P1_CONN MESH_ASY_P1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1671
     dataReduction( patch_MESH_ASY_P1_CONN_MESH_ASY_P1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1672
  ;  patch_MESH_ASY_M1_CONN_MESH_ASY_M1 = buttOrOver( MESH_ASY_M1_CONN MESH_ASY_M1 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1673
     dataReduction( patch_MESH_ASY_M1_CONN_MESH_ASY_M1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1674
  ;  patch_MESH_ASY_P2_CONN_MESH_ASY_P2 = buttOrOver( MESH_ASY_P2_CONN MESH_ASY_P2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1675
     dataReduction( patch_MESH_ASY_P2_CONN_MESH_ASY_P2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1676
  ;  patch_MESH_ASY_M2_CONN_MESH_ASY_M2 = buttOrOver( MESH_ASY_M2_CONN MESH_ASY_M2 )
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1677
     dataReduction( patch_MESH_ASY_M2_CONN_MESH_ASY_M2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 216M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 1678
  ;  label( 
@@ -12225,59 +12225,59 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2469
     unstable_device_for_snyres_mm_Device_20 = unstableDevices( "rsnd_mml130e" snyres_mm_Device_20 snyres_mm_Device_20)
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2470
     dataReduction( snyres_mm_Device_20 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2471
     dataReduction( snyres_mm_Device_20_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2472
  ;  region( snyres_mm_Device_20_shape )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2473
  ;  region( snyres_mm_Device_20 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2474
     T?4398 = geomOr( T?4396 T?4784 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2475
     errorLayer( geomAndNot( T?4398 snyres_mm_Device_20 ) "malformed device snyres_mm" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2476
     T?1677 = geomAnd( snyres_mm BNDIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2477
  ;  region( T?1677 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2478
     T?1678  = geomGetEdge( T?1677 inside BNDIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2479
     dataReduction( T?1678 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2480
  ;  region( T?1678 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2481
     width  = measureParameter( length ( snyres_mm inside BNDIFF ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2482
     a_res  = measureParameter( area ( snyres_mm ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2483
     length = calculateParameter( a_res / width ) 
@@ -12397,7 +12397,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2512
     length = calculateParameter( a_res / width ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2513
     res = calculateParameter( length / width * 7 ) 
@@ -12629,7 +12629,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2570
     length = calculateParameter( a_res / width ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2571
     res = calculateParameter( length / width * 8 ) 
@@ -12673,11 +12673,11 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2581
     T?4802 = _geomPushDown( ply T?4408 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2582
     T?4803 = geomMerge( T?4802 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 2583
     dataReduction( T?4803 ) 
@@ -13793,59 +13793,59 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2861
     attachParameter( ATTACH_T?1840 "area" bjt_v10_mm )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2862
     T?4441 = _geomExtractMerge( bjt_v15_mm ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2863
     unstable_device_for_bjt_v15_mm_BJT_35 = unstableDevices( "pnp_v150x150_l130e" bjt_v15_mm_BJT_35 T?4441)
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2864
     dataReduction( T?4441 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2865
  ;  region( T?4441 )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2866
     T?4855 = _geomPushDown( PSUB T?4441 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2867
     T?4856 = geomMerge( T?4855 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2868
     dataReduction( T?4856 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2869
     T?4857 = _geomPushDown( wel T?4441 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2870
     T?4858 = geomMerge( T?4857 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2871
     dataReduction( T?4858 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2872
     T?4859 = _geomPushDown( qte T?4441 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2873
     T?4860 = geomMerge( T?4859 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2874
     dataReduction( T?4860 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2875
     extractBJT( "pnp_v150x150_l130e" T?4441 PSUB( "C" ) wel( "B" ) qte( "E" ) flagMalformed  cellView("PNP_V150X150_L130E ivpcell"))
@@ -13893,67 +13893,67 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2886
     attachParameter( ATTACH_T?1853 "area" bjt_v15_mm )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2887
     T?4861 = geomAvoiding( MNGATE_RF PSUB ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2888
     T?4862 = geomAndNot( MNGATE_RF T?4861 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2889
     T?4444 = _geomExtractMerge( T?4862 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2890
     unstable_device_for_MNGATE_RF_Device_36 = unstableDevices( "n_12_rf" MNGATE_RF_Device_36 T?4444)
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2891
     dataReduction( T?4444 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2892
  ;  region( T?4444 )
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2893
     T?4863 = _geomPushDown( rfnd T?4444 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2894
     T?4864 = geomMerge( T?4863 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2895
     dataReduction( T?4864 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2896
     T?4865 = _geomPushDown( ply T?4444 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2897
     T?4866 = geomMerge( T?4865 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2898
     dataReduction( T?4866 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2899
     T?4867 = _geomPushDown( rfns T?4444 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2900
     T?4868 = geomMerge( T?4867 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2901
     dataReduction( T?4868 ) 
-    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
 
  ;# 2902
     extractDevice( "n_12_rf" T?4444 rfnd( "D" ) ply( "G" ) rfns( "S" ) PSUB( "B" ) flagMalformed namePrefix( "X" )  cellView("N_12_RF ivpcell"))
@@ -14253,75 +14253,75 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 2976
     CALC_T?1921 = calculateParameter( ATTACH_T?1920 / ATTACH_T?1914 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2977
     attachParameter( CALC_T?1921 "wf" MPGATE_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2978
     attachParameter( ATTACH_T?1914 "nf" MPGATE_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2979
     T?4880 = geomAvoiding( NTGATE_RF PSUB ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2980
     T?4881 = geomAndNot( NTGATE_RF T?4880 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2981
     T?4450 = _geomExtractMerge( T?4881 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2982
     unstable_device_for_NTGATE_RF_Device_38 = unstableDevices( "n_33_rf" NTGATE_RF_Device_38 T?4450)
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2983
     dataReduction( T?4450 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2984
  ;  region( T?4450 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2985
     T?4882 = _geomPushDown( rfnd T?4450 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2986
     T?4883 = geomMerge( T?4882 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2987
     dataReduction( T?4883 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2988
     T?4884 = _geomPushDown( ply T?4450 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2989
     T?4885 = geomMerge( T?4884 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2990
     dataReduction( T?4885 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2991
     T?4886 = _geomPushDown( rfns T?4450 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2992
     T?4887 = geomMerge( T?4886 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2993
     dataReduction( T?4887 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2994
     extractDevice( "n_33_rf" T?4450 rfnd( "D" ) ply( "G" ) rfns( "S" ) PSUB( "B" ) flagMalformed namePrefix( "X" )  cellView("N_33_RF ivpcell"))
@@ -14429,91 +14429,91 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3020
     CALC_T?1954 = calculateParameter( ATTACH_T?1953 / ATTACH_T?1947 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3021
     attachParameter( CALC_T?1954 "wf" NTGATE_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3022
     attachParameter( ATTACH_T?1947 "nf" NTGATE_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3023
     T?4453 = _geomExtractMerge( PTGATE_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3024
     unstable_device_for_PTGATE_RF_Device_39 = unstableDevices( "p_33_rf" PTGATE_RF_Device_39 T?4453)
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3025
     dataReduction( T?4453 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3026
  ;  region( T?4453 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3027
     T?4889 = _geomPushDown( rfpd T?4453 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3028
     T?4890 = geomMerge( T?4889 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3029
     dataReduction( T?4890 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3030
     T?4891 = _geomPushDown( ply T?4453 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3031
     T?4892 = geomMerge( T?4891 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3032
     dataReduction( T?4892 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3033
     T?4893 = _geomPushDown( rfps T?4453 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3034
     T?4894 = geomMerge( T?4893 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3035
     dataReduction( T?4894 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3036
     T?4895 = _geomPushDown( wel T?4453 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3037
     T?4896 = geomMerge( T?4895 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3038
     dataReduction( T?4896 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3039
     T?4897 = _geomPushDown( PWELL T?4453 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3040
     T?4898 = geomMerge( T?4897 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3041
     dataReduction( T?4898 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 3042
     extractDevice( "p_33_rf" T?4453 rfpd( "D" ) ply( "G" ) rfps( "S" ) wel( "B" ) PWELL( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("P_33_RF ivpcell"))
@@ -16865,7 +16865,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3629
     extractDevice( "varmis_33_rf" T?4498 ply( "PLUS" ) wel( "MINUS" ) PWELL( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("VARMIS_33_RF ivpcell"))
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3630
     unstable_device_for_varmis_rf33_Device_54 = unstableDevices( "varmis_33_rf" varmis_rf33_Device_54 varmis_rf33_Device_54)
@@ -17189,75 +17189,75 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3710
     unstable_device_for_CMMC_RF_Device_56 = unstableDevices( "mimcaps_rf" CMMC_RF_Device_56 CMMC_RF_Device_56)
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3711
     dataReduction( CMMC_RF_Device_56 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3712
     dataReduction( CMMC_RF_Device_56_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3713
  ;  region( CMMC_RF_Device_56_shape )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3714
  ;  region( CMMC_RF_Device_56 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3715
     T?4506 = geomOr( T?4504 T?5033 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3716
     errorLayer( geomAndNot( T?4506 CMMC_RF_Device_56 ) "malformed device CMMC_RF" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3717
     MPI_T?2475 = geomButtOrOver( CMMC_RF1 CMMC_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3718
  ;  region( MPI_T?2475 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3719
     ATTACH_T?2476  = measureParameter( area ( MPI_T?2475 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3720
     ATTACH_T?2478  = measureParameter( perimeter ( MPI_T?2475 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3721
     CALC_T?2479 = calculateParameter( 0.001 * ATTACH_T?2476 + 1.14e-10 * ATTACH_T?2478 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3722
     attachParameter( CALC_T?2479 "c" CMMC_RF )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3723
     EDGE_T?2482 = drc( MPI_T?2475 CSYMBOL enc == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3724
     dataReduction( EDGE_T?2482 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3725
     T?5300 = drcEdgePrep( EDGE_T?2482 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3726
  ;  region( T?5300 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3727
     ATTACH_T?2484  = measureParameter( length ( MPI_T?2475 coincident CSYMBOL ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 3728
     CALC_T?2485 = calculateParameter( ATTACH_T?2476 / ATTACH_T?2484 ) 
@@ -17478,139 +17478,139 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3782
     CALC_T?2525 = calculateParameter( ATTACH_T?2524 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3783
     CALC_T?2526 = calculateParameter( 3 + floor( ( ( ( CALC_T?2519 + CALC_T?2522 ) + CALC_T?2525 ) / CALC_T?2513 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3784
     attachParameter( CALC_T?2526 "nm" MOMVP1_MM )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3785
     ATTACH_T?2555  = measureParameter( figCount ( MPI_T?2511 enclosing fns2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3786
     CALC_T?2556 = calculateParameter( ATTACH_T?2555 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3787
     attachParameter( CALC_T?2556 "nf" MOMVP1_MM )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3788
     ATTACH_T?2558  = measureParameter( perimeter ( MPI_T?2514 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3789
     CALC_T?2559 = calculateParameter( ( ATTACH_T?2558 / ATTACH_T?2555 - 4e-07 ) / 2 + 8e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3790
     attachParameter( CALC_T?2559 "l" MOMVP1_MM )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3791
     ATTACH_T?2561  = measureParameter( figCount ( MPI_T?2511 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3792
     CALC_T?2562 = calculateParameter( ATTACH_T?2561 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3793
     ATTACH_T?2564  = measureParameter( figCount ( MPI_T?2511 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3794
     CALC_T?2565 = calculateParameter( ATTACH_T?2564 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3795
     ATTACH_T?2567  = measureParameter( figCount ( MPI_T?2511 enclosing fns6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3796
     CALC_T?2568 = calculateParameter( ATTACH_T?2567 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3797
     CALC_T?2569 = calculateParameter( 3 + floor( ( ( ( CALC_T?2562 + CALC_T?2565 ) + CALC_T?2568 ) / CALC_T?2556 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3798
     attachParameter( CALC_T?2569 "nm" MOMVP1_MM )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3799
     CALC_T?2570 = calculateParameter( CALC_T?2559 / 1e-06 * ( ( CALC_T?2556 - 3 ) * 6.88e-16 + ( 2 * 0.904 ) * 6.88e-16 ) + ( CALC_T?2556 - 2 ) * 1.85e-16 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3800
     CALC_T?2571 = calculateParameter( ( ( 1 * zerop( ( CALC_T?2569 - 6 ) ) + 0.832 * zerop( ( CALC_T?2569 - 5 ) ) ) + 0.661 * zerop( ( CALC_T?2569 - 4 ) ) ) + 0.485 * zerop( ( CALC_T?2569 - 3 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3801
     CALC_T?2572 = calculateParameter( CALC_T?2570 * CALC_T?2571 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3802
     attachParameter( CALC_T?2572 "c" MOMVP1_MM )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3803
     T?4510 = _geomExtractMerge( MOMVP1_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3804
     unstable_device_for_MOMVP1_RF_Device_59 = unstableDevices( "MOMCAPS_RF" MOMVP1_RF_Device_59 T?4510)
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3805
     dataReduction( T?4510 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3806
  ;  region( T?4510 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3807
     T?5050 = _geomPushDown( MOM1_term T?4510 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3808
     T?5051 = geomMerge( T?5050 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3809
     dataReduction( T?5051 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3810
     T?5052 = _geomPushDown( wel T?4510 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3811
     T?5053 = geomMerge( T?5052 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3812
     dataReduction( T?5053 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3813
     T?5054 = _geomPushDown( PSUB T?4510 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3814
     T?5055 = geomMerge( T?5054 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3815
     dataReduction( T?5055 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3816
     extractDevice( "MOMCAPS_RF" T?4510 MOM1_term( "PLUS" "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_RF ivpcell"))
@@ -17618,87 +17618,87 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3817
     unstable_device_for_MOMVP1_RF_Device_59 = unstableDevices( "MOMCAPS_RF" MOMVP1_RF_Device_59 MOMVP1_RF_Device_59)
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3818
     dataReduction( MOMVP1_RF_Device_59 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3819
     dataReduction( MOMVP1_RF_Device_59_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3820
  ;  region( MOMVP1_RF_Device_59_shape )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3821
  ;  region( MOMVP1_RF_Device_59 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3822
     T?4512 = geomOr( T?4510 T?5049 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3823
     errorLayer( geomAndNot( T?4512 MOMVP1_RF_Device_59 ) "malformed device MOMVP1_RF" ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3824
     MPI_T?2599 = geomButtOrOver( MOMSYM MOMVP1_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3825
  ;  region( MPI_T?2599 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3826
     ATTACH_T?2600  = measureParameter( figCount ( MPI_T?2599 enclosing fns2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3827
     CALC_T?2601 = calculateParameter( ATTACH_T?2600 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3828
     attachParameter( CALC_T?2601 "nf" MOMVP1_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3829
     MPI_T?2602 = geomButtOrOver( fns2 MOMVP1_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3830
  ;  region( MPI_T?2602 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3831
     ATTACH_T?2603  = measureParameter( perimeter ( MPI_T?2602 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3832
     CALC_T?2604 = calculateParameter( ( ATTACH_T?2603 / ATTACH_T?2600 - 4e-07 ) / 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3833
     attachParameter( CALC_T?2604 "l" MOMVP1_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3834
     ATTACH_T?2606  = measureParameter( figCount ( MPI_T?2599 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3835
     CALC_T?2607 = calculateParameter( ATTACH_T?2606 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3836
     ATTACH_T?2609  = measureParameter( figCount ( MPI_T?2599 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3837
     CALC_T?2610 = calculateParameter( ATTACH_T?2609 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3838
     ATTACH_T?2612  = measureParameter( figCount ( MPI_T?2599 enclosing fns6 ) ) 
@@ -17706,79 +17706,79 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3839
     CALC_T?2613 = calculateParameter( ATTACH_T?2612 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3840
     CALC_T?2614 = calculateParameter( 3 + floor( ( ( ( CALC_T?2607 + CALC_T?2610 ) + CALC_T?2613 ) / CALC_T?2601 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3841
     attachParameter( CALC_T?2614 "nm" MOMVP1_RF )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3842
     T?4513 = _geomExtractMerge( MOMVP2_MM ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3843
     unstable_device_for_MOMVP2_MM_Device_61 = unstableDevices( "MOMCAPS_ASY_MM" MOMVP2_MM_Device_61 T?4513)
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3844
     dataReduction( T?4513 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3845
  ;  region( T?4513 )
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3846
     T?5057 = _geomPushDown( wel T?4513 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3847
     T?5058 = geomMerge( T?5057 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3848
     dataReduction( T?5058 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3849
     T?5059 = _geomPushDown( MOM2_term_P T?4513 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3850
     T?5060 = geomMerge( T?5059 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3851
     dataReduction( T?5060 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3852
     T?5061 = _geomPushDown( MOM2_term_M T?4513 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3853
     T?5062 = geomMerge( T?5061 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3854
     dataReduction( T?5062 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3855
     T?5063 = _geomPushDown( PSUB T?4513 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3856
     T?5064 = geomMerge( T?5063 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3857
     dataReduction( T?5064 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3858
     extractDevice( "MOMCAPS_ASY_MM" T?4513 MOM2_term_P( "PLUS" ) MOM2_term_M( "MINUS" ) wel( "B" ) flagMalformed namePrefix( "XC" )  cellView("MOMCAPS_ASY_MM ivpcell"))
@@ -17851,419 +17851,419 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3875
     CALC_T?2646 = calculateParameter( ATTACH_T?2645 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3876
     attachParameter( CALC_T?2646 "nf" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3877
     MPI_T?2647 = geomButtOrOver( fns2 MOMVP2_MM ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3878
  ;  region( MPI_T?2647 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3879
     ATTACH_T?2648  = measureParameter( perimeter ( MPI_T?2647 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3880
     CALC_T?2649 = calculateParameter( ( ATTACH_T?2648 / ATTACH_T?2645 - 4e-07 ) / 2 + 8e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3881
     attachParameter( CALC_T?2649 "l" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3882
     ATTACH_T?2651  = measureParameter( figCount ( MPI_T?2644 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3883
     CALC_T?2652 = calculateParameter( ATTACH_T?2651 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3884
     ATTACH_T?2654  = measureParameter( figCount ( MPI_T?2644 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3885
     CALC_T?2655 = calculateParameter( ATTACH_T?2654 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3886
     ATTACH_T?2657  = measureParameter( figCount ( MPI_T?2644 enclosing fns6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3887
     CALC_T?2658 = calculateParameter( ATTACH_T?2657 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3888
     CALC_T?2659 = calculateParameter( 3 + floor( ( ( ( CALC_T?2652 + CALC_T?2655 ) + CALC_T?2658 ) / CALC_T?2646 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3889
     attachParameter( CALC_T?2659 "nm" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3890
     CALC_T?2660 = calculateParameter( CALC_T?2649 / 1e-06 * ( ( CALC_T?2646 - 3 ) * 6.03e-16 + ( 2 * 1.72 ) * 6.03e-16 ) + ( CALC_T?2646 - 2 ) * 1e-18 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3891
     CALC_T?2661 = calculateParameter( ( 1 * zerop( ( CALC_T?2659 - 6 ) ) + 0.812 * zerop( ( CALC_T?2659 - 5 ) ) ) + 0.624 * zerop( ( CALC_T?2659 - 4 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3892
     CALC_T?2662 = calculateParameter( CALC_T?2660 * CALC_T?2661 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3893
     attachParameter( CALC_T?2662 "c" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3894
     ATTACH_T?2693  = measureParameter( figCount ( MPI_T?2644 enclosing fns2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3895
     CALC_T?2694 = calculateParameter( ATTACH_T?2693 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3896
     attachParameter( CALC_T?2694 "nf" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3897
     ATTACH_T?2696  = measureParameter( perimeter ( MPI_T?2647 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3898
     CALC_T?2697 = calculateParameter( ( ATTACH_T?2696 / ATTACH_T?2693 - 4e-07 ) / 2 + 8e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3899
     attachParameter( CALC_T?2697 "l" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3900
     ATTACH_T?2699  = measureParameter( figCount ( MPI_T?2644 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3901
     CALC_T?2700 = calculateParameter( ATTACH_T?2699 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3902
     ATTACH_T?2702  = measureParameter( figCount ( MPI_T?2644 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3903
     CALC_T?2703 = calculateParameter( ATTACH_T?2702 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3904
     ATTACH_T?2705  = measureParameter( figCount ( MPI_T?2644 enclosing fns6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3905
     CALC_T?2706 = calculateParameter( ATTACH_T?2705 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3906
     CALC_T?2707 = calculateParameter( 3 + floor( ( ( ( CALC_T?2700 + CALC_T?2703 ) + CALC_T?2706 ) / CALC_T?2694 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3907
     attachParameter( CALC_T?2707 "nm" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3908
     CALC_T?2708 = calculateParameter( CALC_T?2697 / 1e-06 * ( ( CALC_T?2694 - 3 ) * 6.03e-16 + ( 2 * 1.72 ) * 6.03e-16 ) + ( CALC_T?2694 - 2 ) * 1e-18 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3909
     CALC_T?2709 = calculateParameter( ( 1 * zerop( ( CALC_T?2707 - 6 ) ) + 0.812 * zerop( ( CALC_T?2707 - 5 ) ) ) + 0.624 * zerop( ( CALC_T?2707 - 4 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3910
     CALC_T?2710 = calculateParameter( CALC_T?2708 * CALC_T?2709 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3911
     attachParameter( CALC_T?2710 "c" MOMVP2_MM )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3912
     T?4516 = _geomExtractMerge( MOMVP2_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3913
     unstable_device_for_MOMVP2_RF_Device_62 = unstableDevices( "MOMCAPS_ASY_RF" MOMVP2_RF_Device_62 T?4516)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3914
     dataReduction( T?4516 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3915
  ;  region( T?4516 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3916
     T?5066 = _geomPushDown( MOM2_term T?4516 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3917
     T?5067 = geomMerge( T?5066 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3918
     dataReduction( T?5067 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3919
     T?5068 = _geomPushDown( MOM1_term T?4516 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3920
     T?5069 = geomMerge( T?5068 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3921
     dataReduction( T?5069 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3922
     T?5070 = _geomPushDown( wel T?4516 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3923
     T?5071 = geomMerge( T?5070 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3924
     dataReduction( T?5071 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3925
     T?5072 = _geomPushDown( PSUB T?4516 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3926
     T?5073 = geomMerge( T?5072 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3927
     dataReduction( T?5073 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3928
     extractDevice( "MOMCAPS_ASY_RF" T?4516 MOM2_term( "PLUS" ) MOM1_term( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_ASY_RF ivpcell"))
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3929
     unstable_device_for_MOMVP2_RF_Device_62 = unstableDevices( "MOMCAPS_ASY_RF" MOMVP2_RF_Device_62 MOMVP2_RF_Device_62)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3930
     dataReduction( MOMVP2_RF_Device_62 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3931
     dataReduction( MOMVP2_RF_Device_62_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3932
  ;  region( MOMVP2_RF_Device_62_shape )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3933
  ;  region( MOMVP2_RF_Device_62 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3934
     T?4518 = geomOr( T?4516 T?5065 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3935
     errorLayer( geomAndNot( T?4518 MOMVP2_RF_Device_62 ) "malformed device MOMVP2_RF" ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3936
     MPI_T?2742 = geomButtOrOver( MOMSYM MOMVP2_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3937
  ;  region( MPI_T?2742 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3938
     ATTACH_T?2743  = measureParameter( figCount ( MPI_T?2742 enclosing fns2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3939
     CALC_T?2744 = calculateParameter( ATTACH_T?2743 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3940
     attachParameter( CALC_T?2744 "nf" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3941
     MPI_T?2745 = geomButtOrOver( fns2 MOMVP2_RF ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3942
  ;  region( MPI_T?2745 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3943
     ATTACH_T?2746  = measureParameter( perimeter ( MPI_T?2745 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3944
     CALC_T?2747 = calculateParameter( ( ATTACH_T?2746 / ATTACH_T?2743 - 4e-07 ) / 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3945
     attachParameter( CALC_T?2747 "l" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3946
     ATTACH_T?2749  = measureParameter( figCount ( MPI_T?2742 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3947
     CALC_T?2750 = calculateParameter( ATTACH_T?2749 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3948
     ATTACH_T?2752  = measureParameter( figCount ( MPI_T?2742 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3949
     CALC_T?2753 = calculateParameter( ATTACH_T?2752 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3950
     ATTACH_T?2755  = measureParameter( figCount ( MPI_T?2742 enclosing fns6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3951
     CALC_T?2756 = calculateParameter( ATTACH_T?2755 + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3952
     CALC_T?2757 = calculateParameter( 3 + floor( ( ( ( CALC_T?2750 + CALC_T?2753 ) + CALC_T?2756 ) / CALC_T?2744 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3953
     attachParameter( CALC_T?2757 "nm" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3954
     CALC_T?2758 = calculateParameter( 3 + floor( CALC_T?2750 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3955
     attachParameter( CALC_T?2758 "nm4" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3956
     CALC_T?2759 = calculateParameter( 3 + floor( CALC_T?2753 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3957
     attachParameter( CALC_T?2759 "nm5" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3958
     CALC_T?2760 = calculateParameter( 3 + floor( CALC_T?2756 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3959
     attachParameter( CALC_T?2760 "nm6" MOMVP2_RF )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3960
     T?4519 = _geomExtractMerge( MOM_MESH_SY_WEL ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3961
     unstable_device_for_MOM_MESH_SY_WEL_Device_63 = unstableDevices( "MOMCAPS_SYMESH_MM" MOM_MESH_SY_WEL_Device_63 T?4519)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3962
     dataReduction( T?4519 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3963
  ;  region( T?4519 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3964
     T?5075 = _geomPushDown( MESH_SY_P1 T?4519 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3965
     T?5076 = geomMerge( T?5075 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3966
     dataReduction( T?5076 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3967
     T?5077 = _geomPushDown( MESH_SY_M1 T?4519 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3968
     T?5078 = geomMerge( T?5077 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3969
     dataReduction( T?5078 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3970
     T?5079 = _geomPushDown( MESH_SY_P2 T?4519 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3971
     T?5080 = geomMerge( T?5079 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3972
     dataReduction( T?5080 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3973
     T?5081 = _geomPushDown( MESH_SY_M2 T?4519 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3974
     T?5082 = geomMerge( T?5081 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3975
     dataReduction( T?5082 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3976
     T?5083 = _geomPushDown( wel T?4519 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3977
     T?5084 = geomMerge( T?5083 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3978
     dataReduction( T?5084 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3979
     extractDevice( "MOMCAPS_SYMESH_MM" T?4519 MESH_SY_P1( "PLUS1" ) MESH_SY_M1( "MINUS1" ) MESH_SY_P2( "PLUS2" ) MESH_SY_M2( "MINUS2" ) wel( "B" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_SYMESH_MM ivpcell"))
@@ -18271,207 +18271,207 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 3980
     unstable_device_for_MOM_MESH_SY_WEL_Device_63 = unstableDevices( "MOMCAPS_SYMESH_MM" MOM_MESH_SY_WEL_Device_63 MOM_MESH_SY_WEL_Device_63)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3981
     dataReduction( MOM_MESH_SY_WEL_Device_63 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3982
     dataReduction( MOM_MESH_SY_WEL_Device_63_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3983
  ;  region( MOM_MESH_SY_WEL_Device_63_shape )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3984
  ;  region( MOM_MESH_SY_WEL_Device_63 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3985
     T?4521 = geomOr( T?4519 T?5074 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3986
     errorLayer( geomAndNot( T?4521 MOM_MESH_SY_WEL_Device_63 ) "malformed device MOM_MESH_SY_WEL" ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3987
     MPI_T?2796 = geomButtOrOver( MOMSYM MOM_MESH_SY_WEL ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3988
  ;  region( MPI_T?2796 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3989
     ATTACH_T?2797  = measureParameter( figCount ( MPI_T?2796 enclosing MESH_N_COUNT ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3990
     CALC_T?2798 = calculateParameter( ATTACH_T?2797 / 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3991
     attachParameter( CALC_T?2798 "mh" MOM_MESH_SY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3992
     ATTACH_T?2800  = measureParameter( figCount ( MPI_T?2796 enclosing fns2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3993
     CALC_T?2801 = calculateParameter( ATTACH_T?2800 / ( CALC_T?2798 * 2 ) + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3994
     attachParameter( CALC_T?2801 "nf" MOM_MESH_SY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3995
     MPI_T?2802 = geomButtOrOver( fns2 MOM_MESH_SY_WEL ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3996
  ;  region( MPI_T?2802 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3997
     ATTACH_T?2803  = measureParameter( perimeter ( MPI_T?2802 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3998
     CALC_T?2804 = calculateParameter( ( ATTACH_T?2803 / ATTACH_T?2800 - 4e-07 ) / 2 + 8e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 3999
     attachParameter( CALC_T?2804 "l" MOM_MESH_SY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4000
     ATTACH_T?2806  = measureParameter( figCount ( MPI_T?2796 enclosing fns4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4001
     CALC_T?2807 = calculateParameter( ATTACH_T?2806 / ( CALC_T?2798 * 2 ) + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4002
     ATTACH_T?2809  = measureParameter( figCount ( MPI_T?2796 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4003
     CALC_T?2810 = calculateParameter( ATTACH_T?2809 / ( CALC_T?2798 * 2 ) + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4004
     ATTACH_T?2812  = measureParameter( figCount ( MPI_T?2796 enclosing fns6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4005
     CALC_T?2813 = calculateParameter( ATTACH_T?2812 / ( CALC_T?2798 * 2 ) + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4006
     CALC_T?2814 = calculateParameter( 3 + floor( ( ( ( CALC_T?2807 + CALC_T?2810 ) + CALC_T?2813 ) / CALC_T?2801 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4007
     attachParameter( CALC_T?2814 "nm" MOM_MESH_SY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4008
     CALC_T?2815 = calculateParameter( CALC_T?2804 / 1e-06 * ( ( CALC_T?2801 - 3 ) * 6.88e-16 + ( 2 * 0.904 ) * 6.88e-16 ) + ( CALC_T?2801 - 2 ) * 1.85e-16 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4009
     CALC_T?2816 = calculateParameter( ( ( 1 * zerop( ( CALC_T?2814 - 6 ) ) + 0.832 * zerop( ( CALC_T?2814 - 5 ) ) ) + 0.661 * zerop( ( CALC_T?2814 - 4 ) ) ) + 0.485 * zerop( ( CALC_T?2814 - 3 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4010
     CALC_T?2817 = calculateParameter( ( CALC_T?2815 * CALC_T?2816 ) * CALC_T?2798 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4011
     attachParameter( CALC_T?2817 "c" MOM_MESH_SY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4012
     T?4522 = _geomExtractMerge( MOM_MESH_SY_PSUB ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4013
     unstable_device_for_MOM_MESH_SY_PSUB_Device_64 = unstableDevices( "MOMCAPS_SYMESH_MM" MOM_MESH_SY_PSUB_Device_64 T?4522)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4014
     dataReduction( T?4522 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4015
  ;  region( T?4522 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4016
     T?5086 = _geomPushDown( MESH_SY_P1 T?4522 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4017
     T?5087 = geomMerge( T?5086 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4018
     dataReduction( T?5087 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4019
     T?5088 = _geomPushDown( MESH_SY_M1 T?4522 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4020
     T?5089 = geomMerge( T?5088 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4021
     dataReduction( T?5089 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4022
     T?5090 = _geomPushDown( MESH_SY_P2 T?4522 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4023
     T?5091 = geomMerge( T?5090 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4024
     dataReduction( T?5091 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4025
     T?5092 = _geomPushDown( MESH_SY_M2 T?4522 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4026
     T?5093 = geomMerge( T?5092 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4027
     dataReduction( T?5093 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4028
     T?5094 = _geomPushDown( PSUB T?4522 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4029
     T?5095 = geomMerge( T?5094 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4030
     dataReduction( T?5095 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4031
     extractDevice( "MOMCAPS_SYMESH_MM" T?4522 MESH_SY_P1( "PLUS1" ) MESH_SY_M1( "MINUS1" ) MESH_SY_P2( "PLUS2" ) MESH_SY_M2( "MINUS2" ) PSUB( "B" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_SYMESH_MM ivpcell"))
@@ -18579,107 +18579,107 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 4057
     CALC_T?2870 = calculateParameter( ATTACH_T?2869 / ( CALC_T?2855 * 2 ) + 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4058
     CALC_T?2871 = calculateParameter( 3 + floor( ( ( ( CALC_T?2864 + CALC_T?2867 ) + CALC_T?2870 ) / CALC_T?2858 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4059
     attachParameter( CALC_T?2871 "nm" MOM_MESH_SY_PSUB )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4060
     CALC_T?2872 = calculateParameter( CALC_T?2861 / 1e-06 * ( ( CALC_T?2858 - 3 ) * 6.88e-16 + ( 2 * 0.904 ) * 6.88e-16 ) + ( CALC_T?2858 - 2 ) * 1.85e-16 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4061
     CALC_T?2873 = calculateParameter( ( ( 1 * zerop( ( CALC_T?2871 - 6 ) ) + 0.832 * zerop( ( CALC_T?2871 - 5 ) ) ) + 0.661 * zerop( ( CALC_T?2871 - 4 ) ) ) + 0.485 * zerop( ( CALC_T?2871 - 3 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4062
     CALC_T?2874 = calculateParameter( ( CALC_T?2872 * CALC_T?2873 ) * CALC_T?2855 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4063
     attachParameter( CALC_T?2874 "c" MOM_MESH_SY_PSUB )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4064
     T?4525 = _geomExtractMerge( MOM_MESH_ASY_WEL ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4065
     unstable_device_for_MOM_MESH_ASY_WEL_Device_65 = unstableDevices( "MOMCAPS_ASMESH_MM" MOM_MESH_ASY_WEL_Device_65 T?4525)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4066
     dataReduction( T?4525 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4067
  ;  region( T?4525 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4068
     T?5097 = _geomPushDown( MESH_ASY_P1 T?4525 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4069
     T?5098 = geomMerge( T?5097 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4070
     dataReduction( T?5098 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4071
     T?5099 = _geomPushDown( MESH_ASY_M1 T?4525 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4072
     T?5100 = geomMerge( T?5099 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4073
     dataReduction( T?5100 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4074
     T?5101 = _geomPushDown( MESH_ASY_P2 T?4525 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4075
     T?5102 = geomMerge( T?5101 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4076
     dataReduction( T?5102 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4077
     T?5103 = _geomPushDown( MESH_ASY_M2 T?4525 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4078
     T?5104 = geomMerge( T?5103 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4079
     dataReduction( T?5104 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4080
     T?5105 = _geomPushDown( wel T?4525 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4081
     T?5106 = geomMerge( T?5105 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4082
     dataReduction( T?5106 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4083
     extractDevice( "MOMCAPS_ASMESH_MM" T?4525 MESH_ASY_P1( "PLUS1" ) MESH_ASY_M1( "MINUS1" ) MESH_ASY_P2( "PLUS2" ) MESH_ASY_M2( "MINUS2" ) wel( "B" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_ASMESH_MM ivpcell"))
@@ -18803,91 +18803,91 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 4113
     CALC_T?2930 = calculateParameter( ( 1 * zerop( ( CALC_T?2928 - 6 ) ) + 0.812 * zerop( ( CALC_T?2928 - 5 ) ) ) + 0.624 * zerop( ( CALC_T?2928 - 4 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4114
     CALC_T?2931 = calculateParameter( ( CALC_T?2929 * CALC_T?2930 ) * CALC_T?2912 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4115
     attachParameter( CALC_T?2931 "c" MOM_MESH_ASY_WEL )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4116
     T?4528 = _geomExtractMerge( MOM_MESH_ASY_PSUB ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4117
     unstable_device_for_MOM_MESH_ASY_PSUB_Device_66 = unstableDevices( "MOMCAPS_ASMESH_MM" MOM_MESH_ASY_PSUB_Device_66 T?4528)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4118
     dataReduction( T?4528 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4119
  ;  region( T?4528 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4120
     T?5108 = _geomPushDown( MESH_ASY_P1 T?4528 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4121
     T?5109 = geomMerge( T?5108 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4122
     dataReduction( T?5109 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4123
     T?5110 = _geomPushDown( MESH_ASY_M1 T?4528 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4124
     T?5111 = geomMerge( T?5110 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4125
     dataReduction( T?5111 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4126
     T?5112 = _geomPushDown( MESH_ASY_P2 T?4528 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4127
     T?5113 = geomMerge( T?5112 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4128
     dataReduction( T?5113 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4129
     T?5114 = _geomPushDown( MESH_ASY_M2 T?4528 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4130
     T?5115 = geomMerge( T?5114 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4131
     dataReduction( T?5115 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4132
     T?5116 = _geomPushDown( PSUB T?4528 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4133
     T?5117 = geomMerge( T?5116 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4134
     dataReduction( T?5117 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4135
     extractDevice( "MOMCAPS_ASMESH_MM" T?4528 MESH_ASY_P1( "PLUS1" ) MESH_ASY_M1( "MINUS1" ) MESH_ASY_P2( "PLUS2" ) MESH_ASY_M2( "MINUS2" ) PSUB( "B" ) flagMalformed namePrefix( "X" )  cellView("MOMCAPS_ASMESH_MM ivpcell"))
@@ -19003,547 +19003,547 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 4163
     attachParameter( CALC_T?2985 "nm" MOM_MESH_ASY_PSUB )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4164
     CALC_T?2986 = calculateParameter( CALC_T?2975 / 1e-06 * ( ( CALC_T?2972 - 3 ) * 6.03e-16 + ( 2 * 1.72 ) * 6.03e-16 ) + ( CALC_T?2972 - 2 ) * 1e-18 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4165
     CALC_T?2987 = calculateParameter( ( 1 * zerop( ( CALC_T?2985 - 6 ) ) + 0.812 * zerop( ( CALC_T?2985 - 5 ) ) ) + 0.624 * zerop( ( CALC_T?2985 - 4 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4166
     CALC_T?2988 = calculateParameter( ( CALC_T?2986 * CALC_T?2987 ) * CALC_T?2969 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4167
     attachParameter( CALC_T?2988 "c" MOM_MESH_ASY_PSUB )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4168
     T?4531 = _geomExtractMerge( p_rf_pad ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4169
     unstable_device_for_p_rf_pad_Device_67 = unstableDevices( "pad_rf" p_rf_pad_Device_67 T?4531)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4170
     dataReduction( T?4531 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4171
  ;  region( T?4531 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4172
     T?5119 = _geomPushDown( AL_RDL T?4531 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4173
     T?5120 = geomMerge( T?5119 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4174
     dataReduction( T?5120 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4175
     T?5121 = _geomPushDown( PSUB T?4531 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4176
     T?5122 = geomMerge( T?5121 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4177
     dataReduction( T?5122 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4178
     extractDevice( "pad_rf" T?4531 AL_RDL( "PLUS" ) PSUB( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("PAD_RF ivpcell"))
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4179
     unstable_device_for_p_rf_pad_Device_67 = unstableDevices( "pad_rf" p_rf_pad_Device_67 p_rf_pad_Device_67)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4180
     dataReduction( p_rf_pad_Device_67 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4181
     dataReduction( p_rf_pad_Device_67_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4182
  ;  region( p_rf_pad_Device_67_shape )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4183
  ;  region( p_rf_pad_Device_67 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4184
     T?4533 = geomOr( T?4531 T?5118 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4185
     errorLayer( geomAndNot( T?4533 p_rf_pad_Device_67 ) "malformed device p_rf_pad" ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4186
     T?3004 = geomSize( TMV_RDL 2.1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4187
     TMV_RDL1 = geomOr( T?3004 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4188
  ;  region( TMV_RDL1 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4189
     saveProperty( p_rf_pad "tm" 6 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4190
     MPI_T?3020 = geomButtOrOver( rf_pad p_rf_pad ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4191
  ;  region( MPI_T?3020 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4192
     ATTACH_T?3021  = measureParameter( figCount ( MPI_T?3020 enclosing type1 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4193
     ATTACH_T?3023  = measureParameter( figCount ( MPI_T?3020 enclosing type2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4194
     ATTACH_T?3025  = measureParameter( figCount ( MPI_T?3020 enclosing type3 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4195
     ATTACH_T?3027  = measureParameter( figCount ( MPI_T?3020 enclosing type4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4196
     ATTACH_T?3029  = measureParameter( figCount ( MPI_T?3020 enclosing type5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4197
     ATTACH_T?3031  = measureParameter( figCount ( MPI_T?3020 enclosing type6 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4198
     ATTACH_T?3033  = measureParameter( figCount ( MPI_T?3020 enclosing type9 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4199
     CALC_T?3034 = calculateParameter( 8 - ( ( ( ( ( ( ATTACH_T?3021 + ATTACH_T?3023 ) + ATTACH_T?3025 ) + ATTACH_T?3027 ) + ATTACH_T?3029 ) + ATTACH_T?3031 ) + ATTACH_T?3033 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4200
     attachParameter( CALC_T?3034 "index" p_rf_pad )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4201
     MPI_T?3035 = geomButtOrOver( TMV_RDL1 p_rf_pad ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4202
  ;  region( MPI_T?3035 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4203
     T?3036 = geomAnd( MPI_T?3035 rf_pad ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4204
  ;  region( T?3036 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4205
     EDGE_T?3037  = geomGetEdge( T?3036 inside rf_pad ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4206
     dataReduction( EDGE_T?3037 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4207
  ;  region( EDGE_T?3037 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4208
     ATTACH_T?3040  = measureParameter( length ( MPI_T?3035 inside rf_pad ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4209
     attachParameter( ATTACH_T?3040 "w" p_rf_pad )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4210
     ATTACH_T?3042  = measureParameter( area ( MPI_T?3020 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4211
     CALC_T?3043 = calculateParameter( ATTACH_T?3042 / ATTACH_T?3040 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4212
     attachParameter( CALC_T?3043 "l" p_rf_pad )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4213
     T?4534 = _geomExtractMerge( N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4214
     unstable_device_for_N_IND_CR_0_Device_68 = unstableDevices( "l_cr20k_rf" N_IND_CR_0_Device_68 T?4534)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4215
     dataReduction( T?4534 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4216
  ;  region( T?4534 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4217
     T?5124 = _geomPushDown( CRTERM1 T?4534 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4218
     T?5125 = geomMerge( T?5124 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4219
     dataReduction( T?5125 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4220
     T?5126 = _geomPushDown( CRTERM2 T?4534 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4221
     T?5127 = geomMerge( T?5126 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4222
     dataReduction( T?5127 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4223
     T?5128 = _geomPushDown( wel T?4534 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4224
     T?5129 = geomMerge( T?5128 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4225
     dataReduction( T?5129 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4226
     T?5130 = _geomPushDown( PSUB T?4534 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4227
     T?5131 = geomMerge( T?5130 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4228
     dataReduction( T?5131 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4229
     extractDevice( "l_cr20k_rf" T?4534 CRTERM1( "PLUS" ) CRTERM2( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("L_CR20K_RF ivpcell"))
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4230
     unstable_device_for_N_IND_CR_0_Device_68 = unstableDevices( "l_cr20k_rf" N_IND_CR_0_Device_68 N_IND_CR_0_Device_68)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4231
     dataReduction( N_IND_CR_0_Device_68 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4232
     dataReduction( N_IND_CR_0_Device_68_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4233
  ;  region( N_IND_CR_0_Device_68_shape )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4234
  ;  region( N_IND_CR_0_Device_68 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4235
     T?4536 = geomOr( T?4534 T?5123 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4236
     errorLayer( geomAndNot( T?4536 N_IND_CR_0_Device_68 ) "malformed device N_IND_CR_0" ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4237
     MPI_T?3075 = geomButtOrOver( ML2 N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4238
  ;  region( MPI_T?3075 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4239
     T?3076 = geomAnd( MPI_T?3075 IND_CRS ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4240
  ;  region( T?3076 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4241
     EDGE_T?3077  = geomGetEdge( T?3076 inside IND_CRS ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4242
     dataReduction( EDGE_T?3077 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4243
  ;  region( EDGE_T?3077 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4244
     ATTACH_T?3080  = measureParameter( length ( MPI_T?3075 inside IND_CRS ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4245
     MPI_T?3081 = geomButtOrOver( IND_CR1 N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4246
  ;  region( MPI_T?3081 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4247
     ATTACH_T?3082  = measureParameter( figCount ( MPI_T?3081 enclosing ML2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4248
     CALC_T?3083 = calculateParameter( ATTACH_T?3080 / ( 2 * ATTACH_T?3082 ) + 2e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4249
     attachParameter( CALC_T?3083 "w" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4250
     CALC_T?3084 = calculateParameter( ATTACH_T?3082 + 0.5 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4251
     attachParameter( CALC_T?3084 "nt" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4252
     MPI_T?3085 = geomButtOrOver( LDIMETER N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4253
  ;  region( MPI_T?3085 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4254
     ATTACH_T?3086  = measureParameter( perimeter ( MPI_T?3085 ) 5e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4255
     ATTACH_T?3088  = measureParameter( area ( MPI_T?3085 ) 1e-12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4256
     CALC_T?3089 = calculateParameter( ( ATTACH_T?3086 + sqrt( ( ATTACH_T?3086 * ATTACH_T?3086 - 4 * ATTACH_T?3088 ) ) ) / 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4257
     attachParameter( CALC_T?3089 "do" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4258
     MPI_T?3090 = geomButtOrOver( ML1 N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4259
  ;  region( MPI_T?3090 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4260
     T?3091 = geomAndNot( MPI_T?3090 IND_CRB ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4261
  ;  region( T?3091 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4262
     EDGE_T?3092  = geomGetEdge( T?3091 outside IND_CRB ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4263
     dataReduction( EDGE_T?3092 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4264
  ;  region( EDGE_T?3092 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4265
     ATTACH_T?3095  = measureParameter( length ( MPI_T?3090 outside IND_CRB ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4266
     ATTACH_T?3097  = measureParameter( figCount ( MPI_T?3085 enclosing ML1 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4267
     CALC_T?3098 = calculateParameter( ATTACH_T?3095 / ( 2 * ATTACH_T?3097 ) + 1.9e-07 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4268
     attachParameter( CALC_T?3098 "s" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4269
     CALC_T?3099 = calculateParameter( CALC_T?3083 + CALC_T?3098 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4270
     CALC_T?3100 = calculateParameter( ( CALC_T?3089 - CALC_T?3084 * CALC_T?3099 ) - CALC_T?3083 + CALC_T?3099 / 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4271
     CALC_T?3101 = calculateParameter( ( ( CALC_T?3084 * CALC_T?3099 + CALC_T?3083 ) - CALC_T?3099 / 2 ) / CALC_T?3100 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4272
     CALC_T?3102 = calculateParameter( ( ( ( 6.285e-07 * 1.071 ) * CALC_T?3100 ) * power( CALC_T?3084 , 1.927 ) ) * ( log( ( 2.438 / CALC_T?3101 ) ) + 0.2657 * power( CALC_T?3101 , 2 ) ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4273
     attachParameter( CALC_T?3102 "l" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4274
     MPI_T?3103 = geomButtOrOver( WELBODY N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4275
  ;  region( MPI_T?3103 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4276
     ATTACH_T?3104  = measureParameter( perimeter ( MPI_T?3103 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4277
     MPI_T?3105 = geomButtOrOver( NWEL N_IND_CR_0 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4278
  ;  region( MPI_T?3105 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4279
     ATTACH_T?3106  = measureParameter( perimeter ( MPI_T?3105 ) 1e-06 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4280
     CALC_T?3107 = calculateParameter( ( ATTACH_T?3104 - ATTACH_T?3106 ) / 8 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4281
     attachParameter( CALC_T?3107 "d" N_IND_CR_0 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4282
     saveProperty( N_IND_CR_0 "tm" 6 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4283
     T?4537 = _geomExtractMerge( N_IND_CR ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4284
     unstable_device_for_N_IND_CR_Device_69 = unstableDevices( "L_NWCR20K_RFVIL" N_IND_CR_Device_69 T?4537)
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4285
     dataReduction( T?4537 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4286
  ;  region( T?4537 )
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4287
     T?5133 = _geomPushDown( CRTERM1 T?4537 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4288
     T?5134 = geomMerge( T?5133 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4289
     dataReduction( T?5134 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4290
     T?5135 = _geomPushDown( CRTERM2 T?4537 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4291
     T?5136 = geomMerge( T?5135 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4292
     dataReduction( T?5136 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4293
     T?5137 = _geomPushDown( wel T?4537 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4294
     T?5138 = geomMerge( T?5137 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4295
     dataReduction( T?5138 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4296
     T?5139 = _geomPushDown( PSUB T?4537 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4297
     T?5140 = geomMerge( T?5139 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4298
     dataReduction( T?5140 ) 
-    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
 
  ;# 4299
     extractDevice( "L_NWCR20K_RFVIL" T?4537 CRTERM1( "PLUS" ) CRTERM2( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed namePrefix( "X" )  cellView("L_NWCR20K_RFVIL ivpcell"))
@@ -21255,7 +21255,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 4726
     ATTACH_T?3618  = measureParameter( figCount ( MPI_T?3607 enclosing layer4 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 4727
     ATTACH_T?3620  = measureParameter( figCount ( MPI_T?3607 enclosing layer5 ) ) 
@@ -22515,7 +22515,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5041
     ATTACH_T?3949  = measureParameter( figCount ( MPI_T?3940 enclosing fns5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5042
     ATTACH_T?3951  = measureParameter( figCount ( MPI_T?3940 enclosing fns6 ) ) 
@@ -22523,7 +22523,7 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5043
     CALC_T?3952 = calculateParameter( ( ( ( ( plusp( ATTACH_T?3941 ) + plusp( ATTACH_T?3943 ) ) + plusp( ATTACH_T?3945 ) ) + plusp( ATTACH_T?3947 ) ) + plusp( ATTACH_T?3949 ) ) + plusp( ATTACH_T?3951 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5044
     attachParameter( CALC_T?3952 "ns" MOM_ARRAY_VP3_RFVCL_4 )
@@ -22743,75 +22743,75 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5098
     CALC_T?4006 = calculateParameter( ATTACH_T?4005 / ( ( 2e-07 * CALC_T?4003 ) * ATTACH_T?4002 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5099
     attachParameter( CALC_T?4006 "lf" MOM_ARRAY_VP4_RFVCL_1 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5100
     T?4579 = _geomExtractMerge( MOM_ARRAY_VP4_RFVCL_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5101
     unstable_device_for_MOM_ARRAY_VP4_RFVCL_2_Device_83 = unstableDevices( "MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_2_Device_83 T?4579)
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5102
     dataReduction( T?4579 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5103
  ;  region( T?4579 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5104
     T?5247 = _geomPushDown( VP4_ME3_2 T?4579 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5105
     T?5248 = geomMerge( T?5247 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5106
     dataReduction( T?5248 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5107
     T?5249 = _geomPushDown( VP4_ME4_2 T?4579 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5108
     T?5250 = geomMerge( T?5249 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5109
     dataReduction( T?5250 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5110
     T?5251 = _geomPushDown( wel T?4579 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5111
     T?5252 = geomMerge( T?5251 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5112
     dataReduction( T?5252 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5113
     T?5253 = _geomPushDown( PSUB T?4579 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5114
     T?5254 = geomMerge( T?5253 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5115
     dataReduction( T?5254 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5116
     extractDevice( "MOMCAPS_Array_VP4_RF" T?4579 VP4_ME3_2( "PLUS" ) VP4_ME4_2( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed )
@@ -22923,75 +22923,75 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5143
     CALC_T?4054 = calculateParameter( ATTACH_T?4053 / ( ( 2e-07 * CALC_T?4051 ) * ATTACH_T?4050 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5144
     attachParameter( CALC_T?4054 "lf" MOM_ARRAY_VP4_RFVCL_2 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5145
     T?4582 = _geomExtractMerge( MOM_ARRAY_VP4_RFVCL_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5146
     unstable_device_for_MOM_ARRAY_VP4_RFVCL_3_Device_84 = unstableDevices( "MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_3_Device_84 T?4582)
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5147
     dataReduction( T?4582 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5148
  ;  region( T?4582 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5149
     T?5256 = _geomPushDown( VP4_ME4_3 T?4582 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5150
     T?5257 = geomMerge( T?5256 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5151
     dataReduction( T?5257 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5152
     T?5258 = _geomPushDown( VP4_ME5_3 T?4582 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5153
     T?5259 = geomMerge( T?5258 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5154
     dataReduction( T?5259 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5155
     T?5260 = _geomPushDown( wel T?4582 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5156
     T?5261 = geomMerge( T?5260 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5157
     dataReduction( T?5261 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5158
     T?5262 = _geomPushDown( PSUB T?4582 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5159
     T?5263 = geomMerge( T?5262 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5160
     dataReduction( T?5263 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5161
     extractDevice( "MOMCAPS_Array_VP4_RF" T?4582 VP4_ME4_3( "PLUS" ) VP4_ME5_3( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed )
@@ -23103,75 +23103,75 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5188
     CALC_T?4102 = calculateParameter( ATTACH_T?4101 / ( ( 2e-07 * CALC_T?4099 ) * ATTACH_T?4098 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5189
     attachParameter( CALC_T?4102 "lf" MOM_ARRAY_VP4_RFVCL_3 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5190
     T?4585 = _geomExtractMerge( MOM_ARRAY_VP4_RFVCL_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5191
     unstable_device_for_MOM_ARRAY_VP4_RFVCL_4_Device_85 = unstableDevices( "MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_4_Device_85 T?4585)
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5192
     dataReduction( T?4585 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5193
  ;  region( T?4585 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5194
     T?5265 = _geomPushDown( VP4_ME5_4 T?4585 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5195
     T?5266 = geomMerge( T?5265 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5196
     dataReduction( T?5266 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5197
     T?5267 = _geomPushDown( VP4_ME6_4 T?4585 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5198
     T?5268 = geomMerge( T?5267 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5199
     dataReduction( T?5268 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5200
     T?5269 = _geomPushDown( wel T?4585 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5201
     T?5270 = geomMerge( T?5269 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5202
     dataReduction( T?5270 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5203
     T?5271 = _geomPushDown( PSUB T?4585 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5204
     T?5272 = geomMerge( T?5271 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5205
     dataReduction( T?5272 ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5206
     extractDevice( "MOMCAPS_Array_VP4_RF" T?4585 VP4_ME5_4( "PLUS" ) VP4_ME6_4( "MINUS" ) wel( "NW" ) PSUB( "PSUB" ) flagMalformed )
@@ -23283,11 +23283,11 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 
  ;# 5233
     CALC_T?4150 = calculateParameter( ATTACH_T?4149 / ( ( 2e-07 * CALC_T?4147 ) * ATTACH_T?4146 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
  ;# 5234
     attachParameter( CALC_T?4150 "lf" MOM_ARRAY_VP4_RFVCL_4 )
-    cpu: 0.0   elapsed: 0   virtual: 155M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 152M   task sum: 0
 
 
 ************************************************************************
@@ -23297,11 +23297,11 @@ TOTALS (secs). . . . . .      0 cpu      2 elap  543.3M virt       0 pf
 Total cells checked = 1
 Total rules checked = 5234
 
-Run time = 10.00 seconds
-CPU time =  0.74 seconds
+Run time = 11.00 seconds
+CPU time =  1.71 seconds
 VM HWM   =   543 Mbytes
-Disk HWM =     0 Mbytes
-Disk end =     0 Mbytes
+Disk HWM =     3 Mbytes
+Disk end =     3 Mbytes
 Eman HWM =     0 Mbytes
 
                   End of Summary Report

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Project_Lib1_sim\" \"photodiode_sim\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "May  3 17:07:05 2022"
+"title" ""
+"analysisList" "()"
+END

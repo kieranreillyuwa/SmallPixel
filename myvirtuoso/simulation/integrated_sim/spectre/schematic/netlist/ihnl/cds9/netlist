@@ -1,0 +1,9 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: integrated_sim
+// View name: schematic
+I0 (net5 vdd! 0 net3 vdd!) integrated
+V1 (net5 0) vsource type=pulse val0=0 val1=1.2 period=90u delay=89u \
+        rise=50n fall=50n width=1u
+V0 (net3 0) vsource type=pulse val0=0 val1=1.2 period=100u delay=0 \
+        rise=50n fall=50n width=1u

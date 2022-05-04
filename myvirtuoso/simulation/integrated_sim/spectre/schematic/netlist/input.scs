@@ -1,0 +1,255 @@
+// Generated for: spectre
+// Generated on: May  3 18:04:08 2022
+// Design library name: Project_Lib1_sim
+// Design cell name: integrated_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/l130e-rf-v171-control.scs"
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_LL12_V141.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_LVT33_BPW_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_RVT33_BPW_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS12_BPW_V241.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_LVT12_BPW_V031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_BJT_V141.lib.scs" section=typ_BIP
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_LVT33_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_NVT33_v031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HG_RVT33_V131.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS12_V241.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_LVT12_V031.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_HS_NVT12_V041.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_20f_MIMCAP_V011.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_15f_MIMCAP_V021.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_MIMCAP_V121.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/mm130e_mom_v031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/MML130E_RES_V152.lib.scs" section=res_typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_SP12_V141.lib.scs" section=tt
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/L130E_DIODE_V151.mdl.scs"
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_cr20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwcr20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsqsk_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsy20kct_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_nwsy20k_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sqsk_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sy20kct_rfvil_V031.lib.scs" section=typ
+include "/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/umc13mmrf/../Models/Spectre/VIL/1P8M2T/l_sy20k_rfvil_V031.lib.scs" section=typ
+
+// Library name: myLib
+// Cell name: NAND
+// View name: schematic
+subckt NAND GND IN1 IN2 NAND VDD
+    PM1 (NAND IN2 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (NAND IN1 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net19 IN2 GND GND) n_12_hsl130e w=1u l=120.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (NAND IN1 net19 GND) n_12_hsl130e w=1u l=120.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends NAND
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: inv
+// View name: schematic
+subckt inv GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=640.0n l=130.0n as=2.176e-13 \
+        ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends inv
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: binary
+// View name: schematic
+subckt binary A1 A2 A3 A4 A5 A6 A7 BC GND VDD
+    I7 (GND net23 A5 net011 VDD) NAND
+    I8 (GND net010 A6 net08 VDD) NAND
+    I9 (GND net07 A7 BC VDD) NAND
+    I3 (GND A1 A2 net20 VDD) NAND
+    I2 (GND net016 A3 net17 VDD) NAND
+    I1 (GND net014 A4 net18 VDD) NAND
+    I14 (GND net08 net07 VDD) inv
+    I13 (GND net011 net010 VDD) inv
+    I12 (GND net18 net23 VDD) inv
+    I10 (GND net20 net016 VDD) inv
+    I11 (GND net17 net014 VDD) inv
+ends binary
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: asr
+// View name: schematic
+subckt asr ASR B1 B2 B3 B4 B5 B6 B7 DC GND VDD
+    I0 (GND net9 DC ASR VDD) NAND
+    I2 (B1 B2 B3 B4 B5 B6 B7 net9 GND VDD) binary
+ends asr
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: delay_chain
+// View name: schematic
+subckt delay_chain GND IN OUT VDD
+    NM14 (OUT net0154 GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM13 (net0154 net0152 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM12 (net0152 net0150 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM11 (net0150 net0148 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM10 (net0148 net0146 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM9 (net0146 net0144 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM8 (net0144 net0142 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM7 (net0142 net0140 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM6 (net0140 net0138 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM5 (net0138 net0135 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM3 (net0133 net038 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM4 (net0135 net0133 GND GND) n_12_hsl130e w=160.0n l=130.0n \
+        as=9.44e-14 ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    NM1 (net036 net033 GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (net038 net036 GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (net033 IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM14 (OUT net0154 VDD VDD) p_12_hsl130e w=640.0n l=130.0n as=2.176e-13 \
+        ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+    PM13 (net0154 net0152 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM12 (net0152 net0150 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM11 (net0150 net0148 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM10 (net0148 net0146 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM9 (net0146 net0144 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM8 (net0144 net0142 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM7 (net0142 net0140 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM6 (net0140 net0138 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM5 (net0138 net0135 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM1 (net036 net033 VDD VDD) p_12_hsl130e w=(640nM)/(1) l=130.0n as=(((640nM)/(1)) < (160n+2*60n)) ? (((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) + (int(((1) - 1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) == 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : (((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) + (int(((1) - 1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) == 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ad=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) != 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : ((int((1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) != 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ps=(((640nM)/(1)) < (160n+2*60n)) ? ((2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) + (int(((1) - 1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) + (int(((1) - 1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         pd=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((int((1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM4 (net0135 net0133 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM3 (net0133 net038 VDD VDD) p_12_hsl130e w=(640nM)/(1) l=130.0n as=(((640nM)/(1)) < (160n+2*60n)) ? (((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) + (int(((1) - 1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) == 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : (((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) + (int(((1) - 1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) == 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ad=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) != 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : ((int((1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) != 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ps=(((640nM)/(1)) < (160n+2*60n)) ? ((2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) + (int(((1) - 1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) + (int(((1) - 1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         pd=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((int((1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM2 (net038 net036 VDD VDD) p_12_hsl130e w=640.0n l=130.0n \
+        as=2.176e-13 ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 \
+        mis_flag=1 mf=(1)*(1)
+    PM0 (net033 IN VDD VDD) p_12_hsl130e w=(640nM)/(1) l=130.0n as=(((640nM)/(1)) < (160n+2*60n)) ? (((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) + (int(((1) - 1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) == 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : (((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) + (int(((1) - 1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) == 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ad=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (2*100n*((640nM)/(1))))) + ((((1) / 2) - int((1) / 2) != 0) ? ((((280.0n)+(2*(60n-60n)))*(60n+160n+60n)) + (100n*((640nM)/(1)))) : 0)) / (1) : ((int((1) / 2.0) * ((640nM)/(1)*((120n-60n)+(280.0n)+(120n-60n)))) + ((((1) / 2) - int((1) / 2) != 0) ? ((640nM)/(1)*(60n-60n+(280.0n)+(120n-60n))) : 0)) / (1) \
+         ps=(((640nM)/(1)) < (160n+2*60n)) ? ((2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) + (int(((1) - 1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) + (int(((1) - 1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) == 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         pd=(((640nM)/(1)) < (160n+2*60n)) ? ((int((1) / 2.0) * (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n))+(4*100n))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*(((280.0n)+(2*(60n-60n)))+(60n+160n+60n)+100n)) : 0)) / (1) : ((int((1) / 2.0) * (2*((640nM)/(1)+((120n-60n)+(280.0n)+(120n-60n))))) + ((((1) / 2) - int((1) / 2) != 0) ? (2*((640nM)/(1)+(60n-60n+(280.0n)+(120n-60n)))) : 0)) / (1) \
+         m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends delay_chain
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: comparator
+// View name: schematic
+subckt comparator GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=640.0n l=130.0n as=2.176e-13 \
+        ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends comparator
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: photodiode
+// View name: schematic
+subckt photodiode N P
+    D0 (P N) dionw_l130e area=1e-10 perim=(40u) m=1
+ends photodiode
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: reset
+// View name: schematic
+subckt reset ASR GR VDD VN
+    PM1 (VN ASR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (VN GR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 ad=1.02e-12 \
+        ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends reset
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: integrated
+// View name: schematic
+subckt integrated B7 BHIGH GND GR VDD
+    I0 (net12 BHIGH BHIGH BHIGH BHIGH BHIGH BHIGH B7 net11 GND VDD) asr
+    I1 (GND net14 net11 VDD) delay_chain
+    I2 (GND GND net14 VDD) comparator
+    I3 (net13 GND) photodiode
+    I4 (net12 GR VDD net13) reset
+ends integrated
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: integrated_sim
+// View name: schematic
+I0 (net5 vdd! 0 net3 vdd!) integrated
+V1 (net5 0) vsource type=pulse val0=0 val1=1.2 period=90u delay=89u \
+        rise=50n fall=50n width=1u
+V0 (net3 0) vsource type=pulse val0=0 val1=1.2 period=100u delay=0 \
+        rise=50n fall=50n width=1u
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=200u errpreset=conservative write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save V0:p V1:p 
+saveOptions options save=allpub

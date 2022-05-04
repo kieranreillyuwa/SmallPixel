@@ -13,8 +13,8 @@
  )
 ( model
 ( "Project_Lib1_sim/inv_sim/schematic" "inv_sim" )
-( "myLib/inv/schematic" "inv" )
+( "Project_Lib1/inv/schematic" "inv_schematic" )
  )
 ( "inv_sim" "ihnl/cds1/map" )
-( "inv" "ihnl/cds0/map" )
+( "inv_schematic" "ihnl/cds2/map" )
  )

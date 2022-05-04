@@ -10,11 +10,12 @@
 
 vuiLayerListOrder  =  "Alphabetical"
 vuiLayerList  = '(
-		("DATAEXTENT" 203 "DATAEXTENT = cellBoundary(root)" 0 4 t "y0 (drawing)" t)
-		("DIFF" 230 "DIFF = geomOr( DIFF )" 1 6 t "y1 (drawing)" t)
-		("ME1" 372 "ME1 = geomOr( ME1 )" 1 5 t "y2 (drawing)" t)
-		("NPLUS" 6 "NPLUS = layer( \"NPLUS\" type(\"drawing\") )" 0 1 t "y3 (drawing)" t)
-		("PPLUS" 5 "PPLUS = layer( \"PPLUS\" type(\"drawing\") )" 0 0 t "y4 (drawing)" t)
-		("m1_pin" 189 "m1_pin = pinText( \"ME1\" )" 0 3 t "y7 (drawing)" t)
-		("po_pin" 188 "po_pin = pinText( \"PO1\" )" 0 2 t "y9 (drawing)" t)
+		("DATAEXTENT" 203 "DATAEXTENT = cellBoundary(root)" 0 5 t "y0 (drawing)" t)
+		("DIFF" 230 "DIFF = geomOr( DIFF )" 1 7 t "y1 (drawing)" t)
+		("M1_TEXTT" 179 "M1_TEXTT = textToPin( \"ME1\" type(\"drawing\") )" 0 2 t "y2 (drawing)" t)
+		("ME1" 372 "ME1 = geomOr( ME1 )" 1 6 t "y3 (drawing)" t)
+		("NPLUS" 6 "NPLUS = layer( \"NPLUS\" type(\"drawing\") )" 0 1 t "y4 (drawing)" t)
+		("PPLUS" 5 "PPLUS = layer( \"PPLUS\" type(\"drawing\") )" 0 0 t "y5 (drawing)" t)
+		("m1_pin" 189 "m1_pin = pinText( \"ME1\" )" 0 4 t "y6 (drawing)" t)
+		("po_pin" 188 "po_pin = pinText( \"PO1\" )" 0 3 t "y7 (drawing)" t)
 )

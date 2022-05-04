@@ -1,0 +1,4 @@
+simulator lang=spectre
+include "dionw_l130e.scs"
+include "n_12_hsl130e.scs"
+include "p_12_hsl130e.scs"

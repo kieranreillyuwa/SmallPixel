@@ -1,0 +1,36 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "integrated_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/integrated_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/reset/schematic" "reset" )
+( "Project_Lib1_sim/integrated_sim/schematic" "integrated_sim" )
+( "Project_Lib1/comparator/schematic" "comparator" )
+( "Project_Lib1/integrated/schematic" "integrated" )
+( "Project_Lib1/inv/schematic" "inv" )
+( "Project_Lib1/photodiode/schematic" "photodiode" )
+( "myLib/NAND/schematic" "NAND" )
+( "Project_Lib1/binary/schematic" "binary" )
+( "Project_Lib1/delay_chain/schematic" "delay_chain" )
+( "Project_Lib1/asr/schematic" "asr" )
+ )
+( "asr" "ihnl/cds3/map" )
+( "integrated_sim" "ihnl/cds9/map" )
+( "comparator" "ihnl/cds5/map" )
+( "photodiode" "ihnl/cds6/map" )
+( "binary" "ihnl/cds2/map" )
+( "delay_chain" "ihnl/cds4/map" )
+( "reset" "ihnl/cds7/map" )
+( "inv" "ihnl/cds1/map" )
+( "integrated" "ihnl/cds8/map" )
+( "NAND" "ihnl/cds0/map" )
+ )

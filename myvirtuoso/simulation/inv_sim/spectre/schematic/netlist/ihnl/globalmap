@@ -1,5 +1,6 @@
 CADENCE IHNL11140
 $model
+Project_Lib1/inv/schematic inv_schematic
 myLib/inv/schematic inv
 Project_Lib1_sim/inv_sim/schematic inv_sim
 $endmodel

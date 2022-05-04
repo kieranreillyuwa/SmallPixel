@@ -1,6 +1,28 @@
 #+1650882076
 pwd
-#+1650882514
-source setup617.csh
 #+1650882583
 exit
+#+1651470281
+cd ..
+#+1651470285
+git add .
+#+1651470337
+git commit -a -m "backup"
+#+1651470355
+git push'
+#+1651470357
+git push
+#+1651470371
+sudo shutdown now
+#+1651565556
+cls
+#+1651565562
+cls AdminTool
+#+1651570017
+clsAdmintool
+#+1651570099
+source setup617.csh
+#+1651572307
+clsAdminTools
+#+1651572311
+clsAdminTool

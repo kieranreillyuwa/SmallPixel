@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "asr"
+"I1n" "delay_chain"
+"I2n" "comparator"
+"I3n" "photodiode"
+"I4n" "reset"
+"B7v" ":1v"
+"BHIGHv" ":2v"
+"GNDv" ":3v"
+"GRv" ":4v"
+"VDDv" ":5v"

@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: photodiode
+// View name: schematic
+subckt photodiode N P

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "15.1.0.345.isr2"
-"date" "5:34:54 PM, Tue Apr 26, 2022"
+"date" "4:18:16 PM, Tue May 3, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -89,13 +89,13 @@ VALUE
 ""
 ""
 )
-"inv" "subckt" (
-""
-"GND IN OUT VDD"
-)
 "mimcaps_20f_rf" "subckt" (
 ""
 ""
+)
+"inv_schematic" "subckt" (
+""
+"GND IN OUT VDD"
 )
 "l_nwsy20kct_rfvil" "subckt" (
 ""

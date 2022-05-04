@@ -1,0 +1,4 @@
+    I0 (GND net9 DC ASR VDD) NAND
+    I2 (B1 B2 B3 B4 B5 B6 B7 net9 GND VDD) binary
+ends asr
+// End of subcircuit definition.

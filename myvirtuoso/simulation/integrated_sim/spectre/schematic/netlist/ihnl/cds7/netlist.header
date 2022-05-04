@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: reset
+// View name: schematic
+subckt reset ASR GR VDD VN

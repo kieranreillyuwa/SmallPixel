@@ -1,0 +1,48 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "15.1.0.345.isr2"
+"date" "5:07:06 PM, Tue May 3, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info.primitives"
+"analysis name" "primitives"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"primitive" STRUCT(
+"model" STRING *
+"oppoint" STRING *
+"output" STRING *
+"inst" STRING *
+"region" STRING *
+"terminals" STRING *
+) PROP(
+"key" "prim"
+)
+VALUE
+"capacitor" "primitive" (
+"c trise tnom w l etch cj cjsw scalec rforce di thick coeffs symmetric min max tc1 tc2 shrink shrink2 bv_max "
+"cap "
+"tempeff meff leff weff ceff "
+"c w l m scale trise tc1 tc2 ic area perim coeffs symmetric bv_max scalec "
+""
+"1 2 "
+)
+"diode" "primitive" (
+"level dcap bv_enable compatible etch etchl l w js is jsw isw isp n ns ik ikf ikp ikr area perim allow_scaling tt cd cjo vj pb m cjsw cjp vjsw php mjsw fc fcs lm lp wm wp xm xp xoi xom xw vjmin bv vb ibv nz bvj isr ibvl nbv nbvl rs rsw gleak gleaksw minr tlev tlevc eglev eg gap1 gap2 xti tbv1 tcv tbv2 tikf tnom trise trs trs1 tmod trs2 tgs tgs2 cta ctp pta ptp ttt1 ttt2 tm1 tm2 jmelt imelt expli jmax imax dskip if ir ecrf ecrr ef er nf nr tox rod jts jtssw mrs njts njtssw xts xtssw tnjts tnjtssw trod kf af shrink shrink2 jtun jtunsw ntun xtitun egtun bv_max fv_max keg "
+"region v i pwr res resp cap capp cd ctotal gd qd vdio "
+"bveff tempeff meff "
+"area perim l w m scale trise lm lp wm wp isnoisy "
+"off on breakdown "
+"a c "
+)
+"isource" "primitive" (
+""
+"i v pwr "
+"tempeff "
+"dc type fundname delay edgetype val0 val1 period rise fall width file offset scale stretch rms pwlfilter rolloff pwlbandwidth allbrkpts pwlperiod pwlperiodstart twidth sinedc ampl freq sinephase ampl2 freq2 sinephase2 fundname2 iqmodfiles fmmodindex fmmodfreq fmmodfiles ammodindex ammodoffset ammodfreq ammodphase damp freqvec amplvec phasevec maxharms td1 tau1 td2 tau2 expperiod data rptstart rpttimes td01 td10 ref jitter rjseed rjrms pjamp pjfreq pjtype seed taps lfsrtaps lfsrseed registerlength triggerthreshold triggerdelthresh triggerdirection transitionreference noisefile noisetype noiseinterp isnoisy mag phase xfmag pacmag pacphase m tc1 tc2 tnom trise "
+""
+"sink src ctlp ctln "
+)
+END
