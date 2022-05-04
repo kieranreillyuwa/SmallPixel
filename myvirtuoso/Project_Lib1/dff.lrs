@@ -1,13 +1,12 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
-run on dep56130nix at Sun May  1 17:23:36 2022
+run on dep56130nix at Wed May  4 12:13:48 2022
 
-Schematic                      | Layout                       | Status
+Schematic                      | Layout                      | Status
 -------------------------------------------------------------------------------
-dff schematic Project_Lib1     | dff layout Project_Lib1      | errors       *
+dff schematic Project_Lib1     | dff layout Project_Lib1     | matched      
 
-Mismatch between Schematic and Layout
-   1 cell with errors
+Schematic and Layout Match
 
 Schematic:
   Library:Project_Lib1
@@ -29,8 +28,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     1 cells have 2 Net mismatches
-     1 cells have 1 Device mismatches
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
      0 cells have 0 Pin mismatches
      0 cells have 0 Parameter mismatches
 

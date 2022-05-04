@@ -1,5 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 unmatched connect pin
-1 1 ((S "I##38" "N_12_HSL130E:SerMos3#1")(L "I##36" "n_12_hsl130e:SerMos3#1")(("IN1" "nRST" "nRST")("IN2" "D" "D")("IN3" "net11" "avC8")))

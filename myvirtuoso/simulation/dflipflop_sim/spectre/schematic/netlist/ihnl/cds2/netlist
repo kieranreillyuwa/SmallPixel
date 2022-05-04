@@ -43,7 +43,7 @@
     NM1 (net72 D net74 GND) n_12_hsl130e w=480.0n l=120.0n as=1.632e-13 \
         ad=1.632e-13 ps=1.64u pd=1.64u m=(1)*(1) nf=1 mis_flag=1 \
         mf=(1)*(1)
-    NM0 (net74 net11 GND GND) n_12_hsl130e w=480.0n l=120.0n as=1.632e-13 \
+    NM0 (net74 net79 GND GND) n_12_hsl130e w=480.0n l=120.0n as=1.632e-13 \
         ad=1.632e-13 ps=1.64u pd=1.64u m=(1)*(1) nf=1 mis_flag=1 \
         mf=(1)*(1)
     PM21 (net83 net30 VDD VDD) p_12_hsl130e w=320.0n l=120.0n as=1.088e-13 \

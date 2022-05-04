@@ -1,0 +1,38 @@
+# 0
+P_12_HSL130E(MOS): p_12_hsl130e(MOS)
+# 0
+N_12_HSL130E(MOS): n_12_hsl130e(MOS)
+# 32
+dff schematic Project_Lib1: dff layout Project_Lib1
+D NM19 avD1_12
+D NM18 avD1_11
+S NM22 avD1_16
+S NM24 avD1_4
+S NM23 avD1_15
+S NM28 avD1_6
+S NM21 avD1_14
+D NM15 avD1_2
+D NM14 avD1_1
+D NM20 avD1_13
+S NM25 avD1_3
+S NM27 avD1_5
+D NM26 avD1_7
+S NM2 avD1_8
+S NM1 avD1_9
+S NM0 avD1_10
+S PM21 avD2_1
+D PM20 avD2_9
+D PM10 avD2_2
+S PM9 avD2_3
+D PM18 avD2_13
+S PM26 avD2_7
+D PM25 avD2_6
+S PM2 avD2_12
+D PM1 avD2_11
+S PM0 avD2_10
+S PM19 avD2_16
+S PM17 avD2_14
+D PM16 avD2_15
+S PM23 avD2_5
+D PM22 avD2_4
+D PM24 avD2_8

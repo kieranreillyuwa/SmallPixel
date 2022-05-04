@@ -1,7 +1,7 @@
 CADENCE IHNL11140
 $model
-Project_Lib1/dflipflop/schematic dflipflop
 Project_Lib1_sim/dflipflop_sim/schematic dflipflop_sim
+Project_Lib1/dflipflop/schematic dflipflop
 Project_Lib1/dff/schematic dff
 $endmodel
 $net

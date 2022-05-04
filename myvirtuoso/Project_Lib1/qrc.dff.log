@@ -1,0 +1,561 @@
+
+
+  Cadence Quantus QRC Extraction - 64-bit Parasitic Extractor - Version
+15.2.0-p076 Tue Jan 26 10:13:56 PST 2016
+-------------------------------------------------------------------------------------------------------------------
+                                    Copyright 2016 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXOPT-243) : For Assura inputs, if the "output_setup -directory_name" option was not
+specified, it is automatically set to the input directory.
+INFO (LBRCXU-108): Starting
+
+ /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/avRCXxref /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/__qrc.rcx_cmd -useRunName
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+run on dep56130nix at Wed May  4 12:19:04 2022
+Reading rsf
+INFO (LBRCXU-114): Finished /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/avRCXxref
+
+INFO (LBRCXM-630): Starting extraction: Wed May  4 12:19:04 2022
+
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus QRC Extraction Techgen -trans VERSION 15.2.0 Linux 64 bit - (Tue Jan 26 10:13:56 PST 2016)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff
+
+WARNING (CAPGEN-41466): process layer 'me8' maps to one or more extraction
+	layers that do not appear in the lvsfile.
+
+WARNING (CAPGEN-41466): process layer 'me7' maps to one or more extraction
+	layers that do not appear in the lvsfile.
+
+WARNING (CAPGEN-41474): Contact layer 'VI6' specified in the p2lvsfile is not found in the lvsfile.
+
+WARNING (CAPGEN-41474): Contact layer 'VI7' specified in the p2lvsfile is not found in the lvsfile.
+
+WARNING (CAPGEN-41474): Contact layer '_TMV_RDL_ME8' specified in the p2lvsfile is not found in the lvsfile.
+
+INFO (CAPGEN-41737): Lvs layers B_DNW CRTERM1 CRTERM2 Lterm1 Lterm2 MESH_ASY_M1 MESH_ASY_M1_CONN MESH_ASY_M2 MESH_ASY_M2_CONN MESH_ASY_P1 MESH_ASY_P1_CONN MESH_ASY_P2 MESH_ASY_P2_CONN MESH_SY_M1 MESH_SY_M1_CONN MESH_SY_M2 MESH_SY_M2_CONN MESH_SY_P1 MESH_SY_P1_CONN MESH_SY_P2 MESH_SY_P2_CONN MMCBP MMCTP MOM1_term MOM2_term MOM2_term_M MOM2_term_P PSUB_P PWBLK PWELL TWEL VP3_ME2_1 VP3_ME3_1 VP3_ME3_2 VP3_ME4_2 VP3_ME4_3 VP3_ME5_3 VP3_ME5_4 VP3_ME6_4 VP4_ME2_1 VP4_ME3_1 VP4_ME3_2 VP4_ME4_2 VP4_ME4_3 VP4_ME5_3 VP4_ME5_4 VP4_ME6_4 lay1a lay1b lay2a lay2b lay3a lay3b lay4a lay4b lay5a lay5b lay6a lay6b ntap ptap ptap_all ptap_p qte rfnd rfns rfpd rfps ttap are not mapped in layer_setup file
+
+WARNING (RCXSPIC-27104): p2lvsfile in tech directory does not have resistance 
+ temperature coefficients (TC1, TC2). ?temperature is ignored 
+
+Forking:  /usr/local/cadence6/EXT15-20-000/tools/extraction/bin/64bit//capgen -techdir /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 -lvs /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.xcn -p2lvs /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4/p2lvsfile -reseqn -sw3d -length_units meter -p ply,Allgates,dif -blocking MOMVP1,me1,me2,me3,me4,me5,me6 -blocking MOMVP2,me1,me2,me3,me4,me5,me6 -cap_unit 1 /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff
+
+Successfully created RCX script '/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/rcx.sh'
+WARNING (LBRCXM-617): Unable to obtain 1 license(s) for Virtuoso_QRC_Extraction_L 15.20
+
+INFO (LBRCXM-581): Checked out '1' license(s) for Virtuoso_QRC_Extraction_XL 15.20
+
+INFO (LBRCXM-608): Executing command
+   /bin/ksh  /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/rcx.sh
+
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/dev/null
+##HCCI_DEV_PROP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1
+##ASSURA_RUN_NAME=dff
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=decoupled
+##CAP_GROUND=GND
+##CAP_MODELS=no
+##DANGLINGR=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=N
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##ENABLESENSITIVITYEXTRACTION=N
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
+##EXTRACT=both
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=N
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=MICRONS
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=
+##HCCI_RUN_NAME=
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=assura
+##M_FACTORR=
+##M_FACTORW=N
+##MACRO_CELL=Y
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MINC=
+##MINC_BY_PERCENTAGE=
+##MINR=0.001
+##NET_NAME_SPACE=layout
+##NETS_FILE=/dev/null
+##OUTPUT=/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dff.sp
+##OUTPUT_NET_NAME_SPACE=schematic
+##PARASITIC_BLOCKING_DEVICE_CELLS_TYPEgray
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=comment
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=Y
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARASITIC_RES_UNIT=N
+##PARTIAL_CAP_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=/dev/null
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=no
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##FORCE_SUBCELL_PIN_ORDERS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/rcx_temp
+##TEMPERATURE=25.0
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/dff.gnx,/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/dff.gdx
+##XY_COORDINATES=
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+QRC_MOS_LW_PRECISION=y
+export QRC_MOS_LW_PRECISION
+TEMPDIR=`setTempDir /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/rcx_temp`
+setTempDir /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff/rcx_temp
+export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+cd /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff
+cat <<ENDCAT> caps2dversion
+* caps2d version: 9
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meter
+ENDCAT
+QRC=Y
+export QRC
+cat <<ENDCAT> topcellxcn.info
+/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.xcn
+ENDCAT
+
+#==========================================================#
+# Generate RCX input data from Assura LVS database
+#==========================================================#
+
+GOALIE2DIR=/usr/local/cadence6/EXT15-20-000/tools/extraction/bin
+export GOALIE2DIR
+vdbToRcx \
+	/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1 \
+	dff -unit meter -- -V1 -H satfile -r \
+	/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.xcn \
+	-xgl
+@(#)$CDS: vdbToRcx_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:06 (sjflg007) $
+15.1.3 Linux 64 bit - (Fri Nov 20 17:40:41 PST 2015)
+Opening LVS data for dff in /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1
+Open time is 0.0 sec.
+Build pins/attributes took 0.1 sec.
+Processing m1_textt                              7 shapes 0.0 sec.
+create satfile took  0.05 user, 0.01 sys, 0.00 elapsed, 250844.0 kbytes
+write edge m1_textt took  0.00 user, 0.00 sys, 0.00 elapsed, 250844.0 kbytes
+Building net map file.		0.0 sec.
+create netmap file took 0.00 user, 0.01 sys, 0.00 elapsed, 250844.0 kbytes
+create net file took 0.00 user, 0.00 sys, 0.00 elapsed, 250844.0 kbytes
+WARNING (LBCLV-5663): No bipolar models provided. Can't create bipolar files
+
+WARNING (LBCLV-5660): No resistor models provided. Can't create resistor files
+
+WARNING (LBCLV-5654): No capacitor models provided. Can't create capacitor file
+
+WARNING (LBCLV-5657): No diode models provided. Can't create diode files
+
+WARNING (LBCLV-5706): no generic models in rule file
+
+Device creation took 0.0 sec
+Processing nwCon                                29 shapes 0.0 sec.
+write edge nwCon took  0.02 user, 0.00 sys, 1.00 elapsed, 250976.0 kbytes
+Processing pwCon_all                            29 shapes 0.0 sec.
+write edge pwCon_all took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+Processing pwCon                                29 shapes 0.0 sec.
+write edge pwCon took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+Processing psdcon                               19 shapes 0.0 sec.
+write edge psdcon took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+Processing nsdcon                               21 shapes 0.0 sec.
+write edge nsdcon took  0.00 user, 0.01 sys, 0.00 elapsed, 250976.0 kbytes
+Processing polycon                              12 shapes 0.0 sec.
+write edge polycon took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+Processing VI1                                  11 shapes 0.0 sec.
+write edge VI1 took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+write edge PG_HS_MOS_2 took  0.00 user, 0.00 sys, 0.00 elapsed, 250976.0 kbytes
+write edge NG_HS_MOS_1 took  0.01 user, 0.00 sys, 0.00 elapsed, 251164.0 kbytes
+Processing PG_HS_MOS_2                          16 shapes 0.0 sec.
+Processing NG_HS_MOS_1                          16 shapes 0.0 sec.
+Processing PWELL                                 1 shapes 0.0 sec.
+write edge PWELL took  0.00 user, 0.00 sys, 0.00 elapsed, 251428.0 kbytes
+Processing PSUB_P                                1 shapes 0.0 sec.
+write edge PSUB_P took  0.00 user, 0.00 sys, 0.00 elapsed, 251620.0 kbytes
+Processing PSUB                                  1 shapes 0.0 sec.
+write edge PSUB took  0.00 user, 0.00 sys, 0.00 elapsed, 251960.0 kbytes
+Processing ME2                                   5 shapes 0.0 sec.
+write edge ME2 took  0.00 user, 0.01 sys, 0.00 elapsed, 252228.0 kbytes
+Processing ME1                                  29 shapes 0.0 sec.
+write edge ME1 took  0.00 user, 0.00 sys, 0.00 elapsed, 252420.0 kbytes
+Processing nsd                                  19 shapes 0.0 sec.
+write edge nsd took  0.00 user, 0.00 sys, 0.00 elapsed, 252748.0 kbytes
+Processing ntap                                  1 shapes 0.0 sec.
+write edge ntap took  0.00 user, 0.00 sys, 0.00 elapsed, 252880.0 kbytes
+Processing psd                                  18 shapes 0.0 sec.
+write edge psd took  0.01 user, 0.00 sys, 0.00 elapsed, 253144.0 kbytes
+Processing ptap_all                              1 shapes 0.0 sec.
+write edge ptap_all took  0.00 user, 0.01 sys, 0.00 elapsed, 253336.0 kbytes
+Processing ptap                                  1 shapes 0.0 sec.
+write edge ptap took  0.00 user, 0.00 sys, 0.00 elapsed, 253468.0 kbytes
+Processing ply                                  12 shapes 0.0 sec.
+write edge ply took  0.00 user, 0.00 sys, 0.00 elapsed, 253792.0 kbytes
+write edge RFSYMBOL took  0.00 user, 0.00 sys, 0.00 elapsed, 253924.0 kbytes
+Processing RFSYMBOL                              0 shapes 0.0 sec.
+Processing wel                                   1 shapes 0.0 sec.
+write edge wel took  0.00 user, 0.00 sys, 0.00 elapsed, 254248.0 kbytes
+WARNING (LBCLV-5576): Ignoring duplicate layer-generation request of RFSYMBOL (id 22)
+
+Processing RFSYMBOL                              0 shapes 0.0 sec.
+sort edges took  0.08 user, 0.21 sys, 2.00 elapsed, 1812.0 kbytes
+sort edges and labels took  0.16 user, 0.28 sys, 2.00 elapsed, 254248.0 kbytes
+
+	vdbToRcx System Usage:
+	Elapsed:     3 seconds.
+	CPU:         0.2 seconds
+	Memory      62 Meg
+GOALIE2DIR=/usr/local/cadence6/EXT15-20-000/tools/extraction/bin/64bit/
+export GOALIE2DIR
+geom NG_HS_MOS_1 nsd - NG_HS_MOS_1,10,i,1
+geom PG_HS_MOS_2 psd - PG_HS_MOS_2,10,i,1
+
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Ensure vias do not extend beyond routing
+#==========================================================#
+
+geom -V polycon ME1 ply - polycon,111,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V nsdcon ME1 nsd - nsdcon,111,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V psdcon ME1 psd - psdcon,111,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V pwCon ME1 ptap - pwCon,111,i,2
+geom took  0.00 user, 0.01 sys, 1.00 elapsed, 2128.0 kbytes
+geom -V pwCon_all ME1 ptap_all - pwCon_all,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2124.0 kbytes
+geom -V nwCon ME1 ntap - nwCon,111,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V VI1 ME1 ME2 - VI1,111,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V PSUB ptap - PSUB_ptap_ovia,11,i,1
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2132.0 kbytes
+geom -V wel ntap - wel_ntap_ovia,11,i,1
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V PSUB_P ptap_all - PSUB_P_ptap_all_ovia,11,i,1
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2128.0 kbytes
+geom -V PWELL PSUB - PWELL_PSUB_ovia,11,i,1
+
+geom took  0.00 user, 0.01 sys, 1.00 elapsed, 2124.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs
+export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData NG_HS_MOS_1 meter
+flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 7712.0 kbytes
+flattenTransistorData PG_HS_MOS_2 meter
+flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 8944.0 kbytes
+flattenLayers -m ME2 ME1 ply nsd psd PSUB wel polycon nsdcon psdcon pwCon \
+	ptap pwCon_all ptap_all nwCon ntap VI1 PSUB_ptap_ovia wel_ntap_ovia \
+	PSUB_P_ptap_all_ovia PSUB_P PWELL_PSUB_ovia PWELL
+flattub took  0.06 user, 0.13 sys, 2.00 elapsed, 2760.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+CAP_GROUND=`findCapGround -g GND NET`
+findCapGround -g GND NET
+echo "CAP_GROUND=" ${CAP_GROUND}
+CAP_GROUND= 2
+export CAP_GROUND
+reconnect -float floatlvsnetsfile -tf NG_HS_MOS_1,PG_HS_MOS_2 -probe \
+	m1_textt:ME1:m1_textt_fvia
+geom NG_HS_MOS_1,PG_HS_MOS_2 - qrcgate,1,i,1
+
+#==========================================================#
+# Generate layer map file for resistance extraction
+#==========================================================#
+
+cat <<ENDCAT> p2elayermapfile
+me2 p_rME2,np_rME2
+me1 p_rME1,np_rME1
+ply p_rply,np_rply
+ENDCAT
+iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
+mv power_list_nums power_list_nums_orig
+cp power_list_nums2 power_list_nums 
+
+#==========================================================#
+# Segregate interconnect into resistive and non-resistive
+#==========================================================#
+
+selectNetsByNumber power_list_nums ME1 p_rME1 np_rME1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1568.0 kbytes
+selectNetsByNumber power_list_nums ME2 p_rME2 np_rME2
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums PSUB p_rPSUB np_rPSUB
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums PSUB_P p_rPSUB_P np_rPSUB_P
+epick took  0.00 user, 0.01 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums PWELL p_rPWELL np_rPWELL
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums nsd p_rnsd np_rnsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums ntap p_rntap np_rntap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums ply p_rply np_rply
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums psd p_rpsd np_rpsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1568.0 kbytes
+selectNetsByNumber power_list_nums ptap p_rptap np_rptap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums ptap_all p_rptap_all np_rptap_all
+epick took  0.00 user, 0.00 sys, 1.00 elapsed, 1564.0 kbytes
+selectNetsByNumber power_list_nums wel p_rwel np_rwel
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1568.0 kbytes
+selectNetsByNumber power_list_nums VI1 p_rVI1 np_rVI1
+epick took  0.00 user, 0.01 sys, 0.00 elapsed, 1568.0 kbytes
+selectNetsByNumber power_list_nums polycon p_rpolycon np_rpolycon
+epick took  0.00 user, 0.01 sys, 0.00 elapsed, 1568.0 kbytes
+mv power_list_nums_orig power_list_nums
+
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt np_rVI1 rVI1 - np_rME1 np_rME2
+mergevia took 0.00 user, 0.02 sys, 0.00 elapsed, 4764.0 kbytes
+mergevia -V -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt np_rpolycon rpolycon - np_rME1 np_rply
+
+mergevia took 0.01 user, 0.02 sys, 0.00 elapsed, 4764.0 kbytes
+#==========================================================#
+# Create resistive interconnect MOSFET terminals
+#==========================================================#
+
+createMosfetGateTerminal NG_HS_MOS_1 np_rply NG_HS_MOS_1_mgvia
+geom took  0.00 user, 0.01 sys, 1.00 elapsed, 2396.0 kbytes
+connect took  0.01 user, 0.01 sys, 0.00 elapsed, 72184.0 kbytes
+write edges took  0.02 user, 0.03 sys, 0.00 elapsed, 1540.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 1604.0 kbytes
+createMosfetGateTerminal PG_HS_MOS_2 np_rply PG_HS_MOS_2_mgvia
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2392.0 kbytes
+connect took  0.00 user, 0.01 sys, 0.00 elapsed, 72188.0 kbytes
+write edges took  0.03 user, 0.02 sys, 0.00 elapsed, 1540.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 1604.0 kbytes
+#==========================================================#
+# Assign net numbers to cut regions
+#==========================================================#
+
+connect -V -relocate NET np_rPSUB:np_rPSUB.conn np_rwel:np_rwel.conn \
+	np_rPSUB_P:np_rPSUB_P.conn np_rPWELL:np_rPWELL.conn \
+	np_rnsd:np_rnsd.conn np_rpsd:np_rpsd.conn np_rntap:np_rntap.conn \
+	np_rptap:np_rptap.conn np_rptap_all:np_rptap_all.conn rVI1 rpolycon \
+	NG_HS_MOS_1_mgvia PG_HS_MOS_2_mgvia - PSUB_P_ptap_all_ovia,3,9 \
+	PSUB_ptap_ovia,1,8 PWELL_PSUB_ovia,4,1 wel_ntap_ovia,2,7 -
+
+connect took  0.01 user, 0.03 sys, 1.00 elapsed, 72568.0 kbytes
+#==========================================================#
+# Assign net numbers to resistor vias
+#==========================================================#
+
+geom -V nsdcon np_rnsd.conn - tmp_rnsdcon,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2396.0 kbytes
+mergevia -V -i -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt tmp_rnsdcon rnsdcon - np_rME1 np_rnsd
+mergevia took 0.05 user, 0.03 sys, 0.00 elapsed, 4764.0 kbytes
+/bin/rm -f tmp_rnsdcon
+geom -V nwCon np_rntap.conn - tmp_rnwCon,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2396.0 kbytes
+mergevia -V -i -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt tmp_rnwCon rnwCon - np_rME1 np_rntap
+mergevia took 0.05 user, 0.04 sys, 1.00 elapsed, 4764.0 kbytes
+/bin/rm -f tmp_rnwCon
+geom -V psdcon np_rpsd.conn - tmp_rpsdcon,11,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2400.0 kbytes
+mergevia -V -i -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt tmp_rpsdcon rpsdcon - np_rME1 np_rpsd
+mergevia took 0.09 user, 0.03 sys, 1.00 elapsed, 4764.0 kbytes
+/bin/rm -f tmp_rpsdcon
+geom -V pwCon np_rptap.conn - tmp_rpwCon,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2392.0 kbytes
+mergevia -V -i -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt tmp_rpwCon rpwCon - np_rME1 np_rptap
+mergevia took 0.06 user, 0.04 sys, 0.00 elapsed, 4764.0 kbytes
+/bin/rm -f tmp_rpwCon
+geom -V pwCon_all np_rptap_all.conn - tmp_rpwCon_all,11,i,2
+geom took  0.00 user, 0.00 sys, 1.00 elapsed, 2400.0 kbytes
+mergevia -V -i -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-cnt tmp_rpwCon_all rpwCon_all - np_rME1 np_rptap_all
+mergevia took 0.08 user, 0.05 sys, 0.00 elapsed, 4760.0 kbytes
+/bin/rm -f tmp_rpwCon_all
+
+#==========================================================#
+# Assign net numbers to nonresistive layers
+#==========================================================#
+
+epick -V -reo -e rnsdcon -e rnwCon -e rpsdcon -e rpwCon -e rpwCon_all \
+	np_rnsd.conn tmp_nsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1568.0 kbytes
+epick -V -reo -e tmp_nsd -c np_rnsd.conn tmp1_nsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+geom -V tmp1_nsd np_rnsd - tmp1_nsd,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2132.0 kbytes
+geom -V tmp_nsd,tmp1_nsd - np_rnsd,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2396.0 kbytes
+/bin/rm -f tmp_nsd tmp1_nsd
+epick -V -reo -e rnsdcon -e rnwCon -e rpsdcon -e rpwCon -e rpwCon_all \
+	np_rpsd.conn tmp_psd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+epick -V -reo -e tmp_psd -c np_rpsd.conn tmp1_psd
+epick took  0.00 user, 0.00 sys, 1.00 elapsed, 1564.0 kbytes
+geom -V tmp1_psd np_rpsd - tmp1_psd,11,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2132.0 kbytes
+geom -V tmp_psd,tmp1_psd - np_rpsd,1,i,1
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2396.0 kbytes
+/bin/rm -f tmp_psd tmp1_psd
+epick -V -reo -e rnsdcon -e rnwCon -e rpsdcon -e rpwCon -e rpwCon_all \
+	np_rPSUB.conn tmp_PSUB
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+epick -V -reo -e tmp_PSUB -c np_rPSUB.conn tmp1_PSUB
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1568.0 kbytes
+geom -V tmp1_PSUB np_rPSUB - tmp1_PSUB,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2132.0 kbytes
+geom -V tmp_PSUB,tmp1_PSUB - np_rPSUB,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2396.0 kbytes
+/bin/rm -f tmp_PSUB tmp1_PSUB
+epick -V -reo -e rnsdcon -e rnwCon -e rpsdcon -e rpwCon -e rpwCon_all \
+	np_rwel.conn tmp_wel
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+epick -V -reo -e tmp_wel -c np_rwel.conn tmp1_wel
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 1564.0 kbytes
+geom -V tmp1_wel np_rwel - tmp1_wel,11,i,2
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 2132.0 kbytes
+geom -V tmp_wel,tmp1_wel - np_rwel,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2396.0 kbytes
+/bin/rm -f tmp_wel tmp1_wel
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F m1_textt L1T0
+
+INFO (FLTLBL-89003): exec labsort -V L1T0
+
+#==========================================================#
+# Parasitic R extraction with default precision
+#==========================================================#
+
+rex -V -m -pd -I'#' -tech \
+	/usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-LOGIC_MIXED_MODE13-1P8M2T-FSG_TOP_METAL8K_L130E_ASSURA-LPE-1.3-P4 \
+	-map p2elayermapfile -wee p2elayermapfile -N NET -rP res.mod \
+	np_rply::ply_cut \
+	np_rME1::me1_cut::s,w:0.16,0.16,0.0205:0.16,0.32,-0.012:0.16,0.48,-0.016:0.16,0.64,-0.016:0.32,0.16,0.02:0.32,0.32,0.0005:0.32,0.48,0.0005:0.32,0.64,0.0005:0.48,0.16,0.0165:0.48,0.32,0.0005:0.48,0.48,0.0005:0.48,0.64,0.0005:0.64,0.16,0.0165:0.64,0.32,0.0005:0.64,0.48,0.0005:0.64,0.64,0.0005 \
+	np_rME2::me2_cut::s,w:0.2,0.2,0.0304:0.2,0.4,0.0208:0.2,0.6,0.02:0.2,0.8,0.02:0.4,0.2,0.025:0.4,0.4,0.0225:0.4,0.6,0.026:0.4,0.8,0.022:0.6,0.2,0.026:0.6,0.4,0.0215:0.6,0.6,0.026:0.6,0.8,0.0205:0.8,0.2,0.025:0.8,0.4,0.021:0.8,0.6,0.025:0.8,0.8,0.0195 \
+	- rVI1,2,3,t rnsdcon,2,t rnwCon,2,t rpolycon,1,2,t rpsdcon,2,t \
+	rpwCon,2,t rpwCon_all,2 NG_HS_MOS_1_mgvia,1,z PG_HS_MOS_2_mgvia,1,z - \
+	L1T0,2,I
+
+ERROR (LBMISC-215052): cannot create np_rply: No such file or directory
+
+ERROR (REX-163152): /usr/local/cadence6/EXT15-20-000/tools/extraction/bin/64bit//geom failed with status 255
+
+ERROR (LBRCXM-609): Bad return status from RCX run. 0xff00
+
+INFO (LBRCXM-709): *****  Quantus QRC terminated abnormally  *****
+
+
