@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Wed May  4 12:13:30 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Wed May  4 19:30:17 2022
 
 
 Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Wed May  4 12:13:30 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Wed May  4 19:30:17 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -38,7 +38,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Wed May  4 12:13:31 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Wed May  4 19:30:17 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -96,14 +96,14 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
-run on dep56130nix at Wed May  4 12:13:36 2022
+run on dep56130nix at Wed May  4 19:30:21 2022
 Reading schematic network
  running dfIIToVldb -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.vlr /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Wed May  4 12:13:36 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Wed May  4 19:30:21 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -236,14 +236,14 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.02m  mem=105.28mb
+cpu=0.00m  wall=0.02m  mem=105.27mb
 
 Finished /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/nvn
 
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.15  elap: 10  pf: 0  in: 0  out: 200  virt: 103M  phys: 584M
+cpu: 0.09  elap: 7  pf: 0  in: 0  out: 200  virt: 103M  phys: 589M
 
 Running the Task Processor, 1 cells, 5234 steps...
 
@@ -2304,12 +2304,12 @@ Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_4)
 Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_4)
 
 Finished running rules. Task processor time in main process:
-cpu: 0.43  elap: 1  pf: 0  in: 0  out: 1216  virt: 152M  phys: 818M
+cpu: 0.34  elap: 1  pf: 0  in: 0  out: 1216  virt: 152M  phys: 819M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6480  virt: 157M  phys: 818M
+cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6480  virt: 157M  phys: 819M
 
 
 *****  aveng terminated normally  *****
@@ -2325,7 +2325,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Wed May  4 12:13:43 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Wed May  4 19:30:27 2022
 
 
    Creating Error Database 'dff'...
@@ -2533,7 +2533,7 @@ Total  errors:                                               0            0
 
    Writing Report into /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.err ...
 
-avrpt cpu sec:    0.08  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.07  elapsed:     1  virtual:    93M
 
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
 
@@ -2557,18 +2557,18 @@ Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avnx on Wed May  4 12:13:45 2022
+run on dep56130nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avnx on Wed May  4 19:30:29 2022
 
 avnx started...
-cpu: 0.11  elap: 0  pf: 0  in: 0  out: 16  virt: 579M  phys: 864M
+cpu: 0.09  elap: 1  pf: 0  in: 0  out: 16  virt: 579M  phys: 862M
 
-Run time =  0.00 seconds
-CPU time =  0.16 seconds
+Run time =  1.00 seconds
+CPU time =  0.11 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.04  elap: 3  pf: 0  in: 0  out: 13040  virt: 509M  phys: 864M
+cpu: 0.03  elap: 6  pf: 0  in: 0  out: 13048  virt: 509M  phys: 862M
 ***** avnx terminated normally ***** 
 
 
@@ -2579,7 +2579,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
-run on dep56130nix at Wed May  4 12:13:48 2022
+run on dep56130nix at Wed May  4 19:30:36 2022
 Reading schematic network
 Reading layout network
  inputting network ./Project_Lib1/dff.ldb
@@ -2615,7 +2615,7 @@ Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/ercChk /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
 
@@ -2657,7 +2657,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Wed May  4 12:13:51 2022
+Run ended: Wed May  4 19:30:38 2022
 
 *****  Assura terminated normally  *****
 

@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 11/09/2015 17:30 (sjfnl634) $
 \o Sub version:		sub-version  s001 
-\o Arguments:		-unmapped -mpssession virtuoso27297 -mpshost dep56130nix 
+\o Arguments:		-unmapped -mpssession virtuoso23476 -mpshost dep56130nix 
 \o Working Directory:	dep56130nix:/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -12,30 +12,15 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(165 19 1438 871))
-\a cdsLibManager->libListBox->value = "Project_Lib1"
-\a cdsLibManager->libLineEdit->value = "Project_Lib1"
-\a cdsLibManager->cellListBox->value = "dff"
-\a nrListItemAction(cdsLibManager->cellListBox 5 0)
-\o MPS request: edit design
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(408 164 1438 871))
 \a cdsLibManager->libListBox->value = "Project_Lib1"
 \a cdsLibManager->libLineEdit->value = "Project_Lib1"
 \a cdsLibManager->cellListBox->value = "dff"
 \a cdsLibManager->cellLineEdit->value = "dff"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
@@ -54,6 +39,8 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")

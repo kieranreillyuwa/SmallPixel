@@ -2,16 +2,8 @@
 pwd
 #+1650882583
 exit
-#+1651470281
-cd ..
-#+1651470285
-git add .
-#+1651470337
-git commit -a -m "backup"
 #+1651470355
 git push'
-#+1651470357
-git push
 #+1651470371
 sudo shutdown now
 #+1651565556
@@ -20,9 +12,19 @@ cls
 cls AdminTool
 #+1651570017
 clsAdmintool
-#+1651570099
-source setup617.csh
 #+1651572307
 clsAdminTools
 #+1651572311
 clsAdminTool
+#+1651637522
+source setup617.csh
+#+1651641090
+cd ..
+#+1651641106
+git add .
+#+1651641128
+git commit
+#+1651641174
+git commit -a -m "backup"
+#+1651641240
+git push
