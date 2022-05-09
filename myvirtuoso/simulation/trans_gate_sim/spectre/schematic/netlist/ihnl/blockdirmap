@@ -1,0 +1,5 @@
+CADENCE IHNL11143
+
+Project_Lib1 inv_21 schematic cds0
+Project_Lib1 trans_gate schematic cds1
+Project_Lib1_sim trans_gate_sim schematic cds2

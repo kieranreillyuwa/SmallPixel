@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "binary_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/binary_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1_sim/binary_sim/schematic" "binary_sim" )
+( "Project_Lib1/inv/schematic" "inv" )
+( "myLib/NAND/schematic" "NAND" )
+( "Project_Lib1/binary/schematic" "binary" )
+ )
+( "binary_sim" "ihnl/cds3/map" )
+( "binary" "ihnl/cds2/map" )
+( "inv" "ihnl/cds1/map" )
+( "NAND" "ihnl/cds0/map" )
+ )

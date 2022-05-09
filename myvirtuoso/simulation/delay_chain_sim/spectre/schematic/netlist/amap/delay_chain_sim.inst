@@ -1,6 +1,6 @@
 HEADER
 "PSFversion" "1.00"
-"I2n" "delay_chain"
+"I3n" "delay_chain2"
 "V1n" "analogLib_vdc_spectre"
 "V0n" "analogLib_vpulse_spectre"
 "C0n" "analogLib_cap_spectre"

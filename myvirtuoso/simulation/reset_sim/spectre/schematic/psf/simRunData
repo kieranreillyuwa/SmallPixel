@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Project_Lib1_sim\" \"reset_sim\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "May  9 18:28:15 2022"
+"title" ""
+"analysisList" "()"
+END

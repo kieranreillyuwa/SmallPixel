@@ -1,0 +1,10 @@
+    PM1 (NAND IN2 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (NAND IN1 VDD VDD) p_12_hsl130e w=2u l=120.00n as=6.8e-13 \
+        ad=6.8e-13 ps=4.68u pd=4.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM1 (net19 IN2 GND GND) n_12_hsl130e w=1u l=120.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM2 (NAND IN1 net19 GND) n_12_hsl130e w=1u l=120.0n as=3.4e-13 \
+        ad=3.4e-13 ps=2.68u pd=2.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends NAND
+// End of subcircuit definition.

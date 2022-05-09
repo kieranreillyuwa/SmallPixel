@@ -13,8 +13,10 @@
  )
 ( model
 ( "Project_Lib1_sim/delay_chain_sim/schematic" "delay_chain_sim" )
-( "Project_Lib1/delay_chain/schematic" "delay_chain" )
+( "Project_Lib1/delay_chain2/schematic" "delay_chain2" )
+( "Project_Lib1/inv/schematic" "inv" )
  )
 ( "delay_chain_sim" "ihnl/cds1/map" )
-( "delay_chain" "ihnl/cds0/map" )
+( "delay_chain2" "ihnl/cds3/map" )
+( "inv" "ihnl/cds2/map" )
  )

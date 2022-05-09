@@ -2,8 +2,8 @@
 // Library name: Project_Lib1_sim
 // Cell name: delay_chain_sim
 // View name: schematic
-I2 (0 in out net02) delay_chain
+I3 (0 delay_in delay_out net02) delay_chain2
 V1 (net02 0) vsource dc=1.2 type=dc
-V0 (in 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
-        fall=10p width=4n
-C0 (out 0) capacitor c=100.0f
+V0 (delay_in 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n \
+        rise=10p fall=10p width=4n
+C0 (delay_out 0) capacitor c=100.0f

@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+Project_Lib1/inv_21/schematic inv_21
+Project_Lib1/trans_gate/schematic trans_gate
+Project_Lib1_sim/trans_gate_sim/schematic trans_gate_sim
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+r r
+$endparam

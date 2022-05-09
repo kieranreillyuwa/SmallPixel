@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Project_Lib1/comparator/schematic comparator
+Project_Lib1_sim/comparator_sim/schematic comparator_sim
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,6 @@
+    PM1 (VN ASR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (VN GR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 ad=1.02e-12 \
+        ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends reset
+// End of subcircuit definition.

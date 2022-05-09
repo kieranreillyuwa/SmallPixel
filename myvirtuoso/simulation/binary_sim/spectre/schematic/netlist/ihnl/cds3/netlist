@@ -1,0 +1,11 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: binary_sim
+// View name: schematic
+I0 (net1 net1 net1 net1 net1 net1 net7 net5 0 net06) binary
+C0 (net5 0) capacitor c=50p
+V2 (net06 0) vsource type=pulse val0=1.2 val1=1.2 period=200u
+V1 (net1 0) vsource type=pulse val0=0 val1=1.2 period=100u rise=10p \
+        fall=10p width=50u
+V0 (net7 0) vsource type=pulse val0=0 val1=1.2 period=10u rise=10p \
+        fall=10p width=300n

@@ -1,0 +1,7 @@
+    PM0 (IN net15 OUT VDD) p_12_hsl130e w=160.0n l=120.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (IN CTRL OUT GND) n_12_hsl130e w=160.0n l=120.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    I1 (GND CTRL net15 VDD) inv_21
+ends trans_gate
+// End of subcircuit definition.

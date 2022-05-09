@@ -1,0 +1,10 @@
+    I13 (net43 net44 GND Q6 VDD net44 nRST) dff
+    I12 (net44 net46 GND Q7 VDD net46 nRST) dff
+    I11 (net41 net43 GND Q5 VDD net43 nRST) dff
+    I10 (net39 net41 GND Q4 VDD net41 nRST) dff
+    I9 (net36 net37 GND Q2 VDD net37 nRST) dff
+    I8 (net37 net39 GND Q3 VDD net39 nRST) dff
+    I1 (net34 net36 GND Q1 VDD net36 nRST) dff
+    I0 (IN net34 GND Q0 VDD net34 nRST) dff
+ends binary_counter
+// End of subcircuit definition.

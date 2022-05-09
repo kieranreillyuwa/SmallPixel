@@ -1,0 +1,11 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: trans_gate_sim
+// View name: schematic
+I0 (CTRL 0 IN OUT net2) trans_gate
+V0 (net2 0) vsource dc=1.2V   type=dc
+V2 (IN 0) vsource type=pulse val0=0 val1=1.2 period=100n delay=0 rise=10p \
+        fall=10p width=50n
+V1 (CTRL 0) vsource type=pulse val0=0 val1=1.2 period=200n delay=0 \
+        rise=10p fall=10p width=100n
+C0 (OUT 0) capacitor c=1f

@@ -1,0 +1,13 @@
+    I7 (GND net23 A5 net011 VDD) NAND
+    I8 (GND net010 A6 net08 VDD) NAND
+    I9 (GND net07 A7 BC VDD) NAND
+    I3 (GND A1 A2 net20 VDD) NAND
+    I2 (GND net016 A3 net17 VDD) NAND
+    I1 (GND net014 A4 net18 VDD) NAND
+    I14 (GND net08 net07 VDD) inv
+    I13 (GND net011 net010 VDD) inv
+    I12 (GND net18 net23 VDD) inv
+    I10 (GND net20 net016 VDD) inv
+    I11 (GND net17 net014 VDD) inv
+ends binary
+// End of subcircuit definition.

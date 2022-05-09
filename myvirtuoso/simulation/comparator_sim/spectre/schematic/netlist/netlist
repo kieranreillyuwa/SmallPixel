@@ -1,0 +1,21 @@
+
+// Library name: Project_Lib1
+// Cell name: comparator
+// View name: schematic
+subckt comparator GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=640.0n l=130.0n as=2.176e-13 \
+        ad=2.176e-13 ps=1.96u pd=1.96u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends comparator
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: comparator_sim
+// View name: schematic
+I3 (0 Vn comparator_out net02) comparator
+V1 (net02 0) vsource dc=1.2 type=dc
+V0 (Vn 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C0 (comparator_out 0) capacitor c=100.0f

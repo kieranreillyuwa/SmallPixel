@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Project_Lib1/reset/schematic reset
+Project_Lib1_sim/reset_sim/schematic reset_sim
+Project_Lib1/photodiode/schematic photodiode
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

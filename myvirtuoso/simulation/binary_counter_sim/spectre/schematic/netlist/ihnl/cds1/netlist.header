@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: binary_counter
+// View name: schematic
+subckt binary_counter GND IN Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 VDD nRST

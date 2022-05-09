@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"PM1n PM0n" "umc13mmrf_P_12_HSL130E_spectre"
+"NM1n NM2n" "umc13mmrf_N_12_HSL130E_spectre"
+"GNDv" ":1v"
+"IN1v" ":2v"
+"IN2v" ":3v"
+"NANDv" ":4v"
+"VDDv" ":5v"

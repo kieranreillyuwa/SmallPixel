@@ -1,0 +1,252 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "15.1.0.345.isr2"
+"date" "5:37:11 PM, Mon May 9, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"mimcaps_mml130e" "subckt" (
+""
+""
+)
+"l_sqsk_rf" "subckt" (
+""
+""
+)
+"momcaps_sy_mm" "subckt" (
+""
+""
+)
+"n_bpw_12_rf" "subckt" (
+""
+""
+)
+"mimcaps_15f_rf" "subckt" (
+""
+""
+)
+"rnnd_mml130e" "subckt" (
+""
+""
+)
+"p_33_rf" "subckt" (
+""
+""
+)
+"mimcaps_20f_rf" "subckt" (
+""
+""
+)
+"n_bpw_12_hsl130e_ig" "subckt" (
+""
+""
+)
+"varmis_12_rf" "subckt" (
+""
+""
+)
+"l_nwcr20k_rfvil" "subckt" (
+""
+""
+)
+"rsnd_mml130e" "subckt" (
+""
+""
+)
+"mimcaps_15f_mml130e" "subckt" (
+""
+""
+)
+"momcaps_symesh_mm" "subckt" (
+""
+""
+)
+"diop_esd_rf" "subckt" (
+""
+""
+)
+"l_nwsy20k_rfvil" "subckt" (
+""
+""
+)
+"n_bpw_33_rf" "subckt" (
+""
+""
+)
+"mimcaps_rf" "subckt" (
+""
+""
+)
+"pnp_nvl20_rf" "subckt" (
+""
+""
+)
+"binary" "subckt" (
+""
+"A1 A2 A3 A4 A5 A6 A7 BC GND VDD"
+)
+"rnppo_mml130e" "subckt" (
+""
+""
+)
+"momcaps_array_vp4_rf" "subckt" (
+""
+""
+)
+"n_33_rf" "subckt" (
+""
+""
+)
+"momcaps_asy_mm" "subckt" (
+""
+""
+)
+"momcaps_array_vp3_rf" "subckt" (
+""
+""
+)
+"vardiop_rf" "subckt" (
+""
+""
+)
+"p_12_hsl130e_ig" "subckt" (
+""
+""
+)
+"npn_sv50x50_rf" "subckt" (
+""
+""
+)
+"pad_rf" "subckt" (
+""
+""
+)
+"npn_svl20_rf" "subckt" (
+""
+""
+)
+"l_sy20kct_rfvil" "subckt" (
+""
+""
+)
+"l_nwsy20kct_rfvil" "subckt" (
+""
+""
+)
+"pnp_nv50x50_rf" "subckt" (
+""
+""
+)
+"n_12_rf" "subckt" (
+""
+""
+)
+"rnppo_rf" "subckt" (
+""
+""
+)
+"rsppo_mml130e" "subckt" (
+""
+""
+)
+"inv" "subckt" (
+""
+"GND IN OUT VDD"
+)
+"p_12_rf" "subckt" (
+""
+""
+)
+"l_nwsqsk_rfvil" "subckt" (
+""
+""
+)
+"momcaps_asmesh_mm" "subckt" (
+""
+""
+)
+"mimcaps_20f_mml130e" "subckt" (
+""
+""
+)
+"rnnpo_rf" "subckt" (
+""
+""
+)
+"diodn_esd_rf" "subckt" (
+""
+""
+)
+"n_12_hsl130e_ig" "subckt" (
+""
+""
+)
+"rspd_mml130e" "subckt" (
+""
+""
+)
+"l_cr20k_rf" "subckt" (
+""
+""
+)
+"NAND" "subckt" (
+""
+"GND IN1 IN2 NAND VDD"
+)
+"rsnpo_mml130e" "subckt" (
+""
+""
+)
+"l_sqsk_rfvil" "subckt" (
+""
+""
+)
+"l_sy20k_rfvil" "subckt" (
+""
+""
+)
+"momcaps_asy_rf" "subckt" (
+""
+""
+)
+"momcaps_rf" "subckt" (
+""
+""
+)
+"npn_nv50x50_rf" "subckt" (
+""
+""
+)
+"varmis_33_rf" "subckt" (
+""
+""
+)
+"rnhr_rf" "subckt" (
+""
+""
+)
+"npn_nvl20_rf" "subckt" (
+""
+""
+)
+"l_cr20k_rfvil" "subckt" (
+""
+""
+)
+"rnhr1000_mml130e" "subckt" (
+""
+""
+)
+END

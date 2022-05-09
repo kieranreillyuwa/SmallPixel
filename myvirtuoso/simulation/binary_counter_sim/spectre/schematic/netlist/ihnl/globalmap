@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+Project_Lib1/binary_counter/schematic binary_counter
+Project_Lib1/dff/schematic dff
+Project_Lib1_sim/binary_counter_sim/schematic binary_counter_sim
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "binary_counter_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/binary_counter_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/binary_counter/schematic" "binary_counter" )
+( "Project_Lib1/dff/schematic" "dff" )
+( "Project_Lib1_sim/binary_counter_sim/schematic" "binary_counter_sim" )
+ )
+( "dff" "ihnl/cds0/map" )
+( "binary_counter_sim" "ihnl/cds2/map" )
+( "binary_counter" "ihnl/cds1/map" )
+ )

@@ -1,0 +1,35 @@
+
+// Library name: Project_Lib1
+// Cell name: inv_21
+// View name: schematic
+subckt inv_21 GND IN OUT VDD
+    NM0 (OUT IN GND GND) n_12_hsl130e w=160.0n l=130.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (OUT IN VDD VDD) p_12_hsl130e w=320.0n l=130.0n as=1.088e-13 \
+        ad=1.088e-13 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 \
+        mf=(1)*(1)
+ends inv_21
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: trans_gate
+// View name: schematic
+subckt trans_gate CTRL GND IN OUT VDD
+    PM0 (IN net15 OUT VDD) p_12_hsl130e w=160.0n l=120.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    NM0 (IN CTRL OUT GND) n_12_hsl130e w=160.0n l=120.0n as=9.44e-14 \
+        ad=9.44e-14 ps=1.32u pd=1.32u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    I1 (GND CTRL net15 VDD) inv_21
+ends trans_gate
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: trans_gate_sim
+// View name: schematic
+I0 (CTRL 0 IN OUT net2) trans_gate
+V0 (net2 0) vsource dc=1.2V   type=dc
+V2 (IN 0) vsource type=pulse val0=0 val1=1.2 period=100n delay=0 rise=10p \
+        fall=10p width=50n
+V1 (CTRL 0) vsource type=pulse val0=0 val1=1.2 period=200n delay=0 \
+        rise=10p fall=10p width=100n
+C0 (OUT 0) capacitor c=1f

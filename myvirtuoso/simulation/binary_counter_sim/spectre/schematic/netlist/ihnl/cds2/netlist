@@ -1,0 +1,18 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: binary_counter_sim
+// View name: schematic
+I0 (0 IN Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 net2 nRST) binary_counter
+V1 (IN 0) vsource type=pulse val0=0 val1=1.2 period=1n delay=0 rise=10p \
+        fall=10p width=100.0p
+V0 (nRST 0) vsource type=pulse val0=0 val1=1.2 period=270n delay=20n \
+        rise=10p fall=10p width=250n
+V2 (net2 0) vsource dc=1.2 type=dc
+C16 (Q0 0) capacitor c=1.0f
+C15 (Q1 0) capacitor c=1.0f
+C14 (Q2 0) capacitor c=1.0f
+C13 (Q3 0) capacitor c=1.0f
+C12 (Q4 0) capacitor c=1.0f
+C11 (Q5 0) capacitor c=1.0f
+C10 (Q6 0) capacitor c=1.0f
+C0 (Q7 0) capacitor c=1.0f

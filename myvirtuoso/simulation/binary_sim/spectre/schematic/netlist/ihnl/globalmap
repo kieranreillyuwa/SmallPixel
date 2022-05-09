@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+myLib/NAND/schematic NAND
+Project_Lib1/inv/schematic inv
+Project_Lib1_sim/binary_sim/schematic binary_sim
+Project_Lib1/binary/schematic binary
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

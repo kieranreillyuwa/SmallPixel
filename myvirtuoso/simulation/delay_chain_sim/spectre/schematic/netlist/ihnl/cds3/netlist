@@ -1,0 +1,22 @@
+    I10 (GND net16 net15 VDD) inv
+    I9 (GND net17 net16 VDD) inv
+    I8 (GND net18 net17 VDD) inv
+    I7 (GND net2 net18 VDD) inv
+    I6 (GND net1 net2 VDD) inv
+    I5 (GND net4 net1 VDD) inv
+    I4 (GND net3 net4 VDD) inv
+    I3 (GND net6 net3 VDD) inv
+    I19 (GND net19 OUT VDD) inv
+    I2 (GND net5 net6 VDD) inv
+    I1 (GND net9 net5 VDD) inv
+    I18 (GND net7 net19 VDD) inv
+    I15 (GND net12 net11 VDD) inv
+    I17 (GND net8 net7 VDD) inv
+    I14 (GND net10 net12 VDD) inv
+    I13 (GND net14 net10 VDD) inv
+    I12 (GND net13 net14 VDD) inv
+    I0 (GND IN net9 VDD) inv
+    I16 (GND net11 net8 VDD) inv
+    I11 (GND net15 net13 VDD) inv
+ends delay_chain2
+// End of subcircuit definition.

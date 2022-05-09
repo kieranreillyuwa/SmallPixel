@@ -1,0 +1,10 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: reset_sim
+// View name: schematic
+I0 (net4 net3 net3 net6) reset
+C0 (net6 0) capacitor c=5p
+V2 (net4 0) vsource type=pulse val0=1.2 val1=0 period=20u rise=10p \
+        fall=10p width=10u
+V1 (net3 0) vsource type=pulse val0=1.2 val1=1.2
+I3 (net6 0) photodiode

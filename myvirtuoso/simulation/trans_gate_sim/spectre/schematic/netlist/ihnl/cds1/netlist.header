@@ -1,0 +1,5 @@
+
+// Library name: Project_Lib1
+// Cell name: trans_gate
+// View name: schematic
+subckt trans_gate CTRL GND IN OUT VDD

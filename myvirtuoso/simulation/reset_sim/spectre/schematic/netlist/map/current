@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "reset_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/reset_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/reset/schematic" "reset" )
+( "Project_Lib1_sim/reset_sim/schematic" "reset_sim" )
+( "Project_Lib1/photodiode/schematic" "photodiode" )
+ )
+( "photodiode" "ihnl/cds2/map" )
+( "reset_sim" "ihnl/cds1/map" )
+( "reset" "ihnl/cds0/map" )
+ )

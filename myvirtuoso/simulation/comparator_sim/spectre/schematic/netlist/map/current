@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "comparator_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/comparator_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/comparator/schematic" "comparator" )
+( "Project_Lib1_sim/comparator_sim/schematic" "comparator_sim" )
+ )
+( "comparator" "ihnl/cds0/map" )
+( "comparator_sim" "ihnl/cds1/map" )
+ )

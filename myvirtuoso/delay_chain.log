@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue Apr 26 17:09:44 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Mon May  9 15:03:05 2022
 
 
 Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/delay_chain.rsf -restart -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 26 17:09:44 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Mon May  9 15:03:05 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
@@ -49,7 +49,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.16  elap: 4  pf: 0  in: 0  out: 40  virt: 162M  phys: 805M
+cpu: 0.16  elap: 4  pf: 0  in: 0  out: 40  virt: 162M  phys: 812M
 
 Running the Task Processor, 1 cells, 3465 steps...
 
@@ -1297,17 +1297,17 @@ Executing: eLOGO_5_8Db = geomOr(drc(DIFF_LOGO eLOGO_5_8Db_CONT_DIFF_LOGO ((0 < e
 	   errorLayer(eLOGO_5_8Db "LOGO_5.8Db: Minimum DIFFUSION enclosure of CONT is 0.14, floating CONT is not allowed")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.09  elap: 0  pf: 0  in: 0  out: 768  virt: 191M  phys: 941M
+cpu: 0.10  elap: 0  pf: 0  in: 0  out: 768  virt: 189M  phys: 944M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.03  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1015M
+cpu: 0.03  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1018M
 
 Finished building the persistent database.
-cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6408  virt: 238M  phys: 1033M
+cpu: 0.03  elap: 2  pf: 0  in: 0  out: 6408  virt: 238M  phys: 1037M
 
 
 *****  aveng terminated normally  *****
@@ -1323,7 +1323,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 26 17:09:50 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Mon May  9 15:03:11 2022
 
 
    Creating Error Database 'delay_chain'...
@@ -1562,7 +1562,7 @@ Total  errors:                                               0            0
 
    Writing Report into ./delay_chain.err ...
 
-avrpt cpu sec:    0.07  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.06  elapsed:     1  virtual:    93M
 
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
 
@@ -1575,7 +1575,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Tue Apr 26 17:09:51 2022
+Run ended: Mon May  9 15:03:12 2022
 
 *****  Assura terminated normally  *****
 

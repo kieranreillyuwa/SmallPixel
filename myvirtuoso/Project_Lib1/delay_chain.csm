@@ -1,5 +1,6 @@
 Schematic                         | Layout                         | Status
 -------------------------------------------------------------------------------
-delay_chain schematic Project_Lib1| delay_chain layout Project_Lib1| matched
+delay_chain schematic Project_Lib1| delay_chain layout Project_Lib1| errors  *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell with errors

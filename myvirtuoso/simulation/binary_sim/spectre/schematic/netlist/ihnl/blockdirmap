@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+myLib NAND schematic cds0
+Project_Lib1 inv schematic cds1
+Project_Lib1 binary schematic cds2
+Project_Lib1_sim binary_sim schematic cds3

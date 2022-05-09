@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  9 15:39:01 2022
+// Design library name: Project_Lib1_sim
+// Design cell name: binary_counter_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0

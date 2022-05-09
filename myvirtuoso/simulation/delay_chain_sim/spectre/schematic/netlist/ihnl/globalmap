@@ -1,6 +1,8 @@
 CADENCE IHNL11140
 $model
+Project_Lib1/inv/schematic inv
 Project_Lib1_sim/delay_chain_sim/schematic delay_chain_sim
+Project_Lib1/delay_chain2/schematic delay_chain2
 Project_Lib1/delay_chain/schematic delay_chain
 $endmodel
 $net

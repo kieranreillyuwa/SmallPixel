@@ -1,0 +1,29 @@
+
+// Library name: Project_Lib1
+// Cell name: reset
+// View name: schematic
+subckt reset ASR GR VDD VN
+    PM1 (VN ASR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 \
+        ad=1.02e-12 ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+    PM0 (VN GR VDD VDD) p_12_hsl130e w=3u l=360.0n as=1.02e-12 ad=1.02e-12 \
+        ps=6.68u pd=6.68u m=(1)*(1) nf=1 mis_flag=1 mf=(1)*(1)
+ends reset
+// End of subcircuit definition.
+
+// Library name: Project_Lib1
+// Cell name: photodiode
+// View name: schematic
+subckt photodiode N P
+    D0 (P N) dionw_l130e area=1e-10 perim=(40u) m=1
+ends photodiode
+// End of subcircuit definition.
+
+// Library name: Project_Lib1_sim
+// Cell name: reset_sim
+// View name: schematic
+I0 (net4 net3 net3 net6) reset
+C0 (net6 0) capacitor c=5p
+V2 (net4 0) vsource type=pulse val0=1.2 val1=0 period=20u rise=10p \
+        fall=10p width=10u
+V1 (net3 0) vsource type=pulse val0=1.2 val1=1.2
+I3 (net6 0) photodiode

@@ -1,0 +1,9 @@
+
+// Library name: Project_Lib1_sim
+// Cell name: comparator_sim
+// View name: schematic
+I3 (0 Vn comparator_out net02) comparator
+V1 (net02 0) vsource dc=1.2 type=dc
+V0 (Vn 0) vsource type=pulse val0=0 val1=1.2 period=8n delay=2n rise=10p \
+        fall=10p width=4n
+C0 (comparator_out 0) capacitor c=100.0f

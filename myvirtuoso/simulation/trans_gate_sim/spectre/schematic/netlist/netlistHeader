@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  9 16:58:06 2022
+// Design library name: Project_Lib1_sim
+// Design cell name: trans_gate_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0

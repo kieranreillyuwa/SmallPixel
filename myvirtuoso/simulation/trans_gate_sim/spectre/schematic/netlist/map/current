@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "trans_gate_sim"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/simulation/trans_gate_sim/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "Project_Lib1/trans_gate/schematic" "trans_gate" )
+( "Project_Lib1_sim/trans_gate_sim/schematic" "trans_gate_sim" )
+( "Project_Lib1/inv_21/schematic" "inv_21" )
+ )
+( "trans_gate_sim" "ihnl/cds2/map" )
+( "trans_gate" "ihnl/cds1/map" )
+( "inv_21" "ihnl/cds0/map" )
+ )

@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue Apr 26 17:10:12 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Mon May  9 15:04:00 2022
 
 
 Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 26 17:10:12 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Mon May  9 15:04:00 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -38,7 +38,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Apr 26 17:10:12 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Mon May  9 15:04:01 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -96,14 +96,14 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
-run on dep56140nix at Tue Apr 26 17:10:16 2022
+run on dep56131nix at Mon May  9 15:04:06 2022
 Reading schematic network
  running dfIIToVldb -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.vlr /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Apr 26 17:10:16 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Mon May  9 15:04:07 2022
 
 
 Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
@@ -236,14 +236,14 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.02m  mem=105.28mb
+cpu=0.00m  wall=0.03m  mem=105.28mb
 
 Finished /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/nvn
 
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.06  elap: 8  pf: 0  in: 0  out: 200  virt: 103M  phys: 591M
+cpu: 0.19  elap: 11  pf: 0  in: 0  out: 200  virt: 103M  phys: 593M
 
 Running the Task Processor, 1 cells, 5234 steps...
 
@@ -1220,7 +1220,7 @@ Executing: (saveInterconnect (ME7 "ME7"))
 Executing: (saveInterconnect (ME8 "ME8"))
 
 Executing: extractMOS("n_12_hsl130e" NG_HS (ply "G") (nsd "S" "D") (PSUB "B") flagMalfor...
-         4 'n_12_hsl130e' created in cell 'delay_chain layout Project_Lib1'.
+         2 'n_12_hsl130e' created in cell 'delay_chain layout Project_Lib1'.
 
 Executing: attachParameter(areaS ("ad" "D") ("as" "S") NG_HS shared)
 
@@ -1239,7 +1239,7 @@ Executing: nameParameter(w_mos "w")
 Executing: nameParameter(w_mos "effW")
 
 Executing: extractMOS("p_12_hsl130e" PG_HS (ply "G") (psd "S" "D") (wel "B") flagMalform...
-         4 'p_12_hsl130e' created in cell 'delay_chain layout Project_Lib1'.
+         2 'p_12_hsl130e' created in cell 'delay_chain layout Project_Lib1'.
 
 Executing: attachParameter(areaS ("ad" "D") ("as" "S") PG_HS shared)
 
@@ -2304,12 +2304,12 @@ Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_4)
 Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_4)
 
 Finished running rules. Task processor time in main process:
-cpu: 0.34  elap: 1  pf: 0  in: 0  out: 1216  virt: 152M  phys: 799M
+cpu: 0.41  elap: 0  pf: 0  in: 0  out: 1216  virt: 155M  phys: 786M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6480  virt: 157M  phys: 799M
+cpu: 0.03  elap: 2  pf: 0  in: 0  out: 6480  virt: 160M  phys: 786M
 
 
 *****  aveng terminated normally  *****
@@ -2325,7 +2325,7 @@ Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 26 17:10:23 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Mon May  9 15:04:13 2022
 
 
    Creating Error Database 'delay_chain'...
@@ -2338,7 +2338,7 @@ Rule      Message                                    FlatCount     RealCount
 (    2)  PWBLK_StampErrorFloat                               0            0
 (    3)  PWBLK_StampErrorMult                                0            0
 (    4)  PWBLK_StampErrorConnect                             0            0
-(    5)  PSUB_StampErrorFloat                                0            0
+(    5)  PSUB_StampErrorFloat                                1            1
 (    6)  PSUB_StampErrorMult                                 0            0
 (    7)  PSUB_StampErrorConnect                              0            0
 (    8)  wel_StampErrorFloat                                 0            0
@@ -2347,7 +2347,7 @@ Rule      Message                                    FlatCount     RealCount
 (   11)  TWEL_StampErrorFloat                                0            0
 (   12)  TWEL_StampErrorMult                                 0            0
 (   13)  TWEL_StampErrorConnect                              0            0
-(   14)  PSUB_P_StampErrorFloat                              0            0
+(   14)  PSUB_P_StampErrorFloat                              1            1
 (   15)  PSUB_P_StampErrorMult                               0            0
 (   16)  PSUB_P_StampErrorConnect                            0            0
 (   17)  B_DNW_StampErrorFloat                               0            0
@@ -2526,14 +2526,16 @@ Rule      Message                                    FlatCount     RealCount
 (  273)  unstable device for PG_HS_MOS_2                     0            0
 (  275)  unstable device for NG_HS_MOS_1                     0            0
 --------------------------------------------------------------------------------
-Total  errors:                                               0            0
+Total  errors:                                               2            2
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.err ...
+   Rule 5 done.
+   Rule 14 done.
 
-avrpt cpu sec:    0.05  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.06  elapsed:     1  virtual:    93M
 
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
 
@@ -2557,18 +2559,18 @@ Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
 
-run on dep56140nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avnx on Tue Apr 26 17:10:24 2022
+run on dep56131nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avnx on Mon May  9 15:04:15 2022
 
 avnx started...
-cpu: 0.10  elap: 1  pf: 0  in: 0  out: 16  virt: 579M  phys: 866M
+cpu: 0.11  elap: 0  pf: 0  in: 0  out: 16  virt: 579M  phys: 864M
 
 Run time =  1.00 seconds
-CPU time =  0.12 seconds
+CPU time =  0.15 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.04  elap: 2  pf: 0  in: 0  out: 13040  virt: 509M  phys: 866M
+cpu: 0.02  elap: 3  pf: 0  in: 0  out: 13032  virt: 509M  phys: 864M
 ***** avnx terminated normally ***** 
 
 
@@ -2579,7 +2581,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
 sub-version 4.1_USR5, integ signature 2015-12-24-1122
-run on dep56140nix at Tue Apr 26 17:10:27 2022
+run on dep56131nix at Mon May  9 15:04:18 2022
 Reading schematic network
 Reading layout network
  inputting network ./Project_Lib1/delay_chain.ldb
@@ -2601,7 +2603,7 @@ Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
 Top cell  delay_chain schematic Project_Lib1 vs delay_chain layout Project_Lib1
-Schematic and Layout Match
+Compare errors, please see /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.csm and /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/delay_chain.cls files.
 cpu=0.00m  wall=0.02m  mem=106.45mb
 
 Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/nvn
@@ -2657,7 +2659,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Tue Apr 26 17:10:29 2022
+Run ended: Mon May  9 15:04:20 2022
 
 *****  Assura terminated normally  *****
 
