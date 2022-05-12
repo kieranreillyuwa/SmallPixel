@@ -1,0 +1,2663 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78
+            Release 4.1_USR5
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue May 10 14:11:41 2022
+
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+@(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue May 10 14:11:41 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+ Summary Report: dff_backup_2.sum
+ RSF           : /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf
+ Library Name  : cadence_test_lib
+ CDSLIB Path   : "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib"
+ Cell Name     : dff_backup_2
+ View Name     : layout
+ Rules File    : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-2.3-P9-EXTRACT.RUL
+ Options       : -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib 
+ Work Directory: /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1
+ Operating Mode: Legacy Mode is Off
+
+
+Starting dfIIToVdb...
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+@(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue May 10 14:11:42 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+Loading umc13mmrf/libInit.il ...
+	Loading umc13mmrf/loadCxt.ile ... done!
+	Loading context 'umc13mmrf' from library 'umc13mmrf' ... done!
+	Loading context 'pdkUtils' from library 'umc13mmrf' ... done!
+	Loading context 'Util' from library 'umc13mmrf' ... done!
+	Loading context 'userUtil' from library 'umc13mmrf' ... done!
+	Loading context 'oxf_cb' from library 'umc13mmrf' ... done!
+	Loading umc13mmrf/libInitCustomExit.il ... done!
+Loaded umc13mmrf/libInit.il successfully!
+Compiling rules...
+
+
+************************************************************* 
+
+ Assura LVS of UMC 0.13um Mixed-Mode and RFCMOS 1P8M MMC FSG Enhancement Process (Ps: Pls select the switches of metal opton and metal combination !! )  
+  
+  
+ 
+
+************************************************************* 
+
+WARNING LVS Run detected.
+Non-legacy mode has been disabled for this LVS run
+Checking out license for Assura_LVS
+*WARNING* Failed to obtain license for Assura_LVS
+No Assura license available.
+Checking out license for Phys_Ver_Sys_LVS_XL
+
+Reading the design data...
+
+
+
+Finished dfIIToVdb.
+
+Building the VDB part 2 in background mode.
+
+Building tables for LVS Preprocessing in background mode.
+
+
+Starting /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/vdbToCells /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1 dff_backup_2
+
+Finished /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/vdbToCells
+
+Starting Nvn PreExtraction...
+
+Starting /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/nvn /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -preExtract -exec1 -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+run on dep56132nix at Tue May 10 14:11:46 2022
+Reading schematic network
+ running dfIIToVldb -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.vlr /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.05s.
+@(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:04 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue May 10 14:11:46 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+Top Cell Library: "cadence_test_lib"
+Top Cell Name: "dff_backup_2"
+Top Cell View: "schematic"
+Output Data Base Name: "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.sdb"
+Simulator Name: "auLvs"
+Failed to obtain license for "Assura_LVS". 
+Checking out license for Phys_Ver_Sys_LVS_XL
+ERROR (LMF-02018): License call failed for feature Assura_LVS, version 4.100 and quantity 1. The license server search path is defined as 5280@lm-cadence.ee.uwa.edu.au. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-18, 0, 0): License server system does not support this feature.
+
+Run 'lic_error LMF-02018' for more information.
+View List: "auLvs schematic symbol"
+Stop List: "auLvs"
+Loading umc13mmrf/libInit.il ...
+	Loading umc13mmrf/loadCxt.ile ... done!
+	Loading context 'umc13mmrf' from library 'umc13mmrf' ... done!
+	Loading context 'pdkUtils' from library 'umc13mmrf' ... done!
+	Loading context 'Util' from library 'umc13mmrf' ... done!
+	Loading context 'userUtil' from library 'umc13mmrf' ... done!
+	Loading context 'oxf_cb' from library 'umc13mmrf' ... done!
+	Loading umc13mmrf/libInitCustomExit.il ... done!
+Loaded umc13mmrf/libInit.il successfully!
+Net Listing Mode is Analog
+writing /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.sdb
+ inputting /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.sdb
+Reading layout network
+ inputting network /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.ldb
+Preprocessing schematic network phase 1
+*WARNING* genericDevice("l_sy20kct_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_nwsy20kct_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_sy20k_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_nwsy20k_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_sqsk_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_nwsqsk_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_cr20k_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_nwcr20k_rfvil") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_sqsk_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("l_cr20k_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("diodn_esd_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("diop_esd_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_asy_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_asy_mm") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_sy_mm") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_SY20KCT_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_NWSY20KCT_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_SY20K_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_NWSY20K_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_SQSK_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_NWSQSK_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_CR20K_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_NWCR20K_RFVIL") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_SQSK_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("L_CR20K_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("DIODN_ESD_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("DIOP_ESD_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("mimcaps_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MIMCAPS_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_ASY_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_ASY_MM") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_SY_MM") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_array_vp4_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_array_vp3_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_Array_VP4_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_Array_VP3_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_asmesh_mm") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_ASMESH_MM") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("momcaps_symesh_mm") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("MOMCAPS_SYMESH_MM") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnhr1000_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnppo_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnnpo_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnpd_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnnd_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rsppo_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rsnpo_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rspd_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rsnd_mml130e") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNHR1000_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNPPO_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNNPO_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNPD_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNND_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RSPPO_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RSNPO_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RSPD_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RSND_MML130E") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("vardiop_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("varmis_33_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("varmis_12_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("pad_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("npn_svL20_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("npn_sv50X50_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("npn_nvL20_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("npn_nv50X50_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("pnp_nvL20_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("pnp_nv50X50_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnppo_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnppo_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("rnhr_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("n_bpw_33_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("n_bpw_12_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("p_33_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("n_33_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("p_12_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("n_12_rf") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("VARDIOP_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("VARMIS_33_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("VARMIS_12_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("PAD_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("NPN_SVL20_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("NPN_SV50X50_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("NPN_NVL20_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("NPN_NV50X50_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("PNP_NVL20_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("PNP_NV50X50_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNPPO_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNNPO_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("RNHR_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("N_BPW_33_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("N_BPW_12_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("P_33_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("N_33_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("P_12_RF") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("N_12_RF") - cell does not exist. This command will be ignored.
+Preprocessing layout network phase 1
+Preprocessing schematic network phase 2
+Preprocessing layout network phase 2
+cpu=0.00m  wall=0.02m  mem=105.28mb
+
+Finished /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/nvn
+
+Building the VDB part 3 in background mode.
+
+Finished building the VDB. VDB build times for main process:
+cpu: 0.14  elap: 9  pf: 0  in: 0  out: 200  virt: 103M  phys: 580M
+
+Running the Task Processor, 1 cells, 5234 steps...
+
+Top Cell is 'dff_backup_2 layout cadence_test_lib'
+
+Executing: NWELL = geomAndNot(NWEL TWEL)
+
+Executing: sepgnd_1 = geomSize(SEPGND 0.01)
+
+Executing: sepgnd_2 = geomAndNot(sepgnd_1 SEPGND)
+
+Executing: PSUB1 = geomAndNot(geomBkgnd() sepgnd_2)
+
+Executing: PSUB = geomAndNot(geomAndNot(PSUB1 NWEL) PWBLK)
+
+Executing: PSUB_P = geomOr(PSUB PWBLK)
+
+Executing: PWELL = geomOr(PSUB NWELL)
+
+Executing: B_DNW = geomSize(geomAnd(TWEL NWEL) 0.001)
+
+Executing: BPDIFF = geomAnd(DIFF PPLUS)
+
+Executing: BNDIFF = geomAnd(DIFF NPLUS)
+
+Executing: RAMCELL = geomOr(geomOr(SP DP2) SPLL)
+
+Executing: welres = geomAnd(NWELL NWR)
+
+Executing: wel = geomAndNot(NWELL welres)
+
+Executing: pyres = geomAnd(PO1 PSYMBOL)
+
+Executing: splyres = geomAnd(pyres SAB)
+
+Executing: hrpyr = geomOverlap(geomAnd(splyres HR) PPLUS)
+
+Executing: nshrpyr1 = geomAnd(hrpyr NWELL)
+
+Executing: nshrpyr_rf = geomAnd(nshrpyr1 RFSYMBOL)
+
+Executing: nshrpyr_rfa = geomEnclose(wel nshrpyr_rf)
+
+Executing: nshrpyr = geomAndNot(hrpyr nshrpyr_rf)
+
+Executing: nshrpyr_psub = geomAnd(nshrpyr PSUB)
+
+Executing: nshrpyr_wel = geomAnd(nshrpyr wel)
+
+Executing: apyres = geomAndNot(pyres hrpyr)
+
+Executing: ppyres = geomAnd(apyres PPLUS)
+
+Executing: nsapyr1 = geomAnd(geomAnd(ppyres SAB) NWELL)
+
+Executing: nsppyr_mm = geomAvoiding(nsapyr1 RFSYMBOL)
+
+Executing: nsppyr_psub = geomAnd(nsppyr_mm PSUB)
+
+Executing: nsppyr_wel = geomAnd(nsppyr_mm wel)
+
+Executing: nsppyr_rf = geomAnd(nsapyr1 RFSYMBOL)
+
+Executing: nsppyr_rfa = geomEnclose(wel nsppyr_rf)
+
+Executing: sppyr_mm = geomAvoiding(ppyres SAB)
+
+Executing: npyres = geomAnd(apyres NPLUS)
+
+Executing: nsbpyr1 = geomAnd(npyres SAB)
+
+Executing: nsnpyr_rf = geomAnd(geomAnd(nsbpyr1 RFSYMBOL) NWELL)
+
+Executing: nsnpyr_rfa = geomEnclose(wel nsnpyr_rf)
+
+Executing: snpyr_mm = geomAvoiding(npyres SAB)
+
+Executing: ply1 = geomAndNot(PO1 pyres)
+
+Executing: ply2 = geomAnd(geomAvoiding(geomAvoiding(ply1 DIFF) pyres) RFSYMBOL)
+
+Executing: PO1res = geomOverlap(PO1 pyres)
+
+Executing: dummyply = geomAvoiding(geomAnd(geomEnclose(NWEL PO1res) geomAvoiding(PO1 DIF...
+
+Executing: ply = geomAndNot(geomAndNot(ply1 ply2) dummyply)
+
+Executing: plya = geomAndNot(ply PO_LVS)
+
+Executing: BPGATE = geomAnd(BPDIFF plya)
+
+Executing: BNGATE = geomAnd(BNDIFF plya)
+
+Executing: pdres = geomAnd(BPDIFF RSYMBOL)
+
+Executing: spyres_mm = geomInside(geomAvoiding(pdres SAB) NWELL)
+
+Executing: psd_A = geomAndNot(geomAndNot(BPDIFF pdres) BPGATE)
+
+Executing: ptap = geomAnd(psd_A PSUB)
+
+Executing: ptap_p = geomAnd(psd_A PWBLK)
+
+Executing: ptap_all = geomOr(ptap ptap_p)
+
+Executing: ttap = geomAnd(psd_A TWEL)
+
+Executing: psd = geomAndNot(geomAndNot(psd_A ptap) ttap)
+
+Executing: rfpsd = geomOverlap(psd_A RFSYMBOL)
+
+Executing: rfpd = geomAvoiding(rfpsd RFMOS_S)
+
+Executing: rfps = geomOverlap(rfpsd RFMOS_S)
+
+Executing: ndres = geomAnd(BNDIFF RSYMBOL)
+
+Executing: nsndres_mm = geomOutside(geomAnd(ndres SAB) NWELL)
+
+Executing: snyres_mm = geomOutside(geomAvoiding(ndres SAB) NWELL)
+
+Executing: NCOMP_NORES = geomAndNot(BNDIFF ndres)
+
+Executing: nsd_A = geomAndNot(geomAndNot(BNDIFF ndres) BNGATE)
+
+Executing: ntap = geomAnd(nsd_A wel)
+
+Executing: nsd = geomAndNot(nsd_A ntap)
+
+Executing: rfnsd = geomOverlap(nsd_A RFSYMBOL)
+
+Executing: rfnd = geomAvoiding(rfnsd RFMOS_S)
+
+Executing: rfns = geomOverlap(rfnsd RFMOS_S)
+
+Executing: ME1RES = geomAnd(ME1 M1RESMK)
+
+Executing: M1a = geomAndNot(ME1 ME1RES)
+
+Executing: ME2RES = geomAnd(ME2 M2RESMK)
+
+Executing: M2a = geomAndNot(ME2 ME2RES)
+
+Executing: ME3RES = geomAnd(ME3 M3RESMK)
+
+Executing: M3a = geomAndNot(ME3 ME3RES)
+
+Executing: ME4RES = geomAnd(ME4 M4RESMK)
+
+Executing: M4a = geomAndNot(ME4 ME4RES)
+
+Executing: ME5RES = geomAnd(ME5 M5RESMK)
+
+Executing: M5a = geomAndNot(ME5 ME5RES)
+
+Executing: ME6RES = geomAnd(ME6 M6RESMK)
+
+Executing: M6a = geomAndNot(ME6 ME6RES)
+
+Executing: pact = geomAnd(psd_A NWELL)
+
+Executing: dpdiod_1 = geomAvoiding(pact PO1)
+
+Executing: dpdiod_2 = geomAvoiding(dpdiod_1 RSYMBOL)
+
+Executing: dpdiod_3 = geomAvoiding(dpdiod_2 BJTSYMBOL)
+
+Executing: dpdiod_4 = geomAvoiding(dpdiod_3 XDIODE)
+
+Executing: dpdiod_5 = geomAvoiding(dpdiod_4 CSYMBOL)
+
+Executing: dpdiod_mm = geomAndNot(dpdiod_5 RFSYMBOL)
+
+Executing: dpdiod_rf = geomAnd(dpdiod_5 RFSYMBOL)
+
+Executing: pnvar = geomAnd(geomAnd(dpdiod_4 CSYMBOL) RFSYMBOL)
+
+Executing: vard_rf = geomEnclose(CSYMBOL pnvar)
+
+Executing: dpesd_rf = geomEnclose(DIOBLK dpdiod_rf)
+
+Executing: nact = geomAnd(nsd_A PSUB)
+
+Executing: dndiod_1 = geomAvoiding(nact PO1)
+
+Executing: dndiod_2 = geomAvoiding(dndiod_1 RSYMBOL)
+
+Executing: dndiod_3 = geomAvoiding(dndiod_2 BJTSYMBOL)
+
+Executing: dndiod_mm = geomAvoiding(dndiod_3 XDIODE)
+
+Executing: dnwdiod_mm = geomInside(geomOverlap(wel nsd_A) DSYMBOL)
+
+Executing: nsdtw_1 = geomAnd(nsd_A TWEL)
+
+Executing: nsdtw_rf = geomEnclose(DIOBLK geomAnd(nsdtw_1 RFSYMBOL))
+
+Executing: nsdtw_11 = geomGetRectangle(nsdtw_1 (length == 5) (width == 5))
+
+Executing: nsdtw_12 = geomAndNot(nsdtw_1 nsdtw_11)
+
+Executing: npn_s11 = geomEnclose(BJTSYMBOL geomAnd(nsdtw_11 RFSYMBOL))
+
+Executing: npn_s12 = geomEnclose(BJTSYMBOL geomAnd(nsdtw_12 RFSYMBOL))
+
+Executing: npn5x5_s_rf = geomAvoiding(npn_s11 SAB)
+
+Executing: npn2_s_rf = geomAvoiding(npn_s12 SAB)
+
+Executing: npn5x5_n_rf = geomOverlap(npn_s11 SAB)
+
+Executing: npn2_n_rf = geomOverlap(npn_s12 SAB)
+
+Executing: pnp_n1 = geomOverlap(geomAnd(geomAnd(geomAnd(psd_A wel) RFSYMBOL) BJTSYMBOL) ...
+
+Executing: pnp_n11 = geomGetRectangle(pnp_n1 (length == 5) (width == 5))
+
+Executing: pnp_n12 = geomAndNot(pnp_n1 pnp_n11)
+
+Executing: pnp5x5_n_rf = geomEnclose(BJTSYMBOL pnp_n11)
+
+Executing: pnp2_n_rf = geomEnclose(BJTSYMBOL pnp_n12)
+
+Executing: VARGATE = geomAnd(geomAnd(NCOMP_NORES ply) wel)
+
+Executing: varmis_rf1 = geomAnd(VARGATE RFSYMBOL)
+
+Executing: varmis_rf33 = geomEnclose(DIFF geomInside(varmis_rf1 TG))
+
+Executing: varmis_rf12 = geomEnclose(DIFF geomAndNot(VARGATE varmis_rf33))
+
+Executing: HVNG = geomAnd(BNGATE TG)
+
+Executing: HVPG = geomAnd(BPGATE TG)
+
+Executing: RBNGAT = geomAndNot(BNGATE geomOr(geomOr(geomOr(TG VTNL) VTNHL) VARGATE))
+
+Executing: RBPGAT = geomAnd(geomAndNot(BPGATE geomOr(geomOr(TG VTPL) VTPHL)) wel)
+
+Executing: TGBNGAT = geomAndNot(geomAndNot(HVNG VTNHL) VARGATE)
+
+Executing: TGBPGAT = geomAnd(geomAndNot(HVPG VTPHL) wel)
+
+Executing: ARBNGAT = geomAnd(RBNGAT PSUB)
+
+Executing: SPLLALL = geomOr(geomOr(geomOr(VTN_SP VTP_SP) VTNH) VTPH)
+
+Executing: NG_HS1 = geomAvoiding(geomAvoiding(ARBNGAT RFSYMBOL) RAMCELL)
+
+Executing: NG_HS2 = geomAvoiding(geomAvoiding(NG_HS1 SPLLALL) NATIVE)
+
+Executing: MNGATE_C = geomAnd(NG_HS2 CSYMBOL)
+
+Executing: NG_HS = geomAndNot(NG_HS2 MNGATE_C)
+
+Executing: NG_LL = geomAnd(NG_HS1 VTNH)
+
+Executing: PG_HS1 = geomAvoiding(geomAvoiding(RBPGAT RFSYMBOL) RAMCELL)
+
+Executing: PG_HS2 = geomAvoiding(PG_HS1 SPLLALL)
+
+Executing: MPGATE_C = geomAnd(PG_HS2 CSYMBOL)
+
+Executing: PG_HS = geomAndNot(PG_HS2 MPGATE_C)
+
+Executing: PG_LL = geomAnd(PG_HS1 VTPH)
+
+Executing: ATGBNGAT = geomAnd(TGBNGAT PSUB)
+
+Executing: NTGATE = geomAvoiding(geomAvoiding(ATGBNGAT RFSYMBOL) NATIVE)
+
+Executing: PTGATE = geomAvoiding(TGBPGAT RFSYMBOL)
+
+Executing: MNGATE_RF1 = geomInside(ARBNGAT RFSYMBOL)
+
+Executing: MNGATE_RF = geomEnclose(DIFF MNGATE_RF1)
+
+Executing: MPGATE_RF1 = geomInside(RBPGAT RFSYMBOL)
+
+Executing: MPGATE_RF = geomEnclose(DIFF MPGATE_RF1)
+
+Executing: NTGATE_RF1 = geomInside(ATGBNGAT RFSYMBOL)
+
+Executing: NTGATE_RF = geomEnclose(DIFF NTGATE_RF1)
+
+Executing: PTGATE_RF1 = geomInside(TGBPGAT RFSYMBOL)
+
+Executing: PTGATE_RF = geomEnclose(DIFF PTGATE_RF1)
+
+Executing: NSGATE1 = geomInside(geomInside(RBNGAT TWEL) NWEL)
+
+Executing: NSGATE = geomAvoiding(NSGATE1 RFSYMBOL)
+
+Executing: NSGATE_RF1 = geomInside(NSGATE1 RFSYMBOL)
+
+Executing: NSGATE_RF = geomEnclose(TWEL NSGATE_RF1)
+
+Executing: TGNSGATE1 = geomInside(geomInside(TGBNGAT TWEL) NWEL)
+
+Executing: TGNSGATE = geomAvoiding(TGNSGATE1 RFSYMBOL)
+
+Executing: TGNSGATE_RF1 = geomInside(TGNSGATE1 RFSYMBOL)
+
+Executing: TGNSGATE_RF = geomEnclose(TWEL TGNSGATE_RF1)
+
+Executing: NLGATE1 = geomAnd(geomAndNot(BNGATE HVNG) VTNL)
+
+Executing: NLTWGATE = geomInside(geomAnd(NLGATE1 TWEL) NWEL)
+
+Executing: NLGATE = geomAnd(NLGATE1 PSUB)
+
+Executing: PLGATE = geomAnd(geomAnd(geomAndNot(BPGATE HVPG) VTPL) wel)
+
+Executing: NLGAT = geomAnd(geomAndNot(BNGATE HVNG) NATIVE)
+
+Executing: NHLGAT = geomAnd(HVNG NATIVE)
+
+Executing: NHLGATE1 = geomAnd(HVNG VTNHL)
+
+Executing: NHLGATE = geomAnd(geomAndNot(NHLGATE1 TWEL) PSUB)
+
+Executing: NLTGTWGATE = geomInside(geomAnd(NHLGATE1 TWEL) NWEL)
+
+Executing: PHLGATE = geomAnd(geomAnd(HVPG VTPHL) wel)
+
+Executing: CMMC1 = geomInside(MMCTP MMCBP)
+
+Executing: CMMC = geomAndNot(CMMC1 RFSYMBOL)
+
+Executing: CMMC_RF1 = geomInside(geomAnd(CMMC1 RFSYMBOL) wel)
+
+Executing: CMMC_RF = geomEnclose(WELBODY CMMC_RF1)
+
+Executing: ME2_PORT2 = geomOverlap(geomAnd(ME2 MOMSYM) geomAnd(VI1 ME1))
+
+Executing: MOMVP1A = geomEnclose(MOMSYM geomOverlap(geomAnd(ME2 MOMSYM) geomAnd(VI1 ME1)...
+
+Executing: MOMVP1 = geomAnd(MOMVP1A RFSYMBOL)
+
+Executing: MOMVP1_RF = geomEnclose(wel MOMVP1)
+
+Executing: MOMVP2A = geomEnclose(MOMSYM ME2_PORT2 (keep == 1))
+
+Executing: MOMVP2 = geomAnd(MOMVP2A RFSYMBOL)
+
+Executing: MOMVP2_RF = geomEnclose(wel MOMVP2)
+
+Executing: MOM1_term = geomAnd(ME1 MOMSYM)
+
+Executing: MOM2_term = geomAndNot(geomAnd(ME2 MOMSYM) ME2_PORT2)
+
+Executing: MOM2_term_P = geomAvoiding(MOM2_term geomButtOrOver(geomAnd(ME2 geomSize(MOMS...
+
+Executing: MOM2_term_M = geomAndNot(MOM2_term MOM2_term_P)
+
+Executing: MOMSYM1 = geomSize(MOMSYM -0.4)
+
+Executing: MOMVP1_MM_1 = geomAvoiding(geomSize(geomAndNot(MOMSYM RFSYMBOL) 0.2) geomOr(g...
+
+Executing: MOMVP1_MM_3 = geomButtOrOver(geomAnd(ME2 MOMSYM) geomAnd(geomAnd(ME1 VI1) MOM...
+
+Executing: MOMVP1_MM = geomButtOrOver(MOMVP1_MM_1 MOMVP1_MM_3 (keep == 4))
+
+Executing: MOMVP2_MM = geomButtOrOver(MOMVP1_MM_1 MOMVP1_MM_3 (keep == 2))
+
+Executing: MOM_MESH_SY = geomAvoiding(geomButtOrOver(geomButtOrOver(SIZE8 MOMSYM) MOM1_t...
+
+Executing: MOM_MESH_SY_WEL = geomInside(MOM_MESH_SY wel)
+
+Executing: MOM_MESH_SY_PSUB = geomOutside(MOM_MESH_SY PSUB)
+
+Executing: MOM_MESH_ASY = geomAvoiding(geomButtOrOver(geomButtOrOver(SIZE9 MOMSYM) MOM1_...
+
+Executing: MOM_MESH_ASY_WEL = geomInside(MOM_MESH_ASY wel)
+
+Executing: MOM_MESH_ASY_PSUB = geomOutside(MOM_MESH_ASY PSUB)
+
+Executing: MOM2_T_SY = geomAnd(ME2 MOM_MESH_SY)
+
+Executing: MOM3_T_SY = geomAnd(ME3 MOM_MESH_SY)
+
+Executing: MOM2_T_ASY = geomAnd(ME2 MOM_MESH_ASY)
+
+Executing: MOM3_T_ASY = geomAnd(ME3 MOM_MESH_ASY)
+
+Executing: MESH_SY_CONN = geomButtOrOver(geomAnd(geomAnd(ME2 ME3) MOM_MESH_SY) VI2)
+
+Executing: MESH_SY_MET2 = geomAnd(geomAndNot(geomSize(MOM_MESH_SY 0.02) MOM_MESH_SY) ME2)
+
+Executing: MESH_SY_MET3 = geomAnd(geomAndNot(geomSize(MOM_MESH_SY 0.02) MOM_MESH_SY) ME3)
+
+Executing: MESH_SY_P1_temp1 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM2_T_SY GTEXT ...
+
+Executing: MESH_SY_P1_temp2 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM3_T_SY GTEXT ...
+
+Executing: MESH_SY_P1_temp3 = geomButtOrOver(MESH_SY_MET2 geomButtOrOver(MOM2_T_SY MESH_...
+
+Executing: MESH_SY_P1_temp4 = geomButtOrOver(MESH_SY_MET3 geomButtOrOver(MOM3_T_SY MESH_...
+
+Executing: MESH_SY_P1_temp5 = geomOr(MESH_SY_P1_temp3 MESH_SY_P1_temp4)
+
+Executing: MESH_SY_P1_CONN = geomOr(MESH_SY_P1_temp1 MESH_SY_P1_temp2)
+
+Executing: MESH_SY_P1 = geomButtOrOver(geomButtOrOver(MOM_MESH_SY MESH_SY_P1_CONN) MESH_...
+
+Executing: MESH_SY_M1_temp1 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM2_T_SY GTEXT ...
+
+Executing: MESH_SY_M1_temp2 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM3_T_SY GTEXT ...
+
+Executing: MESH_SY_M1_temp3 = geomButtOrOver(MESH_SY_MET2 geomButtOrOver(MOM2_T_SY MESH_...
+
+Executing: MESH_SY_M1_temp4 = geomButtOrOver(MESH_SY_MET3 geomButtOrOver(MOM3_T_SY MESH_...
+
+Executing: MESH_SY_M1_temp5 = geomOr(MESH_SY_M1_temp3 MESH_SY_M1_temp4)
+
+Executing: MESH_SY_M1_CONN = geomOr(MESH_SY_M1_temp1 MESH_SY_M1_temp2)
+
+Executing: MESH_SY_M1 = geomButtOrOver(geomButtOrOver(MOM_MESH_SY MESH_SY_M1_CONN) MESH_...
+
+Executing: MESH_SY_P2_temp1 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM2_T_SY GTEXT ...
+
+Executing: MESH_SY_P2_temp2 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM3_T_SY GTEXT ...
+
+Executing: MESH_SY_P2_temp3 = geomButtOrOver(MESH_SY_MET2 geomButtOrOver(MOM2_T_SY MESH_...
+
+Executing: MESH_SY_P2_temp4 = geomButtOrOver(MESH_SY_MET3 geomButtOrOver(MOM3_T_SY MESH_...
+
+Executing: MESH_SY_P2_temp5 = geomOr(MESH_SY_P2_temp3 MESH_SY_P2_temp4)
+
+Executing: MESH_SY_P2_CONN = geomOr(MESH_SY_P2_temp1 MESH_SY_P2_temp2)
+
+Executing: MESH_SY_P2 = geomButtOrOver(geomButtOrOver(MOM_MESH_SY MESH_SY_P2_CONN) MESH_...
+
+Executing: MESH_SY_M2_temp1 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM2_T_SY GTEXT ...
+
+Executing: MESH_SY_M2_temp2 = geomButtOrOver(MESH_SY_CONN geomGetTexted(MOM3_T_SY GTEXT ...
+
+Executing: MESH_SY_M2_temp3 = geomButtOrOver(MESH_SY_MET2 geomButtOrOver(MOM2_T_SY MESH_...
+
+Executing: MESH_SY_M2_temp4 = geomButtOrOver(MESH_SY_MET3 geomButtOrOver(MOM3_T_SY MESH_...
+
+Executing: MESH_SY_M2_temp5 = geomOr(MESH_SY_M2_temp3 MESH_SY_M2_temp4)
+
+Executing: MESH_SY_M2_CONN = geomOr(MESH_SY_M2_temp1 MESH_SY_M2_temp2)
+
+Executing: MESH_SY_M2 = geomButtOrOver(geomButtOrOver(MOM_MESH_SY MESH_SY_M2_CONN) MESH_...
+
+Executing: MESH_ASY_CONN = geomButtOrOver(geomAnd(geomAnd(ME2 ME3) MOM_MESH_ASY) VI2)
+
+Executing: MESH_ASY_MET2 = geomAnd(geomAndNot(geomSize(MOM_MESH_ASY 0.02) MOM_MESH_ASY) ...
+
+Executing: MESH_ASY_MET3 = geomAnd(geomAndNot(geomSize(MOM_MESH_ASY 0.02) MOM_MESH_ASY) ...
+
+Executing: MESH_ASY_P1_temp1 = geomButtOrOver(geomAvoiding(MESH_ASY_CONN VI1) geomGetTex...
+
+Executing: MESH_ASY_P1_temp2 = geomButtOrOver(geomAvoiding(MESH_ASY_CONN VI1) geomGetTex...
+
+Executing: MESH_ASY_P1_temp3 = geomButtOrOver(MESH_ASY_MET2 geomButtOrOver(MOM2_T_ASY ME...
+
+Executing: MESH_ASY_P1_temp4 = geomButtOrOver(MESH_ASY_MET3 geomButtOrOver(MOM3_T_ASY ME...
+
+Executing: MESH_ASY_P1_temp5 = geomOr(MESH_ASY_P1_temp3 MESH_ASY_P1_temp4)
+
+Executing: MESH_ASY_P1_CONN = geomOr(MESH_ASY_P1_temp1 MESH_ASY_P1_temp2)
+
+Executing: MESH_ASY_P1 = geomButtOrOver(geomButtOrOver(MOM_MESH_ASY MESH_ASY_P1_CONN) ME...
+
+Executing: MESH_ASY_M1_temp1 = geomButtOrOver(geomButtOrOver(MESH_ASY_CONN VI1) geomGetT...
+
+Executing: MESH_ASY_M1_temp2 = geomButtOrOver(geomButtOrOver(MESH_ASY_CONN VI1) geomGetT...
+
+Executing: MESH_ASY_M1_temp3 = geomButtOrOver(MESH_ASY_MET2 geomButtOrOver(MOM2_T_ASY ME...
+
+Executing: MESH_ASY_M1_temp4 = geomButtOrOver(MESH_ASY_MET3 geomButtOrOver(MOM3_T_ASY ME...
+
+Executing: MESH_ASY_M1_temp5 = geomOr(MESH_ASY_M1_temp3 MESH_ASY_M1_temp4)
+
+Executing: MESH_ASY_M1_CONN = geomOr(MESH_ASY_M1_temp1 MESH_ASY_M1_temp2)
+
+Executing: MESH_ASY_M1 = geomButtOrOver(geomButtOrOver(MOM_MESH_ASY MESH_ASY_M1_CONN) ME...
+
+Executing: MESH_ASY_P2_temp1 = geomButtOrOver(geomAvoiding(MESH_ASY_CONN VI1) geomGetTex...
+
+Executing: MESH_ASY_P2_temp2 = geomButtOrOver(geomAvoiding(MESH_ASY_CONN VI1) geomGetTex...
+
+Executing: MESH_ASY_P2_temp3 = geomButtOrOver(MESH_ASY_MET2 geomButtOrOver(MOM2_T_ASY ME...
+
+Executing: MESH_ASY_P2_temp4 = geomButtOrOver(MESH_ASY_MET3 geomButtOrOver(MOM3_T_ASY ME...
+
+Executing: MESH_ASY_P2_temp5 = geomOr(MESH_ASY_P2_temp3 MESH_ASY_P2_temp4)
+
+Executing: MESH_ASY_P2_CONN = geomOr(MESH_ASY_P2_temp1 MESH_ASY_P2_temp2)
+
+Executing: MESH_ASY_P2 = geomButtOrOver(geomButtOrOver(MOM_MESH_ASY MESH_ASY_P2_CONN) ME...
+
+Executing: MESH_ASY_M2_temp1 = geomButtOrOver(geomButtOrOver(MESH_ASY_CONN VI1) geomGetT...
+
+Executing: MESH_ASY_M2_temp2 = geomButtOrOver(geomButtOrOver(MESH_ASY_CONN VI1) geomGetT...
+
+Executing: MESH_ASY_M2_temp3 = geomButtOrOver(MESH_ASY_MET2 geomButtOrOver(MOM2_T_ASY ME...
+
+Executing: MESH_ASY_M2_temp4 = geomButtOrOver(MESH_ASY_MET3 geomButtOrOver(MOM3_T_ASY ME...
+
+Executing: MESH_ASY_M2_temp5 = geomOr(MESH_ASY_M2_temp3 MESH_ASY_M2_temp4)
+
+Executing: MESH_ASY_M2_CONN = geomOr(MESH_ASY_M2_temp1 MESH_ASY_M2_temp2)
+
+Executing: MESH_ASY_M2 = geomButtOrOver(geomButtOrOver(MOM_MESH_ASY MESH_ASY_M2_CONN) ME...
+
+Executing: MESH_N_COUNT = geomAnd(geomOr(SIZE8 SIZE9) MOMSYM)
+
+Executing: bjtpod = geomAndNot(geomAnd(psd_A BJTSYMBOL) RFSYMBOL)
+
+Executing: qte = geomInside(bjtpod wel)
+
+Executing: qtc = geomOutside(bjtpod NWEL)
+
+Executing: bjt_all = geomHoles(qtc innermostEmpty)
+
+Executing: qte5 = geomContactCheck(qte (length <= 5.5) (width <= 5.5))
+
+Executing: qte15 = geomContactCheck(qte (length >= 14.5) (width >= 14.5))
+
+Executing: qte10 = geomAndNot(geomAndNot(qte qte15) qte5)
+
+Executing: bjt_v5_mm = geomEnclose(bjt_all qte5)
+
+Executing: bjt_v10_mm = geomEnclose(bjt_all qte10)
+
+Executing: bjt_v15_mm = geomEnclose(bjt_all qte15)
+
+Executing: RFSYMBOL1 = geomSize(RFSYMBOL -5 downUp)
+
+Executing: LLMARK = geomAnd(RFSYMBOL1 IND)
+
+Executing: CRTOP1 = geomAnd(CRTOP LLMARK)
+
+Executing: CRTERM1 = geomAndNot(CRTOP CRTOP1)
+
+Executing: CRBOT1 = geomAvoiding(geomAnd(CRBOT LLMARK) CRBOTT)
+
+Executing: CRTERM2 = geomAndNot(CRBOT CRBOT1)
+
+Executing: IND_CR1 = geomOr(CRTOP1 CRBOT1)
+
+Executing: IND_CR = geomEnclose(RFSYMBOL IND_CR1)
+
+Executing: IND_CRB = geomSize(CRTOP1 0.1)
+
+Executing: IND_CRS = geomSize(CRTOP1 -0.1)
+
+Executing: ME6LS_Q = geomAvoiding(geomOverlap(geomAnd(ME6 IND) RFSYMBOL) ME5)
+
+Executing: MEN_IND = geomAnd(CRMID IND)
+
+Executing: MENLS = geomOverlap(MEN_IND RFSYMBOL)
+
+Executing: ME5LS_Q = geomAvoiding(geomOverlap(geomAnd(ME5 IND) RFSYMBOL) ME4)
+
+Executing: MENL_IND = geomAnd(CRBOT IND)
+
+Executing: MENLLS = geomOverlap(MENL_IND RFSYMBOL)
+
+Executing: ME4LS_Q = geomAvoiding(geomOverlap(geomAnd(ME4 IND) RFSYMBOL) ME3)
+
+Executing: ME3LS_Q = geomAvoiding(geomOverlap(geomAnd(ME3 IND) RFSYMBOL) ME2)
+
+Executing: lay1 = geomAndNot(geomAnd(ME1 LLMARK) SIZE1)
+
+Executing: lay2 = geomAndNot(geomAnd(ME2 LLMARK) SIZE2)
+
+Executing: lay3 = geomAvoiding(geomAndNot(geomAnd(ME3 LLMARK) SIZE3) ME3LS_Q)
+
+Executing: lay4 = geomAvoiding(geomAnd(ME4 LLMARK) ME4LS_Q)
+
+Executing: lay5 = geomAvoiding(geomAnd(ME5 LLMARK) ME5LS_Q)
+
+Executing: lay6 = geomAvoiding(geomAnd(ME6 LLMARK) ME6LS_Q)
+
+Executing: IND_SQ0 = geomOr(geomOr(geomOr(geomOr(geomOr(lay1 lay2) lay3) lay4) lay5) lay6)
+
+Executing: M1t_c = geomAndNot(M1a RFSYMBOL)
+
+Executing: M2t_c = geomAndNot(M2a RFSYMBOL)
+
+Executing: M3t_c = geomAndNot(M3a RFSYMBOL)
+
+Executing: M4t_c = geomAndNot(M4a RFSYMBOL)
+
+Executing: M5t_c = geomAndNot(M5a RFSYMBOL)
+
+Executing: M6t_c = geomAndNot(M6a RFSYMBOL)
+
+Executing: lay1a = geomButtOrOver(geomAvoiding(M1t_c geomOr(geomOr(SIZE1 SIZE2) SIZE3)) ...
+
+Executing: lay1b = geomButtOrOver(geomAndNot(M1t_c lay1a) IND_SQ0)
+
+Executing: lay2a = geomButtOrOver(geomButtOrOver(geomButting(M2t_c LLMARK) geomOr(SIZE1 ...
+
+Executing: lay2b = geomButtOrOver(geomAndNot(M2t_c lay2a) IND_SQ0)
+
+Executing: lay3a = geomButtOrOver(geomButtOrOver(geomButting(M3t_c LLMARK) geomOr(SIZE2 ...
+
+Executing: lay3b = geomButtOrOver(geomAndNot(M3t_c lay3a) IND_SQ0)
+
+Executing: lay4a = geomButtOrOver(geomButtOrOver(geomButting(M4t_c LLMARK) SIZE3) IND_SQ0)
+
+Executing: lay4b = geomButtOrOver(geomAndNot(M4t_c lay4a) IND_SQ0)
+
+Executing: lay5a = geomButtOrOver(geomAvoiding(M5t_c geomOr(geomOr(SIZE1 SIZE2) SIZE3)) ...
+
+Executing: lay5b = geomButtOrOver(geomAndNot(M5t_c lay5a) IND_SQ0)
+
+Executing: lay6a = geomButtOrOver(geomAvoiding(M6t_c geomOr(geomOr(SIZE1 SIZE2) SIZE3)) ...
+
+Executing: lay6b = geomButtOrOver(geomAndNot(M6t_c lay6a) IND_SQ0)
+
+Executing: IND_SQa = geomGetBBox(IND_SQ0)
+
+Executing: E_IND_SQ0 = geomSize(geomGetBBox(IND_SQ0) 0.01)
+
+Executing: Lterm1 = geomAnd(geomButting(geomOr(geomOr(geomOr(geomSize(M1t_c -0.3 downUp)...
+
+Executing: Lterm2 = geomAnd(geomButting(geomOr(geomOr(geomOr(geomOr(lay2b lay3b) lay4b) ...
+
+Executing: geomHoles(geomSize(geomSize(IND_SQ0 0.2) -0.2))
+
+Executing: IND_SQ1 = geomGrow(IND_SQi 25 0)
+
+Executing: IND_SQ2 = geomAnd(IND_SQ1 IND_SQ0)
+
+Executing: IND_UPS = geomAnd(geomOr(geomOr(SIZE1 SIZE2) SIZE3) LLMARK)
+
+Executing: layer1a = geomAnd(M1a LLMARK)
+
+Executing: layer2a = geomAnd(M2a LLMARK)
+
+Executing: layer3a = geomAndNot(geomAnd(M3a LLMARK) CRBOT1)
+
+Executing: layer4 = geomAndNot(geomAnd(M4a LLMARK) CRBOT1)
+
+Executing: layer5 = geomAndNot(geomAnd(M5a LLMARK) CRBOT1)
+
+Executing: layer6 = geomAndNot(geomAnd(M6a LLMARK) CRBOT1)
+
+Executing: IND_SQ_CR = geomOr(IND_CR1 IND_SQ0)
+
+Executing: rf_pad = geomAnd(geomAnd(AL_RDL PADMARK) RFSYMBOL)
+
+Executing: p_rf_pad = geomAvoiding(geomEnclose(PWBLK rf_pad) IND)
+
+Executing: type9 = geomAnd(rf_pad PADMARK)
+
+Executing: type6 = geomAnd(M6a type9)
+
+Executing: type5 = geomAnd(M5a type9)
+
+Executing: type4 = geomAnd(M4a type9)
+
+Executing: type3 = geomAnd(M3a type9)
+
+Executing: type2 = geomAnd(M2a type9)
+
+Executing: type1 = geomAnd(M1a type9)
+
+Executing: MENLT1 = geomAnd(SIZE6 CRTOP1)
+
+Executing: MENLU_1 = geomAndNot(SIZE6 MENLT1)
+
+Executing: MENLU_2 = geomButtOrOver(MENLU_1 MENLT1 (keep == 2))
+
+Executing: MENLU = geomSize(MENLU_2 0.2)
+
+Executing: N_IND_CR = geomOverlap(geomOverlap(IND_CR wel) SIZE7)
+
+Executing: N_IND_CR_P = geomOverlap(geomAvoiding(IND_CR wel) SIZE10)
+
+Executing: N_IND_SYC = geomOverlap(geomOverlap(IND_CR wel) SIZE8)
+
+Executing: N_IND_SYC_P = geomOverlap(geomAvoiding(IND_CR wel) SIZE11)
+
+Executing: N_IND_SY = geomOverlap(geomOverlap(IND_CR wel) SIZE9)
+
+Executing: N_IND_SY_P = geomOverlap(geomAvoiding(IND_CR wel) SIZE12)
+
+Executing: MLT = geomEnclose(geomAnd(CRBOT1 CRTOP1) VIA)
+
+Executing: ML2 = geomAndNot(geomAnd(CRBOT1 CRTOP1) MLT)
+
+Executing: LDIMETER = geomGetBBox(CRTOP1)
+
+Executing: LDIMETER1 = geomSize(LDIMETER -0.5)
+
+Executing: ML1 = geomAnd(geomAndNot(geomAndNot(CRBOT1 MLT) ML2) LDIMETER1)
+
+Executing: MENLT_1 = geomAnd(MENLS CRTOP1)
+
+Executing: MENLT = geomOverlap(MENLT_1 VIA)
+
+Executing: LDTA_1 = geomAndNot(LDIMETER CRTOP1)
+
+Executing: LDTA_2 = geomGetBBox(LDTA_1)
+
+Executing: LDTA = geomAndNot(LDIMETER LDTA_2)
+
+Executing: MENLUKCT2 = geomGetBBox(geomAndNot(MENLS MENLT))
+
+Executing: MENLUKCT = geomOr(geomAvoiding(geomAndNot(geomGetBBox(MENLS) MENLUKCT2) VIAL)...
+
+Executing: MENLUKCT1 = geomButting(geomOr(geomGetBBox(geomAndNot(MENLS MENLT)) LDTA) MEN...
+
+Executing: MENLT2_1 = geomAvoiding(MENLT MENLLS)
+
+Executing: MENLT2 = geomOr(MENLT2_1 LDTA)
+
+Executing: layer1b = geomInside(layer1a SIZE1)
+
+Executing: layer1 = geomAndNot(layer1a layer1b)
+
+Executing: layer2b = geomInside(layer2a SIZE2)
+
+Executing: layer2 = geomAndNot(layer2a layer2b)
+
+Executing: layer3b = geomInside(layer3a SIZE3)
+
+Executing: layer3 = geomAndNot(layer3a layer3b)
+
+Executing: IND_SQ0 = geomOr(geomOr(geomOr(geomOr(geomOr(layer1 layer2) layer3) layer4) l...
+
+Executing: SIZEA = geomOr(geomOr(geomOr(geomOr(geomOr(SIZE8 SIZE9) SIZE11) SIZE12) SIZE7...
+
+Executing: N_IND_CR_0 = geomAvoiding(geomOverlap(RFSYMBOL IND_CR) SIZEA)
+
+Executing: SQLDIMETER = geomGetBBox(IND_SQ0)
+
+Executing: N_IND_SQ_P = geomAvoiding(geomAvoiding(geomGetBBox(IND_SQ0) NWEL) geomOverlap...
+
+Executing: N_IND_SQ = geomButtOrOver(geomAvoiding(geomEnclose(NWEL IND_SQ0) geomOverlap(...
+
+Executing: N_IND_SQ_0 = geomAvoiding(geomAvoiding(geomEnclose(NWEL IND_SQ0) geomOverlap(...
+
+Executing: IND_SQ = geomAvoiding(geomEnclose(WELBODY IND_SQ0) SIZE6)
+
+Executing: geomHoles(geomSize(geomSize(IND_SQ0 1) -1))
+
+Executing: CENTER1 = geomGrow(CENTER 35 0 35 0)
+
+Executing: SQ_DATW = geomAnd(CENTER1 IND_SQ0)
+
+Executing: q1 = geomAndNot(SQLDIMETER geomSize(SQLDIMETER -1))
+
+Executing: q2 = geomAndNot(geomSize(SQLDIMETER -2) geomSize(SQLDIMETER -3))
+
+Executing: q3 = geomAndNot(geomSize(SQLDIMETER -4) geomSize(SQLDIMETER -5))
+
+Executing: q4 = geomAndNot(geomSize(SQLDIMETER -6) geomSize(SQLDIMETER -7))
+
+Executing: q5 = geomAndNot(geomSize(SQLDIMETER -8) geomSize(SQLDIMETER -9))
+
+Executing: q6 = geomAndNot(geomSize(SQLDIMETER -10) geomSize(SQLDIMETER -11))
+
+Executing: ns1 = geomAnd(q1 geomOverlap(SQLDIMETER layer1))
+
+Executing: ns2 = geomAnd(q2 geomOverlap(SQLDIMETER layer2))
+
+Executing: ns3 = geomAnd(q3 geomOverlap(SQLDIMETER layer3))
+
+Executing: ns4 = geomAnd(q4 geomOverlap(SQLDIMETER layer4))
+
+Executing: ns5 = geomAnd(q5 geomOverlap(SQLDIMETER layer5))
+
+Executing: ns6 = geomAnd(q6 geomOverlap(SQLDIMETER layer6))
+
+Executing: us1 = geomAnd(q1 geomAnd(SIZE1 LLMARK))
+
+Executing: us2 = geomAnd(q2 geomAnd(SIZE2 LLMARK))
+
+Executing: us3 = geomAnd(q3 geomAnd(SIZE3 LLMARK))
+
+Executing: SQ_NS = geomOr(geomOr(geomOr(geomOr(geomOr(ns1 ns2) ns3) ns4) ns5) ns6)
+
+Executing: SQ_BM1 = geomOr(us1 q4)
+
+Executing: SQ_BM2 = geomOr(us2 q4)
+
+Executing: SQ_BM3 = geomOr(us3 q4)
+
+Executing: polycon = geomAndNot(CONT DIFF)
+
+Executing: diffcon = geomAndNot(CONT PO1)
+
+Executing: nsdcon = geomAnd(diffcon nsd)
+
+Executing: psdcon = geomAnd(diffcon psd)
+
+Executing: pwCon = geomAnd(diffcon ptap)
+
+Executing: pwCon_p = geomAnd(diffcon ptap_p)
+
+Executing: pwCon_all = geomAnd(diffcon ptap_all)
+
+Executing: nwCon = geomAnd(diffcon ntap)
+
+Executing: twCon = geomAnd(diffcon ttap)
+
+Executing: VI1L = geomAnd(VI1 LSYMBOL)
+
+Executing: VI2L = geomAnd(VI2 LSYMBOL)
+
+Executing: VI3L = geomAnd(VI3 LSYMBOL)
+
+Executing: VI4L = geomAnd(VI4 LSYMBOL)
+
+Executing: VI5L = geomAnd(VI5 LSYMBOL)
+
+Executing: VI1 = geomAndNot(VI1 VI1L)
+
+Executing: VI2 = geomAndNot(VI2 VI2L)
+
+Executing: VI3 = geomAndNot(VI3 VI3L)
+
+Executing: VI4 = geomAndNot(VI4 VI4L)
+
+Executing: VI5 = geomAndNot(VI5 VI5L)
+
+Executing: rcxLayer(RFSYMBOL)
+
+Executing: ME1 = geomAndNot(ME1 IND_SQ_CR)
+
+Executing: ME2 = geomAndNot(ME2 IND_SQ_CR)
+
+Executing: ME3 = geomAndNot(ME3 IND_SQ_CR)
+
+Executing: ME4 = geomAndNot(ME4 IND_SQ_CR)
+
+Executing: ME5 = geomAndNot(ME5 IND_SQ_CR)
+
+Executing: ME6 = geomAndNot(ME6 IND_SQ_CR)
+
+Executing: ME7 = geomAndNot(ME7 IND_SQ_CR)
+
+Executing: ME8 = geomAndNot(ME8 IND_SQ_CR)
+
+Executing: MOM_ARRAY_VP3_RFVCL_0 = geomButtOrOver(geomAnd(SIZE4 RFSYMBOL) MOMSYM)
+
+Executing: MOM_ARRAY_VP3_RFVCL_1 = geomSize(geomAndNot(MOM_ARRAY_VP3_RFVCL_0 geomOr(SIZE...
+
+Executing: MOM_ARRAY_VP3_RFVCL_2 = geomSize(geomAnd(MOM_ARRAY_VP3_RFVCL_0 SIZE1) 0.4)
+
+Executing: MOM_ARRAY_VP3_RFVCL_3 = geomSize(geomAnd(MOM_ARRAY_VP3_RFVCL_0 SIZE2) 0.4)
+
+Executing: MOM_ARRAY_VP3_RFVCL_4 = geomSize(geomAnd(MOM_ARRAY_VP3_RFVCL_0 SIZE3) 0.4)
+
+Executing: VP3_ME2_1 = geomAndNot(geomButtOrOver(geomAndNot(geomStraddle(ME2 ME3) geomOr...
+
+Executing: VP3_ME3_1 = geomAndNot(geomButtOrOver(geomAndNot(geomStraddle(ME3 ME2) geomOr...
+
+Executing: VP3_ME3_2 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP3_ME4_2 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP3_ME4_3 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP3_ME5_3 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP3_ME5_4 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP3_ME6_4 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: MOM_ARRAY_VP4_RFVCL_0 = geomButtOrOver(geomAnd(SIZE5 RFSYMBOL) MOMSYM)
+
+Executing: MOM_ARRAY_VP4_RFVCL_1 = geomSize(geomAndNot(MOM_ARRAY_VP4_RFVCL_0 geomOr(SIZE...
+
+Executing: MOM_ARRAY_VP4_RFVCL_2 = geomSize(geomAnd(MOM_ARRAY_VP4_RFVCL_0 SIZE1) 0.4)
+
+Executing: MOM_ARRAY_VP4_RFVCL_3 = geomSize(geomAnd(MOM_ARRAY_VP4_RFVCL_0 SIZE2) 0.4)
+
+Executing: MOM_ARRAY_VP4_RFVCL_4 = geomSize(geomAnd(MOM_ARRAY_VP4_RFVCL_0 SIZE3) 0.4)
+
+Executing: VP4_ME2_1 = geomAndNot(geomButtOrOver(geomAndNot(geomStraddle(ME2 ME3) geomOr...
+
+Executing: VP4_ME3_1 = geomAndNot(geomButtOrOver(geomAndNot(geomStraddle(ME3 ME2) geomOr...
+
+Executing: VP4_ME3_2 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP4_ME4_2 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP4_ME4_3 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP4_ME5_3 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP4_ME5_4 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: VP4_ME6_4 = geomAndNot(geomButtOrOver(geomButtOrOver(geomAndNot(geomStraddle(...
+
+Executing: MOMSYM1_VCL = geomSize(geomSize(MOMSYM -0.07) 0.07)
+
+Executing: MOMCOUNT1 = geomAnd(geomAnd(MOMSYM1_VCL geomAnd(ME1 RFSYMBOL)) geomOr(SIZE4 S...
+
+Executing: MOMCOUNT2 = geomAnd(geomAnd(MOMSYM1_VCL geomAnd(ME2 RFSYMBOL)) geomOr(SIZE4 S...
+
+Executing: MOMCOUNT3 = geomAnd(geomAnd(MOMSYM1_VCL geomAnd(ME3 RFSYMBOL)) geomOr(SIZE4 S...
+
+Executing: MOMCOUNT4 = geomAnd(geomAnd(MOMSYM1_VCL geomAnd(ME4 RFSYMBOL)) geomOr(SIZE4 S...
+
+Executing: MOMCOUNT5 = geomAnd(geomAnd(MOMSYM1_VCL geomAnd(ME5 RFSYMBOL)) geomOr(SIZE4 S...
+
+Executing: N_ARRAY = geomAnd(MOMSYM geomOr(SIZE4 SIZE5 SIZE6 SIZE7))
+
+Executing: geomConnect((via polycon ME1 ply) (via nsdcon ME1 nsd) (via psdcon ME1 psd) (...
+ See the label report in "dff_backup_2.erc" file for details.
+
+
+Executing: geomConnect(incremental (buttOrOver ME2 MESH_SY_P1_CONN) (buttOrOver ME3 MESH...
+ See the label report in "dff_backup_2.erc" file for details.
+
+
+Executing: geomConnect(incremental (svia TMV_RDL AL_RDL ME6 MMCTP MMCBP))
+ See the label report in "dff_backup_2.erc" file for details.
+
+
+Executing: geomStamp(PWBLK ptap_p error)
+
+Executing: geomStamp(PSUB ptap error)
+
+Executing: geomStamp(wel ntap error)
+
+Executing: geomStamp(TWEL ttap error)
+
+Executing: geomStamp(PSUB_P ptap_all error)
+
+Executing: geomStamp(B_DNW wel error)
+
+Executing: nnbdif = geomButtOnly(nsd ptap diffNet)
+	   errorLayer(nnbdif " nsd/ptap butting issue: nsd/ptap need to be connected by metal and contact")
+
+Executing: ppbdif = geomButtOnly(psd ntap diffNet)
+	   errorLayer(ppbdif " psd/ntap butting issue: psd/ntap need to be connected by metal and contact")
+
+Executing: ptap99 = geomAvoiding(geomGetNet(ptap PWR1 PWR2) geomOr(CSYMBOL DSYMBOL BJTSY...
+	   errorLayer(ptap99 "ptap is wrongly connected to POWER ! ")
+
+Executing: ntap99 = geomAvoiding(geomGetNet(ntap GND1 GND2) geomOr(CSYMBOL DSYMBOL BJTSY...
+	   errorLayer(ntap99 "ntap is wrongly connected to GROUND ! ")
+
+Executing: geomStamp(qte psd)
+
+Executing: geomStamp(PWELL PSUB)
+
+Executing: geomStamp(rfpd psd)
+
+Executing: geomStamp(rfps psd)
+
+Executing: geomStamp(rfnd nsd)
+
+Executing: geomStamp(rfns nsd)
+
+Executing: (saveInterconnect (ply "PO1"))
+
+Executing: (saveInterconnect (ME1 "ME1"))
+
+Executing: (saveInterconnect (ME2 "ME2"))
+
+Executing: (saveInterconnect (ME3 "ME3"))
+
+Executing: (saveInterconnect (ME4 "ME4"))
+
+Executing: (saveInterconnect (ME5 "ME5"))
+
+Executing: (saveInterconnect (ME6 "ME6"))
+
+Executing: (saveInterconnect (ME7 "ME7"))
+
+Executing: (saveInterconnect (ME8 "ME8"))
+
+Executing: extractMOS("n_12_hsl130e" NG_HS (ply "G") (nsd "S" "D") (PSUB "B") flagMalfor...
+        16 'n_12_hsl130e' created in cell 'dff_backup_2 layout cadence_test_lib'.
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NG_HS shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NG_HS shared)
+
+Executing: w_mos = measureParameter(length (NG_HS coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NG_HS) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_12_hsl130e" PG_HS (ply "G") (psd "S" "D") (wel "B") flagMalform...
+        16 'p_12_hsl130e' created in cell 'dff_backup_2 layout cadence_test_lib'.
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") PG_HS shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") PG_HS shared)
+
+Executing: w_mos = measureParameter(length (PG_HS coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (PG_HS) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_12_hsl130e" MNGATE_C (ply "G") (nsd "S" "D") (PSUB "B") flagMal...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") MNGATE_C shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") MNGATE_C shared)
+
+Executing: w_mos = measureParameter(length (MNGATE_C coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (MNGATE_C) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_12_hsl130e" MPGATE_C (ply "G") (psd "S" "D") (wel "B") flagMalf...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") MPGATE_C shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") MPGATE_C shared)
+
+Executing: w_mos = measureParameter(length (MPGATE_C coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (MPGATE_C) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_hg_33_l130e" NTGATE (ply "G") (nsd "S" "D") (PSUB "B") flagMalf...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NTGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NTGATE shared)
+
+Executing: w_mos = measureParameter(length (NTGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NTGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_hg_33_l130e" PTGATE (ply "G") (psd "S" "D") (wel "B") flagMalfo...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") PTGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") PTGATE shared)
+
+Executing: w_mos = measureParameter(length (PTGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (PTGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_bpw_12_hsl130e" NSGATE (ply "G") (nsd "S" "D") (TWEL "B") flagM...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NSGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NSGATE shared)
+
+Executing: w_mos = measureParameter(length (NSGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NSGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_hgbpw_33_l130e" TGNSGATE (ply "G") (nsd "S" "D") (TWEL "B") fla...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") TGNSGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") TGNSGATE shared)
+
+Executing: w_mos = measureParameter(length (TGNSGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (TGNSGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_lv_12_hsl130e" NLGATE (ply "G") (nsd "S" "D") (PSUB "B") flagMa...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NLGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NLGATE shared)
+
+Executing: w_mos = measureParameter(length (NLGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NLGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_lv_12_hsl130e" PLGATE (ply "G") (psd "S" "D") (wel "B") flagMal...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") PLGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") PLGATE shared)
+
+Executing: w_mos = measureParameter(length (PLGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (PLGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_hglv_33_l130e" NHLGATE (ply "G") (nsd "S" "D") (PSUB "B") flagM...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NHLGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NHLGATE shared)
+
+Executing: w_mos = measureParameter(length (NHLGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NHLGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_hglv_33_l130e" PHLGATE (ply "G") (psd "S" "D") (wel "B") flagMa...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") PHLGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") PHLGATE shared)
+
+Executing: w_mos = measureParameter(length (PHLGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (PHLGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_nvt_12_hsl130e" NLGAT (ply "G") (nsd "S" "D") (PSUB "B") flagMa...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NLGAT shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NLGAT shared)
+
+Executing: w_mos = measureParameter(length (NLGAT coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NLGAT) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_hgnvt_33_l130e" NHLGAT (ply "G") (nsd "S" "D") (PSUB "B") flagM...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NHLGAT shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NHLGAT shared)
+
+Executing: w_mos = measureParameter(length (NHLGAT coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NHLGAT) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_lvbpw_12_hsl130e" NLTWGATE (ply "G") (nsd "S" "D") (TWEL "B") f...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NLTWGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NLTWGATE shared)
+
+Executing: w_mos = measureParameter(length (NLTWGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NLTWGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_hglvbpw_33_l130e" NLTGTWGATE (ply "G") (nsd "S" "D") (TWEL "B")...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NLTGTWGATE shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NLTGTWGATE shared)
+
+Executing: w_mos = measureParameter(length (NLTGTWGATE coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NLTGTWGATE) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("n_12_lll130e" NG_LL (ply "G") (nsd "S" "D") (PSUB "B") flagMalfor...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") NG_LL shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") NG_LL shared)
+
+Executing: w_mos = measureParameter(length (NG_LL coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (NG_LL) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractMOS("p_12_lll130e" PG_LL (ply "G") (psd "S" "D") (wel "B") flagMalform...
+
+Executing: attachParameter(areaS ("ad" "D") ("as" "S") PG_LL shared)
+
+Executing: attachParameter(periS ("pd" "D") ("ps" "S") PG_LL shared)
+
+Executing: w_mos = measureParameter(length (PG_LL coincident ply) 5e-07)
+
+Executing: a_mos = measureParameter(area (PG_LL) 1e-12)
+
+Executing: l_mos = calculateParameter((a_mos / w_mos))
+
+Executing: nameParameter(l_mos "l")
+
+Executing: nameParameter(w_mos "w")
+
+Executing: nameParameter(w_mos "effW")
+
+Executing: extractRES("RSNWELL" welres (wel "PLUS" "MINUS") flagMalformed)
+
+Executing: length = measureParameter(length (welres coincident NWEL) 5e-07)
+
+Executing: width = measureParameter(length (welres inside NWEL) 5e-07)
+
+Executing: res = calculateParameter(((length / (width + delta_W)) * rs_nw))
+
+Executing: nameParameter(length "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rsnd_mml130e" snyres_mm (nsd "PLUS" "MINUS") (PSUB "B") (cellV...
+
+Executing: width = measureParameter(length (snyres_mm inside BNDIFF) 5e-07)
+
+Executing: a_res = measureParameter(area (snyres_mm) 1e-12)
+
+Executing: length = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter(((length / width) * RhoD))
+
+Executing: nameParameter(length "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rspd_mml130e" spyres_mm (psd "PLUS" "MINUS") (wel "B") (cellVi...
+
+Executing: width = measureParameter(length (spyres_mm inside BPDIFF) 5e-07)
+
+Executing: a_res = measureParameter(area (spyres_mm) 1e-12)
+
+Executing: length = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter(((length / width) * RhoD))
+
+Executing: nameParameter(length "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rsnpo_mml130e" snpyr_mm (ply "PLUS" "MINUS") (PSUB "B") (cellV...
+
+Executing: width = measureParameter(length (snpyr_mm inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (snpyr_mm) 1e-12)
+
+Executing: length = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter(((length / width) * RhoD))
+
+Executing: nameParameter(length "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rsppo_mml130e" sppyr_mm (ply "PLUS" "MINUS") (wel "B") (cellVi...
+
+Executing: width = measureParameter(length (sppyr_mm inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (sppyr_mm) 1e-12)
+
+Executing: length = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter(((length / width) * RhoD))
+
+Executing: nameParameter(length "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rnhr1000_mml130e" nshrpyr_wel (ply "PLUS" "MINUS") (wel "B") (...
+
+Executing: width = measureParameter(length (nshrpyr_wel inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (nshrpyr_wel) 1e-12)
+
+Executing: l = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter((((2 * Rend) / (width + deltaW)) + ((Rs * (l - 8e-07...
+
+Executing: nameParameter(l "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rnhr1000_mml130e" nshrpyr_psub (ply "PLUS" "MINUS") (PSUB "B")...
+
+Executing: width = measureParameter(length (nshrpyr_psub inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (nshrpyr_psub) 1e-12)
+
+Executing: l = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter((((2 * Rend) / (width + deltaW)) + ((Rs * (l - 8e-07...
+
+Executing: nameParameter(l "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rnnd_mml130e" nsndres_mm (nsd "PLUS" "MINUS") (PSUB "B") (cell...
+
+Executing: width = measureParameter(length (nsndres_mm inside BNDIFF) 5e-07)
+
+Executing: a_res = measureParameter(area (nsndres_mm) 1e-12)
+
+Executing: l = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter((((2 * Rend) / (width + deltaW)) + ((Rs * l) / (widt...
+
+Executing: nameParameter(l "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rnppo_mml130e" nsppyr_wel (ply "PLUS" "MINUS") (wel "B") (cell...
+
+Executing: width = measureParameter(length (nsppyr_wel inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (nsppyr_wel) 1e-12)
+
+Executing: l = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter((((2 * Rend) / (width + delta_W)) + ((Rs * l) / (wid...
+
+Executing: nameParameter(l "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDevice("rnppo_mml130e" nsppyr_psub (ply "PLUS" "MINUS") (PSUB "B") (ce...
+
+Executing: width = measureParameter(length (nsppyr_psub inside PO1) 5e-07)
+
+Executing: a_res = measureParameter(area (nsppyr_psub) 1e-12)
+
+Executing: l = calculateParameter((a_res / width))
+
+Executing: res = calculateParameter((((2 * Rend) / (width + delta_W)) + ((Rs * l) / (wid...
+
+Executing: nameParameter(l "l")
+
+Executing: nameParameter(width "w")
+
+Executing: nameParameter(res "r")
+
+Executing: extractDIODE("dion_l130e" dndiod_mm (PSUB "PLUS") (nsd "MINUS") (cellView "DI...
+
+Executing: area = measureParameter(area (dndiod_mm) 1e-12)
+
+Executing: perim = measureParameter(perimeter (dndiod_mm) 1e-06)
+
+Executing: nameParameter(area "area")
+
+Executing: nameParameter(perim "pj")
+
+Executing: extractDIODE("diop_l130e" dpdiod_mm (psd "PLUS") (wel "MINUS") (cellView "DIO...
+
+Executing: area = measureParameter(area (dpdiod_mm) 1e-12)
+
+Executing: perim = measureParameter(perimeter (dpdiod_mm) 1e-06)
+
+Executing: nameParameter(area "area")
+
+Executing: nameParameter(perim "pj")
+
+Executing: extractDIODE("dionw_l130e" dnwdiod_mm (PSUB "PLUS") (wel "MINUS") (cellView "...
+
+Executing: area = measureParameter(area (dnwdiod_mm) 1e-12)
+
+Executing: perim = measureParameter(perimeter (dnwdiod_mm) 1e-06)
+
+Executing: nameParameter(area "area")
+
+Executing: nameParameter(perim "pj")
+
+Executing: extractDevice("mimcaps_mml130e" CMMC (MMCTP "PLUS") (MMCBP "MINUS") (cellView...
+
+Executing: A = measureParameter(area (CMMC) 1e-12)
+
+Executing: P = measureParameter(perimeter (CMMC) 1e-06)
+
+Executing: C = calculateParameter(((Ca * A) + (Cp * P)))
+
+Executing: length_mmc = calculateParameter((((P / 2) + sqrt((((P * P) / 4) - (4 * A)))) ...
+
+Executing: width_mmc = calculateParameter((A / length_mmc))
+
+Executing: nameParameter(C "C")
+
+Executing: nameParameter(width_mmc "w")
+
+Executing: nameParameter(length_mmc "l")
+
+Executing: extractBJT("pnp_v50x50_l130e" bjt_v5_mm (PSUB "C") (wel "B") (qte "E") (cellV...
+
+Executing: attachParameter(emitArea "area" bjt_v5_mm)
+
+Executing: extractBJT("pnp_v100x100_l130e" bjt_v10_mm (PSUB "C") (wel "B") (qte "E") (ce...
+
+Executing: attachParameter(emitArea "area" bjt_v10_mm)
+
+Executing: extractBJT("pnp_v150x150_l130e" bjt_v15_mm (PSUB "C") (wel "B") (qte "E") (ce...
+
+Executing: attachParameter(emitArea "area" bjt_v15_mm)
+
+Executing: extractDevice("n_12_rf" MNGATE_RF (rfnd "D") (ply "G") (rfns "S") (PSUB "B") ...
+
+Executing: attachParameter(length "lf" MNGATE_RF)
+
+Executing: attachParameter(width "wf" MNGATE_RF)
+
+Executing: attachParameter(m_mos "nf" MNGATE_RF)
+
+Executing: extractDevice("p_12_rf" MPGATE_RF (rfpd "D") (ply "G") (rfps "S") (wel "B") (...
+
+Executing: attachParameter(length "lf" MPGATE_RF)
+
+Executing: attachParameter(width "wf" MPGATE_RF)
+
+Executing: attachParameter(m_mos "nf" MPGATE_RF)
+
+Executing: extractDevice("n_33_rf" NTGATE_RF (rfnd "D") (ply "G") (rfns "S") (PSUB "B") ...
+
+Executing: attachParameter(length "lf" NTGATE_RF)
+
+Executing: attachParameter(width "wf" NTGATE_RF)
+
+Executing: attachParameter(m_mos "nf" NTGATE_RF)
+
+Executing: extractDevice("p_33_rf" PTGATE_RF (rfpd "D") (ply "G") (rfps "S") (wel "B") (...
+
+Executing: attachParameter(length "lf" PTGATE_RF)
+
+Executing: attachParameter(width "wf" PTGATE_RF)
+
+Executing: attachParameter(m_mos "nf" PTGATE_RF)
+
+Executing: extractDevice("n_bpw_12_rf" NSGATE_RF (rfnd "D") (ply "G") (rfns "S") (TWEL "...
+
+Executing: attachParameter(length "lf" NSGATE_RF)
+
+Executing: attachParameter(width "wf" NSGATE_RF)
+
+Executing: attachParameter(m_mos "nf" NSGATE_RF)
+
+Executing: extractDevice("n_bpw_33_rf" TGNSGATE_RF (rfnd "D") (ply "G") (rfns "S") (TWEL...
+
+Executing: attachParameter(length "lf" TGNSGATE_RF)
+
+Executing: attachParameter(width "wf" TGNSGATE_RF)
+
+Executing: attachParameter(m_mos "nf" TGNSGATE_RF)
+
+Executing: extractDevice("rnhr_rf" nshrpyr_rf (ply "PLUS" "MINUS") (wel "NW") (PWELL "PS...
+
+Executing: attachParameter(length "l" nshrpyr_rf)
+
+Executing: attachParameter(width "w" nshrpyr_rf)
+
+Executing: attachParameter(res "r" nshrpyr_rf)
+
+Executing: attachParameter(d_mmc "d" nshrpyr_rf)
+
+Executing: extractDevice("rnppo_rf" nsppyr_rf (ply "PLUS" "MINUS") (wel "NW") (PWELL "PS...
+
+Executing: attachParameter(length "l" nsppyr_rf)
+
+Executing: attachParameter(width "w" nsppyr_rf)
+
+Executing: attachParameter(res "r" nsppyr_rf)
+
+Executing: attachParameter(d_mmc "d" nsppyr_rf)
+
+Executing: extractDevice("rnnpo_rf" nsnpyr_rf (ply "PLUS" "MINUS") (wel "NW") (PWELL "PS...
+
+Executing: attachParameter(length "l" nsnpyr_rf)
+
+Executing: attachParameter(width "w" nsnpyr_rf)
+
+Executing: attachParameter(res "r" nsnpyr_rf)
+
+Executing: attachParameter(d_mmc "d" nsnpyr_rf)
+
+Executing: extractDevice("npn_sv50x50_rf" npn5x5_s_rf (nsd "E") (TWEL "B") (wel "C") (PS...
+
+Executing: attachParameter(A "ea" npn5x5_s_rf)
+
+Executing: attachParameter(width "we" npn5x5_s_rf)
+
+Executing: attachParameter(length "le" npn5x5_s_rf)
+
+Executing: extractDevice("npn_svl20_rf" npn2_s_rf (nsd "E") (TWEL "B") (wel "C") (PSUB "...
+
+Executing: attachParameter(A "ea" npn2_s_rf)
+
+Executing: attachParameter(width "we" npn2_s_rf)
+
+Executing: attachParameter(length "le" npn2_s_rf)
+
+Executing: extractDevice("npn_nv50x50_rf" npn5x5_n_rf (nsd "E") (TWEL "B") (wel "C") (PS...
+
+Executing: attachParameter(A "ea" npn5x5_n_rf)
+
+Executing: attachParameter(width "we" npn5x5_n_rf)
+
+Executing: attachParameter(length "le" npn5x5_n_rf)
+
+Executing: extractDevice("npn_nvl20_rf" npn2_n_rf (nsd "E") (TWEL "B") (wel "C") (PSUB "...
+
+Executing: attachParameter(A "ea" npn2_n_rf)
+
+Executing: attachParameter(width "we" npn2_n_rf)
+
+Executing: attachParameter(length "le" npn2_n_rf)
+
+Executing: extractDevice("pnp_nv50x50_rf" pnp5x5_n_rf (psd "E") (wel "B") (PSUB "C") (ce...
+
+Executing: attachParameter(A "ea" pnp5x5_n_rf)
+
+Executing: attachParameter(width "we" pnp5x5_n_rf)
+
+Executing: attachParameter(length "le" pnp5x5_n_rf)
+
+Executing: extractDevice("pnp_nvl20_rf" pnp2_n_rf (psd "E") (wel "B") (PSUB "C") (cellVi...
+
+Executing: attachParameter(A "ea" pnp2_n_rf)
+
+Executing: attachParameter(width "we" pnp2_n_rf)
+
+Executing: attachParameter(length "le" pnp2_n_rf)
+
+Executing: extractDevice("diodn_esd_rf" nsdtw_rf (TWEL "PLUS") (nsd "MINUS") (wel "NW") ...
+
+Executing: attachParameter(width "w" nsdtw_rf)
+
+Executing: attachParameter(length "l" nsdtw_rf)
+
+Executing: extractDevice("diop_esd_rf" dpesd_rf (psd "PLUS") (wel "MINUS") (PSUB "PSUB")...
+
+Executing: attachParameter(width "w" dpesd_rf)
+
+Executing: attachParameter(length "l" dpesd_rf)
+
+Executing: extractDevice("varmis_12_rf" varmis_rf12 (ply "PLUS") (wel "MINUS") (PWELL "P...
+
+Executing: attachParameter(nf "nf" varmis_rf12)
+
+Executing: attachParameter(w "w" varmis_rf12)
+
+Executing: attachParameter(l "l" varmis_rf12)
+
+Executing: attachParameter(C "c" varmis_rf12)
+
+Executing: extractDevice("varmis_33_rf" varmis_rf33 (ply "PLUS") (wel "MINUS") (PWELL "P...
+
+Executing: attachParameter(nf "nf" varmis_rf33)
+
+Executing: attachParameter(w "w" varmis_rf33)
+
+Executing: attachParameter(l "l" varmis_rf33)
+
+Executing: attachParameter(C "c" varmis_rf33)
+
+Executing: extractDevice("vardiop_rf" vard_rf (psd "PLUS") (wel "MINUS") (PSUB "PSUB") (...
+
+Executing: attachParameter(nf "nf" vard_rf)
+
+Executing: attachParameter(width_vard "wp" vard_rf)
+
+Executing: attachParameter(length_vard "l" vard_rf)
+
+Executing: attachParameter(C "c" vard_rf)
+
+Executing: extractDevice("mimcaps_rf" CMMC_RF (MMCTP "PLUS") (MMCBP "MINUS") (wel "NW") ...
+
+Executing: attachParameter(C "c" CMMC_RF)
+
+Executing: attachParameter(width_mmc "w" CMMC_RF)
+
+Executing: attachParameter(length_mmc "l" CMMC_RF)
+
+Executing: saveProperty(CMMC_RF "tm" 6)
+
+Executing: extractDevice("MOMCAPS_SY_MM" MOMVP1_MM (MOM1_term "PLUS" "MINUS") (wel "B") ...
+           extractDevice("MOMCAPS_SY_MM" MOMVP1_MM (MOM1_term "PLUS" "MINUS") (PSUB "B")...
+
+Executing: fns2 = geomAnd(ME2 MOMSYM1)
+
+Executing: fns4 = geomAnd(ME4 MOMSYM1)
+
+Executing: fns5 = geomAnd(ME5 MOMSYM1)
+
+Executing: fns6 = geomAnd(ME6 MOMSYM1)
+
+Executing: attachParameter(nf2 "nf" MOMVP1_MM)
+
+Executing: attachParameter(length_finger "l" MOMVP1_MM)
+
+Executing: attachParameter(nm "nm" MOMVP1_MM)
+
+Executing: attachParameter(nf2 "nf" MOMVP1_MM)
+
+Executing: attachParameter(length_finger "l" MOMVP1_MM)
+
+Executing: attachParameter(nm "nm" MOMVP1_MM)
+
+Executing: attachParameter(c "c" MOMVP1_MM)
+
+Executing: extractDevice("MOMCAPS_RF" MOMVP1_RF (MOM1_term "PLUS" "MINUS") (wel "NW") (P...
+
+Executing: attachParameter(nf2 "nf" MOMVP1_RF)
+
+Executing: attachParameter(length_finger "l" MOMVP1_RF)
+
+Executing: attachParameter(nm "nm" MOMVP1_RF)
+
+Executing: extractDevice("MOMCAPS_ASY_MM" MOMVP2_MM (MOM2_term_P "PLUS") (MOM2_term_M "M...
+           extractDevice("MOMCAPS_ASY_MM" MOMVP2_MM (MOM2_term_P "PLUS") (MOM2_term_M "M...
+
+Executing: attachParameter(nf2 "nf" MOMVP2_MM)
+
+Executing: attachParameter(length_finger "l" MOMVP2_MM)
+
+Executing: attachParameter(nm "nm" MOMVP2_MM)
+
+Executing: attachParameter(c "c" MOMVP2_MM)
+
+Executing: attachParameter(nf2 "nf" MOMVP2_MM)
+
+Executing: attachParameter(length_finger "l" MOMVP2_MM)
+
+Executing: attachParameter(nm "nm" MOMVP2_MM)
+
+Executing: attachParameter(c "c" MOMVP2_MM)
+
+Executing: extractDevice("MOMCAPS_ASY_RF" MOMVP2_RF (MOM2_term "PLUS") (MOM1_term "MINUS...
+
+Executing: attachParameter(nf2 "nf" MOMVP2_RF)
+
+Executing: attachParameter(length_finger "l" MOMVP2_RF)
+
+Executing: attachParameter(nm "nm" MOMVP2_RF)
+
+Executing: attachParameter(nm4 "nm4" MOMVP2_RF)
+
+Executing: attachParameter(nm5 "nm5" MOMVP2_RF)
+
+Executing: attachParameter(nm6 "nm6" MOMVP2_RF)
+
+Executing: extractDevice("MOMCAPS_SYMESH_MM" MOM_MESH_SY_WEL (MESH_SY_P1 "PLUS1") (MESH_...
+
+Executing: attachParameter(MH "mh" MOM_MESH_SY_WEL)
+
+Executing: attachParameter(nf2 "nf" MOM_MESH_SY_WEL)
+
+Executing: attachParameter(length_finger "l" MOM_MESH_SY_WEL)
+
+Executing: attachParameter(nm "nm" MOM_MESH_SY_WEL)
+
+Executing: attachParameter(c "c" MOM_MESH_SY_WEL)
+
+Executing: extractDevice("MOMCAPS_SYMESH_MM" MOM_MESH_SY_PSUB (MESH_SY_P1 "PLUS1") (MESH...
+
+Executing: attachParameter(MH "mh" MOM_MESH_SY_PSUB)
+
+Executing: attachParameter(nf2 "nf" MOM_MESH_SY_PSUB)
+
+Executing: attachParameter(length_finger "l" MOM_MESH_SY_PSUB)
+
+Executing: attachParameter(nm "nm" MOM_MESH_SY_PSUB)
+
+Executing: attachParameter(c "c" MOM_MESH_SY_PSUB)
+
+Executing: extractDevice("MOMCAPS_ASMESH_MM" MOM_MESH_ASY_WEL (MESH_ASY_P1 "PLUS1") (MES...
+
+Executing: attachParameter(MH "mh" MOM_MESH_ASY_WEL)
+
+Executing: attachParameter(nf2 "nf" MOM_MESH_ASY_WEL)
+
+Executing: attachParameter(length_finger "l" MOM_MESH_ASY_WEL)
+
+Executing: attachParameter(nm "nm" MOM_MESH_ASY_WEL)
+
+Executing: attachParameter(c "c" MOM_MESH_ASY_WEL)
+
+Executing: extractDevice("MOMCAPS_ASMESH_MM" MOM_MESH_ASY_PSUB (MESH_ASY_P1 "PLUS1") (ME...
+
+Executing: attachParameter(MH "mh" MOM_MESH_ASY_PSUB)
+
+Executing: attachParameter(nf2 "nf" MOM_MESH_ASY_PSUB)
+
+Executing: attachParameter(length_finger "l" MOM_MESH_ASY_PSUB)
+
+Executing: attachParameter(nm "nm" MOM_MESH_ASY_PSUB)
+
+Executing: attachParameter(c "c" MOM_MESH_ASY_PSUB)
+
+Executing: extractDevice("pad_rf" p_rf_pad (AL_RDL "PLUS") (PSUB "PSUB") (cellView "PAD_...
+
+Executing: TMV_RDL1 = geomSize(TMV_RDL 2.1)
+
+Executing: saveProperty(p_rf_pad "tm" 6)
+
+Executing: attachParameter(index "index" p_rf_pad)
+
+Executing: attachParameter(width "w" p_rf_pad)
+
+Executing: attachParameter(length "l" p_rf_pad)
+
+Executing: extractDevice("l_cr20k_rf" N_IND_CR_0 (CRTERM1 "PLUS") (CRTERM2 "MINUS") (wel...
+
+Executing: attachParameter(W "w" N_IND_CR_0)
+
+Executing: attachParameter(nt "nt" N_IND_CR_0)
+
+Executing: attachParameter(OD "do" N_IND_CR_0)
+
+Executing: attachParameter(S "s" N_IND_CR_0)
+
+Executing: attachParameter(l "l" N_IND_CR_0)
+
+Executing: attachParameter(d_mmc "d" N_IND_CR_0)
+
+Executing: saveProperty(N_IND_CR_0 "tm" 6)
+
+Executing: extractDevice("L_NWCR20K_RFVIL" N_IND_CR (CRTERM1 "PLUS") (CRTERM2 "MINUS") (...
+
+Executing: MENLT1a = geomSize(MENLT1 0.01)
+
+Executing: MENLUa = geomSize(MENLU 0.1)
+
+Executing: attachParameter(W "w" N_IND_CR)
+
+Executing: attachParameter(nt "nt" N_IND_CR)
+
+Executing: attachParameter(OD "od" N_IND_CR)
+
+Executing: attachParameter(s "s" N_IND_CR)
+
+Executing: extractDevice("L_CR20K_RFVIL" N_IND_CR_P (CRTERM1 "PLUS") (CRTERM2 "MINUS") (...
+
+Executing: MENLU = geomAndNot(MENLU CRTOP1)
+
+Executing: attachParameter(W "w" N_IND_CR_P)
+
+Executing: attachParameter(nt "nt" N_IND_CR_P)
+
+Executing: attachParameter(OD "od" N_IND_CR_P)
+
+Executing: attachParameter(s "s" N_IND_CR_P)
+
+Executing: extractDevice("L_NWSY20K_RFVIL" N_IND_SY (CRTERM1 "PLUS") (CRTERM1 "MINUS") (...
+
+Executing: attachParameter(W "w" N_IND_SY)
+
+Executing: attachParameter(nt "nt" N_IND_SY)
+
+Executing: attachParameter(OD "od" N_IND_SY)
+
+Executing: attachParameter(s "s" N_IND_SY)
+
+Executing: extractDevice("L_SY20K_RFVIL" N_IND_SY_P (CRTERM1 "PLUS") (CRTERM1 "MINUS") (...
+
+Executing: attachParameter(W "w" N_IND_SY_P)
+
+Executing: attachParameter(nt "nt" N_IND_SY_P)
+
+Executing: attachParameter(OD "od" N_IND_SY_P)
+
+Executing: attachParameter(s "s" N_IND_SY_P)
+
+Executing: extractDevice("L_NWSY20KCT_RFVIL" N_IND_SYC (CRTERM1 "PLUS") (CRTERM1 "MINUS"...
+
+Executing: attachParameter(W "w" N_IND_SYC)
+
+Executing: attachParameter(nt "nt" N_IND_SYC)
+
+Executing: attachParameter(OD "od" N_IND_SYC)
+
+Executing: attachParameter(s "s" N_IND_SYC)
+
+Executing: extractDevice("L_SY20KCT_RFVIL" N_IND_SYC_P (CRTERM1 "PLUS") (CRTERM1 "MINUS"...
+
+Executing: attachParameter(W "w" N_IND_SYC_P)
+
+Executing: attachParameter(nt "nt" N_IND_SYC_P)
+
+Executing: attachParameter(OD "od" N_IND_SYC_P)
+
+Executing: attachParameter(s "s" N_IND_SYC_P)
+
+Executing: extractDevice("l_sqsk_rf" N_IND_SQ_0 (Lterm2 "PLUS") (Lterm1 "MINUS") (wel "N...
+
+Executing: IND_SQa_A = geomAnd(IND_SQ IND_SQa)
+
+Executing: SIZE1_A = geomAnd(IND_SQ SIZE1)
+
+Executing: SIZE2_A = geomAnd(IND_SQ SIZE2)
+
+Executing: SIZE3_A = geomAnd(IND_SQ SIZE3)
+
+Executing: attachParameter(W "w" N_IND_SQ_0)
+
+Executing: attachParameter(nt "nt" N_IND_SQ_0)
+
+Executing: attachParameter(ns "ns" N_IND_SQ_0)
+
+Executing: attachParameter(bm "bm" N_IND_SQ_0)
+
+Executing: attachParameter(OD "do" N_IND_SQ_0)
+
+Executing: attachParameter(S "s" N_IND_SQ_0)
+
+Executing: attachParameter(l "l" N_IND_SQ_0)
+
+Executing: attachParameter(d_mmc "d" N_IND_SQ_0)
+
+Executing: extractDevice("L_NWSQSK_RFVIL" N_IND_SQ (Lterm2 "PLUS") (Lterm1 "MINUS") (wel...
+
+Executing: attachParameter(W "w" N_IND_SQ)
+
+Executing: attachParameter(nt "nt" N_IND_SQ)
+
+Executing: attachParameter(ns "ns" N_IND_SQ)
+
+Executing: attachParameter(bm "bm" N_IND_SQ)
+
+Executing: attachParameter(OD "od" N_IND_SQ)
+
+Executing: attachParameter(S "s" N_IND_SQ)
+
+Executing: extractDevice("L_SQSK_RFVIL" N_IND_SQ_P (Lterm2 "PLUS") (Lterm1 "MINUS") (PSU...
+
+Executing: attachParameter(W "w" N_IND_SQ_P)
+
+Executing: attachParameter(nt "nt" N_IND_SQ_P)
+
+Executing: attachParameter(ns "ns" N_IND_SQ_P)
+
+Executing: attachParameter(bm "bm" N_IND_SQ_P)
+
+Executing: attachParameter(OD "od" N_IND_SQ_P)
+
+Executing: attachParameter(S "s" N_IND_SQ_P)
+
+Executing: extractDevice("MOMCAPS_Array_VP3_RF" MOM_ARRAY_VP3_RFVCL_1 (VP3_ME2_1 "PLUS")...
+
+Executing: fns1 = geomAnd(ME1 MOMSYM1)
+
+Executing: fns3 = geomAnd(ME3 MOMSYM1)
+
+Executing: saveProperty(MOM_ARRAY_VP3_RFVCL_1 "bm" 1)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP3_RFVCL_1)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP3_RFVCL_1)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP3_RFVCL_1)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP3_RFVCL_1)
+
+Executing: extractDevice("MOMCAPS_Array_VP3_RF" MOM_ARRAY_VP3_RFVCL_2 (VP3_ME3_2 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP3_RFVCL_2 "bm" 2)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP3_RFVCL_2)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP3_RFVCL_2)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP3_RFVCL_2)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP3_RFVCL_2)
+
+Executing: extractDevice("MOMCAPS_Array_VP3_RF" MOM_ARRAY_VP3_RFVCL_3 (VP3_ME4_3 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP3_RFVCL_3 "bm" 3)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP3_RFVCL_3)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP3_RFVCL_3)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP3_RFVCL_3)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP3_RFVCL_3)
+
+Executing: extractDevice("MOMCAPS_Array_VP3_RF" MOM_ARRAY_VP3_RFVCL_4 (VP3_ME5_4 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP3_RFVCL_4 "bm" 4)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP3_RFVCL_4)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP3_RFVCL_4)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP3_RFVCL_4)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP3_RFVCL_4)
+
+Executing: extractDevice("MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_1 (VP4_ME2_1 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP4_RFVCL_1 "bm" 1)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP4_RFVCL_1)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP4_RFVCL_1)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_1)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_1)
+
+Executing: extractDevice("MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_2 (VP4_ME3_2 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP4_RFVCL_2 "bm" 2)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP4_RFVCL_2)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP4_RFVCL_2)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_2)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_2)
+
+Executing: extractDevice("MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_3 (VP4_ME4_3 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP4_RFVCL_3 "bm" 3)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP4_RFVCL_3)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP4_RFVCL_3)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_3)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_3)
+
+Executing: extractDevice("MOMCAPS_Array_VP4_RF" MOM_ARRAY_VP4_RFVCL_4 (VP4_ME5_4 "PLUS")...
+
+Executing: saveProperty(MOM_ARRAY_VP4_RFVCL_4 "bm" 4)
+
+Executing: attachParameter(ns "ns" MOM_ARRAY_VP4_RFVCL_4)
+
+Executing: attachParameter(nf "nf" MOM_ARRAY_VP4_RFVCL_4)
+
+Executing: attachParameter(array "array" MOM_ARRAY_VP4_RFVCL_4)
+
+Executing: attachParameter(lf "lf" MOM_ARRAY_VP4_RFVCL_4)
+
+Finished running rules. Task processor time in main process:
+cpu: 0.40  elap: 1  pf: 0  in: 0  out: 1216  virt: 155M  phys: 833M
+
+No output post-processing: This is not a DRC run
+
+Finished building the persistent database.
+cpu: 0.04  elap: 1  pf: 0  in: 0  out: 6480  virt: 160M  phys: 833M
+
+
+*****  aveng terminated normally  *****
+
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+@(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Tue May 10 14:11:53 2022
+
+
+   Creating Error Database 'dff_backup_2'...
+
+   Reading VDB ...
+--------------------------------------------------------------------------------
+Rule      Message                                    FlatCount     RealCount
+--------------------------------------------------------------------------------
+(    1)  dataAuditErrors                                     0            0
+(    2)  PWBLK_StampErrorFloat                               0            0
+(    3)  PWBLK_StampErrorMult                                0            0
+(    4)  PWBLK_StampErrorConnect                             0            0
+(    5)  PSUB_StampErrorFloat                                0            0
+(    6)  PSUB_StampErrorMult                                 0            0
+(    7)  PSUB_StampErrorConnect                              0            0
+(    8)  wel_StampErrorFloat                                 0            0
+(    9)  wel_StampErrorMult                                  0            0
+(   10)  wel_StampErrorConnect                               0            0
+(   11)  TWEL_StampErrorFloat                                0            0
+(   12)  TWEL_StampErrorMult                                 0            0
+(   13)  TWEL_StampErrorConnect                              0            0
+(   14)  PSUB_P_StampErrorFloat                              0            0
+(   15)  PSUB_P_StampErrorMult                               0            0
+(   16)  PSUB_P_StampErrorConnect                            0            0
+(   17)  B_DNW_StampErrorFloat                               0            0
+(   18)  B_DNW_StampErrorMult                                0            0
+(   19)  B_DNW_StampErrorConnect                             0            0
+(   20)   nsd/ptap butting issue: nsd/ptap need t            0            0
+(   21)   psd/ntap butting issue: psd/ntap need t            0            0
+(   22)  ptap is wrongly connected to POWER !                0            0
+(   23)  ntap is wrongly connected to GROUND !               0            0
+(   24)  malformed device NG_HS                              0            0
+(   25)  malformed device PG_HS                              0            0
+(   26)  malformed device MNGATE_C                           0            0
+(   27)  malformed device MPGATE_C                           0            0
+(   28)  malformed device NTGATE                             0            0
+(   29)  malformed device PTGATE                             0            0
+(   30)  malformed device NSGATE                             0            0
+(   31)  malformed device TGNSGATE                           0            0
+(   32)  malformed device NLGATE                             0            0
+(   33)  malformed device PLGATE                             0            0
+(   34)  malformed device NHLGATE                            0            0
+(   35)  malformed device PHLGATE                            0            0
+(   36)  malformed device NLGAT                              0            0
+(   37)  malformed device NHLGAT                             0            0
+(   38)  malformed device NLTWGATE                           0            0
+(   39)  malformed device NLTGTWGATE                         0            0
+(   40)  malformed device NG_LL                              0            0
+(   41)  malformed device PG_LL                              0            0
+(   42)  malformed device welres                             0            0
+(   43)  malformed device snyres_mm                          0            0
+(   44)  malformed device spyres_mm                          0            0
+(   45)  malformed device snpyr_mm                           0            0
+(   46)  malformed device sppyr_mm                           0            0
+(   47)  malformed device nshrpyr_wel                        0            0
+(   48)  malformed device nshrpyr_psub                       0            0
+(   49)  malformed device nsndres_mm                         0            0
+(   50)  malformed device nsppyr_wel                         0            0
+(   51)  malformed device nsppyr_psub                        0            0
+(   52)  malformed device dndiod_mm                          0            0
+(   53)  malformed device dpdiod_mm                          0            0
+(   54)  malformed device dnwdiod_mm                         0            0
+(   55)  malformed device CMMC                               0            0
+(   56)  malformed device bjt_v5_mm                          0            0
+(   57)  malformed device bjt_v10_mm                         0            0
+(   58)  malformed device bjt_v15_mm                         0            0
+(   59)  malformed device MNGATE_RF                          0            0
+(   60)  malformed device MPGATE_RF                          0            0
+(   61)  malformed device NTGATE_RF                          0            0
+(   62)  malformed device PTGATE_RF                          0            0
+(   63)  malformed device NSGATE_RF                          0            0
+(   64)  malformed device TGNSGATE_RF                        0            0
+(   65)  malformed device nshrpyr_rf                         0            0
+(   66)  malformed device nsppyr_rf                          0            0
+(   67)  malformed device nsnpyr_rf                          0            0
+(   68)  malformed device npn5x5_s_rf                        0            0
+(   69)  malformed device npn2_s_rf                          0            0
+(   70)  malformed device npn5x5_n_rf                        0            0
+(   71)  malformed device npn2_n_rf                          0            0
+(   72)  malformed device pnp5x5_n_rf                        0            0
+(   73)  malformed device pnp2_n_rf                          0            0
+(   74)  malformed device nsdtw_rf                           0            0
+(   75)  malformed device dpesd_rf                           0            0
+(   76)  malformed device varmis_rf12                        0            0
+(   77)  malformed device varmis_rf33                        0            0
+(   78)  malformed device vard_rf                            0            0
+(   79)  malformed device CMMC_RF                            0            0
+(   80)  malformed device MOMVP1_MM                          0            0
+(   81)  malformed device MOMVP1_RF                          0            0
+(   82)  malformed device MOMVP2_MM                          0            0
+(   83)  malformed device MOMVP2_RF                          0            0
+(   84)  malformed device MOM_MESH_SY_WEL                    0            0
+(   85)  malformed device MOM_MESH_SY_PSUB                   0            0
+(   86)  malformed device MOM_MESH_ASY_WEL                   0            0
+(   87)  malformed device MOM_MESH_ASY_PSUB                  0            0
+(   88)  malformed device p_rf_pad                           0            0
+(   89)  malformed device N_IND_CR_0                         0            0
+(   90)  malformed device N_IND_CR                           0            0
+(   91)  malformed device N_IND_CR_P                         0            0
+(   92)  malformed device N_IND_SY                           0            0
+(   93)  malformed device N_IND_SY_P                         0            0
+(   94)  malformed device N_IND_SYC                          0            0
+(   95)  malformed device N_IND_SYC_P                        0            0
+(   96)  malformed device N_IND_SQ_0                         0            0
+(   97)  malformed device N_IND_SQ                           0            0
+(   98)  malformed device N_IND_SQ_P                         0            0
+(   99)  malformed device MOM_ARRAY_VP3_RFVCL_1              0            0
+(  100)  malformed device MOM_ARRAY_VP3_RFVCL_2              0            0
+(  101)  malformed device MOM_ARRAY_VP3_RFVCL_3              0            0
+(  102)  malformed device MOM_ARRAY_VP3_RFVCL_4              0            0
+(  103)  malformed device MOM_ARRAY_VP4_RFVCL_1              0            0
+(  104)  malformed device MOM_ARRAY_VP4_RFVCL_2              0            0
+(  105)  malformed device MOM_ARRAY_VP4_RFVCL_3              0            0
+(  106)  malformed device MOM_ARRAY_VP4_RFVCL_4              0            0
+(  107)  unstable device for MOM_ARRAY_VP4_RFVCL_            0            0
+(  109)  unstable device for MOM_ARRAY_VP4_RFVCL_            0            0
+(  111)  unstable device for MOM_ARRAY_VP4_RFVCL_            0            0
+(  113)  unstable device for MOM_ARRAY_VP4_RFVCL_            0            0
+(  115)  unstable device for MOM_ARRAY_VP3_RFVCL_            0            0
+(  117)  unstable device for MOM_ARRAY_VP3_RFVCL_            0            0
+(  119)  unstable device for MOM_ARRAY_VP3_RFVCL_            0            0
+(  121)  unstable device for MOM_ARRAY_VP3_RFVCL_            0            0
+(  123)  unstable device for N_IND_SQ_P_Device_77            0            0
+(  125)  unstable device for N_IND_SQ_Device_76              0            0
+(  127)  unstable device for N_IND_SQ_0_Device_75            0            0
+(  129)  unstable device for N_IND_SYC_P_Device_7            0            0
+(  131)  unstable device for N_IND_SYC_Device_73             0            0
+(  133)  unstable device for N_IND_SY_P_Device_72            0            0
+(  135)  unstable device for N_IND_SY_Device_71              0            0
+(  137)  unstable device for N_IND_CR_P_Device_70            0            0
+(  139)  unstable device for N_IND_CR_Device_69              0            0
+(  141)  unstable device for N_IND_CR_0_Device_68            0            0
+(  143)  unstable device for p_rf_pad_Device_67              0            0
+(  145)  unstable device for MOM_MESH_ASY_PSUB_De            0            0
+(  147)  unstable device for MOM_MESH_ASY_WEL_Dev            0            0
+(  149)  unstable device for MOM_MESH_SY_PSUB_Dev            0            0
+(  151)  unstable device for MOM_MESH_SY_WEL_Devi            0            0
+(  153)  unstable device for MOMVP2_RF_Device_62             0            0
+(  155)  unstable device for MOMVP2_MM_Device_60             0            0
+(  157)  unstable device for MOMVP2_MM_Device_61             0            0
+(  159)  unstable device for MOMVP1_RF_Device_59             0            0
+(  161)  unstable device for MOMVP1_MM_Device_57             0            0
+(  163)  unstable device for MOMVP1_MM_Device_58             0            0
+(  165)  unstable device for CMMC_RF_Device_56               0            0
+(  167)  unstable device for vard_rf_Device_55               0            0
+(  169)  unstable device for varmis_rf33_Device_5            0            0
+(  171)  unstable device for varmis_rf12_Device_5            0            0
+(  173)  unstable device for dpesd_rf_Device_52              0            0
+(  175)  unstable device for nsdtw_rf_Device_51              0            0
+(  177)  unstable device for pnp2_n_rf_Device_50             0            0
+(  179)  unstable device for pnp5x5_n_rf_Device_4            0            0
+(  181)  unstable device for npn2_n_rf_Device_48             0            0
+(  183)  unstable device for npn5x5_n_rf_Device_4            0            0
+(  185)  unstable device for npn2_s_rf_Device_46             0            0
+(  187)  unstable device for npn5x5_s_rf_Device_4            0            0
+(  189)  unstable device for nsnpyr_rf_Device_44             0            0
+(  191)  unstable device for nsppyr_rf_Device_43             0            0
+(  193)  unstable device for nshrpyr_rf_Device_42            0            0
+(  195)  unstable device for TGNSGATE_RF_Device_4            0            0
+(  197)  unstable device for NSGATE_RF_Device_40             0            0
+(  199)  unstable device for PTGATE_RF_Device_39             0            0
+(  201)  unstable device for NTGATE_RF_Device_38             0            0
+(  203)  unstable device for MPGATE_RF_Device_37             0            0
+(  205)  unstable device for MNGATE_RF_Device_36             0            0
+(  207)  unstable device for bjt_v15_mm_BJT_35               0            0
+(  209)  unstable device for bjt_v10_mm_BJT_34               0            0
+(  211)  unstable device for bjt_v5_mm_BJT_33                0            0
+(  213)  unstable device for CMMC_Device_32                  0            0
+(  215)  unstable device for dnwdiod_mm_DIODE_31             0            0
+(  217)  unstable device for dpdiod_mm_DIODE_30              0            0
+(  219)  unstable device for dndiod_mm_DIODE_29              0            0
+(  221)  unstable device for nsppyr_psub_Device_2            0            0
+(  223)  unstable device for nsppyr_wel_Device_27            0            0
+(  225)  unstable device for nsndres_mm_Device_26            0            0
+(  227)  unstable device for nshrpyr_psub_Device_            0            0
+(  229)  unstable device for nshrpyr_wel_Device_2            0            0
+(  231)  unstable device for sppyr_mm_Device_23              0            0
+(  233)  unstable device for snpyr_mm_Device_22              0            0
+(  235)  unstable device for spyres_mm_Device_21             0            0
+(  237)  unstable device for snyres_mm_Device_20             0            0
+(  239)  unstable device for welres_RES_19                   0            0
+(  241)  unstable device for PG_LL_MOS_18                    0            0
+(  243)  unstable device for NG_LL_MOS_17                    0            0
+(  245)  unstable device for NLTGTWGATE_MOS_16               0            0
+(  247)  unstable device for NLTWGATE_MOS_15                 0            0
+(  249)  unstable device for NHLGAT_MOS_14                   0            0
+(  251)  unstable device for NLGAT_MOS_13                    0            0
+(  253)  unstable device for PHLGATE_MOS_12                  0            0
+(  255)  unstable device for NHLGATE_MOS_11                  0            0
+(  257)  unstable device for PLGATE_MOS_10                   0            0
+(  259)  unstable device for NLGATE_MOS_9                    0            0
+(  261)  unstable device for TGNSGATE_MOS_8                  0            0
+(  263)  unstable device for NSGATE_MOS_7                    0            0
+(  265)  unstable device for PTGATE_MOS_6                    0            0
+(  267)  unstable device for NTGATE_MOS_5                    0            0
+(  269)  unstable device for MPGATE_C_MOS_4                  0            0
+(  271)  unstable device for MNGATE_C_MOS_3                  0            0
+(  273)  unstable device for PG_HS_MOS_2                     0            0
+(  275)  unstable device for NG_HS_MOS_1                     0            0
+--------------------------------------------------------------------------------
+Total  errors:                                               0            0
+--------------------------------------------------------------------------------
+
+   Finished creating Error Database ...
+
+   Writing Report into /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.err ...
+
+avrpt cpu sec:    0.09  elapsed:     1  virtual:    93M
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avnx /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -exec1 -LVS -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+*WARNING* Failed to obtain license for Assura_LVS
+@(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avnx on Tue May 10 14:11:54 2022
+
+avnx started...
+cpu: 0.10  elap: 1  pf: 0  in: 0  out: 16  virt: 579M  phys: 866M
+
+Run time =  1.00 seconds
+CPU time =  0.15 seconds
+
+                  End of Summary Report
+
+************************************************************************
+cpu: 0.02  elap: 2  pf: 0  in: 0  out: 13056  virt: 509M  phys: 867M
+***** avnx terminated normally ***** 
+
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avnx
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/nvn /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -postExtract -exec1 -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+Checking out license for Assura_LVS
+Checking out license for Phys_Ver_Sys_LVS_XL
+@(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:05 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+run on dep56132nix at Tue May 10 14:11:58 2022
+Reading schematic network
+Reading layout network
+ inputting network /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.ldb
+Preprocessing schematic network phase 1
+Preprocessing layout network phase 1
+ WARNING (AVLVSNN-10050) : capDevice - cell 'mimcaps_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rnnpo_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rnpd_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rnppo_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rnnd_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : capDevice - cell 'VARMIS_33_RF(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : capDevice - cell 'VARMIS_12_RF(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rnhr1000_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rsppo_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rsnpo_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rspd_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rsnd_mml130e(GENERIC)' not found.
+ WARNING (AVLVSNN-10050) : resDevice - cell 'rsnwell_mml130e(GENERIC)' not found.
+Preprocessing schematic network phase 2
+Preprocessing layout network phase 2
+Top cell  dff_backup_2 schematic cadence_test_lib vs dff_backup_2 layout cadence_test_lib
+Schematic and Layout Match
+cpu=0.00m  wall=0.00m  mem=106.46mb
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/nvn
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa dff_backup_2.snn dff_backup_2.tre dff_backup_2.cel
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa dff_backup_2.lnn dff_backup_2.tre2 dff_backup_2.cel2
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/vldbToRpa
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/ercChk /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+Loading umc13mmrf/libInit.il ...
+	Loading umc13mmrf/loadCxt.ile ... done!
+	Loading context 'umc13mmrf' from library 'umc13mmrf' ... done!
+	Loading context 'pdkUtils' from library 'umc13mmrf' ... done!
+	Loading context 'Util' from library 'umc13mmrf' ... done!
+	Loading context 'userUtil' from library 'umc13mmrf' ... done!
+	Loading context 'oxf_cb' from library 'umc13mmrf' ... done!
+	Loading umc13mmrf/libInitCustomExit.il ... done!
+Loaded umc13mmrf/libInit.il successfully!
+
+************************************************************* 
+
+ Assura LVS of UMC 0.13um Mixed-Mode and RFCMOS 1P8M MMC FSG Enhancement Process (Ps: Pls select the switches of metal opton and metal combination !! )  
+  
+  
+ 
+
+************************************************************* 
+
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/ercChk
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1/dff_backup_2.rsf -trp -exec1
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_ASSURA-LVS-Ver.2.3_P9/techRuleSets
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc
+
+
+Assura LVS terminated normally.
+
+
+
+Run ended: Tue May 10 14:12:00 2022
+
+*****  Assura terminated normally  *****
+

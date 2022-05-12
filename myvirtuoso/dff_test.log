@@ -1,0 +1,1582 @@
+
+            Assura (R) Physical Verification Version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78
+            Release 4.1_USR5
+
+Copyright (c) Cadence Design Systems. All rights reserved.
+@(#)$CDS: assura_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/assura on Tue May 10 14:05:03 2022
+
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dff_test.rsf -restart -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+@(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/aveng on Tue May 10 14:05:03 2022
+
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+ Summary Report: dff_test.sum
+ RSF           : /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dff_test.rsf
+ Library Name  : Project_Lib1
+ CDSLIB Path   : "/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib"
+ Cell Name     : dff_test
+ View Name     : layout
+ Rules File    : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/G-DF-Mixed_Mode_RFCMOS13-1P6M_20KA-MMC-L130E-ASSURA-DRC-2.5-P1.rul
+ Options       : -restart -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib 
+ Work Directory: .
+ Operating Mode: Legacy Mode is Off
+
+Checking out license for Assura_DRC
+*WARNING* Failed to obtain license for Assura_DRC
+No Assura license available.
+Checking out license for Phys_Ver_Sys_DRC_XL
+Restarting with VDB Build 2 
+
+Building the VDB part 2 in background mode.
+
+Executing: DATAEXTENT = cellBoundary(root)
+
+Building the VDB part 3 in background mode.
+
+
+Running in restart mode.
+
+
+Finished building the VDB. VDB build times for main process:
+cpu: 0.16  elap: 5  pf: 0  in: 0  out: 40  virt: 162M  phys: 813M
+
+Running the Task Processor, 1 cells, 3465 steps...
+
+Top Cell is 'dff_test layout Project_Lib1'
+
+Executing: SRAM = geomCat(SPLL1 SP SP_1 SPLL DP DP2 _2PRF_1 _2PRFLL _2PHD _2PRF DP1 ROM_ID)
+
+Executing: DRC_1 = geomBkgnd()
+
+Executing: BULK = geomSize(DRC_1 1.0)
+
+Executing: RNWELL = geomButtOrOver(NWEL NWR)
+
+Executing: NWELL = geomAndNot(NWEL RNWELL)
+
+Executing: DIFF_PS = geomOutside(DIFF NWEL)
+
+Executing: DIFF_NW = geomAndNot(DIFF DIFF_PS)
+
+Executing: DIFF_NT = geomOutside(DIFF_NW TWEL)
+
+Executing: DIFF_TW = geomAndNot(DIFF_NW DIFF_NT)
+
+Executing: NDIF = geomCat(geomAndNot(DIFF_PS PPLUS) geomAndNot(DIFF_TW PPLUS))
+
+Executing: PTAP = geomCat(geomAnd(DIFF_PS PPLUS) geomAnd(DIFF_TW PPLUS))
+
+Executing: NTAP = geomAndNot(DIFF_NT PPLUS)
+
+Executing: PDIF = geomAnd(DIFF_NT PPLUS)
+
+Executing: PSD = geomAndNot(PDIF PO1)
+
+Executing: NSD = geomAndNot(NDIF PO1)
+
+Executing: PDIF3 = geomButtOrOver(PDIF TG)
+
+Executing: PDIF1 = geomAndNot(PDIF PDIF3)
+
+Executing: PDIF1_P = geomAndNot(PDIF1 SRAM)
+
+Executing: NDIF3 = geomButtOrOver(NDIF TG)
+
+Executing: NDIF1 = geomAndNot(NDIF NDIF3)
+
+Executing: NDIF1_P = geomAndNot(NDIF1 SRAM)
+
+Executing: BUT_PPLUS = geomGetEdge(PPLUS inside DIFF)
+
+Executing: BUT_PS = geomButtOnly(PSD NTAP)
+
+Executing: BUT_NTAP = geomButtOnly(NTAP PSD)
+
+Executing: BUT_NS = geomButtOnly(NSD PTAP)
+
+Executing: BUT_PTAP = geomButtOnly(PTAP NSD)
+
+Executing: POLCNT = geomOutside(CONT DIFF)
+
+Executing: DIFCNT = geomAndNot(CONT POLCNT)
+
+Executing: CO_PSD = geomOr(geomEnclose(PSD DIFCNT) geomEnclose(geomAndNot(PTAP PO1) DIFC...
+
+Executing: CO_NSD = geomOr(geomEnclose(NSD DIFCNT) geomEnclose(geomAndNot(PTAP PO1) DIFC...
+
+Executing: CO_SD = geomOr(CO_PSD CO_NSD)
+
+Executing: GATE = geomAnd(PO1 DIFF)
+
+Executing: GATE_W = geomGetEdge(PO1 coincident GATE)
+
+Executing: GATE33 = geomButtOrOver(GATE TG)
+
+Executing: GATE12 = geomAndNot(GATE GATE33)
+
+Executing: GATE1_W = geomGetEdge(GATE12 coincident PO1)
+
+Executing: GATE3_W = geomGetEdge(GATE33 coincident PO1)
+
+Executing: EXPOL = geomAndNot(PO1 DIFF)
+
+Executing: EXPO_E = geomGetEdge(PO1 outside GATE)
+
+Executing: INTPOL = geomAvoiding(EXPOL CONT)
+
+Executing: WPO = geomSizeAnd(geomSize(PO1 -0.12) PO1 0.12 0.12)
+
+Executing: GATE_Wc = geomGetEdge(GATE_W butting CO_SD)
+
+Executing: GATE_Woc = geomAndNot(GATE_W GATE_Wc)
+
+Executing: WGATE_Wc = geomAnd(GATE_Wc WPO edges)
+
+Executing: WGATE_Woc = geomAnd(GATE_Woc WPO edges)
+
+Executing: WEXPO_E = geomAnd(EXPO_E WPO edges)
+
+Executing: SAB_PO1 = geomAnd(PO1 SAB)
+
+Executing: SAB_INEDGE_PO1 = geomGetEdge(SAB inside PO1)
+
+Executing: SAB_CORNER_PO1 = drc(SAB_INEDGE_PO1 (width < 0.01) shielded only_perp)
+
+Executing: SAB_ACEDGE_PO1 = geomAndNot(SAB_INEDGE_PO1 geomOr(geomGetEdge(SAB_INEDGE_PO1 ...
+
+Executing: SAB_ACROSS_PO1 = geomButtOnly(SAB_PO1 geomEnclose(geomSize(SAB_PO1 0.001 edge...
+
+Executing: SAB_PO1_CUT_N = geomStraddle(SAB_ACROSS_PO1 NPLUS)
+
+Executing: SAB_PO1_CUT_P = geomStraddle(SAB_ACROSS_PO1 PPLUS)
+
+Executing: NO_SQ_SAB_PO1 = geomGetVertex(SAB_PO1 (keep > 4))
+
+Executing: PO1_NOT_SAB = geomButtOnly(geomAndNot(PO1 SAB) SAB_PO1)
+
+Executing: PO1_WITH_CONT = geomEnclose(PO1_NOT_SAB CONT)
+
+Executing: SAB_POINT_SAB = geomOr(drc(SAB PO1 (ovlp < 0.01) only_perp))
+
+Executing: SAB_HANG12_PO1 = geomOr(drc(PO1 geomAndNot(SAB_INEDGE_PO1 geomOr(geomGetEdge(...
+
+Executing: SAB_PO1_WITHCO1 = geomGetEdge(SAB_ACROSS_PO1 butting PO1_WITH_CONT)
+
+Executing: SAB_PO1_WITHCO2 = geomButtOnly(geomButtOnly(SAB_PO1 SAB_HANG12_PO1) PO1_WITH_...
+
+Executing: SAB_DIFF = geomAnd(DIFF SAB)
+
+Executing: SAB_INEDGE_DIFF = geomGetEdge(SAB inside DIFF)
+
+Executing: SAB_CORNER_DIFF = geomOr(drc(SAB_INEDGE_DIFF (width < 0.01) shielded only_perp))
+
+Executing: SAB_ACROSS_DIFF = geomOutside(SAB_DIFF SAB_CORNER_DIFF)
+
+Executing: SAB_DIFF_CUT_N = geomStraddle(SAB_ACROSS_DIFF NPLUS)
+
+Executing: SAB_DIFF_CUT_P = geomStraddle(SAB_ACROSS_DIFF PPLUS)
+
+Executing: NO_SQ_SAB_DIFF = geomGetVertex(SAB_DIFF (keep > 4))
+
+Executing: DIFF_NOT_SAB = geomButtOnly(geomAndNot(DIFF SAB) SAB_DIFF)
+
+Executing: DIFF_WITH_CONT = geomEnclose(DIFF_NOT_SAB CONT)
+
+Executing: SAB_DIFF_WITHCO1 = geomGetEdge(NO_SQ_SAB_DIFF butting DIFF_WITH_CONT)
+
+Executing: SAB_DIFF_WITHCO2 = geomGetEdge(SAB_ACROSS_DIFF butting DIFF_WITH_CONT)
+
+Executing: ME1_c = geomAndNot(geomAndNot(ME1 M1RESMK) IND)
+
+Executing: ME2_c = geomAndNot(geomAndNot(ME2 M2RESMK) IND)
+
+Executing: ME3_c = geomAndNot(geomAndNot(ME3 M3RESMK) IND)
+
+Executing: ME4_c = geomAndNot(geomAndNot(ME4 M4RESMK) IND)
+
+Executing: ME5_c = geomAndNot(geomAndNot(ME5 M5RESMK) IND)
+
+Executing: ME6_c = geomAndNot(geomAndNot(ME6 M6RESMK) IND)
+
+Executing: AL_c = geomAndNot(geomAndNot(AL_RDL ALRESMK) IND)
+
+Executing: vi1_all = geomOr(VI1 VI1BAR)
+
+Executing: vi2_all = geomOr(VI2 VI2BAR)
+
+Executing: vi3_all = geomOr(VI3 VI3BAR)
+
+Executing: vi4_all = geomOr(VI4 VI4BAR)
+
+Executing: vi5_all = geomOr(VI5 VI5BAR)
+
+Executing: TMV_RDL_ALL = geomOr(TMV_RDL TMVBAR)
+
+Executing: NTAP_con = geomAnd(NTAP CONT)
+
+Executing: PTAP_con = geomAnd(PTAP CONT)
+
+Executing: HNWELL = geomOr(geomOverlap(NWELL PDIF3) geomOverlap(NWELL geomOverlap(NTAP T...
+
+Executing: geomConnect((via NTAP_con ME1_c NTAP) (via PTAP_con ME1_c PTAP) (via vi1_all ...
+ See the label report in "dff_test.erc" file for details.
+
+
+Executing: geomStamp(NWELL NTAP)
+
+Executing: geomStamp(HNWELL NTAP)
+
+Executing: geomStamp(TWEL PTAP)
+
+Executing: DIFF_LOGO = geomAnd(DIFF LOGOMK)
+
+Executing: DIFF_N_LOGO = geomAndNot(DIFF LOGOMK)
+
+Executing: NWEL_LOGO = geomAnd(NWEL LOGOMK)
+
+Executing: NWEL_N_LOGO = geomAndNot(NWEL LOGOMK)
+
+Executing: TG_LOGO = geomAnd(TG LOGOMK)
+
+Executing: TG_N_LOGO = geomAndNot(TG LOGOMK)
+
+Executing: PO1_LOGO = geomAnd(PO1 LOGOMK)
+
+Executing: PO1_N_LOGO = geomAndNot(PO1 LOGOMK)
+
+Executing: NPLUS_LOGO = geomAnd(NPLUS LOGOMK)
+
+Executing: NPLUS_N_LOGO = geomAndNot(NPLUS LOGOMK)
+
+Executing: PPLUS_LOGO = geomAnd(PPLUS LOGOMK)
+
+Executing: PPLUS_N_LOGO = geomAndNot(PPLUS LOGOMK)
+
+Executing: SAB_LOGO = geomAnd(SAB LOGOMK)
+
+Executing: SAB_N_LOGO = geomAndNot(SAB LOGOMK)
+
+Executing: CONT_LOGO = geomAnd(CONT LOGOMK)
+
+Executing: CONT_N_LOGO = geomAndNot(CONT LOGOMK)
+
+Executing: ME1_N_LOGO = geomAndNot(ME1 LOGOMK)
+
+Executing: VI1_N_LOGO = geomAndNot(VI1 LOGOMK)
+
+Executing: ME2_N_LOGO = geomAndNot(ME2 LOGOMK)
+
+Executing: VI2_N_LOGO = geomAndNot(VI2 LOGOMK)
+
+Executing: ME3_N_LOGO = geomAndNot(ME3 LOGOMK)
+
+Executing: VI3_N_LOGO = geomAndNot(VI3 LOGOMK)
+
+Executing: ME4_N_LOGO = geomAndNot(ME4 LOGOMK)
+
+Executing: VI4_N_LOGO = geomAndNot(VI4 LOGOMK)
+
+Executing: ME5_N_LOGO = geomAndNot(ME5 LOGOMK)
+
+Executing: VI5_N_LOGO = geomAndNot(VI5 LOGOMK)
+
+Executing: ME6_N_LOGO = geomAndNot(ME6 LOGOMK)
+
+Executing: eSkewEdge_1 = geomGetAngledEdge(DIFF_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_2 = geomGetAngledEdge(NWEL_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_3 = geomGetAngledEdge(TG_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_4 = geomGetAngledEdge(PO1_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_5 = geomGetAngledEdge(NPLUS_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_6 = geomGetAngledEdge(PPLUS_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_7 = geomGetAngledEdge(SAB_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_8 = geomGetAngledEdge(CONT_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_9 = geomGetAngledEdge(ME1_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_10 = geomGetAngledEdge(VI1_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_11 = geomGetAngledEdge(ME2_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_12 = geomGetAngledEdge(VI2_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_13 = geomGetAngledEdge(ME3_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_14 = geomGetAngledEdge(VI3_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_15 = geomGetAngledEdge(ME4_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_16 = geomGetAngledEdge(VI4_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_17 = geomGetAngledEdge(ME5_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_18 = geomGetAngledEdge(VI5_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_19 = geomGetAngledEdge(ME6_N_LOGO ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_20 = geomGetAngledEdge(TWEL ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_21 = geomGetAngledEdge(HR ((0 < keep) < 45) mode4)
+
+Executing: eSkewEdge_22 = geomGetAngledEdge(DIFF_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_23 = geomGetAngledEdge(NWEL_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_24 = geomGetAngledEdge(TG_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_25 = geomGetAngledEdge(PO1_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_26 = geomGetAngledEdge(NPLUS_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_27 = geomGetAngledEdge(PPLUS_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_28 = geomGetAngledEdge(SAB_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_29 = geomGetAngledEdge(CONT_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_30 = geomGetAngledEdge(ME1_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_31 = geomGetAngledEdge(VI1_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_32 = geomGetAngledEdge(ME2_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_33 = geomGetAngledEdge(VI2_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_34 = geomGetAngledEdge(ME3_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_35 = geomGetAngledEdge(VI3_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_36 = geomGetAngledEdge(ME4_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_37 = geomGetAngledEdge(VI4_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_38 = geomGetAngledEdge(ME5_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_39 = geomGetAngledEdge(VI5_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_40 = geomGetAngledEdge(ME6_N_LOGO ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_41 = geomGetAngledEdge(TWEL ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge_42 = geomGetAngledEdge(HR ((45 < keep) < 90) mode4)
+
+Executing: eSkewEdge = geomOr(eSkewEdge_1 eSkewEdge_2 eSkewEdge_3 eSkewEdge_4 eSkewEdge_...
+	   errorLayer(eSkewEdge "SkewEdge: ")
+
+Executing: e4A1AB_E = geomOr(drc(DIFF (width < 0.16)) geomSize(drc(DIFF (width < 0.01) w...
+
+Executing: e4A1AB = geomAndNot(e4A1AB_E geomOr(SRAM LOGOMK SPS DPS DP2S SPLLS))
+	   errorLayer(e4A1AB "4A.1AB: Minimum DIFFUSION width is 0.16um")
+
+Executing: e4A1Ca1_b1 = geomAndNot(drc(DIFF (sepNotch < 0.2) withSingularPoint) geomOr(S...
+	   errorLayer(e4A1Ca1_b1 "4A.1C.a1_b1:Minimum DIFFUSION to DIFFUSION spacing is 0.20um")
+
+Executing: HV_DIFF1 = geomButtOrOver(geomAvoiding(DIFF PO1) TG)
+
+Executing: HV_DIFF2 = geomAvoiding(geomAndNot(geomStraddle(DIFF PO1) PO1) GATE12)
+
+Executing: HV_DIFF = geomOr(HV_DIFF1 HV_DIFF2 GATE33)
+
+Executing: e4A1Ca2_b2 = drc(geomGetEdge(DIFF coincident HV_DIFF) DIFF ((0 < sep) < 0.22))
+	   errorLayer(e4A1Ca2_b2 "4A.1C.a2_b2: Minimum DIFFUSION to DIFFUSION spacing for 3.3V is 0.22um")
+
+Executing: e4A1Da_E = drc(NWEL NDIF1_P (sep < 0.3) withIntersection withSingularPoint)
+
+Executing: e4A1Da = geomAndNot(e4A1Da_E geomOr(SRAM LOGOMK SPS DPS DP2S SPLLS DP4S DP3S))
+	   errorLayer(e4A1Da "4A.1D.a:Minimum N_WELL to N+ DIFFUSION (1.2V) spacing is 0.3um")
+
+Executing: e4A1Db = drc(NWEL NDIF3 (sep < 0.5) with_perp withIntersection withSingularPo...
+	   errorLayer(e4A1Db "4A.1D.b:Minimum N_WELL to N+ DIFFUSION (3.3V) spacing is 0.5um")
+
+Executing: e4A1E_x = geomAndNot(NTAP geomStraddle(NTAP geomOr(SPS SPLLS)))
+
+Executing: e4A1E = geomAndNot(drc(NWEL e4A1E_x (enc < 0.16) with_perp withIntersection w...
+	   errorLayer(e4A1E "4A.1E:Minimum N_WELL enclosure of N+ DIFFUSION is 0.16um")
+
+Executing: e4A1F = drc(NWEL PTAP (sep < 0.16) with_perp withIntersection withSingularPoint)
+	   errorLayer(e4A1F "4A.1F:Minimum N_WELL to P+ DIFFUSION spacing is 0.16um")
+
+Executing: e4A1Ga = geomAndNot(drc(NWEL PDIF1_P (enc < 0.3) shielded with_perp withInter...
+	   errorLayer(e4A1Ga "4A.1G.a:Minimum N_WELL enclosure of P+ DIFFUSION (1.2V) is 0.3um")
+
+Executing: e4A1Gb = geomOr(drc(NWEL PDIF3 (enc < 0.5) with_perp shielded withIntersectio...
+	   errorLayer(e4A1Gb "4A.1G.b:Minimum N_WELL enclosure of P+ DIFFUSION (3.3V) is 0.5um")
+
+Executing: e4A1I = drc(DIFF (area < 0.1024))
+	   errorLayer(e4A1I "4A.1I:Minimum DIFFUSION/isolation area 0.1024 sq.um")
+
+Executing: e4A2Aa_E = geomOr(drc(NWEL (width < 0.63)) geomSize(drc(NWEL (width < 0.01) w...
+
+Executing: e4A2Aa = geomAndNot(e4A2Aa_E LOGOMK)
+	   errorLayer(e4A2Aa "4A.2A.a:Minimum width of an N-Well region is 0.63um")
+
+Executing: e4A2Ab = drc(RNWELL (width < 1.5))
+	   errorLayer(e4A2Ab "4A.2A.b:Minimum dimension of an N-Well resistor region is 1.5um")
+
+Executing: NWEL_RES_BODY = geomAnd(RNWELL NWR)
+
+Executing: NWEL_RES_W = geomGetEdge(NWEL_RES_BODY coincident RNWELL)
+
+Executing: e4A2Ac = geomButtOrOver(NWEL_RES_BODY geomAndNot(NWEL_RES_BODY geomSizeAnd(ge...
+	   errorLayer(e4A2Ac "4A.2A.c:Maximum N-Well width for resistor is 20 um")
+
+Executing: e4A2Ba = drc(NWEL (sepNotch < 0.63) withSingularPoint)
+	   errorLayer(e4A2Ba "4A.2B.a:Minimum N-Well to N-Well spacing is 0.63um")
+
+Executing: e4A2Bb1 = drc(NWELL (sep < 1.0) diffNet)
+	   errorLayer(e4A2Bb1 "4A.2B.b1:Minium N-Well to non-potential(1.2V device) N-Well spacing is 1.0um")
+
+Executing: e4A2Bb2 = drc(HNWELL NWELL (sep < 1.5) diffNet)
+	   errorLayer(e4A2Bb2 "4A.2B.b2:Minimum N-Well to non-potential(3.3V device) N-Well spacing is 1.5um")
+
+Executing: e4A2Bc_d = drc(RNWELL NWEL ((0 < sep) < 2.2))
+	   errorLayer(e4A2Bc_d "4A.2B.c_d:Minimum spacing from N-well resistor to other N-Well regions is 2.2um")
+
+Executing: NWRES_E = geomSize(geomAndNot(NWR NWEL_RES_W edges) 0.005 unmerged edges)
+
+Executing: NWRES_NTAP_E = geomSize(geomButtOrOver(NTAP RNWELL) -0.005 unmerged edges)
+
+Executing: e4A2CD = geomAndNot(NWRES_E geomOverlap(NWRES_E drc(geomAnd(NWRES_E NWRES_NTA...
+	   errorLayer(e4A2CD "4A.2C/D: The resistor marker layer edges must either be entirely coincident with N-well edge or at least partially butted to N+ Tap (terminal).")
+
+Executing: TWELL33 = geomOr(geomOverlap(TWEL NDIF3) geomOverlap(TWEL geomAnd(PTAP TG)))
+
+Executing: e4A4A = drc(TWEL (width < 0.63) withCornerTouch)
+	   errorLayer(e4A4A "4A.4A:Minimum T_WELL width is 0.63um")
+
+Executing: e4A4Ba = drc(TWEL (sep < 0.63) withSingularPoint)
+	   errorLayer(e4A4Ba "4A.4B.a:Minimum T_WELL to T_WELL spacing is 0.63um")
+
+Executing: e4A4Bb1 = drc(TWEL (sep < 1.0) diffNet)
+	   errorLayer(e4A4Bb1 "4A.4B.b1:Minimum T_WELL to T_WELL spacing (1.2V) for non-equal-potential is 1.0um")
+
+Executing: geomConnect((via TWEL TWELL33))
+
+Executing: e4A4Bb2 = drc(TWELL33 TWEL (sep < 1.5) diffNet)
+	   errorLayer(e4A4Bb2 "4A.4B.b2: Minimum T_WELL to T_WELL spacing (3.3V) for non-equal-potential is 1.5um")
+
+Executing: e4A4C = geomOr(drc(NWELL TWEL (enc < 1.5) withSingularPoint) geomAndNot(TWEL ...
+	   errorLayer(e4A4C "4A.4C:Minimum N_WELL enclosure of T_WELL is 1.5um")
+
+Executing: e4A4Da_E = geomOr(drc(TWEL PDIF1 (sep < 0.3) withIntersection) drc(TWEL PDIF1...
+
+Executing: e4A4Da = geomAndNot(e4A4Da_E SRAM)
+	   errorLayer(e4A4Da "4A.4D.a:Minimum T_WELL to P+ DIFFUSION (1.2V) spacing is 0.3um")
+
+Executing: e4A4Db = drc(TWEL PDIF3 (sep < 0.5) withIntersection with_perp)
+	   errorLayer(e4A4Db "4A.4D.b:Minimum T_WELL to P+ DIFFUSION (3.3V) spacing is 0.5um")
+
+Executing: TWEL_PTAP = geomButtOrOver(PTAP TWEL)
+
+Executing: e4A4E = geomOr(drc(TWEL TWEL_PTAP (enc < 0.16) shielded withIntersection with...
+	   errorLayer(e4A4E "4A.4E:Minimum T_WELL enclosure of P+ DIFFUSION is 0.16um")
+
+Executing: e4A4F = drc(TWEL NTAP (sep < 0.16) withSingularPoint withIntersection with_perp)
+	   errorLayer(e4A4F "4A.4F:Minimum T_WELL to N+ DIFFUSION is 0.16um")
+
+Executing: e4A4Ga = geomAndNot(geomOr(drc(TWEL NDIF1 (enc < 0.3) shielded withIntersecti...
+	   errorLayer(e4A4Ga "4A.4G.a:Minimum T_WELL enclosure of N+ DIFFUSION (1.2V) is 0.3um")
+
+Executing: e4A4Gb = geomOr(drc(TWEL NDIF3 (enc < 0.5) with_perp shielded withIntersectio...
+	   errorLayer(e4A4Gb "4A.4G.b:Minimum T_WELL enclosure of N+ DIFFUSION (3.3V) is 0.5um")
+
+Executing: GATE1_VTN_SP = geomAndNot(geomButtOrOver(GATE12 VTN_SP) PPLUS)
+
+Executing: GATE_NOT_VTN_SP = geomAndNot(GATE GATE1_VTN_SP)
+
+Executing: e4A7A = drc(VTN_SP (width < 0.4))
+	   errorLayer(e4A7A "4A.7A:Minimum width of VTN_SP region is 0.40um")
+
+Executing: e4A7B = geomAndNot(drc(VTN_SP (sepNotch < 0.4)) SRAM)
+	   errorLayer(e4A7B "4A.7B:Minimum space between two VTN_SP regions is 0.40um")
+
+Executing: e4A7C = geomAndNot(geomOr(drc(VTN_SP GATE1_VTN_SP (enc < 0.16) with_perp shie...
+	   errorLayer(e4A7C "4A.7C:Minimum VTN_SP extension over Poly gate is 0.16um")
+
+Executing: e4A7D = geomAndNot(geomOr(drc(VTN_SP GATE_NOT_VTN_SP (sep < 0.28) with_perp) ...
+	   errorLayer(e4A7D "4A.7D:Minimum VTN_SP to unrelated Poly gate spacing is 0.28um")
+
+Executing: GATE1_VTP_SP = geomAnd(geomAnd(GATE12 VTP_SP) PPLUS)
+
+Executing: GATE_NOT_VTP_SP = geomAndNot(GATE GATE1_VTP_SP)
+
+Executing: e4A8A = drc(VTP_SP (width < 0.4))
+	   errorLayer(e4A8A "4A.8A: Minimum width of VTP_SP region is 0.40um")
+
+Executing: e4A8B = geomAndNot(drc(VTP_SP (sepNotch < 0.4)) SRAM)
+	   errorLayer(e4A8B "4A.8B: Minimum space between two VTP_SP regions is 0.40um")
+
+Executing: e4A8C = geomAndNot(geomOr(drc(VTP_SP GATE1_VTP_SP (enc < 0.16) with_perp shie...
+	   errorLayer(e4A8C "4A.8C: Minimum VTP_SP extension over Poly gate is 0.16um")
+
+Executing: e4A8D = geomAndNot(geomOr(drc(VTP_SP GATE_NOT_VTP_SP (sep < 0.28) with_perp) ...
+	   errorLayer(e4A8D "4A.8D: Minimum VTP_SP to unrelated Poly gate spacing is 0.28um")
+
+Executing: GATE1_VTNH = geomAndNot(geomAnd(GATE12 VTNH) PPLUS)
+
+Executing: GATE_NOT_VTNH = geomAndNot(GATE GATE1_VTNH)
+
+Executing: e4A9A = drc(VTNH (width < 0.4))
+	   errorLayer(e4A9A "4A.9A: Minimum width of VTNH region is 0.40um")
+
+Executing: e4A9B = geomAndNot(drc(VTNH (sepNotch < 0.4)) SRAM)
+	   errorLayer(e4A9B "4A.9B: Minimum space between two VTNH regions is 0.40um")
+
+Executing: e4A9C = geomAndNot(geomOr(geomOr(drc(VTNH GATE1_VTNH (enc < 0.16) with_perp s...
+	   errorLayer(e4A9C "4A.9C: Minimum VTNH extension over Poly gate is 0.16um")
+
+Executing: e4A9D = geomAndNot(geomOr(drc(VTNH GATE_NOT_VTNH (sep < 0.28)) drc(VTNH GATE_...
+	   errorLayer(e4A9D "4A.9D: Minimum VTNH to unrelated Poly gate spacing is 0.28um")
+
+Executing: GATE1_VTPH = geomAnd(geomAnd(GATE12 VTPH) PPLUS)
+
+Executing: GATE_NOT_VTPH = geomAndNot(GATE GATE1_VTPH)
+
+Executing: e4A10A = drc(VTPH (width < 0.4))
+	   errorLayer(e4A10A "4A.10A: Minimum width of VTPH region is 0.40um")
+
+Executing: e4A10B = geomAndNot(drc(VTPH (sepNotch < 0.4)) SRAM)
+	   errorLayer(e4A10B "4A.10B: Minimum space between two VTPH regions is 0.40um")
+
+Executing: e4A10C = geomAndNot(geomOr(geomOr(drc(VTPH GATE1_VTPH (enc < 0.16) with_perp ...
+	   errorLayer(e4A10C "4A.10C: Minimum VTPH extension over Poly gate is 0.16um")
+
+Executing: e4A10D = geomAndNot(geomOr(drc(VTPH GATE_NOT_VTPH (sep < 0.28)) drc(VTPH GATE...
+	   errorLayer(e4A10D "4A.10D: Minimum VTPH to unrelated Poly gate spacing is 0.28um")
+
+Executing: GATE1_VTNL = geomOutside(geomButtOrOver(GATE12 VTNL) PPLUS)
+
+Executing: e4A11A = drc(GATE1_VTNL (width < 0.12))
+	   errorLayer(e4A11A "4A.11A:Minimum width of poly(1.2V low Vt NMOS) region is 0.12um")
+
+Executing: e4A11B = drc(VTNL (width < 0.4))
+	   errorLayer(e4A11B "4A.11B:Minimum width of VTNL region is 0.40um")
+
+Executing: e4A11C = drc(VTNL (sepNotch < 0.4))
+	   errorLayer(e4A11C "4A.11C:Minimum space between two VTNL regions is 0.40um")
+
+Executing: e4A11d_temp = geomOverlap(DIFF VTNL)
+
+Executing: e4A11D = drc(VTNL e4A11d_temp (enc < 0.3) withSingularPoint)
+	   errorLayer(e4A11D "4A.11D:Minimum VTNL overlap Diffusion is 0.3um")
+
+Executing: e4A11E = drc(VTNL DIFF (sep < 0.3) withSingularPoint)
+	   errorLayer(e4A11E "4A.11E:Minimum VTNL to unrelated Diffusion spacing is 0.3um")
+
+Executing: e4A11F1 = drc(VTNL GATE1_VTNL (enc < 0.4) opposite)
+
+Executing: e4A11g_2 = geomAnd(VTNL GATE)
+
+Executing: e4A11F = geomOr(geomOverlap(e4A11F1 DIFF) geomGetEdge(VTNL inside GATE))
+	   errorLayer(e4A11F "4A.11F:Minimum VTNL extension over poly on diffusion of related device is 0.4um")
+
+Executing: VTNL_E_IN_DIFF = geomGetEdge(VTNL inside DIFF)
+
+Executing: e4A11g_1 = drc(VTNL_E_IN_DIFF GATE_W (sep < 0.4))
+
+Executing: e4A11G = geomCat(geomOverlap(e4A11g_2 TG) geomOverlap(e4A11g_2 PPLUS) e4A11g_1)
+	   errorLayer(e4A11G "4A.11G:Minimum VTNL to unrelated PO1 spacing is 0.4um")
+
+Executing: GATE1_VTPL = geomInside(geomButtOrOver(GATE12 VTPL) PPLUS)
+
+Executing: e4A12A = drc(GATE1_VTPL (width < 0.12))
+	   errorLayer(e4A12A "4A.12A:Minimum width of poly(1.2V low Vt PMOS) region is 0.12um")
+
+Executing: e4A12B = drc(VTPL (width < 0.4))
+	   errorLayer(e4A12B "4A.12B:Minimum width of VTPL region is 0.40um")
+
+Executing: e4A12C = drc(VTPL (sepNotch < 0.4))
+	   errorLayer(e4A12C "4A.12C:Minimum space between two VTPL regions is 0.40um")
+
+Executing: e4A12d_temp = geomOverlap(DIFF VTPL)
+
+Executing: e4A12D = drc(VTPL e4A12d_temp (enc < 0.3) withSingularPoint)
+	   errorLayer(e4A12D "4A.12D:Minimum VTPL overlap Diffusion of related device is 0.3um")
+
+Executing: e4A12E = drc(VTPL DIFF (sep < 0.3) withSingularPoint)
+	   errorLayer(e4A12E "4A.12E:Minimum VTPL to unrelated Diffusion spacing is 0.3um")
+
+Executing: e4A12F1 = drc(VTPL GATE1_VTPL (enc < 0.4) opposite)
+
+Executing: e4A12g_2 = geomAnd(VTPL GATE)
+
+Executing: e4A12F = geomOr(geomOverlap(e4A12F1 DIFF) geomGetEdge(VTPL inside GATE))
+	   errorLayer(e4A12F "4A.12F:Minimum VTPL extension over poly on diffusion of related device is 0.4um")
+
+Executing: VTPL_E_IN_DIFF = geomGetEdge(VTPL inside DIFF)
+
+Executing: e4A12g_1 = geomOr(drc(VTPL_E_IN_DIFF GATE_W (sep < 0.4)) geomStraddle(GATE VT...
+
+Executing: e4A12G = geomCat(geomAnd(e4A12g_2 NPLUS) geomAnd(e4A12g_2 TG) e4A12g_1)
+	   errorLayer(e4A12G "4A.12G:Minimum VTPL to unrelated PO1 spacing is 0.4um")
+
+Executing: GATE3_VTNHL = geomOutside(geomButtOrOver(GATE33 VTNHL) PPLUS)
+
+Executing: GATE3_VTNHL_E = drc(PO1 GATE3_VTNHL (enc == 0) edgea opposite)
+
+Executing: e4A13A = drc(GATE3_VTNHL_E (width < 0.34))
+	   errorLayer(e4A13A "4A.13A:Minimum width of poly(3.3V low Vt NMOS) region is 0.34um")
+
+Executing: e4A13B = drc(VTNHL (width < 0.4))
+	   errorLayer(e4A13B "4A.13B:Minimum width of VTNHL region is 0.40um")
+
+Executing: e4A13C = drc(VTNHL (sepNotch < 0.4))
+	   errorLayer(e4A13C "4A.13C:Minimum space between two VTNHL regions is 0.40um")
+
+Executing: e4A13D_temp = geomOverlap(DIFF VTNHL)
+
+Executing: e4A13D = drc(VTNHL e4A13D_temp (enc < 0.3) withSingularPoint)
+	   errorLayer(e4A13D "4A.13D:Minimum VTNHL overlap Diffusion is 0.3um")
+
+Executing: e4A13E = drc(VTNHL DIFF (sep < 0.3) withSingularPoint)
+	   errorLayer(e4A13E "4A.13E:Minimum VTNHL to unrelated Diffusion spacing is 0.3um")
+
+Executing: e4A13g_2 = geomAnd(VTNHL GATE)
+
+Executing: e4A13F = geomOr(drc(VTNHL GATE3_VTNHL (enc < 0.4) opposite) geomGetEdge(VTNHL...
+	   errorLayer(e4A13F "4A.13F:Minimum VTNHL extension over poly on diffusion of related device is 0.4um")
+
+Executing: VTNHL_E_IN_DIFF = geomGetEdge(VTNHL inside DIFF)
+
+Executing: e4A13g_1 = geomOr(drc(VTNHL_E_IN_DIFF GATE_W (sep < 0.4)) geomStraddle(GATE V...
+
+Executing: e4A13G = geomCat(geomAndNot(e4A13g_2 TG) geomOverlap(e4A13g_2 PPLUS) e4A13g_1)
+	   errorLayer(e4A13G "4A.13G:Minimum VTPL to unrelated PO1 spacing is 0.4um")
+
+Executing: GATE3_VTPHL = geomInside(geomButtOrOver(GATE33 VTPHL) PPLUS)
+
+Executing: GATE3_VTPHL_E = drc(PO1 GATE3_VTPHL (enc == 0) edgea opposite)
+
+Executing: e4A14A = drc(GATE3_VTPHL_E (width < 0.34))
+	   errorLayer(e4A14A "4A.14A:Minimum width of poly(3.3V low Vt PMOS) region is 0.34um")
+
+Executing: e4A14B = drc(VTPHL (width < 0.4))
+	   errorLayer(e4A14B "4A.14B:Minimum width of VTPHL region is 0.40um")
+
+Executing: e4A14C = drc(VTPHL (sepNotch < 0.4))
+	   errorLayer(e4A14C "4A.14C:Minimum space between two VTPHL regions is 0.40um")
+
+Executing: e4A14d_temp = geomOverlap(DIFF VTPHL)
+
+Executing: e4A14D = drc(VTPHL e4A14d_temp (enc < 0.3) withSingularPoint)
+	   errorLayer(e4A14D "4A.14D:Minimum VTPHL overlap Diffusion of related device is 0.3um")
+
+Executing: e4A14E = drc(VTPHL DIFF (sep < 0.3) withSingularPoint)
+	   errorLayer(e4A14E "4A.14E:Minimum VTPHL to unrelated Diffusion spacing is 0.3um")
+
+Executing: e4A14g_2 = geomAnd(VTPHL GATE)
+
+Executing: e4A14F = geomOr(drc(VTPHL GATE3_VTPHL (enc < 0.4) opposite) geomGetEdge(VTPHL...
+	   errorLayer(e4A14F "4A.14F:Minimum VTPHL extension over poly on diffusion of related device is 0.4um")
+
+Executing: VTPHL_E_IN_DIFF = geomGetEdge(VTPHL inside DIFF)
+
+Executing: e4A14g_1 = geomOr(drc(VTPHL_E_IN_DIFF GATE_W (sep < 0.4)) geomStraddle(GATE V...
+
+Executing: e4A14G = geomCat(geomAndNot(e4A14g_2 TG) geomAnd(e4A14g_2 NPLUS) e4A14g_1)
+	   errorLayer(e4A14G "4A.14G:Minimum VTPHL to unrelated PO1 spacing is 0.4um")
+
+Executing: e4A15Aa = drc(geomGetEdge(GATE_W inside NATIVE) (width < 1.2))
+	   errorLayer(e4A15Aa "4A.15A.a: Minimum width of poly(1.2V NMOS) region is 1.2um")
+
+Executing: e4A15Ab = drc(geomGetEdge(GATE3_W inside NATIVE) (width < 1.8))
+	   errorLayer(e4A15Ab "4A.15A.b: Minimum width of poly(3.3V NMOS) region is 1.8um")
+
+Executing: e4A15B = geomOr(drc(NATIVE (width < 1.6)) geomSize(drc(NATIVE (width < 0.01) ...
+	   errorLayer(e4A15B "4A.15B: Minimum NATIVE width is 1.60um")
+
+Executing: e4A15C = drc(NATIVE (sepNotch < 0.63) withSingularPoint)
+	   errorLayer(e4A15C "4A.15C: Minimum NATIVE spacing is 0.63um")
+
+Executing: e4A15D = geomButtOrOver(NATIVE geomXor(geomButtOrOver(NATIVE DIFF) geomSize(g...
+	   errorLayer(e4A15D "4A.15D: Exact NATIVE enclosure of DIFFUSION is 0.3um")
+
+Executing: e4A15E = drc(NATIVE DIFF (sep < 0.25) with_perp withIntersection)
+	   errorLayer(e4A15E "4A.15E: Minimum NATIVE to unrelated Diffusion spacing is 0.25um")
+
+Executing: e4A15F = geomOr(drc(NATIVE NWEL (sep < 0.9) with_perp withIntersection) geomA...
+	   errorLayer(e4A15F "4A.15F: Minimum NATIVE to N-WELL spacing is 0.9um")
+
+Executing: e4A15J = geomGetNon90(NATIVE)
+	   errorLayer(e4A15J "4A.15J: NATIVE shapes must be orthogonal")
+
+Executing: e4A15K = geomAndNot(NATIVE NPLUS)
+	   errorLayer(e4A15K "4A.15K: NATIVE must be within N+")
+
+Executing: e4Note1 = geomButtOrOver(NATIVE DIFF (keep >= 2))
+	   errorLayer(e4Note1 "4A.Note.1: Two or more device in one Native region is not allowed")
+
+Executing: e4A_18A = geomOr(drc(TG (width < 0.45)) geomSize(drc(TG (width < 0.01) withCo...
+	   errorLayer(e4A_18A "4A.18A: Minimum width of TG region is 0.45um")
+
+Executing: e4A_18B = drc(TG (sepNotch < 0.45))
+	   errorLayer(e4A_18B "4A.18B: Minimum space between two TG regions is 0.45um")
+
+Executing: e4A_18C = drc(TG DIFF (enc < 0.3) withIntersection)
+	   errorLayer(e4A_18C "4A.18C: Minimum TG overlap DIFF of 3.3V device is 0.3um")
+
+Executing: e4A_18D = drc(TG DIFF (sep < 0.3) withIntersection)
+	   errorLayer(e4A_18D "4A.18D: Minimum TG to unrelated DIFF spacing is 0.3um")
+
+Executing: e4A_18E = geomOr(drc(TG GATE3_W (enc < 0.4) opposite with_perp) geomAndNot(GA...
+	   errorLayer(e4A_18E "4A.18E: Minimum TG extension over PO1 gate of 3.3V device is 0.4um")
+
+Executing: e4A_18F = drc(geomGetEdge(TG inside DIFF) GATE1_W (sep < 0.4) with_perp withI...
+	   errorLayer(e4A_18F "4A.18F: Minimum TG to unrelated PO1 gate spacing is 0.4um")
+
+Executing: e4A_19AaBaC = geomAndNot(geomOr(drc(PO1 (width < 0.12)) geomSize(drc(PO1 (wid...
+	   errorLayer(e4A_19AaBaC "4A.19AaBaC: Minimum poly1 width is 0.12um.")
+
+Executing: e4A_19Ab = drc(geomGetEdge(GATE3_W inside NPLUS) (width < 0.34))
+	   errorLayer(e4A_19Ab "4A.19Ab: Minimum poly1 width for 3.3V NMOS is 0.34um")
+
+Executing: e4A_19Bb = drc(geomGetEdge(GATE3_W inside PPLUS) (width < 0.3))
+	   errorLayer(e4A_19Bb "4A.19Bb: Minimum poly1 width for 3.3V PMOS is 0.30um")
+
+Executing: e4A_19Da1c1c21 = geomAndNot(drc(PO1 (sepNotch < 0.2) withSingularPoint) geomO...
+	   errorLayer(e4A_19Da1c1c21 "4A.19D.a1_4A.19D.c1_4A.19D.c2.1: Minimum poly1 spacing is 0.2um.")
+
+Executing: e4A_19Da2 = drc(WGATE_Woc GATE_Woc (sep < 0.24) opposite)
+	   errorLayer(e4A_19Da2 "4A.19D.a2: Minimum poly1 spacing on DIFF regions without contact (as poly width >= 0.24um) is 0.24um.")
+
+Executing: e4A_19Db1 = geomAndNot(drc(GATE_Wc (sep < 0.26) opposite) geomOr(SRAM SPS DPS...
+	   errorLayer(e4A_19Db1 "4A.19D.b1: Minimum poly1 spacing on DIFF regions with contacts is 0.26um")
+
+Executing: e4A_19Db2 = drc(WGATE_Wc GATE_Wc (sep < 0.3) opposite)
+	   errorLayer(e4A_19Db2 "4A.19D.b2: Minimum poly1 spacing on DIFF regions with contacts is 0.3um when PO1 width>0.24um.")
+
+Executing: e4A_19Dc22 = geomGetLength(geomOr(drc(WEXPO_E EXPO_E (sep < 0.24) opposite)) ...
+	   errorLayer(e4A_19Dc22 "4A.19D.c2.2: Minimum space between two poly1 regions on field area is 0.24um when PO1 width>0.24um and common run length >1um")
+
+Executing: e4A_19E = geomAndNot(drc(PO1 DIFF (enc < 0.18) shielded withIntersection) geo...
+	   errorLayer(e4A_19E "4A.19E: Minimum overlap of a poly1 region extended into field oxide is 0.18um")
+
+Executing: e4A_19F = geomAndNot(geomOr(drc(PO1 DIFF (sep < 0.1) withIntersection) drc(PO...
+	   errorLayer(e4A_19F "4A.19F: Minimum separation from an DIFF region to poly1 on field oxide is 0.10um")
+
+Executing: END_CAP = geomButtOrOver(INTPOL GATE (keep == 1))
+
+Executing: e4A_19G = geomAndNot(drc(geomGetAdjacentEdge(END_CAP GATE) DIFF ((0 < sep) < ...
+	   errorLayer(e4A_19G "4A.19G: Minimum poly1 endcap to RELATED DIFF spacing is 0.10um")
+
+Executing: e4A_19Ha_4A9O = geomAndNot(drc(DIFF GATE_W (enc < 0.2)) geomOr(SRAM SPS DPS D...
+	   errorLayer(e4A_19Ha_4A9O "4A.19H.a__4A.19O: Minimum poly1 gate to field edge spacing is 0.20um")
+
+Executing: WGATE_W = geomGetEdge(GATE_W coincident WPO)
+
+Executing: gen1 = geomSize(inLayer1 0.005 unmerged edges)
+
+Executing: gen2 = geomSize(inEdge2 0.005 unmerged edges)
+
+Executing: gen3 = geomOverlap(gen1 drc(geomAnd(gen1 gen2) (area >= 5e-06)))
+
+Executing: DIFF_E_W_GATE = geomGetEdge(DIFF butting gen3)
+
+Executing: DIFF_E_WO_GATE = geomAndNot(DIFF DIFF_E_W_GATE edges)
+
+Executing: e4A_19Hb = geomOr(drc(DIFF WGATE_W (enc < 0.24) parallel) drc(DIFF_E_WO_GATE ...
+	   errorLayer(e4A_19Hb "4A.19H.b: Minimum poly1 gate (width > 0.24) to field edge spacing is 0.24 um")
+
+Executing: e4A_19Ia = geomAndNot(drc(geomGetNon90(GATE1_W) (width < 0.14)) geomOr(SRAM D...
+	   errorLayer(e4A_19Ia "4A.19I.a: Minimum poly1 gate width for 45 degree(1.2V) is 0.14um")
+
+Executing: e4A_19Ib = geomAndNot(drc(geomGetNon90(GATE3_W) (width < 0.38)) SRAM)
+	   errorLayer(e4A_19Ib "4A.19I.b: Minimum poly1 gate width for 45 degree(3.3V) is 0.38um")
+
+Executing: e4A_19J = geomAndNot(geomOr(drc(GATE_W (sep < 0.01) only_perp) drc(GATE_W (wi...
+	   errorLayer(e4A_19J "4A.19J: 90 degree bent gate is not allowed.")
+
+Executing: e4A_19K = drc(GATE (area > 6400))
+	   errorLayer(e4A_19K "4A.19K: Maximum area of poly1 overlap of DIFF region is 80um x 80um.")
+
+Executing: e4A_19N = geomAndNot(drc(EXPO_E DIFF (sep < 0.1) notParallel) geomOr(SRAM SPS...
+	   errorLayer(e4A_19N "4A.19N:Minimum PO1 bent gate on field region to DIff spacing is 0.1um")
+
+Executing: e4A_19Q = geomAndNot(drc(DIFF PO1 (enc < 0.005) withIntersection) geomOr(SRAM...
+	   errorLayer(e4A_19Q "4A.19Q: POLY1 may only intersection DIFFUSION at 90 degrees , extra check POLY1 butting edge DIFFUSION")
+
+Executing: HRPOLY = geomButtOrOver(PO1 HR)
+
+Executing: SAB_E_IN_HRPOLY = geomGetEdge(SAB inside HRPOLY)
+
+Executing: HRCONT = geomOverlap(CONT HR)
+
+Executing: PURPOLY = geomAndNot(PO1 HRPOLY)
+
+Executing: e4A20A = geomOr(drc(HR (width < 0.6)) geomSize(drc(HR (width < 0.01) withCorn...
+	   errorLayer(e4A20A "4A.20A: Minimum HR width is 0.6um")
+
+Executing: e4A20B = drc(HR (sepNotch < 0.6) withSingularPoint)
+	   errorLayer(e4A20B "4A.20B: Minimum space between two HR regions is 0.6um")
+
+Executing: e4A20C = drc(HRPOLY (width < 0.5))
+	   errorLayer(e4A20C "4A.20C: Minimum HR poly1 width is 0.5um")
+
+Executing: e4A20D = drc(SAB_E_IN_HRPOLY (width < 1.0) with_perp)
+	   errorLayer(e4A20D "4A.20D: Minimum SAB width for HR PO1 resistor is 1.0um(define HR POLY length)")
+
+Executing: e4A20E = geomOr(drc(HR HRPOLY (enc < 0.5) shielded with_perp withIntersection...
+	   errorLayer(e4A20E "4A.20E: Minimum HR enclosure of HR poly1 resistor")
+
+Executing: e4A20F = drc(HR PURPOLY (sep < 2.0) withIntersection)
+	   errorLayer(e4A20F "4A.20F: Minimum HR to unrelated poly1 spacing is 2um")
+
+Executing: e4A20G = geomOr(drc(NPLUS HRPOLY (sep < 1.5) with_perp withIntersection) geom...
+	   errorLayer(e4A20G "4A.20G: Minimum HR poly to N+ spacing is 1.5um")
+
+Executing: e4A20H = drc(PPLUS HR (sep < 0.5) with_perp withIntersection)
+	   errorLayer(e4A20H "4A.20H: Minimum HR to PPLUS spacing is 0.5um")
+
+Executing: e4A20I = geomOr(drc(SAB HRPOLY (enc < 0.24)) geomAvoiding(HRPOLY SAB))
+	   errorLayer(e4A20I "4A.20I :Minimum SAB overlap HR poly1 resistor is 0.24um , extra check POLY1 inside HR region does not interact SAB")
+
+Executing: e4A20J = drc(HRCONT SAB (sep < 0.5) with_perp withIntersection)
+	   errorLayer(e4A20J "4A.20J: Minimum HR poly1 contact to SAB spacing is 0.5um")
+
+Executing: e4A20K = geomOr(drc(HR DIFF (sep < 0.5) with_perp withIntersection) geomAnd(H...
+	   errorLayer(e4A20K "4A.20K: Minimum HR to diffusion spacing is 0.5um")
+
+Executing: e4A20L = geomOr(drc(NWELL HRPOLY (enc < 1.5) shielded with_perp withIntersect...
+	   errorLayer(e4A20L "4A.20L: Minimum NWELL overlap HR poly1 resistor is 1.5um")
+
+Executing: e4A20M_temp1 = geomAnd(SAB HR)
+
+Executing: e4A20M_temp2 = drc(e4A20M_temp1 PPLUS (ovlp < 0.2))
+
+Executing: e4A20M_temp3 = geomAndNot(geomSize(SAB_E_IN_HRPOLY 0.001) PPLUS)
+
+Executing: e4A20M = geomOr(e4A20M_temp2 e4A20M_temp3)
+	   errorLayer(e4A20M "4A.20M: Min PPLUS overlap SAB is 0.2 um")
+
+Executing: e4A20N = drc(geomGetEdge(HRPOLY inside SAB) PPLUS (sep < 0.4))
+	   errorLayer(e4A20N "4A.20N: Minimum spacing from P+ implant to unrelated poly resistor is 0.4um")
+
+Executing: e4A21M_1 = geomAndNot(NWELL TWEL)
+
+Executing: EXP_PTAP = geomSizeAndNot(PTAP e4A21M_1 0.5 20)
+
+Executing: e4A21M = geomAndNot(geomAndNot(geomAndNot(geomAndNot(geomButtOrOver(NDIF PO1)...
+	   errorLayer(e4A21M "4A.21M: Maximum NPLUS diffusion to nearest P+ pick-up spacing is 20um")
+
+Executing: e4A22A = geomOr(drc(PPLUS (width < 0.24)) geomSize(drc(PPLUS (width < 0.01) w...
+	   errorLayer(e4A22A "4A.22A: Minimum width of a PPLUS region is 0.24um")
+
+Executing: e4A22B = geomAndNot(drc(PPLUS (sepNotch < 0.24) withSingularPoint) SRAM)
+	   errorLayer(e4A22B "4A.22B: Minimum space between two PPLUS regions is 0.24um")
+
+Executing: e4A22Ca = geomAndNot(drc(PPLUS e4A22Ca_1 (enc < 0.16) shielded withIntersecti...
+	   errorLayer(e4A22Ca "4A.22C.a: Minimum PPLUS overlap P+ DIFF(inside N-Well) is 0.16um")
+
+Executing: e4A22Cb = drc(PPLUS DIFF_PS (enc < 0.06) shielded withIntersection)
+	   errorLayer(e4A22Cb "4A.22C.b: Minimum PPLUS overlap P+ DIFF(inside P-Well) is 0.06um")
+
+Executing: e4A22Da = geomAndNot(geomOr(drc(PPLUS DIFF_PS (sep < 0.16) shielded withInter...
+	   errorLayer(e4A22Da "4A.22D.a: Minimum PPLUS to N+ DIFF spacing(inside P-Well) is 0.16um")
+
+Executing: e4A22Db = geomOr(drc(PPLUS DIFF_NW (sep < 0.06) withIntersection) geomSize(dr...
+	   errorLayer(e4A22Db "4A.22D.b: Minimum PPLUS to N+ DIFF spacing(inside N-Well) is 0.06um")
+
+Executing: e4A22E = geomAnd(geomAnd(DIFF PPLUS) NPLUS)
+	   errorLayer(e4A22E "4A.22E: Minimum P+ diffusion to N+ diffusion is 0um")
+
+Executing: e4A22F_21G = drc(BUT_PPLUS DIFF (ovlp < 0.16))
+	   errorLayer(e4A22F_21G "4A.22F(4A.21G): Minimum PPLUS overlap DIFF to form P+ region is 0.16um")
+
+Executing: e4A22G_21F = drc(DIFF BUT_PPLUS (enc < 0.16))
+	   errorLayer(e4A22G_21F "4A.22G(4A.21F): Minimum DIFF extension over PPLUS to form N+ region is 0.16um")
+
+Executing: e4A22H_21I = drc(BUT_PPLUS GATE_W (sep < 0.24) with_perp)
+	   errorLayer(e4A22H_21I "4A.22H(4A.21I): Minimum PPLUS to PO1 spacing to form N+ S/D region is 0.24um")
+
+Executing: e4A22I_21H = geomAndNot(drc(BUT_PPLUS GATE_W (enc < 0.24) with_perp) SRAM)
+	   errorLayer(e4A22I_21H "4A.22I(4A.21H): Minimum PPLUS extension over PO1 to form P+ s/d is 0.24um")
+
+Executing: e4A22J_21K = drc(BUT_PPLUS DIFCNT (enc < 0.1) with_perp)
+	   errorLayer(e4A22J_21K "4A.22J(4A.21K): Minimum PPLUS overlap CONT region is 0.10um, no butted contact.")
+
+Executing: e4A22K_21J = drc(BUT_PPLUS DIFCNT (sep < 0.1))
+	   errorLayer(e4A22K_21J "4A.22K(4A.21J): Minimum PPLUS to N+ CONT spacing is 0.10um")
+
+Executing: e4A22L_1 = geomOutside(BUT_PS CONT)
+
+Executing: e4A22L_2 = geomOutside(BUT_NS CONT)
+
+Executing: e4A22L_3 = geomOutside(BUT_NTAP CONT)
+
+Executing: e4A22L_4 = geomOutside(BUT_PTAP CONT)
+
+Executing: e4A22L = geomAndNot(geomAndNot(geomAndNot(geomCat(e4A22L_1 e4A22L_2 e4A22L_3 ...
+	   errorLayer(e4A22L "4A.22L: Soft Contacts are prohibited")
+
+Executing: geomSizeAnd(NTAP NWELL 0.5 20)
+
+Executing: geomSizeAnd(NTAP NWELL 0.5 20)
+
+Executing: geomSizeAnd(NTAP NWELL 0.5 20)
+
+Executing: geomSizeAnd(NTAP NWELL 0.5 20)
+
+Executing: geomSizeAnd(NTAP NWELL 0.5 20)
+
+Executing: e4A22M = geomAndNot(geomAndNot(geomAndNot(geomAndNot(geomOverlap(PDIF PO1) EX...
+	   errorLayer(e4A22M "4A.22M: Maximum P+ DIFF to nearest N+ pick-up spacing is 20um")
+
+Executing: e4A22N = drc(PPLUS (area < 0.1764))
+	   errorLayer(e4A22N "4A.22N: Minimun PPLUS area is 0.1764 sq.um")
+
+Executing: SAB_DIF = geomButtOrOver(DIFF SAB)
+
+Executing: IO_SD = geomButtOrOver(SAB_DIF GATE)
+
+Executing: SAB_DIF_RES = geomButtOrOver(geomAndNot(SAB_DIF IO_SD) RSYMBOL)
+
+Executing: IO_SAB = geomButtOrOver(SAB IO_SD)
+
+Executing: EXPOL_RES = geomButtOrOver(EXPOL PSYMBOL)
+
+Executing: SAB_POL = geomButtOrOver(EXPOL_RES SAB)
+
+Executing: SAB_POL_NH = geomOutside(EXPOL_RES HR)
+
+Executing: P_SAB_POL = geomInside(SAB_POL_NH PPLUS)
+
+Executing: N_SAB_POL = geomAndNot(SAB_POL_NH P_SAB_POL)
+
+Executing: e4A23A = geomOr(drc(SAB (width < 0.4)) geomSize(drc(SAB (width < 0.01) withCo...
+	   errorLayer(e4A23A "4A.23A: Minimum SAB width is 0.40um")
+
+Executing: e4A23B = drc(SAB (sepNotch < 0.4) withSingularPoint)
+	   errorLayer(e4A23B "4A.23B: Minimum SAB space is 0.40um")
+
+Executing: e4A23C = geomAnd(SAB CONT)
+	   errorLayer(e4A23C "4A.23C: Contact over SAB is not allowed.")
+
+Executing: e4A23E = drc(IO_SAB IO_SD (enc < 0.2) withIntersection)
+	   errorLayer(e4A23E "4A.23E: Minimum SAB extention over DIFF region is 0.2um")
+
+Executing: SAB_PO1 = geomButtOrOver(PO1 SAB)
+
+Executing: E4A_23Fa_X = geomOr(SAB_DIF SAB_PO1 SAB)
+
+Executing: E4A_23Fa_Y = geomAndNot(DRC_1 BULK)
+
+Executing: E4A_23Fa_PO1 = geomOr(PO1 E4A_23Fa_Y)
+
+Executing: E4A_23Fa_SAB = geomOr(SAB E4A_23Fa_Y)
+
+Executing: geomConnect((overlap E4A_23Fa_X E4A_23Fa_Y))
+
+Executing: geomStamp(E4A_23Fa_PO1 E4A_23Fa_X)
+
+Executing: geomStamp(E4A_23Fa_SAB E4A_23Fa_X)
+
+Executing: e4A23Fa = geomAndNot(drc(E4A_23Fa_SAB E4A_23Fa_PO1 (sep < 0.24) withIntersect...
+	   errorLayer(e4A23Fa "4A.23Fa: Minimum SAB to PO1 spacing is 0.24um")
+
+Executing: e4A23Fb = geomAndNot(drc(SAB PO1 (sep < 0.2) withIntersection) IOID)
+	   errorLayer(e4A23Fb "4A.23Fb: Minimum SAB to PO1 spacing is 0.2um")
+
+Executing: e4A23G = drc(SAB DIFF (sep < 0.2) withIntersection)
+	   errorLayer(e4A23G "4A.23G:Minimum SAB to unrelated DIFF spacing is 0.20um")
+
+Executing: e4A23Hb = drc(IO_SAB POLCNT (sep < 0.24) with_perp withIntersection)
+	   errorLayer(e4A23Hb "4A.23H.b: Minimum SAB to PO1 Contact spacing is 0.24um.")
+
+Executing: e4A23J = drc(SAB SAB_DIF_RES (enc < 0.2) withIntersection)
+	   errorLayer(e4A23J "4A.23J: Minimum SAB extension over DIFF resistor is 0.2um")
+
+Executing: e4A23K = drc(SAB SAB_POL (enc < 0.2) withIntersection)
+	   errorLayer(e4A23K "4A.23K: Minimum SAB extension over PO1 resistor is 0.2um")
+
+Executing: e4A23L = geomOr(drc(SAB CONT (sep < 0.24) with_perp withIntersection) geomAnd...
+	   errorLayer(e4A23L "4A.23L: Minimum SAB to contact spacing is 0.24um")
+
+Executing: e4A23M = drc(PPLUS P_SAB_POL (enc < 0.24) with_perp)
+	   errorLayer(e4A23M "4A.23M: Minimum PPLUS overlap P+ poly1 resistor is 0.24um")
+
+Executing: e4A23N = geomOr(drc(PPLUS N_SAB_POL (sep < 0.24) with_perp) geomAnd(PPLUS N_S...
+	   errorLayer(e4A23N "4A.23N: Minimum PPLUS to N+ (SAB) poly1 resistor spacing is 0.24um")
+
+Executing: e4A23O = drc(NWEL P_SAB_POL (enc < 0.24) with_perp withIntersection)
+	   errorLayer(e4A23O "4A.23O: Minimum N-Well overlap P+ poly1 non-salicider resistor is 0.24um")
+
+Executing: e4A23P = drc(N_SAB_POL NWEL (sep < 0.24) with_perp withIntersection)
+	   errorLayer(e4A23P "4A.23P: Minimum N-Well to N+ non-saliceder resistor spacing is 0.24um")
+
+Executing: e4A23Q = geomOr(drc(NPLUS N_SAB_POL (enc < 0.24) with_perp) geomAndNot(N_SAB_...
+	   errorLayer(e4A23Q "4A.23Q: Minimum N+ overlap N+ poly1 resistor is 0.24um")
+
+Executing: e4A23R = geomOr(drc(P_SAB_POL NPLUS (sep < 0.24) with_perp) geomAnd(P_SAB_POL...
+	   errorLayer(e4A23R "4A.23R: Minimum N+ to P+ (SAB) poly1 resistor spacing is 0.24um")
+
+Executing: e4A23S = drc(SAB (area < 0.37))
+	   errorLayer(e4A23S "4A.23S: Minimun SAB area is 0.37 sq.um")
+
+Executing: POL_RES_BODY = geomAnd(SAB_POL SAB)
+
+Executing: DIF_RES_BODY = geomAnd(SAB_DIF_RES SAB)
+
+Executing: e4A23T = geomOr(drc(geomGetEdge(POL_RES_BODY inside SAB_POL) (width < 1.0) wi...
+	   errorLayer(e4A23T "4A.23T: Minimun SAB length for resistor is 1.0um")
+
+Executing: e4A23U = drc(geomGetEdge(POL_RES_BODY coincident SAB_POL) (width < 0.5))
+	   errorLayer(e4A23U "4A.23U: Minimun poly1 width for non-salicide resistor is 0.5um")
+
+Executing: e4A23V = drc(geomGetEdge(DIF_RES_BODY coincident SAB_DIF_RES) (width < 0.5))
+	   errorLayer(e4A23V "4A.23V: Minimun diffusion width for non-salicide resistor is 0.5um")
+
+Executing: e4A23Wa = drc(POL_RES_BODY TG (sep < 0.24) with_perp withIntersection)
+	   errorLayer(e4A23Wa "4A.23Wa: Minimun TG to (SAB and PO1) of non-salicide resistor is 0.24um")
+
+Executing: e4A23Wb = drc(DIF_RES_BODY TG (sep < 0.24) with_perp)
+	   errorLayer(e4A23Wb "4A.23Wb: Minimun TG to (SAB and DIFF) of non-salicide resistor is 0.24um")
+
+Executing: e4A23Xa = drc(TG POL_RES_BODY (enc < 0.24) with_perp)
+	   errorLayer(e4A23Xa "4A.23Xa: Minimun TG overlap (SAB and PO1) of non-salicide resistor is 0.24um")
+
+Executing: e4A23Xb = drc(TG DIF_RES_BODY (enc < 0.24) with_perp)
+	   errorLayer(e4A23Xb "4A.23Xb: Minimun TG overlap (SAB and DIFF) of non-salicide resistor is 0.24um")
+
+Executing: RES2_DIF = geomButtOrOver(geomButtOrOver(DIFF SAB) RSYMBOL)
+
+Executing: RES2_POL = geomButtOrOver(geomButtOrOver(PO1 SAB) PSYMBOL)
+
+Executing: P_RES2_DIF = geomButtOrOver(RES2_DIF PPLUS)
+
+Executing: N_RES2_DIF = geomAndNot(RES2_DIF P_RES2_DIF)
+
+Executing: P_RES2_POL = geomButtOrOver(RES2_POL PPLUS)
+
+Executing: N_RES2_POL = geomAndNot(RES2_POL P_RES2_POL)
+
+Executing: e4A23Ya = geomAnd(N_RES2_DIF NWEL)
+	   errorLayer(e4A23Ya "4A.23Ya : N+ DIFFUSION non-salicide resistor should be drawn outside N_WELL")
+
+Executing: e4A23Yb = geomAndNot(P_RES2_DIF NWEL)
+	   errorLayer(e4A23Yb "4A.23Yb : P+ DIFFUSION non-salicide resistor should be drawn within N_WELL")
+
+Executing: Recommend_4A23Yc = geomAnd(TG RES2_DIF)
+	   errorLayer(Recommend_4A23Yc "Recommend_4A.23Yc:TG over N+DIFFUSION and P+DIFFUSION non-salicide resistor are not recommended")
+
+Executing: Recommend_4A23Yd = geomAnd(TG RES2_POL)
+	   errorLayer(Recommend_4A23Yd "Recommend_4A.23Yd:TG over N+POLY1 and P+POLY1 non-salicide resistor are not recommended")
+
+Executing: e4A_23Za = geomOr(drc(N_RES2_POL PPLUS (sep < 0.24) with_perp withIntersectio...
+	   errorLayer(e4A_23Za "4A.23Za:Minimum N+POLY1 non-salicide resistor to P+ implant layer spacing is 0.24um")
+
+Executing: e4A_23Zb = drc(P_RES2_POL NPLUS (sep < 0.24) with_perp withIntersection)
+	   errorLayer(e4A_23Zb "4A.23Zb:Minimum N+ implant layer to  P+POLY1 non-salicide resistor spacing is 0.24um")
+
+Executing: e4A_23Zc = drc(NWEL N_RES2_POL (enc < 0.24) shielded withIntersection)
+	   errorLayer(e4A_23Zc "4A.23Zc:Minimum N_WELL layer extension to N+POLY1 non-salicide resistor is 0.24um")
+
+Executing: e4A_23Zd_a_E1 = geomOr(drc(NPLUS SAB_PO1_WITHCO1 (enc < 0.2) opposite shielde...
+
+Executing: e4A_23Zd_a_E2 = geomOr(drc(NPLUS SAB_PO1_WITHCO2 (enc < 0.2) opposite shielde...
+
+Executing: e4A_23Zd_a_1 = geomAndNot(geomAvoiding(e4A_23Zd_a_E1 HR) END_CAP)
+
+Executing: e4A_23Zd_a_2 = geomAndNot(geomAvoiding(e4A_23Zd_a_E2 HR) END_CAP)
+
+Executing: e4A_23Zd_a = geomOr(e4A_23Zd_a_1 e4A_23Zd_a_2)
+	   errorLayer(e4A_23Zd_a "4A.23Zd.a: Minimum N+ implant enclosure of (N+ POLY1 OVER SAB) is 0.20 um,  (POLY1 endcap is excepted from this rule)")
+
+Executing: e4A_23Zd_b_E1 = geomStraddle(NO_SQ_SAB_PO1 NPLUS)
+
+Executing: e4A_23Zd_b_1 = geomButtOnly(geomStraddle(geomButtOnly(SAB_PO1 SAB_HANG12_PO1)...
+
+Executing: e4A_23Zd_b_E2 = geomButtOnly(geomAnd(SAB_PO1_CUT_N NPLUS) PO1_WITH_CONT)
+
+Executing: e4A_23Zd_b_E3 = geomButtOnly(geomAndNot(SAB_PO1_CUT_N NPLUS) PO1_WITH_CONT)
+
+Executing: e4A_23Zd_b_2 = geomAvoiding(geomOr(e4A_23Zd_b_E1 geomOr(e4A_23Zd_b_E2 e4A_23Z...
+
+Executing: e4A_23Zd_b = geomOr(e4A_23Zd_b_1 e4A_23Zd_b_2)
+	   errorLayer(e4A_23Zd_b "4A.23Zd.b: If SAB lies across POLY1,(POLY1 OVER SAB) partially covered,  by N+ and partially not covered by N+ is not allowed")
+
+Executing: e4A_23Ze_a_E1 = geomOr(drc(PPLUS SAB_PO1_WITHCO1 (enc < 0.2) opposite shielde...
+
+Executing: e4A_23Ze_a_E2 = geomOr(drc(PPLUS SAB_PO1_WITHCO2 (enc < 0.2) opposite shielde...
+
+Executing: e4A_23Ze_a_1 = geomAndNot(geomAvoiding(e4A_23Ze_a_E1 HR) END_CAP)
+
+Executing: e4A_23Ze_a_2 = geomAndNot(geomAvoiding(e4A_23Ze_a_E2 HR) END_CAP)
+
+Executing: e4A_23Ze_a = geomOr(e4A_23Ze_a_1 e4A_23Ze_a_2)
+	   errorLayer(e4A_23Ze_a "4A.23Ze.a: Minimum P+ implant enclosure of ((P+ POLY1 OVER SAB) NOT HR) is 0.20 um,  (POLY1 endcap is excepted from this rule)")
+
+Executing: e4A_23Ze_b_E1 = geomStraddle(NO_SQ_SAB_PO1 PPLUS)
+
+Executing: e4A_23Ze_b_1 = geomButtOnly(geomStraddle(geomButtOnly(SAB_PO1 SAB_HANG12_PO1)...
+
+Executing: e4A_23Ze_b_E2 = geomButtOnly(geomAnd(SAB_PO1_CUT_P PPLUS) PO1_WITH_CONT)
+
+Executing: e4A_23Ze_b_E3 = geomButtOnly(geomAndNot(SAB_PO1_CUT_P PPLUS) PO1_WITH_CONT)
+
+Executing: e4A_23Ze_b_2 = geomAvoiding(geomOr(e4A_23Ze_b_E1 geomOr(e4A_23Ze_b_E2 e4A_23Z...
+
+Executing: e4A_23Ze_b = geomOr(e4A_23Ze_b_1 e4A_23Ze_b_2)
+	   errorLayer(e4A_23Ze_b "4A.23Ze.b: If SAB lies across POLY1,((POLY1 OVER SAB) NOT HR) partially covered,  by P+ and partially not covered by P+ is not allowed")
+
+Executing: e4A_23Zf_a_1 = geomOr(drc(NPLUS SAB_DIFF_WITHCO1 (enc < 0.2) withIntersection...
+
+Executing: e4A_23Zf_a_2 = geomOr(drc(NPLUS SAB_DIFF_WITHCO2 (enc < 0.2) withIntersection...
+
+Executing: e4A_23Zf_a = geomOr(e4A_23Zf_a_1 e4A_23Zf_a_2)
+	   errorLayer(e4A_23Zf_a "4A.23Zf.a: Minimum N+ implant enclosure of (N+ DIFFUSION OVER SAB) is 0.20 um,  (DIFFUSION endcap is excepted from this rule)")
+
+Executing: e4a_23Zf_b_1 = geomStraddle(NO_SQ_SAB_DIFF NPLUS)
+
+Executing: e4a_23Zf_b_2 = geomButtOnly(geomAnd(SAB_DIFF_CUT_N NPLUS) DIFF_WITH_CONT)
+
+Executing: e4a_23Zf_b_3 = geomButtOnly(geomAndNot(SAB_DIFF_CUT_N NPLUS) DIFF_WITH_CONT)
+
+Executing: e4a_23Zf_b = geomOr(e4a_23Zf_b_1 e4a_23Zf_b_2 e4a_23Zf_b_3)
+	   errorLayer(e4a_23Zf_b "4A.23Zf.b: (DIFFUSION OVER SAB) partially covered by N+ and partially not covered by N+ is not allowed")
+
+Executing: e4A_23Zg_a_1 = geomOr(drc(PPLUS SAB_DIFF_WITHCO1 (enc < 0.2) withIntersection...
+
+Executing: e4A_23Zg_a_2 = geomOr(drc(PPLUS SAB_DIFF_WITHCO2 (enc < 0.2) withIntersection...
+
+Executing: e4A_23Zg_a = geomOr(e4A_23Zg_a_1 e4A_23Zg_a_2)
+	   errorLayer(e4A_23Zg_a "4A.23Zg.a: Minimum P+ implant enclosure of (P+ DIFFUSION OVER SAB) is 0.20 um,  (DIFFUSION endcap is excepted from this rule)")
+
+Executing: e4A_23Zg_b_1 = geomStraddle(NO_SQ_SAB_DIFF PPLUS)
+
+Executing: e4A_23Zg_b_2 = geomButtOnly(geomAnd(SAB_DIFF_CUT_P PPLUS) DIFF_WITH_CONT)
+
+Executing: e4A_23Zg_b_3 = geomButtOnly(geomAndNot(SAB_DIFF_CUT_P PPLUS) DIFF_WITH_CONT)
+
+Executing: e4A_23Zg_b = geomOr(e4A_23Zg_b_1 e4A_23Zg_b_2 e4A_23Zg_b_3)
+	   errorLayer(e4A_23Zg_b "4A.23Zg.b: (DIFFUSION OVER SAB) partially covered by P+ and partially not covered by P+ is not allowed")
+
+Executing: e4A24A = geomAndNot(geomOr(geomContactCheck(CONT (length == 0.16) (width == 0...
+	   errorLayer(e4A24A "4A.24A: Exact CONT size is 0.16um")
+
+Executing: e4A24B = geomAndNot(drc(CONT (sepNotch < 0.2) withSingularPoint) geomOr(SRAM ...
+	   errorLayer(e4A24B "4A.24B: Minimum space between two CONT regions is 0.20um")
+
+Executing: e4A24Ca = geomAndNot(drc(GATE1_W DIFCNT (sep < 0.12) with_perp) geomOr(SRAM S...
+	   errorLayer(e4A24Ca "4A.24C.a:Minimum DIFF CONT to poly1 gate spacing is 0.12um.")
+
+Executing: e4A24Cb = drc(GATE3_W DIFCNT (sep < 0.14) with_perp)
+	   errorLayer(e4A24Cb "4A.24C.b:Minimum DIFF CONT to poly1(3.3V) gate spacing is 0.14um.")
+
+Executing: e4A24D = geomAndNot(drc(DIFF POLCNT (sep < 0.16) with_perp withIntersection) ...
+	   errorLayer(e4A24D "4A.24D:Minimum poly1 contact to diffusion spacing is 0.16um")
+
+Executing: e4A24E = geomAndNot(geomOr(drc(PO1 POLCNT (enc < 0.06) withSingularPoint) geo...
+	   errorLayer(e4A24E "4A.24E: Minimum PO1 overlap CONT is 0.06um, no floating contact")
+
+Executing: DIFCNT_N_SRAM = geomAndNot(DIFCNT SRAM)
+
+Executing: e4A24FG = geomAndNot(geomOr(drc(DIFF DIFCNT_N_SRAM (enc < 0.06) with_perp) ge...
+	   errorLayer(e4A24FG "4A.24FG: Minimum extension of a diffusion region beyond a CONT region is 0.06um")
+
+Executing: e4A24I = geomAndNot(geomAnd(GATE CONT) geomOr(SRAM SPS SPLLS LOGOMK))
+	   errorLayer(e4A24I "4A.24I: Poly contact on diffusion is not allowed.")
+
+Executing: e4A25A = geomOr(drc(PESD (width < 0.6)) geomSize(drc(PESD (width < 0.01) with...
+	   errorLayer(e4A25A "4A.25A: Minimum width of PESD region is 0.60um")
+
+Executing: e4A25B = drc(PESD (sepNotch < 0.6) withSingularPoint)
+	   errorLayer(e4A25B "4A.25B: Minimum space between two PESD regions is 0.60um")
+
+Executing: e4A26A = geomAndNot(geomOr(drc(PWBLK (width < 0.63) withCornerTouch)) LOGOMK)
+	   errorLayer(e4A26A "4A.26A: Minimum width of P_WELL_BLOCK region is 0.63um")
+
+Executing: e4A26B = geomAndNot(drc(PWBLK (sepNotch < 0.63) withSingularPoint) LOGOMK)
+	   errorLayer(e4A26B "4A.26B: Minimum space between two P_WELL_BLOCK regions is 0.63um")
+
+Executing: e4A26C = geomAndNot(geomOr(drc(NATIVE PWBLK (sep < 0.63) with_perp withInters...
+	   errorLayer(e4A26C "4A.26C: Minimum P_WELL_BLOCK to NATIVE spacing or notch is 0.63 um")
+
+Executing: e4A26D = geomAndNot(geomOr(drc(NWEL PWBLK (sep < 0.9) with_perp withIntersect...
+	   errorLayer(e4A26D "4A.26D: Minimum P_WELL_BLOCK to N_WELL spacing or notch is 0.90 um")
+
+Executing: e4A26E = geomAndNot(geomOr(drc(IND PWBLK (sep < 0.63) with_perp withIntersect...
+	   errorLayer(e4A26E "4A.26E: Minimum P_WELL_BLOCK to IND spacing or notch is 0.63 um")
+
+Executing: e4A26F = geomAndNot(geomOr(drc(DIFF PWBLK (sep < 0.25) with_perp withIntersec...
+	   errorLayer(e4A26F "4A.26F: Minimum P_WELL_BLOCK to DIFFUSION spacing is 0.25 um")
+
+Executing: e4A26G = geomAndNot(geomOr(drc(PWBLK DIFF (enc < 0.3) shielded withIntersecti...
+	   errorLayer(e4A26G "4A.26G: Minimum P_WELL_BLOCK enclosure of DIFFUSION is 0.30 um")
+
+Executing: e4A26H = geomAndNot(geomAnd(PWBLK GATE) LOGOMK)
+	   errorLayer(e4A26H "4A.26H: P_WELL_BLOCK overlap GATE is not allowed")
+
+Executing: e4A26I = geomAndNot(geomAnd(PWBLK NWEL) LOGOMK)
+	   errorLayer(e4A26I "4A.26I: P_WELL_BLOCK overlap NWEL is not allowed")
+
+Executing: e4A26J = geomAndNot(geomAnd(PWBLK IND) LOGOMK)
+	   errorLayer(e4A26J "4A.26J: P_WELL_BLOCK overlap IND is not allowed")
+
+Executing: e4A26K = geomAndNot(geomAnd(PWBLK NATIVE) LOGOMK)
+	   errorLayer(e4A26K "4A.26K: P_WELL_BLOCK overlap NATIVE is not allowed")
+
+Executing: e4A26L = geomAndNot(geomOr(drc(IND NATIVE (sep < 0.63) with_perp withIntersec...
+	   errorLayer(e4A26L "4A.26L: Minimum IND to NATIVE spacing is 0.63 um")
+
+Executing: e4A26M = geomAndNot(geomOr(drc(IND NWEL (sep < 0.9) with_perp withIntersectio...
+	   errorLayer(e4A26M "4A.26M: Minimum IND to N_WELL spacing is 0.90 um")
+
+Executing: eLOGO_5_1A_5_1C_suggested = geomOr(drc(DIFF_LOGO (width < 0.3)) geomSize(drc(...
+	   errorLayer(eLOGO_5_1A_5_1C_suggested "LOGO_5.1A_5.1C_suggested: Minimum width of DIFF region is 0.3um")
+
+Executing: eLOGO_5_1B = geomOr(drc(DIFF_LOGO (sepNotch < 0.4) shielded withIntersection))
+	   errorLayer(eLOGO_5_1B "LOGO_5.1B: Minimum space between DIFF regions is 0.4um")
+
+Executing: eLOGO_5_2A_5_2C_suggested = geomOr(drc(NWEL_LOGO (width < 1.2)) geomSize(drc(...
+	   errorLayer(eLOGO_5_2A_5_2C_suggested "LOGO_5.2A_5.2C_suggested: Minimum width of NW region is 1.2um")
+
+Executing: eLOGO_5_2B = geomOr(drc(NWEL_LOGO (sepNotch < 2) shielded withIntersection))
+	   errorLayer(eLOGO_5_2B "LOGO_5.2B: Minimum space between NW regions is 2um")
+
+Executing: eLOGO_5_3A_5_3C_suggested = geomOr(drc(TG_LOGO (width < 0.6)) geomSize(drc(TG...
+	   errorLayer(eLOGO_5_3A_5_3C_suggested "LOGO_5.3A_5.3C_suggested: Minimum width of TG region is 0.6um")
+
+Executing: eLOGO_5_3B = geomOr(drc(TG_LOGO (sepNotch < 0.6) shielded withIntersection))
+	   errorLayer(eLOGO_5_3B "LOGO_5.3B: Minimum space between TG regions is 0.6um")
+
+Executing: eLOGO_5_4A_5_4C_suggested = geomOr(drc(PO1_LOGO (width < 0.24)) geomSize(drc(...
+	   errorLayer(eLOGO_5_4A_5_4C_suggested "LOGO_5.4A_5.4C_suggested: Minimum width of PO1 region is 0.24um")
+
+Executing: eLOGO_5_4B = geomOr(drc(PO1_LOGO (sepNotch < 0.32) shielded withIntersection))
+	   errorLayer(eLOGO_5_4B "LOGO_5.4B: Minimum space between PO1 regions is 0.32um")
+
+Executing: eLOGO_5_5A_5_5C_suggested = geomOr(drc(NPLUS_LOGO (width < 0.42)) geomSize(dr...
+	   errorLayer(eLOGO_5_5A_5_5C_suggested "LOGO_5.5A_5.5C_suggested: Minimum width of NPLUS region is 0.42um")
+
+Executing: eLOGO_5_5B = geomOr(drc(NPLUS_LOGO (sepNotch < 0.42) shielded withIntersection))
+	   errorLayer(eLOGO_5_5B "LOGO_5.5B: Minimum space between NPLUS regions is 0.42um")
+
+Executing: eLOGO_5_6A_5_6C_suggested = geomOr(drc(PPLUS_LOGO (width < 0.42)) geomSize(dr...
+	   errorLayer(eLOGO_5_6A_5_6C_suggested "LOGO_5.6A_5.6C_suggested: Minimum width of PPLUS region is 0.42um")
+
+Executing: eLOGO_5_6B = geomOr(drc(PPLUS_LOGO (sepNotch < 0.42) shielded withIntersection))
+	   errorLayer(eLOGO_5_6B "LOGO_5.6B: Minimum space between PPLUS regions is 0.42um")
+
+Executing: eLOGO_5_7A_5_7C_suggested = geomOr(drc(SAB_LOGO (width < 0.6)) geomSize(drc(S...
+	   errorLayer(eLOGO_5_7A_5_7C_suggested "LOGO_5.7A_5.7C_suggested: Minimum width of SAB region is 0.6um")
+
+Executing: eLOGO_5_7B = geomOr(drc(SAB_LOGO (sepNotch < 0.6) shielded withIntersection))
+	   errorLayer(eLOGO_5_7B "LOGO_5.7B: Minimum space between SAB regions is 0.6um")
+
+Executing: eLOGO_5_8A_5_8C_suggested = geomOr(drc(CONT_LOGO (width < 0.32)) geomSize(drc...
+	   errorLayer(eLOGO_5_8A_5_8C_suggested "LOGO_5.8A_5.8C_suggested: Minimum width of CONT region is 0.32um")
+
+Executing: eLOGO_5_8B = geomOr(drc(CONT_LOGO (sepNotch < 0.4) shielded withIntersection))
+	   errorLayer(eLOGO_5_8B "LOGO_5.8B: Minimum space between CONT regions is 0.4um")
+
+Executing: eLOGO_5_8Da_CONT_PO1_LOGO = geomButtOrOver(CONT_LOGO PO1_LOGO)
+
+Executing: eLOGO_5_8Da = geomOr(drc(PO1_LOGO eLOGO_5_8Da_CONT_PO1_LOGO ((0 < enc) < 0.14...
+	   errorLayer(eLOGO_5_8Da "LOGO_5.8Da: Minimum PO1 enclosure of CONT is 0.14,")
+
+Executing: eLOGO_5_8Db_CONT_DIFF_LOGO = geomAndNot(CONT_LOGO eLOGO_5_8Db_CONT_PO1_LOGO)
+
+Executing: eLOGO_5_8Db = geomOr(drc(DIFF_LOGO eLOGO_5_8Db_CONT_DIFF_LOGO ((0 < enc) < 0....
+	   errorLayer(eLOGO_5_8Db "LOGO_5.8Db: Minimum DIFFUSION enclosure of CONT is 0.14, floating CONT is not allowed")
+
+Finished running rules. Task processor time in main process:
+cpu: 0.10  elap: 0  pf: 0  in: 0  out: 776  virt: 191M  phys: 949M
+
+Started output post-processing ...
+
+Nothing to postprocess: No grid cells in the design
+
+Finished output post-processing
+cpu: 0.03  elap: 0  pf: 0  in: 0  out: 0  virt: 233M  phys: 1020M
+
+Finished building the persistent database.
+cpu: 0.03  elap: 1  pf: 0  in: 0  out: 6400  virt: 238M  phys: 1039M
+
+
+*****  aveng terminated normally  *****
+
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/aveng
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dff_test.rsf
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+@(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.7-64b:IC6.1.7-64b.78 12/24/2015 12:01 (sjflg007) $
+sub-version 4.1_USR5, integ signature 2015-12-24-1122
+
+run on dep56132nix from /usr/local/cadence6/ASSURA415-001-617/tools.lnx86/assura/bin/64bit/avrpt on Tue May 10 14:05:10 2022
+
+
+   Creating Error Database 'dff_test'...
+
+   Reading VDB ...
+--------------------------------------------------------------------------------
+Rule      Message                                    FlatCount     RealCount
+--------------------------------------------------------------------------------
+(    1)  dataAuditErrors                                     0            0
+(    2)  SkewEdge:                                           0            0
+(    3)  4A.1AB: Minimum DIFFUSION width is 0.16u            0            0
+(    4)  4A.1C.a1_b1:Minimum DIFFUSION to DIFFUSI            0            0
+(    5)  4A.1C.a2_b2: Minimum DIFFUSION to DIFFUS            0            0
+(    6)  4A.1D.a:Minimum N_WELL to N+ DIFFUSION (            0            0
+(    7)  4A.1D.b:Minimum N_WELL to N+ DIFFUSION (            0            0
+(    8)  4A.1E:Minimum N_WELL enclosure of N+ DIF            0            0
+(    9)  4A.1F:Minimum N_WELL to P+ DIFFUSION spa            0            0
+(   10)  4A.1G.a:Minimum N_WELL enclosure of P+ D            0            0
+(   11)  4A.1G.b:Minimum N_WELL enclosure of P+ D            0            0
+(   12)  4A.1I:Minimum DIFFUSION/isolation area 0            0            0
+(   13)  4A.2A.a:Minimum width of an N-Well regio            0            0
+(   14)  4A.2A.b:Minimum dimension of an N-Well r            0            0
+(   15)  4A.2A.c:Maximum N-Well width for resisto            0            0
+(   16)  4A.2B.a:Minimum N-Well to N-Well spacing            0            0
+(   17)  4A.2B.b1:Minium N-Well to non-potential(            0            0
+(   18)  4A.2B.b2:Minimum N-Well to non-potential            0            0
+(   19)  4A.2B.c_d:Minimum spacing from N-well re            0            0
+(   20)  4A.2C/D: The resistor marker layer edges            0            0
+(   21)  4A.4A:Minimum T_WELL width is 0.63um                0            0
+(   22)  4A.4B.a:Minimum T_WELL to T_WELL spacing            0            0
+(   23)  4A.4B.b1:Minimum T_WELL to T_WELL spacin            0            0
+(   24)  4A.4B.b2: Minimum T_WELL to T_WELL spaci            0            0
+(   25)  4A.4C:Minimum N_WELL enclosure of T_WELL            0            0
+(   26)  4A.4D.a:Minimum T_WELL to P+ DIFFUSION (            0            0
+(   27)  4A.4D.b:Minimum T_WELL to P+ DIFFUSION (            0            0
+(   28)  4A.4E:Minimum T_WELL enclosure of P+ DIF            0            0
+(   29)  4A.4F:Minimum T_WELL to N+ DIFFUSION is             0            0
+(   30)  4A.4G.a:Minimum T_WELL enclosure of N+ D            0            0
+(   31)  4A.4G.b:Minimum T_WELL enclosure of N+ D            0            0
+(   32)  4A.7A:Minimum width of VTN_SP region is             0            0
+(   33)  4A.7B:Minimum space between two VTN_SP r            0            0
+(   34)  4A.7C:Minimum VTN_SP extension over Poly            0            0
+(   35)  4A.7D:Minimum VTN_SP to unrelated Poly g            0            0
+(   36)  4A.8A: Minimum width of VTP_SP region is            0            0
+(   37)  4A.8B: Minimum space between two VTP_SP             0            0
+(   38)  4A.8C: Minimum VTP_SP extension over Pol            0            0
+(   39)  4A.8D: Minimum VTP_SP to unrelated Poly             0            0
+(   40)  4A.9A: Minimum width of VTNH region is 0            0            0
+(   41)  4A.9B: Minimum space between two VTNH re            0            0
+(   42)  4A.9C: Minimum VTNH extension over Poly             0            0
+(   43)  4A.9D: Minimum VTNH to unrelated Poly ga            0            0
+(   44)  4A.10A: Minimum width of VTPH region is             0            0
+(   45)  4A.10B: Minimum space between two VTPH r            0            0
+(   46)  4A.10C: Minimum VTPH extension over Poly            0            0
+(   47)  4A.10D: Minimum VTPH to unrelated Poly g            0            0
+(   48)  4A.11A:Minimum width of poly(1.2V low Vt            0            0
+(   49)  4A.11B:Minimum width of VTNL region is 0            0            0
+(   50)  4A.11C:Minimum space between two VTNL re            0            0
+(   51)  4A.11D:Minimum VTNL overlap Diffusion is            0            0
+(   52)  4A.11E:Minimum VTNL to unrelated Diffusi            0            0
+(   53)  4A.11F:Minimum VTNL extension over poly             0            0
+(   54)  4A.11G:Minimum VTNL to unrelated PO1 spa            0            0
+(   55)  4A.12A:Minimum width of poly(1.2V low Vt            0            0
+(   56)  4A.12B:Minimum width of VTPL region is 0            0            0
+(   57)  4A.12C:Minimum space between two VTPL re            0            0
+(   58)  4A.12D:Minimum VTPL overlap Diffusion of            0            0
+(   59)  4A.12E:Minimum VTPL to unrelated Diffusi            0            0
+(   60)  4A.12F:Minimum VTPL extension over poly             0            0
+(   61)  4A.12G:Minimum VTPL to unrelated PO1 spa            0            0
+(   62)  4A.13A:Minimum width of poly(3.3V low Vt            0            0
+(   63)  4A.13B:Minimum width of VTNHL region is             0            0
+(   64)  4A.13C:Minimum space between two VTNHL r            0            0
+(   65)  4A.13D:Minimum VTNHL overlap Diffusion i            0            0
+(   66)  4A.13E:Minimum VTNHL to unrelated Diffus            0            0
+(   67)  4A.13F:Minimum VTNHL extension over poly            0            0
+(   68)  4A.13G:Minimum VTPL to unrelated PO1 spa            0            0
+(   69)  4A.14A:Minimum width of poly(3.3V low Vt            0            0
+(   70)  4A.14B:Minimum width of VTPHL region is             0            0
+(   71)  4A.14C:Minimum space between two VTPHL r            0            0
+(   72)  4A.14D:Minimum VTPHL overlap Diffusion o            0            0
+(   73)  4A.14E:Minimum VTPHL to unrelated Diffus            0            0
+(   74)  4A.14F:Minimum VTPHL extension over poly            0            0
+(   75)  4A.14G:Minimum VTPHL to unrelated PO1 sp            0            0
+(   76)  4A.15A.a: Minimum width of poly(1.2V NMO            0            0
+(   77)  4A.15A.b: Minimum width of poly(3.3V NMO            0            0
+(   78)  4A.15B: Minimum NATIVE width is 1.60um              0            0
+(   79)  4A.15C: Minimum NATIVE spacing is 0.63um            0            0
+(   80)  4A.15D: Exact NATIVE enclosure of DIFFUS            0            0
+(   81)  4A.15E: Minimum NATIVE to unrelated Diff            0            0
+(   82)  4A.15F: Minimum NATIVE to N-WELL spacing            0            0
+(   83)  4A.15J: NATIVE shapes must be orthogonal            0            0
+(   84)  4A.15K: NATIVE must be within N+                    0            0
+(   85)  4A.Note.1: Two or more device in one Nat            0            0
+(   86)  4A.18A: Minimum width of TG region is 0.            0            0
+(   87)  4A.18B: Minimum space between two TG reg            0            0
+(   88)  4A.18C: Minimum TG overlap DIFF of 3.3V             0            0
+(   89)  4A.18D: Minimum TG to unrelated DIFF spa            0            0
+(   90)  4A.18E: Minimum TG extension over PO1 ga            0            0
+(   91)  4A.18F: Minimum TG to unrelated PO1 gate            0            0
+(   92)  4A.19AaBaC: Minimum poly1 width is 0.12u            0            0
+(   93)  4A.19Ab: Minimum poly1 width for 3.3V NM            0            0
+(   94)  4A.19Bb: Minimum poly1 width for 3.3V PM            0            0
+(   95)  4A.19D.a1_4A.19D.c1_4A.19D.c2.1: Minimum            0            0
+(   96)  4A.19D.a2: Minimum poly1 spacing on DIFF            0            0
+(   97)  4A.19D.b1: Minimum poly1 spacing on DIFF            0            0
+(   98)  4A.19D.b2: Minimum poly1 spacing on DIFF            0            0
+(   99)  4A.19D.c2.2: Minimum space between two p            0            0
+(  100)  4A.19E: Minimum overlap of a poly1 regio            0            0
+(  101)  4A.19F: Minimum separation from an DIFF             0            0
+(  102)  4A.19G: Minimum poly1 endcap to RELATED             0            0
+(  103)  4A.19H.a__4A.19O: Minimum poly1 gate to             0            0
+(  104)  4A.19H.b: Minimum poly1 gate (width > 0.            0            0
+(  105)  4A.19I.a: Minimum poly1 gate width for 4            0            0
+(  106)  4A.19I.b: Minimum poly1 gate width for 4            0            0
+(  107)  4A.19J: 90 degree bent gate is not allow            0            0
+(  108)  4A.19K: Maximum area of poly1 overlap of            0            0
+(  109)  4A.19N:Minimum PO1 bent gate on field re            0            0
+(  110)  4A.19Q: POLY1 may only intersection DIFF            0            0
+(  111)  4A.20A: Minimum HR width is 0.6um                   0            0
+(  112)  4A.20B: Minimum space between two HR reg            0            0
+(  113)  4A.20C: Minimum HR poly1 width is 0.5um             0            0
+(  114)  4A.20D: Minimum SAB width for HR PO1 res            0            0
+(  115)  4A.20E: Minimum HR enclosure of HR poly1            0            0
+(  116)  4A.20F: Minimum HR to unrelated poly1 sp            0            0
+(  117)  4A.20G: Minimum HR poly to N+ spacing is            0            0
+(  118)  4A.20H: Minimum HR to PPLUS spacing is 0            0            0
+(  119)  4A.20I :Minimum SAB overlap HR poly1 res            0            0
+(  120)  4A.20J: Minimum HR poly1 contact to SAB             0            0
+(  121)  4A.20K: Minimum HR to diffusion spacing             0            0
+(  122)  4A.20L: Minimum NWELL overlap HR poly1 r            0            0
+(  123)  4A.20M: Min PPLUS overlap SAB is 0.2 um             0            0
+(  124)  4A.20N: Minimum spacing from P+ implant             0            0
+(  125)  4A.21M: Maximum NPLUS diffusion to neare            0            0
+(  126)  4A.22A: Minimum width of a PPLUS region             0            0
+(  127)  4A.22B: Minimum space between two PPLUS             0            0
+(  128)  4A.22C.a: Minimum PPLUS overlap P+ DIFF(            0            0
+(  129)  4A.22C.b: Minimum PPLUS overlap P+ DIFF(            0            0
+(  130)  4A.22D.a: Minimum PPLUS to N+ DIFF spaci            0            0
+(  131)  4A.22D.b: Minimum PPLUS to N+ DIFF spaci            0            0
+(  132)  4A.22E: Minimum P+ diffusion to N+ diffu            0            0
+(  133)  4A.22F(4A.21G): Minimum PPLUS overlap DI            0            0
+(  134)  4A.22G(4A.21F): Minimum DIFF extension o            0            0
+(  135)  4A.22H(4A.21I): Minimum PPLUS to PO1 spa            0            0
+(  136)  4A.22I(4A.21H): Minimum PPLUS extension             0            0
+(  137)  4A.22J(4A.21K): Minimum PPLUS overlap CO            0            0
+(  138)  4A.22K(4A.21J): Minimum PPLUS to N+ CONT            0            0
+(  139)  4A.22L: Soft Contacts are prohibited                0            0
+(  140)  4A.22M: Maximum P+ DIFF to nearest N+ pi            0            0
+(  141)  4A.22N: Minimun PPLUS area is 0.1764 sq.            0            0
+(  142)  4A.23A: Minimum SAB width is 0.40um                 0            0
+(  143)  4A.23B: Minimum SAB space is 0.40um                 0            0
+(  144)  4A.23C: Contact over SAB is not allowed.            0            0
+(  145)  4A.23E: Minimum SAB extention over DIFF             0            0
+(  146)  4A.23Fa: Minimum SAB to PO1 spacing is 0            0            0
+(  147)  4A.23Fb: Minimum SAB to PO1 spacing is 0            0            0
+(  148)  4A.23G:Minimum SAB to unrelated DIFF spa            0            0
+(  149)  4A.23H.b: Minimum SAB to PO1 Contact spa            0            0
+(  150)  4A.23J: Minimum SAB extension over DIFF             0            0
+(  151)  4A.23K: Minimum SAB extension over PO1 r            0            0
+(  152)  4A.23L: Minimum SAB to contact spacing i            0            0
+(  153)  4A.23M: Minimum PPLUS overlap P+ poly1 r            0            0
+(  154)  4A.23N: Minimum PPLUS to N+ (SAB) poly1             0            0
+(  155)  4A.23O: Minimum N-Well overlap P+ poly1             0            0
+(  156)  4A.23P: Minimum N-Well to N+ non-saliced            0            0
+(  157)  4A.23Q: Minimum N+ overlap N+ poly1 resi            0            0
+(  158)  4A.23R: Minimum N+ to P+ (SAB) poly1 res            0            0
+(  159)  4A.23S: Minimun SAB area is 0.37 sq.um              0            0
+(  160)  4A.23T: Minimun SAB length for resistor             0            0
+(  161)  4A.23U: Minimun poly1 width for non-sali            0            0
+(  162)  4A.23V: Minimun diffusion width for non-            0            0
+(  163)  4A.23Wa: Minimun TG to (SAB and PO1) of             0            0
+(  164)  4A.23Wb: Minimun TG to (SAB and DIFF) of            0            0
+(  165)  4A.23Xa: Minimun TG overlap (SAB and PO1            0            0
+(  166)  4A.23Xb: Minimun TG overlap (SAB and DIF            0            0
+(  167)  4A.23Ya : N+ DIFFUSION non-salicide resi            0            0
+(  168)  4A.23Yb : P+ DIFFUSION non-salicide resi            0            0
+(  169)  Recommend_4A.23Yc:TG over N+DIFFUSION an            0            0
+(  170)  Recommend_4A.23Yd:TG over N+POLY1 and P+            0            0
+(  171)  4A.23Za:Minimum N+POLY1 non-salicide res            0            0
+(  172)  4A.23Zb:Minimum N+ implant layer to  P+P            0            0
+(  173)  4A.23Zc:Minimum N_WELL layer extension t            0            0
+(  174)  4A.23Zd.a: Minimum N+ implant enclosure             0            0
+(  175)  4A.23Zd.b: If SAB lies across POLY1,(POL            0            0
+(  176)  4A.23Ze.a: Minimum P+ implant enclosure             0            0
+(  177)  4A.23Ze.b: If SAB lies across POLY1,((PO            0            0
+(  178)  4A.23Zf.a: Minimum N+ implant enclosure             0            0
+(  179)  4A.23Zf.b: (DIFFUSION OVER SAB) partiall            0            0
+(  180)  4A.23Zg.a: Minimum P+ implant enclosure             0            0
+(  181)  4A.23Zg.b: (DIFFUSION OVER SAB) partiall            0            0
+(  182)  4A.24A: Exact CONT size is 0.16um                   0            0
+(  183)  4A.24B: Minimum space between two CONT r            0            0
+(  184)  4A.24C.a:Minimum DIFF CONT to poly1 gate            0            0
+(  185)  4A.24C.b:Minimum DIFF CONT to poly1(3.3V            0            0
+(  186)  4A.24D:Minimum poly1 contact to diffusio            0            0
+(  187)  4A.24E: Minimum PO1 overlap CONT is 0.06            0            0
+(  188)  4A.24FG: Minimum extension of a diffusio            0            0
+(  189)  4A.24I: Poly contact on diffusion is not            0            0
+(  190)  4A.25A: Minimum width of PESD region is             0            0
+(  191)  4A.25B: Minimum space between two PESD r            0            0
+(  192)  4A.26A: Minimum width of P_WELL_BLOCK re            0            0
+(  193)  4A.26B: Minimum space between two P_WELL            0            0
+(  194)  4A.26C: Minimum P_WELL_BLOCK to NATIVE s            0            0
+(  195)  4A.26D: Minimum P_WELL_BLOCK to N_WELL s            0            0
+(  196)  4A.26E: Minimum P_WELL_BLOCK to IND spac            0            0
+(  197)  4A.26F: Minimum P_WELL_BLOCK to DIFFUSIO            0            0
+(  198)  4A.26G: Minimum P_WELL_BLOCK enclosure o            0            0
+(  199)  4A.26H: P_WELL_BLOCK overlap GATE is not            0            0
+(  200)  4A.26I: P_WELL_BLOCK overlap NWEL is not            0            0
+(  201)  4A.26J: P_WELL_BLOCK overlap IND is not             0            0
+(  202)  4A.26K: P_WELL_BLOCK overlap NATIVE is n            0            0
+(  203)  4A.26L: Minimum IND to NATIVE spacing is            0            0
+(  204)  4A.26M: Minimum IND to N_WELL spacing is            0            0
+(  205)  LOGO_5.1A_5.1C_suggested: Minimum width             0            0
+(  206)  LOGO_5.1B: Minimum space between DIFF re            0            0
+(  207)  LOGO_5.2A_5.2C_suggested: Minimum width             0            0
+(  208)  LOGO_5.2B: Minimum space between NW regi            0            0
+(  209)  LOGO_5.3A_5.3C_suggested: Minimum width             0            0
+(  210)  LOGO_5.3B: Minimum space between TG regi            0            0
+(  211)  LOGO_5.4A_5.4C_suggested: Minimum width             0            0
+(  212)  LOGO_5.4B: Minimum space between PO1 reg            0            0
+(  213)  LOGO_5.5A_5.5C_suggested: Minimum width             0            0
+(  214)  LOGO_5.5B: Minimum space between NPLUS r            0            0
+(  215)  LOGO_5.6A_5.6C_suggested: Minimum width             0            0
+(  216)  LOGO_5.6B: Minimum space between PPLUS r            0            0
+(  217)  LOGO_5.7A_5.7C_suggested: Minimum width             0            0
+(  218)  LOGO_5.7B: Minimum space between SAB reg            0            0
+(  219)  LOGO_5.8A_5.8C_suggested: Minimum width             0            0
+(  220)  LOGO_5.8B: Minimum space between CONT re            0            0
+(  221)  LOGO_5.8Da: Minimum PO1 enclosure of CON            0            0
+(  222)  LOGO_5.8Db: Minimum DIFFUSION enclosure             0            0
+--------------------------------------------------------------------------------
+Total  errors:                                               0            0
+--------------------------------------------------------------------------------
+
+   Finished creating Error Database ...
+
+   Writing Report into ./dff_test.err ...
+
+avrpt cpu sec:    0.10  elapsed:     0  virtual:    93M
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avrpt
+
+Starting /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/dff_test.rsf -restart -cdslib /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/cds.lib
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+
+Loading tech rule set file : /usr/local/cadence6/G-9FD-MIXED_MODE_RFCMOS13-1P8M-MMC_FSG_L130E_UM130FDKMFC0000OA-FDK-Ver.A02_PB/RuleDecks/Assura/G-DF-MIXED_MODE_RFCMOS13-1P8M-MMC_L130E_ASSURA-DRC-Ver.2.5_P1/techRuleSets
+
+Finished /usr/local/cadence6/ASSURA415-001-617//tools.lnx86/assura/bin/avcallproc
+
+
+Run ended: Tue May 10 14:05:10 2022
+
+*****  Assura terminated normally  *****
+
+/uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/.assura_DRC.run: line 3: ui: command not found

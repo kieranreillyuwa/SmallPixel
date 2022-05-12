@@ -16,6 +16,6 @@ avParameters(
   ?technology "Assura_DRC_FEOL"
   ?techLib "./assura_tech.lib"
   ?techRuleSet "DRC_2.5p1"
-  ?set ("Skip_NPLUS_checks" "Skip_Poly_Density_Check" "Skip_Soft-Connect_Checks" "skip_DIFF_density_check")
+  ?set ("skip_DIFF_density_check" "Skip_NPLUS_checks" "Skip_Poly_Density_Check" "Skip_Soft-Connect_Checks")
   ?avrpt t
 )

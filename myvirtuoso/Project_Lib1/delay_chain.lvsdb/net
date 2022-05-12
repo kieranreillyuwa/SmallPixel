@@ -1,7 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 bind match unmatched shorts opens
-1 0 ((L "GND")((2 "n_12_hsl130e" ( "D" "S"))(2 "n_12_hsl130e" ( "B")))(S "GND")((20 "N_12_HSL130E" ( "D" "S"))(20 "N_12_HSL130E" ( "B"))))
-1 0 ((L "VDD")((2 "p_12_hsl130e" ( "D" "S"))(2 "p_12_hsl130e" ( "B")))(S "VDD")((20 "P_12_HSL130E" ( "D" "S"))(20 "P_12_HSL130E" ( "B"))))
-1 2 ((S "net16")(S "net15")(S "net17")(S "net18")(S "net2")(S "net1")(S "net4")(S "net3")(S "net6")(S "net19")(S "net5")(S "net7")(S "net12")(S "net11")(S "net8")(S "net10")(S "net14")(S "net13"))

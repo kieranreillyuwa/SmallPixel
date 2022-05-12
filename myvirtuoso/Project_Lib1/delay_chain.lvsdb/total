@@ -1,5 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 device net parameter pin rewire total
-1  5 (( ( S "delay_chain layout Project_Lib1" )( L "delay_chain schematic Project_Lib1" ) )(( 1 2 20 )( 0 0 36 )))

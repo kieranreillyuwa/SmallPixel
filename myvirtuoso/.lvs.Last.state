@@ -14,7 +14,7 @@ vuiLVSFormTable = '(
 	schematicSource  "DFII"
 	layoutSource  "DFII"
 	runName  ""
-	runDir  "./Project_Lib1"
+	runDir  "~/Project_Lib1"
 	machineLoc  "local"
 	viewRules  t
 	technologyField  "Assura_LVS"

@@ -12,3 +12,4 @@ DEFINE Project_Lib1 /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-
 DEFINE myLib myLib
 DEFINE myLib_sim /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/myLib_sim
 DEFINE Project_Lib1_sim /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/myvirtuoso/Project_Lib1_sim
+DEFINE cadence_test_lib /home/uniwa/22484032/test_lib/cadence_test_lib

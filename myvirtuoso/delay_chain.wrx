@@ -1,0 +1,13 @@
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.015, 0.195). See .erc file  for  details.
+*WARNING* Nets C4 and C3 are associated with the same label "VDD" at (2.980, 2.940). See .erc file  for  details.
+*WARNING* 2 same-label  warnings found in cell 'delay_chain layout Project_Lib1'.
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.015, 0.195). See .erc file  for  details.
+*WARNING* 1 same-label  warning  found in cell 'delay_chain layout Project_Lib1'.
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.070, 0.195). See .erc file  for  details.
+*WARNING* 1 same-label  warning  found in cell 'delay_chain layout Project_Lib1'.
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.160, 0.195). See .erc file  for  details.
+*WARNING* 1 same-label  warning  found in cell 'delay_chain layout Project_Lib1'.
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.295, 0.195). See .erc file  for  details.
+*WARNING* 1 same-label  warning  found in cell 'delay_chain layout Project_Lib1'.
+*WARNING* Nets C2 and C1 are associated with the same label "GND" at (3.415, 0.195). See .erc file  for  details.
+*WARNING* 1 same-label  warning  found in cell 'delay_chain layout Project_Lib1'.

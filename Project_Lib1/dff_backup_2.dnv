@@ -1,0 +1,8 @@
+vuiLVSdebugRunInfo = list( nil
+   'layoutLibrary "cadence_test_lib"
+   'layoutCell "dff_backup_2"
+   'layoutView "layout"
+   'schematicLibrary "cadence_test_lib"
+   'schematicCell "dff_backup_2"
+   'schematicView "schematic"
+)

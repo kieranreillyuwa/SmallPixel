@@ -1,3 +1,7 @@
+Tue May 10 13:50:52 2022~@$^*/usr/local/cadence6/IC617-701/doc/cdnshelp/What_s_New_in_Cadence_Help.html~@$^*Previous Versions <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
+Tue May 10 13:50:52 2022~@$^*/usr/local/cadence6/IC617-701/doc/cdnshelp/What_s_New_in_Cadence_Help.html~@$^*Cadence Help <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
+Tue May 10 13:50:52 2022~@$^*/usr/local/cadence6/IC617-701/doc/comphelp/chap3.html#Wire~@$^*Adding Narrow or Wide Wires <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
+Tue May 10 13:50:52 2022~@$^*/usr/local/cadence6/IC617-701/doc/comphelp/chap3.html#Wire~@$^*Wire <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
 Wed May 4 19:25:09 2022~@$^*/usr/local/cadence6/IC617-701/doc/vlehelp/chap7.html#moveCommand~@$^*Moving Objects <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
 Wed May 4 19:25:09 2022~@$^*/usr/local/cadence6/IC617-701/doc/vlehelp/chap7.html#moveCommand~@$^*Move <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>
 Wed May 4 18:54:02 2022~@$^*/usr/local/cadence6/IC617-701/doc/vlehelp/vlehelpTOC.html#~@$^*Virtuoso Layout Suite L User Guide <sup><font size="1" color="#A9A9A9">[ IC6.17 ]</font></sup>

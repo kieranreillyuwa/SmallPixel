@@ -1,0 +1,42 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'dff_backup_2 layout cadence_test_lib':
+  info: Assign pin label "nRST" at (1.815, 0.720) to layer `ME1'.
+  info: Assign pin label "CLK" at (1.255, 1.780) to layer `ME1'.
+  info: Assign pin label "D" at (1.570, 2.535) to layer `ME1'.
+  info: Assign pin label "GND" at (12.290, 0.245) to layer `ME1'.
+  info: Assign pin label "Q" at (13.000, 1.940) to layer `ME1'.
+  info: Assign pin label "nQ" at (12.830, 2.760) to layer `ME1'.
+  info: Assign pin label "VDD" at (12.500, 4.540) to layer `ME1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'dff_backup_2 layout cadence_test_lib':
+  info: Assign pin label "nRST" at (1.815, 0.720) to layer `ME1'.
+  info: Assign pin label "CLK" at (1.255, 1.780) to layer `ME1'.
+  info: Assign pin label "D" at (1.570, 2.535) to layer `ME1'.
+  info: Assign pin label "GND" at (12.290, 0.245) to layer `ME1'.
+  info: Assign pin label "Q" at (13.000, 1.940) to layer `ME1'.
+  info: Assign pin label "nQ" at (12.830, 2.760) to layer `ME1'.
+  info: Assign pin label "VDD" at (12.500, 4.540) to layer `ME1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'dff_backup_2 layout cadence_test_lib':
+  info: Assign pin label "nRST" at (1.815, 0.720) to layer `ME1'.
+  info: Assign pin label "CLK" at (1.255, 1.780) to layer `ME1'.
+  info: Assign pin label "D" at (1.570, 2.535) to layer `ME1'.
+  info: Assign pin label "GND" at (12.290, 0.245) to layer `ME1'.
+  info: Assign pin label "Q" at (13.000, 1.940) to layer `ME1'.
+  info: Assign pin label "nQ" at (12.830, 2.760) to layer `ME1'.
+  info: Assign pin label "VDD" at (12.500, 4.540) to layer `ME1'.
+
+***** End of Label Report *****
+

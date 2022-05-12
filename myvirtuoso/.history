@@ -14,31 +14,41 @@ clsAdmintool
 clsAdminTools
 #+1651641128
 git commit
-#+1651641174
-git commit -a -m "backup"
 #+1651658080
 git restore SmallPixel/myvirtuoso/Project_Lib1/dff/layout
 #+1651658098
 git --help
-#+1651658466
-pwd
 #+1651664481
 git commit -a -m "dff commit before stupid qrc"
 #+1651664618
 cd myvirtuoso/
-#+1651665486
-cd ..
-#+1651665489
-git add .
 #+1651665518
 git commit -a -m "added bin_counter schematic and symbol"
-#+1651665607
-git push
 #+1652084301
 cd ~/myvirtuoso
 #+1652084529
 cd ~/myvirtuoso/
-#+1652084543
-source setup617.csh
 #+1652092490
 clsAdminTool
+#+1652092777
+git add .
+#+1652092882
+git commit -a -m "backup"
+#+1652092965
+git push
+#+1652093067
+vim gh
+#+1652161136
+source setup617.csh
+#+1652162397
+cd /usr/local/share/
+#+1652162400
+cd ..
+#+1652162423
+cd /uwa_network_storage/shared/
+#+1652163225
+pwd
+#+1652163228
+cd
+#+1652163228
+ls

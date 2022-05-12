@@ -1,0 +1,35 @@
+# 4
+P_12_HSL130E(MOS): p_12_hsl130e(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+N_12_HSL130E(MOS): n_12_hsl130e(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 21
+dff schematic Project_Lib1: dff layout Project_Lib1
+= net69 avC18
+= net83 avC11
+= net30 avC10
+= net11 avC9
+= net71 avC19
+= net68 avC20
+= net79 avC8
+= net73 avC21
+= net72 avC12
+= net74 avC13
+= net67 avC14
+= net70 avC15
+= net66 avC16
+= net65 avC17
+= VDD VDD I
+= GND GND I
+= CLK CLK I
+= D D I
+= Q Q O
+= nQ nQ O
+= nRST nRST I
