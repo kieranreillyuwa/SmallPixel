@@ -29,7 +29,7 @@ output_db -type extracted_view \
 	 -cap_property_name "c" \
 	 -enable_cellview_check false \
 	 -include_cap_model "false" \
-	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_cap_model "comment" \
 	 -include_parasitic_res_model "comment" \
 	 -include_parasitic_res_width true \
 	 -include_res_model "false" \
