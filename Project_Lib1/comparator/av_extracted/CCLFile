@@ -18,12 +18,12 @@ extraction_setup \
 filter_res \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "inv layout myLib" \
-	 -directory_name "/home/uniwa/22495757/myvirtuoso" \
+	 -design_cell_name "comparator layout Project_Lib1" \
+	 -directory_name "/home/uniwa/22511497/myvirtuoso" \
 	 -format "DFII" \
-	 -run_name "inv"
+	 -run_name "comparator"
 log_file \
-	 -file_name "/home/uniwa/22495757/myvirtuoso/qrc.inv.log"
+	 -file_name "/home/uniwa/22511497/myvirtuoso/qrc.comparator.log"
 output_db -type extracted_view \
 	 -cap_component "pcapacitor" \
 	 -cap_property_name "c" \
@@ -37,12 +37,12 @@ output_db -type extracted_view \
 	 -res_property_name "r" \
 	 -view_name "av_extracted"
 output_setup \
-	 -directory_name "/home/uniwa/22495757/myvirtuoso" \
-	 -temporary_directory_name "inv"
+	 -directory_name "/home/uniwa/22511497/myvirtuoso" \
+	 -temporary_directory_name "comparator"
 process_technology \
 	 -technology_corner \
 		"LVS_2.3_p9" \
-	 -technology_library_file "/home/uniwa/22495757/myvirtuoso/assura_tech.lib" \
+	 -technology_library_file "/home/uniwa/22511497/myvirtuoso/assura_tech.lib" \
 	 -technology_name "Assura_LVS" \
 	 -temperature \
 		25.0
