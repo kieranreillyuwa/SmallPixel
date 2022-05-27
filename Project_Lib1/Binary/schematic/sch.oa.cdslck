@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      22511497
+HostName                       dep56159nix.uniwa.uwa.edu.au
+ProcessIdentifier              4790
+ProcessCreationTime_UTC        1653372346
+ProcessCreationTime_Readable   Tue May 24 14:05:46 2022 AWST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/Project_Lib1/binary/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue May 24 16:40:49 2022 AWST
