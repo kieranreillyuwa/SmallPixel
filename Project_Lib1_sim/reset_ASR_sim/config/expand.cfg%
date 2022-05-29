@@ -1,0 +1,22 @@
+//Revision 3
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config reset_asr_sim;
+design Project_Lib1_sim.reset_asr_sim:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice;
+stoplist spectre;
+
+
+cell Project_Lib1.asr_10 binding :av_extracted;
+cell Project_Lib1.reset binding :av_extracted;
+cell Project_Lib1.photodiode binding :av_extracted;
+
+
+endconfig
