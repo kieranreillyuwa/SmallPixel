@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Mon May 30 07:56:13 2022 AWST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/Project_Lib1_sim/binary_counter_sim/schematic/sch.oa.cdslck
-TimeEditLocked                 Mon May 30 09:34:54 2022 AWST
+FilePathUsedToEditLock         /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/Project_Lib1_sim/integrated_v3_common_sel/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon May 30 13:53:56 2022 AWST
