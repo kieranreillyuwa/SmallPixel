@@ -1,4 +1,4 @@
-//Revision 2
+//Revision 1
 //NOTE
 // Default template for spectre
 // Note:
@@ -19,7 +19,6 @@ cell Project_Lib1.comparator binding :av_extracted;
 cell Project_Lib1.reset binding :av_extracted;
 cell Project_Lib1.photodiode binding :av_extracted;
 cell Project_Lib1.delay_chain binding :av_extracted;
-cell Project_Lib1.dff binding :av_extracted;
 
 
 endconfig
