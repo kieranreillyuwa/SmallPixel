@@ -4,13 +4,13 @@
 # Information about current Edit Lock Owner.
 #
 LockStakeVersion               1.1
-LoginName                      22484032
-HostName                       dep56160nix.uniwa.uwa.edu.au
-ProcessIdentifier              31199
-ProcessCreationTime_UTC        1653816266
-ProcessCreationTime_Readable   Sun May 29 17:24:26 2022 AWST
+LoginName                      22495757
+HostName                       dep56158nix.uniwa.uwa.edu.au
+ProcessIdentifier              5777
+ProcessCreationTime_UTC        1653872798
+ProcessCreationTime_Readable   Mon May 30 09:06:38 2022 AWST
 AppIdentifier                  /usr/local/cadence6/IC617-701/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       Not specified
 FilePathUsedToEditLock         /uwa_network_storage/shared/studentdata/ELEC/ELEC5503/Group-01/SmallPixel/Project_Lib1_sim/integrated_v3/config/expand.cfg
-TimeEditLocked                 Sun May 29 17:39:06 2022 AWST
+TimeEditLocked                 Mon May 30 09:23:28 2022 AWST
